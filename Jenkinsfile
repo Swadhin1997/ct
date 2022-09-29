@@ -27,7 +27,7 @@ agent any
         }  
         stage ('Building dll') {
             steps {
-               sh "dotnet build PrjPASS.sln"
+               //sh "dotnet build PrjPASS.sln"
             }           
         }
     }
