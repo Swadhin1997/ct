@@ -13,7 +13,7 @@ agent any
 
         stage ("Clone Repository") {
                 steps {
-                   git branch: 'main', url: 'https://github.com/Swadhin1997/chotupass-prod-test.git'
+                   git branch: 'main', url: 'https://github.com/Swadhin1997/ct.git'
                 }
             }  
         stage('Prep') {
