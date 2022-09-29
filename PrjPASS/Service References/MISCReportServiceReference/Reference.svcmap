@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="98abac6a-2b39-4e72-b5de-baab7533c0a6" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://10.221.12.44/KGIMISCReportService/MISCReportService.svc?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="MISCReportService.xsd" MetadataType="Schema" ID="bf6e7699-167d-413c-9cff-a2fdb283613b" SourceId="1" SourceUrl="http://kgi-svr-v127.kgi.kotakgroup.com/KGIMISCReportService/MISCReportService.svc?xsd=xsd1" />
+    <MetadataFile FileName="MISCReportService.wsdl" MetadataType="Wsdl" ID="3fed7a4a-af8f-43b8-ab44-d481285340a0" SourceId="1" SourceUrl="http://10.221.12.44/KGIMISCReportService/MISCReportService.svc?wsdl" />
+    <MetadataFile FileName="MISCReportService1.xsd" MetadataType="Schema" ID="3a5289a0-741b-4b2f-88b7-285603b38b97" SourceId="1" SourceUrl="http://kgi-svr-v127.kgi.kotakgroup.com/KGIMISCReportService/MISCReportService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

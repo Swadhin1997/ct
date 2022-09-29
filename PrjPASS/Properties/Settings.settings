@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="PrjPASS.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="PrjPASS_ContactWS_Contact_x0020_Web_x0020_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://kgi-p-app-talisma-1-v089/contactiservice/contact.asmx</Value>
+    </Setting>
+    <Setting Name="PrjPASS_InteractionWS_Interaction_x0020_Web_x0020_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://kgi-p-app-talisma-1-v089/interactioniservice/interaction.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

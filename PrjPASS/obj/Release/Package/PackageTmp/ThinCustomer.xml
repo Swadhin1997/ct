@@ -1,0 +1,103 @@
+<?xml version="1.0" ?>
+<Root Name="CustomerDetails">
+  <CustomerDetails>
+    <IsThinCustomer Name="IsThinCustomer" Value="False" Type="Boolean" />
+    <CustomerId Name="Customer ID" Value="" Type="Double" />
+    <CustomerType Name="CustomerType" Value="I" Type="String" />
+    <ContactPerson Name="ContactPerson"  Value="" Type="String" />
+    <FirstName Name="FirstName" Value="" Type="String" />
+    <MiddleName Name="MiddleName" Value="" Type="String" />
+    <LastName Name="LastName" Value="" Type="String" />
+    <DOB Name="DOB" Value="" Type="String" />
+    <EmailId Name="EmailId" Value="" Type="String" />
+    <MobileNo Name="MobileNo"  Value="" Type="String" />
+    <PinCode Name="PinCode" Value="" Type="String"/>
+    <AlternateCustCode Name="AlternateCustCode" Value="0" Type="Double" />
+    <Salutation Name="Salutation" Value="" Type="String" />
+    <AlternateEmailId Name="AlternateEmailId" Value="" Type="String" />
+    <Gender Name="Gender" Value="" Type="String" />
+    <MaritalStatus Name="MaritalStatus" Value="Single" Type="String"/>
+    <OccupationCode Name ="OccupationCode" Value="7" Type="Integer" />
+    <PanNo Name="PanNo" Value="" Type="String" />
+    <IDProof Name="IDProof" Value="0" Type="Integer" />
+    <IDProofDetails Name="IDProofDetails" Value="" Type="String" />
+    <DematAccNo Name="DematAccNo" Value="" Type="String" />
+    <EducationQualification Name="EducationQualification" Value="0" Type="Integer" />
+    <IsKotakGroupEmployee Name="IsKotakGroupEmployee" Value="N" Type="String" />
+    <KotakGroupEmployeeOrganisationName Name="KotakGroupEmployeeOrganisationName" Value="" Type="String" />
+    <KotakGroupEmployeeNo Name="KotakGroupEmployeeNo" Value="0" Type="String" />
+    <IsKotakGroupCustomer Name="KotakGroupCustomerOrganisationName" Value="" Type="String" />
+    <KotakGroupCustomerOrganisationName Name="KotakGroupCustomerOrganisationName" Value="" Type="String" />
+    <KotakGroupCustomerCRNNo Name="KotakGroupCustomerCRNNo" Value="" Type="String" />
+    <SourceOfFund Name="SourceOfFund" Value="" Type="String" />
+    <IsBlacklisted Name="IsBlacklisted" Value="0" Type="Integer" />
+    <IsPriorityClient Name="IsPriorityClient" Value="0" Type="Integer" />
+    <Nationality Name="Nationality" Value="INDIAN RESIDENT" Type="String" />
+    <DeDupID Name="DeDupID" Value="1" Type="String" />
+    <PermanentLocationSameAsMailLocation Name="PermanentLocationSameAsMailLocation" Value="True" Type="Boolean" />
+    <LandLineISD Name="LandLineISD" Value="" Type="String" />
+    <LandLineSTD Name="LandLineSTD" Value="" Type="String" />
+    <LandLineNo Name="LandLineNo" Value="" Type="String" />
+    <Extension Name="Extension" Value="" Type="String" />
+    <AlternateISD Name="AlternateISD" Value="" Type="String" />
+    <AlternateSTD Name="AlternateSTD" Value="" Type="String" />
+    <AlternateNo Name="AlternateNo" Value="" Type="String" />
+    <Extension1 Name="Extension1" Value="" Type="String" />
+    <MobileISD Name="MobileISD" Value="91" Type="String" />
+    <DoNotCall Name="DoNotCall" Value="1" Type="Integer" />
+    <AlternateMobileISD Name="AlternateMobileISD" Value="" Type="String" />
+    <AlternateMobileNo Name="AlternateMobileNo" Value="" Type="String" />
+    <DoNotCallAlternate Name="DoNotCallAlternate" Value="1" Type="Integer" />
+    <EndDate Name="EndDate" Value="12/12/2050" Type="String" />
+    <EIARequired Name="EIARequired" Value="" Type="String"/>
+    <EIANumber Name="EIANumber" Value="" Type="String"/>
+    <IR Name="IR" Value="" Type="String"/>
+    <GSTNumber Name="GSTNumber" Value="" Type="String"/>
+    <MailLocation>
+      <AddressLine1 Name="AddressLine1" Value="" Type="String" />
+      <AddressLine2 Name="AddressLine2" Value="" Type="String" />
+      <AddressLine3 Name="AddressLine3" Value="" Type="String" />
+      <Landmark Name="Landmark" Value="" Type="String" />
+      <PinCode Name="PinCode" Value="" Type="Integer" />
+      <PinCodeLocality Name="PinCodeLocality" Value="" Type="String" />
+      <CountryID Name="CountryID" Value="64" Type="Integer" />
+      <CountryName Name="CountryName" Value="India" Type="String" />
+      <StateCode Name="StateCode" Value="" Type="Integer" />
+      <StateName Name="StateName" Value="" Type="String" />
+      <CityDistrictCode Name="CityDistrictCode" Value="" Type="Integer" />
+      <CityDistrictName Name="CityDistrictName" Value="" Type="String" />
+      <CityId Name="CityId" Value="" Type="Integer" />
+      <CityName Name="CityName" Value="" Type="String" />
+    </MailLocation>
+    <PermanentLocation>
+      <AddressLine1 Name="AddressLine1" Value="" Type="String" />
+      <AddressLine2 Name="AddressLine2" Value="" Type="String" />
+      <AddressLine3 Name="AddressLine3" Value="" Type="String" />
+      <Landmark Name="Landmark" Value="" Type="String" />
+      <PinCode Name="PinCode" Value="" Type="Integer" />
+      <PinCodeLocality Name="PinCodeLocality" Value="" Type="String" />
+      <CountryID Name="CountryID" Value="64" Type="Integer" />
+      <CountryName Name="CountryName" Value="India" Type="String" />
+      <StateCode Name="StateCode" Value="" Type="Integer" />
+      <StateName Name="StateName" Value="" Type="String" />
+      <CityDistrictCode Name="CityDistrictCode" Value="" Type="Integer" />
+      <CityDistrictName Name="CityDistrictName" Value="" Type="String" />
+      <CityId Name="CityId" Value="" Type="Integer" />
+      <CityName Name="CityName" Value="" Type="String" />
+      <LandLineISD Name="LandLineISD" Value="" Type="String" />
+      <LandLineSTD Name="LandLineSTD" Value="" Type="String" />
+      <LandLineNo Name="LandLineNo" Value="" Type="String" />
+      <Extension Name="Extension" Value="" Type="String" />
+      <AlternateISD Name="AlternateISD" Value="" Type="String" />
+      <AlternateSTD Name="AlternateSTD" Value="" Type="String" />
+      <AlternateNo Name="AlternateNo" Value="" Type="String" />
+      <Extension1 Name="Extension1" Value="" Type="String" />
+      <MobileISD Name="MobileISD" Value="91" Type="String" />
+      <MobileNo Name="MobileNo" Value="" Type="String" />
+      <DoNotCall Name="DoNotCall" Value="1" Type="Integer" />
+      <AlternateMobileISD Name="AlternateMobileISD" Value="" Type="String" />
+      <AlternateMobileNo Name="AlternateMobileNo" Value="" Type="String" />
+      <DoNotCallAlternate Name="DoNotCallAlternate" Value="1" Type="Integer" />
+    </PermanentLocation>
+  </CustomerDetails>
+</Root>

@@ -1,0 +1,656 @@
+<?xml version="1.0"?>
+<Root Code="2876" Name="KotakHealthCare">
+  <ProposalDetails>
+    <RiskDetails>
+      <Block>
+        <PropRisks_AdditionInfoLetterDecision Type="String" Value="" />
+        <PropRisks_AdditionInfoLetterDecisionDate Type="String" Value="" />
+        <PropRisks_AdditionInfoLetterToBeGeneratd Type="String" Value="" />
+        <PropRisks_Boolean1 Type="Boolean" Value="True" />
+        <PropRisks_Boolean2 Type="Boolean" Value="True" />
+        <PropRisks_CounterOfferLetterDecision Type="String" Value="Counter Offer Letter Not Required" />
+        <PropRisks_CounterOfferLetterDecisionDate Type="String" Value="" />
+        <PropRisks_CounterOfferLetterToBeGeneratd Type="String" Value="" />
+        <PropRisks_DeviationRemarks Type="String" Value="Any Remarks" />
+        <PropRisks_ExtraBoolean1 Type="Boolean" Value="True" />
+        <PropRisks_ExtraBoolean10 Type="Boolean" Value="True" />
+        <PropRisks_ExtraBoolean2 Type="Boolean" Value="True" />
+        <PropRisks_ExtraBoolean3 Type="Boolean" Value="True" />
+        <PropRisks_ExtraBoolean4 Type="Boolean" Value="True" />
+        <PropRisks_ExtraBoolean5 Type="Boolean" Value="True" />
+        <PropRisks_ExtraBoolean6 Type="Boolean" Value="True" />
+        <PropRisks_ExtraBoolean7 Type="Boolean" Value="True" />
+        <PropRisks_ExtraBoolean8 Type="Boolean" Value="True" />
+        <PropRisks_ExtraBoolean9 Type="Boolean" Value="True" />
+        <PropRisks_ExtraNum1 Type="Double" Value="0" />
+        <PropRisks_ExtraNum10 Type="Double" Value="0" />
+        <PropRisks_ExtraNum2 Type="Double" Value="0" />
+        <PropRisks_ExtraNum3 Type="Double" Value="0" />
+        <PropRisks_ExtraNum4 Type="Double" Value="0" />
+        <PropRisks_ExtraNum5 Type="Double" Value="0" />
+        <PropRisks_ExtraNum6 Type="Double" Value="0" />
+        <PropRisks_ExtraNum7 Type="Double" Value="0" />
+        <PropRisks_ExtraNum8 Type="Double" Value="0" />
+        <PropRisks_ExtraNum9 Type="Double" Value="0" />
+        <PropRisks_ExtraText1 Type="String" Value="" />
+        <PropRisks_ExtraText10 Type="String" Value="" />
+        <PropRisks_ExtraText2 Type="String" Value="" />
+        <PropRisks_ExtraText3 Type="String" Value="" />
+        <PropRisks_ExtraText4 Type="String" Value="" />
+        <PropRisks_ExtraText5 Type="String" Value="" />
+        <PropRisks_ExtraText6 Type="String" Value="" />
+        <PropRisks_ExtraText7 Type="String" Value="" />
+        <PropRisks_ExtraText8 Type="String" Value="" />
+        <PropRisks_ExtraText9 Type="String" Value="" />
+        <PropRisks_FamilyDiscApplicability Type="Boolean" Value="False" />
+        <PropRisks_FamilyDiscountAppPrem Type="Double" Value="0" />
+        <PropRisks_FamilyDoctor Type="String" Value="" />
+        <PropRisks_FamilyDoctorAddress Type="String" Value="" />
+        <PropRisks_FamilyDoctorEmail Type="String" Value="" />
+        <PropRisks_FamilyDoctorMobile Type="String" Value="" />
+        <PropRisks_FamilyDoctorName Type="String" Value="" />
+        <PropRisks_FamilyDoctorQualification Type="String" Value="" />
+        <PropRisks_FamilyDoctorTelNo Type="String" Value="" />
+        <PropRisks_FinalApproval Type="String" Value="" />
+        <PropRisks_FloaterCBAmount Type="String" Value="0" />
+        <PropRisks_FloaterSumInsured Type="Double" Value="0" />
+        <PropRisks_InstAdditionalEndorsement Type="Boolean" Value="True" />
+        <PropRisks_InstallmentFrequency Type="String" Value="" />
+        <PropRisks_IsPolicyholderanInsured Type="Boolean" Value="True" />
+        <PropRisks_IsServiceTaxExempted Type="Boolean" Value="False" />
+        <PropRisks_LoadingPercentage Type="Double" Value="0" />
+        <PropRisks_LocationCode Type="String" Value="" />
+        <PropRisks_LongTermDiscApplicability Type="Boolean" Value="True" />
+        <PropRisks_LongTermDiscountAppPrem Type="Double" Value="0" />
+        <PropRisks_MASPercentage Type="Double" Value="100" />
+        <PropRisks_MFLPercentage Type="Double" Value="100" />
+        <PropRisks_MemberPremiumTotal Type="Double" Value="0" />
+        <PropRisks_NoMedicalDeclaration Type="Boolean" Value="True" />
+        <PropRisks_NoPED Type="Boolean" Value="True" />
+        <PropRisks_Num1 Type="Double" Value="0" />
+        <PropRisks_Num2 Type="Double" Value="0" />
+        <PropRisks_Num3 Type="Double" Value="0" />
+        <PropRisks_Num4 Type="Double" Value="0" />
+        <PropRisks_Num5 Type="Double" Value="0" />
+        <PropRisks_OtherDate1 Type="String" Value="" />
+        <PropRisks_OtherInfoBool1 Type="Boolean" Value="True" />
+        <PropRisks_OtherInfoText1 Type="String" Value=",applicability=NONBANCASSURANCE,InsuredDtls=1>Self|" />
+        <PropRisks_OtherInfoText2 Type="String" Value="" />
+        <PropRisks_OtherInfoText3 Type="String" Value="" />
+        <PropRisks_OtherInfoText4 Type="String" Value=",memberid=1000006862" />
+        <PropRisks_OtherInfoText5 Type="String" Value="" />
+        <PropRisks_OtherInfoText6 Type="String" Value="" />
+        <PropRisks_OtherInfoText7 Type="String" Value="" />
+        <PropRisks_OtherInfoText8 Type="String" Value="" />
+        <PropRisks_PMLPercentage Type="Double" Value="100" />
+        <PropRisks_PlanCode Type="Double" Value="10001" />
+        <PropRisks_PlanName Type="String" Value="EXCEL" />
+        <PropRisks_PlanType Type="String" Value="Individual Basis" />
+        <PropRisks_PremiumReceivedFromCustomer Type="Double" Value="3635" />
+        <PropRisks_RelationshipCombination Type="String" Value="" />
+        <PropRisks_TPACode Type="String" Value="1000000001" />
+        <PropRisks_TPAName Type="String" Value="Family Health Plan (TPA) Limited" />
+        <PropRisks_Term Type="String" Value="1 Year" />
+        <PropRisks_Text1 Type="String" Value="" />
+        <PropRisks_Text2 Type="String" Value="" />
+        <PropRisks_Text3 Type="String" Value="" />
+        <PropRisks_Text4 Type="String" Value="" />
+        <PropRisks_TotalNoOfInstallment Type="Double" Value="0" />
+        <PropRisks_ProposalEntryDate Type="String" Value="24/11/2016" />
+        <PropRisks_UWDecisionDeviation Type="Boolean" Value="False" />
+        <OtherDetailsGrid>
+          <KotakHealthCare_NomineeDtls Name="KotakHealthCare_NomineeDtls" Value="GRP734">
+            <KotakHealthCare_NomineeDtls Type="GroupData">
+              <NomineeName Name="NomineeName" Value="DC JAIN" Type="String" />
+              <DateofBirth Name="DateofBirth" Value="31/08/1966" Type="String" />
+              <Age Name="Age" Value="50" Type="Double" />
+              <RelationshipwithProposer Name="RelationshipwithProposer" Value="Father" Type="String" />
+              <AppointeeName Name="AppointeeName" Value="" Type="String" />
+              <RelationshipofAppointeewithNominee Name="RelationshipofAppointeewithNominee" Value="" Type="String" />
+              <Nomineecontribution Name="Nomineecontribution" Value="100" Type="Double" />
+            </KotakHealthCare_NomineeDtls>
+          </KotakHealthCare_NomineeDtls>
+          <PropRiskCol Name="Self~1" Value="0">
+            <PropRiskCol Type="GroupData">
+              <IsOptionalCover Type="Boolean" Value="" Name="IsOptionalCover" />
+              <PropRisks_AnyAddInfoRecommendedByAMHI Type="String" Value="" Name="PropRisks_AnyAddInfoRecommendedByAMHI" />
+              <PropRisks_AnyAddTestRecommendedByAMHI Type="String" Value="" Name="PropRisks_AnyAddTestRecommendedByAMHI" />
+              <PropRisks_AnyAdditionalInforRecommended Type="String" Value="" Name="PropRisks_AnyAdditionalInforRecommended" />
+              <PropRisks_AnyAdditionalTestRecommended Type="String" Value="" Name="PropRisks_AnyAdditionalTestRecommended" />
+              <PropRisks_AnyExclusionRecommendedByAMHI Type="String" Value="" Name="PropRisks_AnyExclusionRecommendedByAMHI" />
+              <PropRisks_AnySpcConRecommendedByAMHI Type="String" Value="" Name="PropRisks_AnySpcConRecommendedByAMHI" />
+              <PropRisks_AnyUWLoadingRecommendedByAMHI Type="String" Value="" Name="PropRisks_AnyUWLoadingRecommendedByAMHI" />
+              <PropRisks_ApplicableSumInsured Type="Double" Value="200000" Name="PropRisks_ApplicableSumInsured" />
+              <PropRisks_BodyMassIndex Type="Double" Value="25.50" Name="PropRisks_BodyMassIndex" />
+              <PropRisks_ConfirmMemberId Type="String" Value="" Name="PropRisks_ConfirmMemberId" />
+              <PropRisks_CumulativeBonusEarned Type="Double" Value="" Name="PropRisks_CumulativeBonusEarned" />
+              <PropRisks_DetailLoadingDiscount_Col Type="Risks_DetailLoadingDiscount[]" Value="" Name="PropRisks_DetailLoadingDiscount_Col" />
+              <PropRisks_DifferentialSI Type="Double" Value="" Name="PropRisks_DifferentialSI" />
+              <PropRisks_EndorsementAmount Type="Double" Value="0" Name="PropRisks_EndorsementAmount" />
+              <PropRisks_EnhancedMemberSI Type="Double" Value="0" Name="PropRisks_EnhancedMemberSI" />
+              <PropRisks_ExpiringPolicySI Type="Double" Value="" Name="PropRisks_ExpiringPolicySI" />
+              <PropRisks_FirstName Type="String" Value="Hasmukh" Name="PropRisks_FirstName" />
+              <PropRisks_Gender Type="String" Value="Male" Name="PropRisks_Gender" />
+              <PropRisks_HeightOfTheInsuredFeet Type="Double" Value="" Name="PropRisks_HeightOfTheInsuredFeet" />
+              <PropRisks_HeightOfTheInsuredInCm Type="Double" Value="165" Name="PropRisks_HeightOfTheInsuredInCm" />
+              <PropRisks_HeightOfTheInsuredInInches Type="Double" Value="" Name="PropRisks_HeightOfTheInsuredInInches" />
+              <PropRisks_ICDMajorCode Type="String" Value="" Name="PropRisks_ICDMajorCode" />
+              <PropRisks_ICDMajorDescription Type="String" Value="" Name="PropRisks_ICDMajorDescription" />
+              <PropRisks_ICDMinorCode Type="String" Value="" Name="PropRisks_ICDMinorCode" />
+              <PropRisks_ICDMinorDescription Type="String" Value="" Name="PropRisks_ICDMinorDescription" />
+              <PropRisks_IndividualRiskPremium Type="Double" Value="" Name="PropRisks_IndividualRiskPremium" />
+              <PropRisks_InsuredAge Type="Double" Value="27" Name="PropRisks_InsuredAge" />
+              <PropRisks_InsuredDateOfBirth Type="String" Value="25/09/1989" Name="PropRisks_InsuredDateOfBirth" />
+              <PropRisks_InsuredName Type="String" Value="Hasmukh" Name="PropRisks_InsuredName" />
+              <PropRisks_InsuredRelationwithProposer Type="String" Value="Self" Name="PropRisks_InsuredRelationwithProposer" />
+              <PropRisks_IsDataDeleted Type="Boolean" Value="False" Name="PropRisks_IsDataDeleted" />
+              <PropRisks_IsOldDataDeleted Type="Boolean" Value="False" Name="PropRisks_IsOldDataDeleted" />
+              <PropRisks_LastName Type="String" Value="Jain" Name="PropRisks_LastName" />
+              <PropRisks_LoadingReasonByAMHI Type="String" Value="" Name="PropRisks_LoadingReasonByAMHI" />
+              <PropRisks_MemberDeath Type="String" Value="" Name="PropRisks_MemberDeath" />
+              <PropRisks_MemberEntryDate Type="String" Value="24/11/2016" Name="PropRisks_MemberEntryDate" />
+              <PropRisks_MemberID Type="String" Value="1000006862" Name="PropRisks_MemberID" />
+              <PropRisks_MemberPremium Type="Double" Value="" Name="PropRisks_MemberPremium" />
+              <PropRisks_MemberStatus Type="String" Value="No Approval Required" Name="PropRisks_MemberStatus" />
+              <PropRisks_MemberStatusByAMHI Type="String" Value="" Name="PropRisks_MemberStatusByAMHI" />
+              <PropRisks_MiddleName Type="String" Value="D" Name="PropRisks_MiddleName" />
+              <PropRisks_Num1RiskGroup Type="Double" Value="" Name="PropRisks_Num1RiskGroup" />
+              <PropRisks_Occupation Type="String" Value="SALARIED" Name="PropRisks_Occupation" />
+              <PropRisks_OtherKotakGenRenewalApplicable Type="Boolean" Value="True" Name="PropRisks_OtherKotakGenRenewalApplicable" />
+              <PropRisks_OtherOccupationSpecify Type="String" Value="" Name="PropRisks_OtherOccupationSpecify" />
+              <PropRisks_OtherRiskDiscountAppPrem Type="Double" Value="" Name="PropRisks_OtherRiskDiscountAppPrem" />
+              <PropRisks_OtherRiskLoadingAppPrem Type="Double" Value="" Name="PropRisks_OtherRiskLoadingAppPrem" />
+              <PropRisks_OtherTagicRenewalApplicable Type="Boolean" Value="True" Name="PropRisks_OtherTagicRenewalApplicable" />
+              <PropRisks_OverallRemarksByAMHI Type="String" Value="" Name="PropRisks_OverallRemarksByAMHI" />
+              <PropRisks_PPCChargePerMember Type="Double" Value="" Name="PropRisks_PPCChargePerMember" />
+              <PropRisks_PPCRegistrationNumber Type="String" Value="" Name="PropRisks_PPCRegistrationNumber" />
+              <PropRisks_PPCTestLevel Type="String" Value="" Name="PropRisks_PPCTestLevel" />
+              <PropRisks_PerDayCashBenefitForAccoChild Type="String" Value="" Name="PropRisks_PerDayCashBenefitForAccoChild" />
+              <PropRisks_Person Type="String" Value="Self" Name="PropRisks_Person" />
+              <PropRisks_PortabilityReqOthTagicRenApp Type="Boolean" Value="False" Name="PropRisks_PortabilityReqOthTagicRenApp" />
+              <PropRisks_PortabilityRequired Type="Boolean" Value="False" Name="PropRisks_PortabilityRequired" />
+              <PropRisks_Premium Type="Double" Value="" Name="PropRisks_Premium" />
+              <PropRisks_Rate Type="Double" Value="" Name="PropRisks_Rate" />
+              <PropRisks_RejectionCategory Type="String" Value="" Name="PropRisks_RejectionCategory" />
+              <PropRisks_RejectionReason Type="String" Value="" Name="PropRisks_RejectionReason" />
+              <PropRisks_RejectionReasonByAMHI Type="String" Value="" Name="PropRisks_RejectionReasonByAMHI" />
+              <PropRisks_Remarks Type="String" Value="" Name="PropRisks_Remarks" />
+              <PropRisks_RiskPremium Type="Double" Value="0" Name="PropRisks_RiskPremium" />
+              <PropRisks_RiskSLNo Type="Double" Value="" Name="PropRisks_RiskSLNo" />
+              <PropRisks_SumInsured Type="Double" Value="200000" Name="PropRisks_SumInsured" />
+              <PropRisks_Title Type="String" Value="MR" Name="PropRisks_Title" />
+              <PropRisks_UWDiscountRate Type="Double" Value="" Name="PropRisks_UWDiscountRate" />
+              <PropRisks_UWLoadingRate Type="Double" Value="" Name="PropRisks_UWLoadingRate" />
+              <PropRisks_UnderwritingDiscountAppPrem Type="Double" Value="" Name="PropRisks_UnderwritingDiscountAppPrem" />
+              <PropRisks_UnderwritingLoadingAppPrem Type="Double" Value="" Name="PropRisks_UnderwritingLoadingAppPrem" />
+              <PropRisks_WeightOfTheInsuredInKG Type="Double" Value="65" Name="PropRisks_WeightOfTheInsuredInKG" />
+            </PropRiskCol>
+          </PropRiskCol>
+        </OtherDetailsGrid>
+        <RisksLoadingDiscountGrid>
+          <RiskGroup Name="Self~1" Value="Risk Wise Loading/Discount" Type="GroupData">
+            <LDGroup Name="Loading/Discount Row" Type="GroupData">
+              <PropDetailLoadingDiscount_Applicable Type="Boolean" Value="True" />
+              <PropDetailLoadingDiscount_CalculatedAmount Type="Double" Value="441.9" />
+              <PropDetailLoadingDiscount_Description Type="String" Value="Room Rent Cap" />
+              <PropDetailLoadingDiscount_DifferentialSI Type="Double" Value="0" />
+              <PropDetailLoadingDiscount_EndorsementAmount Type="Double" Value="441.9" />
+              <PropDetailLoadingDiscount_FixedAmount Type="Double" Value="0" />
+              <PropDetailLoadingDiscount_IsDataDeleted Type="Boolean" Value="True" />
+              <PropDetailLoadingDiscount_IsOldDataDeleted Type="Boolean" Value="True" />
+              <PropDetailLoadingDiscount_LoadingDiscountReason Type="String" Value="Room Rent Cap discount" />
+              <PropDetailLoadingDiscount_NUMRLD1 Type="Double" Value="0" />
+              <PropDetailLoadingDiscount_NUMRLD2 Type="Double" Value="0" />
+              <PropDetailLoadingDiscount_Premium Type="Double" Value="4419" />
+              <PropDetailLoadingDiscount_Rate Type="Double" Value="10" />
+              <PropDetailLoadingDiscount_RiskLevelLDPremium Type="Double" Value="0" />
+              <PropDetailLoadingDiscount_SumInsured Type="Double" Value="200000" />
+              <PropDetailLoadingDiscount_TEXTRLD1 Type="String" Value="" />
+            </LDGroup>
+          </RiskGroup>
+        </RisksLoadingDiscountGrid>
+      </Block>
+    </RiskDetails>
+    <GeneralProposalInformation>
+      <ErrorTrackingNeeded Type="Boolean" Value="True" />
+      <ProductType Type="String" Value="SB" />
+      <PropBranchDetails_IMDBranchCode Type="String" Value="" />
+      <PropBranchDetails_IMDBranchName Type="String" Value="" />
+      <PropCalculation_CalculateRate Type="Boolean" Value="True" />
+      <PropCalculation_Validate Type="Boolean" Value="True" />
+      <PropCalculation_ValidateData Type="Boolean" Value="True" />
+      <PropClauseDetails_Component51 Type="String" Value="" />
+      <PropClauseDetails_DepartmentCode_Mandatary Type="Double" Value="0" />
+      <PropClauseDetails_ProductCode_Mandatary Type="Double" Value="2876" />
+      <PropClauseDetails_SectionCode Type="String" Value="" />
+      <PropCoinsuranceDetails_AddRow Type="Boolean" Value="True" />
+      <PropCoinsuranceDetails_CoinsuranceType Type="String" Value="" />
+      <PropCoinsuranceDetails_Commissiontobepaidbytheleader Type="Boolean" Value="True" />
+      <PropCoinsuranceDetails_PolicyNooftheleader Type="String" Value="" />
+      <PropCoinsuranceDetails_ReferenceNumber Type="String" Value="" />
+      <PropCoinsuranceDetails_SERVTAXCOMMRCVRLEADER Type="Boolean" Value="True" />
+      <PropCoinsuranceDetails_Servicetaxtobepaidbytheleader Type="Boolean" Value="True" />
+      <PropCoinsuranceDetails_Validate Type="String" Value="" />
+      <PropConditionDetails_ConditionDescription Type="String" Value="" />
+      <PropConditionDetails_DepartmentCode Type="Double" Value="0" />
+      <PropConditionDetails_ProductCode Type="Double" Value="2876" />
+      <PropConditionDetails_SectionCode Type="String" Value="" />
+      <PropConditionDetails_SpecialConditionDescription Type="String" Value="" />
+      <PropCoverNoteDetails_CoverNoteBookNo Type="String" Value="" />
+      <PropCoverNoteDetails_CoverNoteLeafNo Type="String" Value="" />
+      <PropCoverNoteDetails_IssuedOnDt Type="String" Value="" />
+      <PropCoverNoteDetails_IsuedonTime Type="String" Value="" />
+      <PropCoverNoteDetails_LeafNo Type="Double" Value="0" />
+      <PropCoverNoteDetails_RecievedOn Type="String" Value="" />
+      <PropCoverNoteDetails_Validate Type="Boolean" Value="False" />
+      <PropCustomerDtls_CustomerID_Mandatary Type="String" Value="1000013793" />
+      <PropCustomerDtls_CustomerName Type="String" Value="Hasmukh D Jain" />
+      <PropCustomerDtls_CustomerType Type="String" Value="" />
+      <PropCustomerDtls_PayeeCustomerID Type="String" Value="1000013793" />
+      <PropCustomerDtls_PayeeCustomerName Type="String" Value="Hasmukh" />
+      <PropCustomerReferenceInfo_OldPolicyNumber Type="String" Value="" />
+      <PropCustomerReferenceInfo_PolicyConversionDate Type="String" Value="" />
+      <PropDistributionChannel_BranchDetails Type="String" Value="" />
+      <PropDistributionChannel_BusineeChannelBrunch Type="String" Value="" />
+      <PropDistributionChannel_BusineeChanneltype Type="String" Value="INTERNET" />
+      <PropDistributionChannel_BusinessServicingChannelType Type="String" Value="" />
+      <PropDistributionChannel_BusinessSharingPercent Type="Double" Value="" />
+      <PropDistributionChannel_BusinessSource_Mandatary Type="String" Value="INTERMEDIARY" />
+      <PropDistributionChannel_BusinessSourcetype Type="String" Value="" />
+      <PropDistributionChannel_Commision Type="Double" Value="" />
+      <PropDistributionChannel_EndorsementDtls Type="String" Value="" />
+      <PropDistributionChannel_FieldUserDetails Type="String" Value="" />
+      <PropDistributionChannel_FolderFilePath Type="String" Value="" />
+      <PropDistributionChannel_IntermediaryDetails Type="String" Value="" />
+      <PropDistributionChannel_MODetails Type="String" Value="" />
+      <PropDistributionChannel_OperationMode Type="String" Value="" />
+      <PropDistributionChannel_SPDetails Type="String" Value="" />
+      <PropDistributionChannel_SerIntermediaryDetails Type="String" Value="" />
+      <PropDistributionChannel_ServiceProvider Type="Double" Value="0" />
+      <PropDistributionChannel_SpecialDiscount Type="Double" Value="0" />
+      <PropDistributionChannel_TERRORISMCOMMISSION Type="String" Value="0" />
+      <PropDistributionChannel_Validate Type="Boolean" Value="True" />
+      <PropDistributionChannel_VerticalDtls Type="String" Value="" />
+      <PropEndorsementDtls_CancellationDueToDataEntry Type="Boolean" Value="True" />
+      <PropEndorsementDtls_CancellationForDeathorPTD Type="Boolean" Value="True" />
+      <PropEndorsementDtls_CancellationForDoubleInsurance Type="String" Value="Automatic" />
+      <PropEndorsementDtls_ClientRequestDate Type="String" Value="" />
+      <PropEndorsementDtls_Description Type="String" Value="" />
+      <PropEndorsementDtls_EndorsementTypeCode Type="Double" Value="0" />
+      <PropEndorsementDtls_IsOrifinalCertificateSurrender Type="Boolean" Value="True" />
+      <PropEndorsementDtls_IsUWCompleted Type="Boolean" Value="True" />
+      <PropEndorsementDtls_NameOfInsCo Type="String" Value="" />
+      <PropEndorsementDtls_OfficeCodeAndAddress Type="String" Value="" />
+      <PropEndorsementDtls_PartnerApplicationDate Type="String" Value="24/11/2016" />
+      <PropEndorsementDtls_PartnerApplicationNo Type="String" Value="QH201611243014" />
+      <PropEndorsementDtls_PeriodFrm Type="String" Value="" />
+      <PropEndorsementDtls_PeriodTodate Type="String" Value="" />
+      <PropEndorsementDtls_PolicyIssueDateTime Type="String" Value="" />
+      <PropEndorsementDtls_PolicyNumber Type="String" Value="" />
+      <PropEndorsementDtls_ReasonForCancellation Type="String" Value="" />
+      <PropEndorsementDtls_TypeofEndorsement Type="String" Value="" />
+      <PropEndorsementDtls_ValuationReport Type="Boolean" Value="True" />
+      <PropEndorsementDtls_cancellationDueToClaim Type="Boolean" Value="True" />
+      <PropEndorsementEffectiveDate_EffectiveDate Type="String" Value="" />
+      <PropEndorsementEffectiveDate_EffectiveTime Type="String" Value="" />
+      <PropExclusionDetails_DepartmentCode Type="Double" Value="0" />
+      <PropExclusionDetails_ProductCode Type="Double" Value="2876" />
+      <PropExclusionDetails_SectionCode Type="String" Value="" />
+      <PropFees_PPCFee Type="Double" Value="0" />
+      <PropFieldUserDetails_FieldUserCode Type="String" Value="" />
+      <PropFieldUserDetails_FieldUserLocation Type="String" Value="" />
+      <PropFieldUserDetails_FieldUserName Type="String" Value="" />
+      <PropFieldUserDetails_FieldUserVertical Type="String" Value="" />
+      <PropFieldUserDetails_FiledUserUserID Type="String" Value="" />
+      <PropFinancierDetails_AddRow Type="Boolean" Value="True" />
+      <PropFinancierDetails_Validate Type="Boolean" Value="True" />
+      <PropGeneralNodes_ApplicationDate Type="String" Value="24/11/2016" />
+      <PropGeneralNodes_ApplicationNo Type="String" Value="" />
+      <PropGeneralNodes_AutoPopulate Type="String" Value="" />
+      <PropGeneralNodes_CustomFetch Type="Boolean" Value="True" />
+      <PropGeneralNodes_ParentCompanyName Type="String" Value="" />
+      <PropGeneralNodes_RIInwardSharePercentage Type="Double" Value="" />
+      <PropGeneralProposalGroup_CoverNoteDetails Type="String" Value="" />
+      <PropGeneralProposalGroup_DistributionChannel Type="String" Value="" />
+      <PropGeneralProposalGroup_Fees Type="String" Value="" />
+      <PropGeneralProposalGroup_GeneralProposalInformation Type="String" Value="" />
+      <PropGeneralProposalInformation_ActiveFlag Type="String" Value="Yes" />
+      <PropGeneralProposalInformation_ApplicationNumber Type="String" Value="" />
+      <PropGeneralProposalInformation_BankID Type="Double" Value="0" />
+      <PropGeneralProposalInformation_BlnEndtNoBlock Type="Boolean" Value="True" />
+      <PropGeneralProposalInformation_BranchInwardDate Type="String" Value="" />
+      <PropGeneralProposalInformation_BranchInwardNumber Type="String" Value="" />
+      <PropGeneralProposalInformation_BranchOfficeCode Type="String" Value="90002" />
+      <PropGeneralProposalInformation_BusinessSourceInfo Type="String" Value="" />
+      <PropGeneralProposalInformation_BusinessType_Mandatary Type="String" Value="New Business" />
+      <PropGeneralProposalInformation_CertificateNumber Type="String" Value="" />
+      <PropGeneralProposalInformation_ChannelNumber Type="String" Value="" />
+      <PropGeneralProposalInformation_CoverNotePlace Type="String" Value="" />
+      <PropGeneralProposalInformation_CovernoteGenType Type="String" Value="" />
+      <PropGeneralProposalInformation_CustomerDtls Type="String" Value="" />
+      <PropGeneralProposalInformation_CustomerReferenceInfo Type="String" Value="" />
+      <PropGeneralProposalInformation_DayDiff Type="String" Value="" />
+      <PropGeneralProposalInformation_DealId Type="String" Value="" />
+      <PropGeneralProposalInformation_DepartmentCode Type="Double" Value="28" />
+      <PropGeneralProposalInformation_DepartmentName Type="String" Value="" />
+      <PropGeneralProposalInformation_DisplayOfficeCode Type="String" Value="0002" />
+      <PropGeneralProposalInformation_DisplayStatus Type="String" Value="" />
+      <PropGeneralProposalInformation_EmployeeName Type="String" Value="" />
+      <PropGeneralProposalInformation_EndorsementDescription Type="String" Value="" />
+      <PropGeneralProposalInformation_EndorsementEffectiveDate Type="String" Value="" />
+      <PropGeneralProposalInformation_EndorsementNo Type="Double" Value="0" />
+      <PropGeneralProposalInformation_EndorsementRequestType Type="String" Value="" />
+      <PropGeneralProposalInformation_EndorsementRequestTypeCode Type="String" Value="" />
+      <PropGeneralProposalInformation_EndorsementSi Type="Double" Value="0" />
+      <PropGeneralProposalInformation_EndorsementType Type="String" Value="" />
+      <PropGeneralProposalInformation_EndorsementWording Type="String" Value="" />
+      <PropGeneralProposalInformation_FrontingCompany Type="String" Value="" />
+      <PropGeneralProposalInformation_IfOthersProvideReason Type="String" Value="" />
+      <PropGeneralProposalInformation_IndustryCode Type="String" Value="" />
+      <PropGeneralProposalInformation_InternalUWComments Type="String" Value="" />
+      <PropGeneralProposalInformation_InwardNo Type="String" Value="" />
+      <PropGeneralProposalInformation_IsNCBApplicable Type="Boolean" Value="True" />
+      <PropGeneralProposalInformation_IsSPCalcByDayDiffReqd Type="String" Value="" />
+      <PropGeneralProposalInformation_LeadGenerator Type="String" Value="" />
+      <PropGeneralProposalInformation_ManualCovernoteNo Type="String" Value="" />
+      <PropGeneralProposalInformation_MasterPolicy Type="String" Value="" />
+      <PropGeneralProposalInformation_MasterPolicyVersion Type="String" Value="" />
+      <PropGeneralProposalInformation_MethodOfCalculation Type="String" Value="3130872" />
+      <PropGeneralProposalInformation_NCBpercentage Type="Double" Value="0" />
+      <PropGeneralProposalInformation_NextB Type="Boolean" Value="True" />
+      <PropGeneralProposalInformation_NoPrevInsuranceFlag Type="Boolean" Value="True" />
+      <PropGeneralProposalInformation_NonLiablePeriod Type="String" Value="" />
+      <PropGeneralProposalInformation_NumCovernoteNo Type="Double" Value="0" />
+      <PropGeneralProposalInformation_OfficeCode Type="String" Value="" />
+      <PropGeneralProposalInformation_OfficeName Type="String" Value="MUMBAI (KALINA)" />
+      <PropGeneralProposalInformation_OldCovernoteNo Type="String" Value="" />
+      <PropGeneralProposalInformation_OpsSalesPartnerUserComments Type="String" Value="" />
+      <PropGeneralProposalInformation_OptionForCalculation Type="String" Value="Yearly" />
+      <PropGeneralProposalInformation_PolicyCurrency Type="String" Value="" />
+      <PropGeneralProposalInformation_PolicyEffectivedate Type="String" Value="24/11/2016" />
+      <PropGeneralProposalInformation_PolicyNo Type="Double" Value="0" />
+      <PropGeneralProposalInformation_PolicyNumberChar Type="String" Value="" />
+      <PropGeneralProposalInformation_PolicySchedule_Mandatary Type="String" Value="Yes" />
+      <PropGeneralProposalInformation_PolicyTerm Type="String" Value="" />
+      <PropGeneralProposalInformation_PrintingType Type="String" Value="With Policy Wording" />
+      <PropGeneralProposalInformation_ProductCode Type="Double" Value="2876" />
+      <PropGeneralProposalInformation_ProductName Type="String" Value="" />
+      <PropGeneralProposalInformation_ProposalDate_Mandatary Type="String" Value="24/11/2016" />
+      <PropGeneralProposalInformation_ProposalFormNumber Type="String" Value="" />
+      <PropGeneralProposalInformation_ProvisionalBooking Type="String" Value="" />
+      <PropGeneralProposalInformation_ProvisionalBookingReason Type="String" Value="" />
+      <PropGeneralProposalInformation_QuickId Type="String" Value="" />
+      <PropGeneralProposalInformation_QuoteNumber Type="String" Value="" />
+      <PropGeneralProposalInformation_ReInsuranceInward Type="Boolean" Value="True" />
+      <PropGeneralProposalInformation_ReSharePer Type="String" Value="" />
+      <PropGeneralProposalInformation_ReferenceNoDate Type="String" Value="" />
+      <PropGeneralProposalInformation_ReferralCode Type="String" Value="" />
+      <PropGeneralProposalInformation_RelationshipType Type="String" Value="Self" />
+      <PropGeneralProposalInformation_Remarks Type="String" Value="" />
+      <PropGeneralProposalInformation_RetainCancellationPremium Type="String" Value="" />
+      <PropGeneralProposalInformation_SalesTax Type="String" Value="" />
+      <PropGeneralProposalInformation_Sector_Mandatary Type="String" Value="Urban" />
+      <PropGeneralProposalInformation_SerDealId Type="String" Value="" />
+      <PropGeneralProposalInformation_ServiceTaxExemption Type="Boolean" Value="True" />
+      <PropGeneralProposalInformation_ServiceTaxExemptionCategory_Mandatary Type="String" Value="No Exemption" />
+      <PropGeneralProposalInformation_ServiceTaxExemptionReason Type="String" Value="No Exemption" />
+      <PropGeneralProposalInformation_SourceOfTransaction Type="String" Value="CP" />
+      <PropGeneralProposalInformation_TotalSi Type="Double" Value="200000" />
+      <PropGeneralProposalInformation_TypeOfBusiness Type="String" Value="" />
+      <PropGeneralProposalInformation_TypeOfCalculation Type="String" Value="" />
+      <PropGeneralProposalInformation_TypeOfIndustry Type="String" Value="" />
+      <PropGeneralProposalInformation_TypeOfPolicy Type="String" Value="" />
+      <PropGeneralProposalInformation_TypeofCancellation Type="String" Value="" />
+      <PropGeneralProposalInformation_UWLocation Type="String" Value="" />
+      <PropGeneralProposalInformation_UWLocationCode Type="String" Value="" />
+      <PropGeneralProposalInformation_ValidationFlag Type="String" Value="" />
+      <PropGeneralProposalInformation_ValuationReport Type="Boolean" Value="True" />
+      <PropGeneralProposalInformation_VehicleLaidUpFrom Type="String" Value="" />
+      <PropGeneralProposalInformation_VehicleLaidUpTo Type="String" Value="" />
+      <PropGeneralProposalInformation_covernoteissuedate Type="String" Value="" />
+      <PropGeneralProposalInformation_covernoteissuetime Type="String" Value="" />
+      <PropGeneralProposalInformation_disprntoffcd Type="String" Value="" />
+      <PropGeneralProposalInformation_iscovernoteused Type="Boolean" Value="False" />
+      <PropGeneralProposalInformation_numTotalFee Type="Double" Value="0" />
+      <PropGeneralProposal_GeneralProposalGroup Type="String" Value="" />
+      <PropGeneralProposal_IsCustomWorkflowCondition Type="String" Value="" />
+      <PropHealthOtherNodes_AfterFetch Type="Boolean" Value="True" />
+      <PropHealthOtherNodes_CancelationDetail Type="String" Value="" />
+      <PropHealthOtherNodes_EndorsementDtls Type="String" Value="" />
+      <PropHealthOtherNodes_FetchRiskCoverDetails Type="String" Value="" />
+      <PropHealthOtherNodes_GeneralNodes Type="String" Value="" />
+      <PropHealthOtherNodes_validate_aftercalc Type="String" Value="" />
+      <PropHealthOtherNodes_validate_beforecalc Type="String" Value="" />
+      <PropHigherExcessDiscount_HE_Disc_RateType_In Type="Double" Value="0" />
+      <PropIntermediaryDetails_BrokeragePercentage Type="String" Value="" />
+      <PropIntermediaryDetails_IntermediaryCityCode Type="String" Value="" />
+      <PropIntermediaryDetails_IntermediaryCityName Type="String" Value="" />
+      <PropIntermediaryDetails_IntermediaryCode Type="String" Value="4103760000" />
+      <PropIntermediaryDetails_IntermediaryName Type="String" Value="DIRECT INTERMEDIARY" />
+      <PropIntermediaryDetails_IntermediaryType Type="String" Value="INTERNET" />
+      <PropMODetails_PrimaryMOCode Type="String" Value="362" />
+      <PropMODetails_PrimaryMOName Type="String" Value="AMIT VYAS" />
+      <PropMODetails_SecondaryMOCode Type="String" Value="" />
+      <PropMODetails_SecondaryMOLocation Type="String" Value="" />
+      <PropMODetails_SecondaryMOName Type="String" Value="" />
+      <PropMODetails_TertiaryMOCode Type="String" Value="" />
+      <PropMODetails_TertiaryMOName Type="String" Value="" />
+      <PropNonLiablePeriod_NonLiableEndTime Type="String" Value="" />
+      <PropNonLiablePeriod_NonLiableFromDate Type="String" Value="" />
+      <PropNonLiablePeriod_NonLiableStartTime Type="String" Value="" />
+      <PropNonLiablePeriod_NonLiableToDate Type="String" Value="" />
+      <PropParameters_AddClause Type="Boolean" Value="True" />
+      <PropParameters_AddCondition Type="Boolean" Value="True" />
+      <PropParameters_AddExclusion Type="Boolean" Value="True" />
+      <PropParameters_AddWarranty Type="Boolean" Value="True" />
+      <PropParameters_AfterFetch Type="Boolean" Value="True" />
+      <PropParameters_ClauseApplicable Type="Boolean" Value="True" />
+      <PropParameters_CoInsuranceApplicability Type="Boolean" Value="True" />
+      <PropParameters_CommissionApplicable Type="Boolean" Value="True" />
+      <PropParameters_ConditionApplicable Type="Boolean" Value="True" />
+      <PropParameters_CoverNoteApplicability Type="Boolean" Value="False" />
+      <PropParameters_EQHigherExcessDiscount Type="Boolean" Value="False" />
+      <PropParameters_ExclusionApplicable Type="Boolean" Value="False" />
+      <PropParameters_FamilyPackageDiscount Type="Boolean" Value="False" />
+      <PropParameters_FinancierApplicability Type="Boolean" Value="False" />
+      <PropParameters_FloaterRiskLoading Type="Boolean" Value="False" />
+      <PropParameters_GroupDiscount Type="Boolean" Value="False" />
+      <PropParameters_HighClaimLoading Type="Boolean" Value="False" />
+      <PropParameters_HigherExcessDiscount Type="Boolean" Value="False" />
+      <PropParameters_Installment Type="Boolean" Value="False" />
+      <PropParameters_LongTermPolicy Type="Boolean" Value="False" />
+      <PropParameters_LowClaimDiscount Type="Boolean" Value="False" />
+      <PropParameters_MinimumPremium Type="Boolean" Value="False" />
+      <PropParameters_NoClaimDiscount Type="Boolean" Value="False" />
+      <PropParameters_OverageLoading Type="Boolean" Value="False" />
+      <PropParameters_PasPolicyApplicable Type="String" Value="" />
+      <PropParameters_PastPolicyApplicable Type="Boolean" Value="False" />
+      <PropParameters_PolicyCancellation Type="Boolean" Value="True" />
+      <PropParameters_PopulateTransactionBegin Type="Boolean" Value="True" />
+      <PropParameters_PreviousPolicyApplicable Type="String" Value="" />
+      <PropParameters_RenewalAllowed Type="Boolean" Value="True" />
+      <PropParameters_SectionDiscount Type="Boolean" Value="False" />
+      <PropParameters_ServiceTaxExempted Type="Boolean" Value="False" />
+      <PropParameters_ShortPeriodLongPeriod Type="Boolean" Value="False" />
+      <PropParameters_SpecialDiscountApplicable Type="Boolean" Value="False" />
+      <PropParameters_StaffDiscount Type="Boolean" Value="False" />
+      <PropParameters_StampDutyChargeable Type="Boolean" Value="True" />
+      <PropParameters_TariffProduct Type="Boolean" Value="True" />
+      <PropParameters_TransferFees Type="Boolean" Value="False" />
+      <PropParameters_VDFDiscountAllowed Type="Boolean" Value="False" />
+      <PropParameters_ValidateClause Type="Boolean" Value="True" />
+      <PropParameters_ValidateCondition Type="Boolean" Value="True" />
+      <PropParameters_ValidateEndorsementData Type="Boolean" Value="True" />
+      <PropParameters_ValidateExclusion Type="Boolean" Value="True" />
+      <PropParameters_ValidateWarranty Type="Boolean" Value="True" />
+      <PropParameters_WarrentyApplicable Type="Boolean" Value="True" />
+      <PropPolicyEffectivedate_Fromdate_Mandatary Type="String" Value="24/11/2016" />
+      <PropPolicyEffectivedate_Fromhour_Mandatary Type="String" Value="22:10" />
+      <PropPolicyEffectivedate_Todate_Mandatary Type="String" Value="24/11/2017" />
+      <PropPolicyEffectivedate_Tohour_Mandatary Type="String" Value="23:59" />
+      <PropPremiumCalculation_BasicPremium Type="Double" Value="3635" />
+      <PropPremiumCalculation_Cess Type="Double" Value="0" />
+      <PropPremiumCalculation_CustomCoverLDPremium Type="Double" Value="0" />
+      <PropPremiumCalculation_ERFAmount Type="Double" Value="0" />
+      <PropPremiumCalculation_EduCess Type="String" Value="" />
+      <PropPremiumCalculation_EndorsementERFAmount Type="Double" Value="0" />
+      <PropPremiumCalculation_EndorsementPremium Type="Double" Value="6877" />
+      <PropPremiumCalculation_EndorsementServiceTax Type="Double" Value="1322.02" />
+      <PropPremiumCalculation_EndorsementStampDuty Type="Double" Value="40" />
+      <PropPremiumCalculation_EndorsementTerrorismPremium Type="Double" Value="0" />
+      <PropPremiumCalculation_EndtEduCess Type="String" Value="" />
+      <PropPremiumCalculation_EndtHigherEduCess Type="String" Value="" />
+      <PropPremiumCalculation_GrossCoverPremium Type="Double" Value="0" />
+      <PropPremiumCalculation_HigherEduCess Type="String" Value="" />
+      <PropPremiumCalculation_NetODPremium Type="Double" Value="0" />
+      <PropPremiumCalculation_NetPremium Type="Double" Value="9117.4" />
+      <PropPremiumCalculation_NetTPPremium Type="Double" Value="0" />
+      <PropPremiumCalculation_SP_PR_LTFactor Type="Double" Value="1" />
+      <PropPremiumCalculation_ServiceTax Type="Double" Value="1322.02" />
+      <PropPremiumCalculation_StampDuty Type="Double" Value="40" />
+      <PropPremiumCalculation_StampDutyApplicability Type="Boolean" Value="True" />
+      <PropPremiumCalculation_TerrorismPremium Type="Double" Value="0" />
+      <PropPremiumCalculation_TotalPremium Type="Double" Value="3635" />
+      <PropPremiumCalculation_TransferFeeAmount Type="Double" Value="0" />
+      <PropPreviousPolicyDetails_AddRow Type="Boolean" Value="False" />
+      <PropPreviousPolicyDetails_CalculateClaimRatio Type="Boolean" Value="True" />
+      <PropPreviousPolicyDetails_ClaimRatio Type="Double" Value="0" />
+      <PropPreviousPolicyDetails_Combo1 Type="String" Value="" />
+      <PropPreviousPolicyDetails_FirstPolicyInceptionDate Type="String" Value="" />
+      <PropPreviousPolicyDetails_InceptionYear Type="Double" Value="0" />
+      <PropPreviousPolicyDetails_NCBPercentage Type="Double" Value="0" />
+      <PropPreviousPolicyDetails_OldTariffSlab Type="Boolean" Value="False" />
+      <PropPreviousPolicyDetails_PreviousPolicyType Type="String" Value="" />
+      <PropPreviousPolicyDetails_Validate Type="Boolean" Value="True" />
+      <PropProductDetails_Component17 Type="String" Value="" />
+      <PropProductDetails_DepartmentCode Type="Double" Value="28" />
+      <PropProductDetails_ProductCode Type="Double" Value="2876" />
+      <PropProductDetails_ProductName Type="String" Value="" />
+      <PropProductName Type="String" Value="KotakHealthCare" />
+      <PropReferenceNoDate_ReferenceDate_Mandatary Type="String" Value="24/11/2016" />
+      <PropReferenceNoDate_ReferenceNo_Mandatary Type="Double" Value="0" />
+      <PropSPDetails_SPCode Type="Double" Value="0" />
+      <PropSPDetails_SPName Type="String" Value="" />
+      <PropSerIntermediaryDetails_SerIntermediaryCode Type="String" Value="" />
+      <PropSerIntermediaryDetails_SerIntermediaryName Type="String" Value="" />
+      <PropSerIntermediaryDetails_SerIntermediaryType Type="String" Value="" />
+      <PropServiceTaxExemptionCategory_Component43 Type="String" Value="" />
+      <PropVerticalDtls_PrimaryVerticalCode Type="String" Value="" />
+      <PropVerticalDtls_PrimaryVerticalName Type="String" Value="" />
+      <PropVerticalDtls_SecondaryVerticalCode Type="String" Value="" />
+      <PropVerticalDtls_SecondaryVerticalName Type="String" Value="" />
+      <PropVerticalDtls_ServicingPrimaryVerticalCode Type="String" Value="" />
+      <PropVerticalDtls_ServicingPrimaryVerticalName Type="String" Value="" />
+      <PropVerticalDtls_ServicingSecondaryVerticalCode Type="String" Value="" />
+      <PropVerticalDtls_ServicingSecondaryVerticalName Type="String" Value="" />
+      <PropVerticalDtls_ServicingTertiaryVerticalCode Type="String" Value="" />
+      <PropVerticalDtls_ServicingTertiaryVerticalName Type="String" Value="" />
+      <PropVerticalDtls_TertiaryVerticalCode Type="String" Value="" />
+      <PropVerticalDtls_TertiaryVerticalName Type="String" Value="" />
+      <PropWarranty_DepartmentCode Type="Double" Value="0" />
+      <PropWarranty_ProductCode Type="Double" Value="0" />
+      <PropWarranty_SectionCode Type="String" Value="" />
+      <PropGeneralNodes_SourceType Type="String" Value="Internet" />
+    </GeneralProposalInformation>
+    <MedicalQuestionDetailsGrid>
+      <MedicalQuestion  Name="Insured1" Value="Medical Question Details" Type="GroupData">
+        <Question  Name="Smoke / Consume Tobacco" Value="31">
+          <Isapplicable Name="31" Value="0"/>
+          <Remarks Name="31" Value=""/>
+        </Question>
+        <Question  Name="Infections" Value="32">
+          <Isapplicable Name="32" Value="0"/>
+          <Remarks Name="32" Value=""/>
+        </Question>
+        <Question  Name="HIV / AIDs" Value="33">
+          <Isapplicable Name="33" Value="0"/>
+          <Remarks Name="33" Value=""/>
+        </Question>
+        <Question  Name="Cancer / Tumor" Value="34">
+          <Isapplicable Name="34" Value="0"/>
+          <Remarks Name="34" Value=""/>
+        </Question>
+        <Question  Name="Nutritional / Endocrinal Disoders / Diabetes" Value="35">
+          <Isapplicable Name="35" Value="0"/>
+          <Remarks Name="35" Value=""/>
+        </Question>
+        <Question  Name="Mental Psychiatric Disorders" Value="36">
+          <Isapplicable Name="36" Value="0"/>
+          <Remarks Name="36" Value=""/>
+        </Question>
+        <Question  Name="Nervous System Disorders" Value="37">
+          <Isapplicable Name="37" Value="0"/>
+          <Remarks Name="37" Value=""/>
+        </Question>
+        <Question  Name="Disorders of the Eyes / Ears / Nose / throat/" Value="38">
+          <Isapplicable Name="38" Value="0"/>
+          <Remarks Name="38" Value=""/>
+        </Question>
+        <Question  Name="Disorders of the circulatory system / HeartDisease / Hypertension" Value="39">
+          <Isapplicable Name="39" Value="0"/>
+          <Remarks Name="39" Value=""/>
+        </Question>
+        <Question  Name="Respiratory Infections and Diseases, Asthma" Value="40">
+          <Isapplicable Name="40" Value="0"/>
+          <Remarks Name="40" Value=""/>
+        </Question>
+        <Question  Name="Diseases of Stomach, Intestines, liver, appendix" Value="41">
+          <Isapplicable Name="41" Value="0"/>
+          <Remarks Name="41" Value=""/>
+        </Question>
+        <Question  Name="Bones and Joints, Spondylitis / Arthritis, etc." Value="42">
+          <Isapplicable Name="42" Value="0"/>
+          <Remarks Name="42" Value=""/>
+        </Question>
+        <Question  Name="Kidney and Urinary System" Value="43">
+          <Isapplicable Name="43" Value="0"/>
+          <Remarks Name="43" Value=""/>
+        </Question>
+        <Question  Name="Pregnant / Gynaecological Disorders / Prostrate" Value="44">
+          <Isapplicable Name="44" Value="0"/>
+          <Remarks Name="44" Value=""/>
+        </Question>
+        <Question  Name="Birth Defects" Value="45">
+          <Isapplicable Name="45" Value="0"/>
+          <Remarks Name="45" Value=""/>
+        </Question>
+        <Question  Name="Any other disease or surgery or Accidents / Burns" Value="46">
+          <Isapplicable Name="46" Value="0"/>
+          <Remarks Name="46" Value=""/>
+        </Question>
+        <Question  Name="Date/Year when illness was first detected in past 10 years" Value="47">
+          <Isapplicable Name="47" Value="0"/>
+          <Remarks Name="47" Value=""/>
+        </Question>
+        <Question  Name="Treatment(s) taken for the illness along with duration for which the treatment(s) medication was taken" Value="48">
+          <Isapplicable Name="48" Value="0"/>
+          <Remarks Name="48" Value=""/>
+        </Question>
+        <Question  Name="Any hospitalization for the illness/ailment? If yes give the duration of hospitalization. If any surgery done for the illness give the name of the surgery" Value="49">
+          <Isapplicable Name="49" Value="0"/>
+          <Remarks Name="49" Value=""/>
+        </Question>
+        <Question  Name="Was the illness / ailment completely cured or not?" Value="50">
+          <Isapplicable Name="50" Value="0"/>
+          <Remarks Name="50" Value=""/>
+        </Question>
+        <Question  Name="What is the current medication for the illness?" Value="51">
+          <Isapplicable Name="51" Value="0"/>
+          <Remarks Name="51" Value=""/>
+        </Question>
+        <Question  Name="In case of any history of Hospitalization please name the ailment and period of hospitalization" Value="52">
+          <Isapplicable Name="52" Value="0"/>
+          <Remarks Name="52" Value=""/>
+        </Question>
+        <Question  Name="Any pre- existing disease in past 10 years" Value="53">
+          <Isapplicable Name="53" Value="0"/>
+          <Remarks Name="53" Value=""/>
+        </Question>
+        <Question  Name="Please provide any additional details required" Value="54">
+          <Isapplicable Name="54" Value="0"/>
+          <Remarks Name="54" Value=""/>
+        </Question>
+      </MedicalQuestion>
+    </MedicalQuestionDetailsGrid>
+  </ProposalDetails>
+</Root>

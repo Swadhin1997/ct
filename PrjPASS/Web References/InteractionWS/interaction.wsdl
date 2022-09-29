@@ -1,0 +1,2010 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.talisma.com/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://www.talisma.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Interaction Web Service</wsdl:documentation>
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.talisma.com/">
+      <s:element name="CreateInteraction">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="contactId" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="phone" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="receivedAt" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="receivedByUserId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="mediaId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="direction" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="subject" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="teamId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="assigntouserId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="aliasId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="priority" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="resolved" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="contactMsg" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userMsg" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IntrnAttachData" type="tns:ArrayOfInteractionAttachmentData" />
+            <s:element minOccurs="0" maxOccurs="1" name="propData" type="tns:ArrayOfPropertyInfo" />
+            <s:element minOccurs="1" maxOccurs="1" name="updateReadOnly" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="ignoreMandatoryCheck" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfInteractionAttachmentData">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="InteractionAttachmentData" nillable="true" type="tns:InteractionAttachmentData" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="InteractionAttachmentData">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="eventId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="attachmentId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="fileName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="cId" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="size" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="fileBlob" type="s:base64Binary" />
+          <s:element minOccurs="1" maxOccurs="1" name="isNewAttachment" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="copyAttachmentFromServer" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="retainAttachment" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="deleteAttachment" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="editAttachment" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfPropertyInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="PropertyInfo" type="tns:PropertyInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="PropertyInfo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="propertyID" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="propValue" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="rowID" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="relJoinID" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="propValAttrs" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CreateInteractionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CreateInteractionResult" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="interactionId" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="evtId" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="error" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="contactPreviouslyUnblocked" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteInteraction">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="interactionId" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="deleteRelatedObjects" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteInteractionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteInteractionResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="error" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteInteractions">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="interactionIds" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="deleteRelatedObjects" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteInteractionsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteInteractionsResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="error" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddMsgToInteraction">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="interactionId" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="contactId" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="phone" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="receivedAt" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="receivedByUserId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="mediaId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="direction" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="subject" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="assigntouserId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="aliasId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="priority" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="resolved" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="contactMsg" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userMsg" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IntrnAttachData" type="tns:ArrayOfInteractionAttachmentData" />
+            <s:element minOccurs="1" maxOccurs="1" name="contactPreviouslyUnblocked" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddMsgToInteractionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddMsgToInteractionResult" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="evtId" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="contactPreviouslyUnblocked" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="error" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddAttachments">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="eventId" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="attachmentCollection" type="tns:ArrayOfInteractionAttachmentData" />
+            <s:element minOccurs="1" maxOccurs="1" name="includeInTransaction" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddAttachmentsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddAttachmentsResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="error" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddCommentsToInteraction">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="interactionId" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="comment" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddCommentsToInteractionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddCommentsToInteractionResult" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="eventId" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="error" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddCommentsToInteractionWithAttch">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="interactionId" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="comment" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddCommentsToInteractionWithAttchResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddCommentsToInteractionWithAttchResult" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="eventId" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="error" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetInteractionEvents">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="interactionId" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="eventsOrder" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="getPropInfoOrPropXml" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetInteractionEventsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetInteractionEventsResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="activityData" type="tns:ArrayOfActivityInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="activityInfoXml" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="totalEventsCount" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="error" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfActivityInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ActivityInfo" type="tns:ActivityInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ActivityInfo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="eventId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="eventType" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="from" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="to" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="cc" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="bcc" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="originatorId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="beforeId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="afterId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="byRule" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="mediaId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="eventDate" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="mailServerEventDate" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="direction" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="isIncoming" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="hasAttachment" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="empty" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="messageContent" type="tns:MessageContent" />
+          <s:element minOccurs="0" maxOccurs="1" name="interactionPriority" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="beforeIdUser" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="afterIdUser" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="originatorIdUser" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="subject" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="interactionId" type="s:long" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="MessageContent">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="interactionId" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="eventId" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="messageContent" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="messageHtmlContent" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="hasAttachment" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="attachmentInfo" type="tns:ArrayOfAttachmentInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="attachmentIds" type="tns:ArrayOfInt" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfAttachmentInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="AttachmentInfo" nillable="true" type="tns:AttachmentInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="AttachmentInfo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="eventId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="attachmentId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="fileName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="cId" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="size" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="inline" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfInt">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="int" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetAllInteractionEvents">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="interactionId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="eventsOrder" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="activityData" type="tns:ArrayOfActivityInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="attachmentInfo" type="tns:ArrayOfAttachmentInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllInteractionEventsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetAllInteractionEventsResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="activityData" type="tns:ArrayOfActivityInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="attachmentInfo" type="tns:ArrayOfAttachmentInfo" />
+            <s:element minOccurs="1" maxOccurs="1" name="totalEventsCount" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="error" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetInteractionEvents2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="interactionId" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="eventRetrivingOptions" type="tns:EventRetrivingOptions" />
+            <s:element minOccurs="0" maxOccurs="1" name="activityData" type="tns:ArrayOfActivityInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="EventRetrivingOptions">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="eventsOrder" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="filterEvents" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="userPreference" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="eventExpandedType" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="numberOfEventsToFetch" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="showSubInteractionEvents" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="lastEventRetrivedServerTime" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="pageNumber" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetInteractionEvents2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetInteractionEvents2Result" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="activityData" type="tns:ArrayOfActivityInfo" />
+            <s:element minOccurs="1" maxOccurs="1" name="totalEventsCount" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="error" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMessageContent">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="messageId" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="messageContent" type="tns:MessageContent" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMessageContentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetMessageContentResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="messageContent" type="tns:MessageContent" />
+            <s:element minOccurs="0" maxOccurs="1" name="error" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllMessageContents">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="interactionId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="messageContents" type="tns:ArrayOfMessageContent" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfMessageContent">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="MessageContent" nillable="true" type="tns:MessageContent" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetAllMessageContentsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetAllMessageContentsResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="messageContents" type="tns:ArrayOfMessageContent" />
+            <s:element minOccurs="0" maxOccurs="1" name="error" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetInteractionPriority">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="interactionId" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="priority" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetInteractionPriorityResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SetInteractionPriorityResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="error" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetInteractionState">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="interactionId" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="interactionState" type="tns:InteractionState" />
+            <s:element minOccurs="0" maxOccurs="1" name="comments" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="force" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="lockedByUserId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:simpleType name="InteractionState">
+        <s:restriction base="s:string">
+          <s:enumeration value="isOpen" />
+          <s:enumeration value="isResolved" />
+          <s:enumeration value="isClosed" />
+          <s:enumeration value="isExpired" />
+          <s:enumeration value="isPending" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="SetInteractionStateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SetInteractionStateResult" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="lockedByUserId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="lockedByUserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="error" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Assign">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="interactionId" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="assignToUserId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="lockByUserId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="comment" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="force" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="checkDeletedStatus" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="checkClosedStatus" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="addEvent" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="checkExpiredStatus" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="checkUndeliveredStatus" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AssignResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AssignResult" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="lockByUserId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="lockByUserName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="assignEventId" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="error" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Transfer">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="interactionId" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="assignToTeamId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="assignToUserId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="transferIfNotOwner" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="lockByUserId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TransferResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="TransferResult" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="lockByUserId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="lockByUserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="error" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAttachmentFile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="attachmentId" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAttachmentFileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetAttachmentFileResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="fileBlob" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="error" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAssignToUserList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="getUsersBasedOnPermissions" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="interactionId" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="teamId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAssignToUserListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetAssignToUserListResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="assignToUsersListXml" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="error" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTransferToList">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetTransferToListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetTransferToListResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="transferToListXml" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="error" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetInteractionInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="interactionInfo" type="tns:InteractionInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="InteractionInfo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="interactionId" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="nSystemAdmin" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="teamId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="teamName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ownerId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ownerName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="priority" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="aliasId" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="contactId" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="contactName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="contactEmail" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="subject" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="lastUpdated" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="systemPriority" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="userPriority" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ruleBasedPriority" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="interactionState" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="consultState" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="replyState" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="dateOfLastMessageFromContact" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="expiryDate" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="isDeleted" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="messageCount" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="lastOpened" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="createdDate" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="lastResolvedDate" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="outgoingMessageId" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="reviewerId" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="reviewerState" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="lastMessageLanguageId" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="sOrderDisplName" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetInteractionInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetInteractionInfoResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="interactionInfo" type="tns:InteractionInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="error" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BeginReply">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="interactionId" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="replyId" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BeginReplyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="BeginReplyResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="lockedByUserName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="replyId" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="originalMessageId" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="outgoingMessageId" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="error" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveReply">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="interactionId" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="replyMessage" type="tns:ReplyMessage" />
+            <s:element minOccurs="0" maxOccurs="1" name="replyAddress" type="tns:ReplyAddresses" />
+            <s:element minOccurs="1" maxOccurs="1" name="send" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="outgoingMessageId" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="eventId" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="unlock" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="resolve" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="aliasId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="addTalismaSignature" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="operationType" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="messageLanguageId" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="reviewReply" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="insertedCRIds" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="smsExtractorName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="smsExtractorId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ReplyMessage">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="subjectPrefix" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="subject" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="partialMessageContents" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="fullMessageContents" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="includeOriginalMessageId" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="temporaryPath" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AttachmentArray" type="tns:ArrayOfInteractionAttachmentData" />
+          <s:element minOccurs="1" maxOccurs="1" name="rushReply" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="plainTextFullMessageContents" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="partialPlainTextContents" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="userMsgPlainTextContent" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="userMsgHTMLTextContent" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HTMLAttachmentContent" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="plainTextAttachmentContent" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ReplyAddresses">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="to" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="cc" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="bcc" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="toDLsExpanded" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ccDLsExpanded" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="bccDLsExpanded" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SaveReplyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SaveReplyResult" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="outgoingMessageId" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="eventId" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="error" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateInteractionReadUnReadStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="readInteractionIds" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="unReadInteractionIds" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateInteractionReadUnReadStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateInteractionReadUnReadStatusResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="error" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveInteractionTrackingInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="listOfTrackingStrings" type="tns:ArrayOfAnyType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfAnyType">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="anyType" nillable="true" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SaveInteractionTrackingInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SaveInteractionTrackingInfoResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="error" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CancelReply">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="interactionId" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="teamId" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="outGoingMessageId" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CancelReplyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CancelReplyResult" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="lockedByUserId" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="outGoingMessageId" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="error" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UnlockInteraction">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="interactionId" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="outGoingMsgId" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UnlockInteractionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UnlockInteractionResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="error" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BuildForwardOrConsult">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="userId" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="interactionId" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="operation" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="cachedTeams" type="tns:ArrayOfLong" />
+            <s:element minOccurs="1" maxOccurs="1" name="teamId" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="force" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfLong">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="long" type="s:long" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ReplyInfo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="maxCharactersInReply" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="strPrefix" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="bEnableFeature" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="signatureOptions" type="tns:ArrayOfUserSignature" />
+          <s:element minOccurs="0" maxOccurs="1" name="prefixOptions" type="tns:ArrayOfPrefixOptions" />
+          <s:element minOccurs="0" maxOccurs="1" name="languageOptions" type="tns:ArrayOfLanguageInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="globalConfigOptions" type="tns:GlobalConfigDetails" />
+          <s:element minOccurs="0" maxOccurs="1" name="stOutGoingAliases" type="tns:ArrayOfOutGoingAlias" />
+          <s:element minOccurs="0" maxOccurs="1" name="strSnifferURL" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="bOriginalMessageInclude" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="bSubjectLineInTheEnd" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="strLockedBy" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="bLockAcquired" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfUserSignature">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="UserSignature" nillable="true" type="tns:UserSignature" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="UserSignature">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="signatureId" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="userId" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="teamId" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="signatureHtmlFormat" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="signaturePlainTextFormat" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="empty" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="attachToMessage" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="languageId" type="s:long" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfPrefixOptions">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="PrefixOptions" nillable="true" type="tns:PrefixOptions" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="PrefixOptions">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="languageId" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="prefixForReply" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="prefixForForward" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfLanguageInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="LanguageInfo" nillable="true" type="tns:LanguageInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="LanguageInfo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="languageId" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="GlobalConfigDetails">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="versionId" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="maxMessageSizeInKb" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="talismaInstallationId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="outboundMailerUrl" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="maxNumberOfMessages" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="chatUrl" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="maxNumberOfRequests" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="sendAttachmentOption" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="isTagLineRequired" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="sendPropertyDetailsInConsult" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfOutGoingAlias">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="OutGoingAlias" nillable="true" type="tns:OutGoingAlias" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="OutGoingAlias">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="aliasId" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="teamId" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="heuristicThread" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="BuildForwardOrConsultResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="BuildForwardOrConsultResult" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="teamId" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="replyInfoData" type="tns:ReplyInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="activityData" type="tns:ArrayOfActivityInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="attachmentData" type="tns:ArrayOfAttachmentInfo" />
+            <s:element minOccurs="1" maxOccurs="1" name="totalEventsCount" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="eventId" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="outGoingMessageId" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="useExternalDispatcher" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="lockedByUserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="interactionInfo" type="tns:InteractionInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="fileBlob" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="error" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BuildSmsReply">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="userId" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="interactionId" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="teamId" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="cachedTeams" type="tns:ArrayOfLong" />
+            <s:element minOccurs="1" maxOccurs="1" name="replyId" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BuildSmsReplyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="BuildSmsReplyResult" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="teamId" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="replyId" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="lockedbyUserName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="interactionReplyPermission" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="sendSmsPermission" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="isContactValidForSms" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="interactionInfo" type="tns:InteractionInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="smsExtractorDispatcherDetails" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="error" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BuildReply">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="userId" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="interactionId" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="cachedTeams" type="tns:ArrayOfLong" />
+            <s:element minOccurs="1" maxOccurs="1" name="teamId" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="replyId" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ReplyMsg">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="msgId" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="languageId" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="aliasId" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="bHasAttachments" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="strTo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="strFrom" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="strCC" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="strBcc" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="strSubject" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="strPlainText" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="strHTMLText" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="strMailServerTime" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="lOutGoingMsgId" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="lLockedByUserId" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="strLockedByUserName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="attachments" type="tns:ArrayOfAttachmentInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="BuildReplyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="BuildReplyResult" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="teamId" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="replyId" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="replyInfoData" type="tns:ReplyInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="replyinProgress" type="tns:ReplyMsg" />
+            <s:element minOccurs="0" maxOccurs="1" name="replyOriginalMessage" type="tns:ReplyMsg" />
+            <s:element minOccurs="0" maxOccurs="1" name="intInfo" type="tns:InteractionInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="error" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteReply">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="interactionId" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="force" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="ignoreLocks" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteReplyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteReplyResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="lockedByUserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="error" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPropertiesTab">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="interactionId" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="tabId" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="getPropInfoOrPropXml" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPropertiesTabResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetPropertiesTabResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="propData" type="tns:ArrayOfPropertyInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="propXml" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="error" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdatePropertyTab">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="interactionId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="propData" type="tns:ArrayOfPropertyInfo" />
+            <s:element minOccurs="1" maxOccurs="1" name="updateReadOnly" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="ignoreMandatoryCheck" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdatePropertyTabResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdatePropertyTabResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="error" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRLTab">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="interactionId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="tabId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="getPropInfoOrPropXml" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRLTabResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetRLTabResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="propData" type="tns:ArrayOfPropertyInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="propXml" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="error" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateRLTab">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="interactionId" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="tabId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="propData" type="tns:ArrayOfPropertyInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="deleteRowsList" type="tns:ArrayOfInt" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateRLTabResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateRLTabResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="error" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLinkedTab">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="interactionId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="tabId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="getPropInfoOrPropXml" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLinkedTabResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetLinkedTabResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="propData" type="tns:ArrayOfPropertyInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="propXml" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="error" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="CreateInteractionSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateInteraction" />
+  </wsdl:message>
+  <wsdl:message name="CreateInteractionSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateInteractionResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteInteractionSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteInteraction" />
+  </wsdl:message>
+  <wsdl:message name="DeleteInteractionSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteInteractionResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteInteractionsSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteInteractions" />
+  </wsdl:message>
+  <wsdl:message name="DeleteInteractionsSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteInteractionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddMsgToInteractionSoapIn">
+    <wsdl:part name="parameters" element="tns:AddMsgToInteraction" />
+  </wsdl:message>
+  <wsdl:message name="AddMsgToInteractionSoapOut">
+    <wsdl:part name="parameters" element="tns:AddMsgToInteractionResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddAttachmentsSoapIn">
+    <wsdl:part name="parameters" element="tns:AddAttachments" />
+  </wsdl:message>
+  <wsdl:message name="AddAttachmentsSoapOut">
+    <wsdl:part name="parameters" element="tns:AddAttachmentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddCommentsToInteractionSoapIn">
+    <wsdl:part name="parameters" element="tns:AddCommentsToInteraction" />
+  </wsdl:message>
+  <wsdl:message name="AddCommentsToInteractionSoapOut">
+    <wsdl:part name="parameters" element="tns:AddCommentsToInteractionResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddCommentsToInteractionWithAttchSoapIn">
+    <wsdl:part name="parameters" element="tns:AddCommentsToInteractionWithAttch" />
+  </wsdl:message>
+  <wsdl:message name="AddCommentsToInteractionWithAttchSoapOut">
+    <wsdl:part name="parameters" element="tns:AddCommentsToInteractionWithAttchResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetInteractionEventsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetInteractionEvents" />
+  </wsdl:message>
+  <wsdl:message name="GetInteractionEventsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetInteractionEventsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllInteractionEventsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllInteractionEvents" />
+  </wsdl:message>
+  <wsdl:message name="GetAllInteractionEventsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllInteractionEventsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetInteractionEvents2SoapIn">
+    <wsdl:part name="parameters" element="tns:GetInteractionEvents2" />
+  </wsdl:message>
+  <wsdl:message name="GetInteractionEvents2SoapOut">
+    <wsdl:part name="parameters" element="tns:GetInteractionEvents2Response" />
+  </wsdl:message>
+  <wsdl:message name="GetMessageContentSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMessageContent" />
+  </wsdl:message>
+  <wsdl:message name="GetMessageContentSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMessageContentResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllMessageContentsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllMessageContents" />
+  </wsdl:message>
+  <wsdl:message name="GetAllMessageContentsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllMessageContentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetInteractionPrioritySoapIn">
+    <wsdl:part name="parameters" element="tns:SetInteractionPriority" />
+  </wsdl:message>
+  <wsdl:message name="SetInteractionPrioritySoapOut">
+    <wsdl:part name="parameters" element="tns:SetInteractionPriorityResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetInteractionStateSoapIn">
+    <wsdl:part name="parameters" element="tns:SetInteractionState" />
+  </wsdl:message>
+  <wsdl:message name="SetInteractionStateSoapOut">
+    <wsdl:part name="parameters" element="tns:SetInteractionStateResponse" />
+  </wsdl:message>
+  <wsdl:message name="AssignSoapIn">
+    <wsdl:part name="parameters" element="tns:Assign" />
+  </wsdl:message>
+  <wsdl:message name="AssignSoapOut">
+    <wsdl:part name="parameters" element="tns:AssignResponse" />
+  </wsdl:message>
+  <wsdl:message name="TransferSoapIn">
+    <wsdl:part name="parameters" element="tns:Transfer" />
+  </wsdl:message>
+  <wsdl:message name="TransferSoapOut">
+    <wsdl:part name="parameters" element="tns:TransferResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAttachmentFileSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAttachmentFile" />
+  </wsdl:message>
+  <wsdl:message name="GetAttachmentFileSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAttachmentFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAssignToUserListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAssignToUserList" />
+  </wsdl:message>
+  <wsdl:message name="GetAssignToUserListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAssignToUserListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTransferToListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTransferToList" />
+  </wsdl:message>
+  <wsdl:message name="GetTransferToListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTransferToListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetInteractionInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetInteractionInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetInteractionInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetInteractionInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="BeginReplySoapIn">
+    <wsdl:part name="parameters" element="tns:BeginReply" />
+  </wsdl:message>
+  <wsdl:message name="BeginReplySoapOut">
+    <wsdl:part name="parameters" element="tns:BeginReplyResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveReplySoapIn">
+    <wsdl:part name="parameters" element="tns:SaveReply" />
+  </wsdl:message>
+  <wsdl:message name="SaveReplySoapOut">
+    <wsdl:part name="parameters" element="tns:SaveReplyResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateInteractionReadUnReadStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateInteractionReadUnReadStatus" />
+  </wsdl:message>
+  <wsdl:message name="UpdateInteractionReadUnReadStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateInteractionReadUnReadStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveInteractionTrackingInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveInteractionTrackingInfo" />
+  </wsdl:message>
+  <wsdl:message name="SaveInteractionTrackingInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveInteractionTrackingInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="CancelReplySoapIn">
+    <wsdl:part name="parameters" element="tns:CancelReply" />
+  </wsdl:message>
+  <wsdl:message name="CancelReplySoapOut">
+    <wsdl:part name="parameters" element="tns:CancelReplyResponse" />
+  </wsdl:message>
+  <wsdl:message name="UnlockInteractionSoapIn">
+    <wsdl:part name="parameters" element="tns:UnlockInteraction" />
+  </wsdl:message>
+  <wsdl:message name="UnlockInteractionSoapOut">
+    <wsdl:part name="parameters" element="tns:UnlockInteractionResponse" />
+  </wsdl:message>
+  <wsdl:message name="BuildForwardOrConsultSoapIn">
+    <wsdl:part name="parameters" element="tns:BuildForwardOrConsult" />
+  </wsdl:message>
+  <wsdl:message name="BuildForwardOrConsultSoapOut">
+    <wsdl:part name="parameters" element="tns:BuildForwardOrConsultResponse" />
+  </wsdl:message>
+  <wsdl:message name="BuildSmsReplySoapIn">
+    <wsdl:part name="parameters" element="tns:BuildSmsReply" />
+  </wsdl:message>
+  <wsdl:message name="BuildSmsReplySoapOut">
+    <wsdl:part name="parameters" element="tns:BuildSmsReplyResponse" />
+  </wsdl:message>
+  <wsdl:message name="BuildReplySoapIn">
+    <wsdl:part name="parameters" element="tns:BuildReply" />
+  </wsdl:message>
+  <wsdl:message name="BuildReplySoapOut">
+    <wsdl:part name="parameters" element="tns:BuildReplyResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteReplySoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteReply" />
+  </wsdl:message>
+  <wsdl:message name="DeleteReplySoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteReplyResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPropertiesTabSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPropertiesTab" />
+  </wsdl:message>
+  <wsdl:message name="GetPropertiesTabSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPropertiesTabResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdatePropertyTabSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdatePropertyTab" />
+  </wsdl:message>
+  <wsdl:message name="UpdatePropertyTabSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdatePropertyTabResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetRLTabSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRLTab" />
+  </wsdl:message>
+  <wsdl:message name="GetRLTabSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRLTabResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateRLTabSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateRLTab" />
+  </wsdl:message>
+  <wsdl:message name="UpdateRLTabSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateRLTabResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetLinkedTabSoapIn">
+    <wsdl:part name="parameters" element="tns:GetLinkedTab" />
+  </wsdl:message>
+  <wsdl:message name="GetLinkedTabSoapOut">
+    <wsdl:part name="parameters" element="tns:GetLinkedTabResponse" />
+  </wsdl:message>
+  <wsdl:portType name="Interaction_x0020_Web_x0020_ServiceSoap">
+    <wsdl:operation name="CreateInteraction">
+      <wsdl:input message="tns:CreateInteractionSoapIn" />
+      <wsdl:output message="tns:CreateInteractionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteInteraction">
+      <wsdl:input message="tns:DeleteInteractionSoapIn" />
+      <wsdl:output message="tns:DeleteInteractionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteInteractions">
+      <wsdl:input message="tns:DeleteInteractionsSoapIn" />
+      <wsdl:output message="tns:DeleteInteractionsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddMsgToInteraction">
+      <wsdl:input message="tns:AddMsgToInteractionSoapIn" />
+      <wsdl:output message="tns:AddMsgToInteractionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddAttachments">
+      <wsdl:input message="tns:AddAttachmentsSoapIn" />
+      <wsdl:output message="tns:AddAttachmentsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddCommentsToInteraction">
+      <wsdl:input message="tns:AddCommentsToInteractionSoapIn" />
+      <wsdl:output message="tns:AddCommentsToInteractionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddCommentsToInteractionWithAttch">
+      <wsdl:input message="tns:AddCommentsToInteractionWithAttchSoapIn" />
+      <wsdl:output message="tns:AddCommentsToInteractionWithAttchSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInteractionEvents">
+      <wsdl:input message="tns:GetInteractionEventsSoapIn" />
+      <wsdl:output message="tns:GetInteractionEventsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllInteractionEvents">
+      <wsdl:input message="tns:GetAllInteractionEventsSoapIn" />
+      <wsdl:output message="tns:GetAllInteractionEventsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInteractionEvents2">
+      <wsdl:input message="tns:GetInteractionEvents2SoapIn" />
+      <wsdl:output message="tns:GetInteractionEvents2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMessageContent">
+      <wsdl:input message="tns:GetMessageContentSoapIn" />
+      <wsdl:output message="tns:GetMessageContentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllMessageContents">
+      <wsdl:input message="tns:GetAllMessageContentsSoapIn" />
+      <wsdl:output message="tns:GetAllMessageContentsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetInteractionPriority">
+      <wsdl:input message="tns:SetInteractionPrioritySoapIn" />
+      <wsdl:output message="tns:SetInteractionPrioritySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetInteractionState">
+      <wsdl:input message="tns:SetInteractionStateSoapIn" />
+      <wsdl:output message="tns:SetInteractionStateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Assign">
+      <wsdl:input message="tns:AssignSoapIn" />
+      <wsdl:output message="tns:AssignSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Transfer">
+      <wsdl:input message="tns:TransferSoapIn" />
+      <wsdl:output message="tns:TransferSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAttachmentFile">
+      <wsdl:input message="tns:GetAttachmentFileSoapIn" />
+      <wsdl:output message="tns:GetAttachmentFileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAssignToUserList">
+      <wsdl:input message="tns:GetAssignToUserListSoapIn" />
+      <wsdl:output message="tns:GetAssignToUserListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTransferToList">
+      <wsdl:input message="tns:GetTransferToListSoapIn" />
+      <wsdl:output message="tns:GetTransferToListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInteractionInfo">
+      <wsdl:input message="tns:GetInteractionInfoSoapIn" />
+      <wsdl:output message="tns:GetInteractionInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BeginReply">
+      <wsdl:input message="tns:BeginReplySoapIn" />
+      <wsdl:output message="tns:BeginReplySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveReply">
+      <wsdl:input message="tns:SaveReplySoapIn" />
+      <wsdl:output message="tns:SaveReplySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateInteractionReadUnReadStatus">
+      <wsdl:input message="tns:UpdateInteractionReadUnReadStatusSoapIn" />
+      <wsdl:output message="tns:UpdateInteractionReadUnReadStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveInteractionTrackingInfo">
+      <wsdl:input message="tns:SaveInteractionTrackingInfoSoapIn" />
+      <wsdl:output message="tns:SaveInteractionTrackingInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CancelReply">
+      <wsdl:input message="tns:CancelReplySoapIn" />
+      <wsdl:output message="tns:CancelReplySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UnlockInteraction">
+      <wsdl:input message="tns:UnlockInteractionSoapIn" />
+      <wsdl:output message="tns:UnlockInteractionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BuildForwardOrConsult">
+      <wsdl:input message="tns:BuildForwardOrConsultSoapIn" />
+      <wsdl:output message="tns:BuildForwardOrConsultSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BuildSmsReply">
+      <wsdl:input message="tns:BuildSmsReplySoapIn" />
+      <wsdl:output message="tns:BuildSmsReplySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BuildReply">
+      <wsdl:input message="tns:BuildReplySoapIn" />
+      <wsdl:output message="tns:BuildReplySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteReply">
+      <wsdl:input message="tns:DeleteReplySoapIn" />
+      <wsdl:output message="tns:DeleteReplySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPropertiesTab">
+      <wsdl:input message="tns:GetPropertiesTabSoapIn" />
+      <wsdl:output message="tns:GetPropertiesTabSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePropertyTab">
+      <wsdl:input message="tns:UpdatePropertyTabSoapIn" />
+      <wsdl:output message="tns:UpdatePropertyTabSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRLTab">
+      <wsdl:input message="tns:GetRLTabSoapIn" />
+      <wsdl:output message="tns:GetRLTabSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRLTab">
+      <wsdl:input message="tns:UpdateRLTabSoapIn" />
+      <wsdl:output message="tns:UpdateRLTabSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLinkedTab">
+      <wsdl:input message="tns:GetLinkedTabSoapIn" />
+      <wsdl:output message="tns:GetLinkedTabSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Interaction_x0020_Web_x0020_ServiceSoap" type="tns:Interaction_x0020_Web_x0020_ServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CreateInteraction">
+      <soap:operation soapAction="http://www.talisma.com/CreateInteraction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteInteraction">
+      <soap:operation soapAction="http://www.talisma.com/DeleteInteraction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteInteractions">
+      <soap:operation soapAction="http://www.talisma.com/DeleteInteractions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddMsgToInteraction">
+      <soap:operation soapAction="http://www.talisma.com/AddMsgToInteraction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddAttachments">
+      <soap:operation soapAction="http://www.talisma.com/AddAttachments" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddCommentsToInteraction">
+      <soap:operation soapAction="http://www.talisma.com/AddCommentsToInteraction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddCommentsToInteractionWithAttch">
+      <soap:operation soapAction="http://www.talisma.com/AddCommentsToInteractionWithAttch" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInteractionEvents">
+      <soap:operation soapAction="http://www.talisma.com/GetInteractionEvents" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllInteractionEvents">
+      <soap:operation soapAction="http://www.talisma.com/GetAllInteractionEvents" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInteractionEvents2">
+      <soap:operation soapAction="http://www.talisma.com/GetInteractionEvents2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMessageContent">
+      <soap:operation soapAction="http://www.talisma.com/GetMessageContent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllMessageContents">
+      <soap:operation soapAction="http://www.talisma.com/GetAllMessageContents" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetInteractionPriority">
+      <soap:operation soapAction="http://www.talisma.com/SetInteractionPriority" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetInteractionState">
+      <soap:operation soapAction="http://www.talisma.com/SetInteractionState" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Assign">
+      <soap:operation soapAction="http://www.talisma.com/Assign" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Transfer">
+      <soap:operation soapAction="http://www.talisma.com/Transfer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAttachmentFile">
+      <soap:operation soapAction="http://www.talisma.com/GetAttachmentFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAssignToUserList">
+      <soap:operation soapAction="http://www.talisma.com/GetAssignToUserList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTransferToList">
+      <soap:operation soapAction="http://www.talisma.com/GetTransferToList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInteractionInfo">
+      <soap:operation soapAction="http://www.talisma.com/GetInteractionInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BeginReply">
+      <soap:operation soapAction="http://www.talisma.com/BeginReply" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveReply">
+      <soap:operation soapAction="http://www.talisma.com/SaveReply" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateInteractionReadUnReadStatus">
+      <soap:operation soapAction="http://www.talisma.com/UpdateInteractionReadUnReadStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveInteractionTrackingInfo">
+      <soap:operation soapAction="http://www.talisma.com/SaveInteractionTrackingInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CancelReply">
+      <soap:operation soapAction="http://www.talisma.com/CancelReply" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnlockInteraction">
+      <soap:operation soapAction="http://www.talisma.com/UnlockInteraction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuildForwardOrConsult">
+      <soap:operation soapAction="http://www.talisma.com/BuildForwardOrConsult" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuildSmsReply">
+      <soap:operation soapAction="http://www.talisma.com/BuildSmsReply" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuildReply">
+      <soap:operation soapAction="http://www.talisma.com/BuildReply" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteReply">
+      <soap:operation soapAction="http://www.talisma.com/DeleteReply" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPropertiesTab">
+      <soap:operation soapAction="http://www.talisma.com/GetPropertiesTab" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePropertyTab">
+      <soap:operation soapAction="http://www.talisma.com/UpdatePropertyTab" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRLTab">
+      <soap:operation soapAction="http://www.talisma.com/GetRLTab" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRLTab">
+      <soap:operation soapAction="http://www.talisma.com/UpdateRLTab" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLinkedTab">
+      <soap:operation soapAction="http://www.talisma.com/GetLinkedTab" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Interaction_x0020_Web_x0020_ServiceSoap12" type="tns:Interaction_x0020_Web_x0020_ServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CreateInteraction">
+      <soap12:operation soapAction="http://www.talisma.com/CreateInteraction" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteInteraction">
+      <soap12:operation soapAction="http://www.talisma.com/DeleteInteraction" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteInteractions">
+      <soap12:operation soapAction="http://www.talisma.com/DeleteInteractions" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddMsgToInteraction">
+      <soap12:operation soapAction="http://www.talisma.com/AddMsgToInteraction" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddAttachments">
+      <soap12:operation soapAction="http://www.talisma.com/AddAttachments" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddCommentsToInteraction">
+      <soap12:operation soapAction="http://www.talisma.com/AddCommentsToInteraction" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddCommentsToInteractionWithAttch">
+      <soap12:operation soapAction="http://www.talisma.com/AddCommentsToInteractionWithAttch" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInteractionEvents">
+      <soap12:operation soapAction="http://www.talisma.com/GetInteractionEvents" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllInteractionEvents">
+      <soap12:operation soapAction="http://www.talisma.com/GetAllInteractionEvents" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInteractionEvents2">
+      <soap12:operation soapAction="http://www.talisma.com/GetInteractionEvents2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMessageContent">
+      <soap12:operation soapAction="http://www.talisma.com/GetMessageContent" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllMessageContents">
+      <soap12:operation soapAction="http://www.talisma.com/GetAllMessageContents" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetInteractionPriority">
+      <soap12:operation soapAction="http://www.talisma.com/SetInteractionPriority" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetInteractionState">
+      <soap12:operation soapAction="http://www.talisma.com/SetInteractionState" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Assign">
+      <soap12:operation soapAction="http://www.talisma.com/Assign" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Transfer">
+      <soap12:operation soapAction="http://www.talisma.com/Transfer" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAttachmentFile">
+      <soap12:operation soapAction="http://www.talisma.com/GetAttachmentFile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAssignToUserList">
+      <soap12:operation soapAction="http://www.talisma.com/GetAssignToUserList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTransferToList">
+      <soap12:operation soapAction="http://www.talisma.com/GetTransferToList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInteractionInfo">
+      <soap12:operation soapAction="http://www.talisma.com/GetInteractionInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BeginReply">
+      <soap12:operation soapAction="http://www.talisma.com/BeginReply" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveReply">
+      <soap12:operation soapAction="http://www.talisma.com/SaveReply" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateInteractionReadUnReadStatus">
+      <soap12:operation soapAction="http://www.talisma.com/UpdateInteractionReadUnReadStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveInteractionTrackingInfo">
+      <soap12:operation soapAction="http://www.talisma.com/SaveInteractionTrackingInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CancelReply">
+      <soap12:operation soapAction="http://www.talisma.com/CancelReply" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnlockInteraction">
+      <soap12:operation soapAction="http://www.talisma.com/UnlockInteraction" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuildForwardOrConsult">
+      <soap12:operation soapAction="http://www.talisma.com/BuildForwardOrConsult" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuildSmsReply">
+      <soap12:operation soapAction="http://www.talisma.com/BuildSmsReply" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuildReply">
+      <soap12:operation soapAction="http://www.talisma.com/BuildReply" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteReply">
+      <soap12:operation soapAction="http://www.talisma.com/DeleteReply" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPropertiesTab">
+      <soap12:operation soapAction="http://www.talisma.com/GetPropertiesTab" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePropertyTab">
+      <soap12:operation soapAction="http://www.talisma.com/UpdatePropertyTab" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRLTab">
+      <soap12:operation soapAction="http://www.talisma.com/GetRLTab" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRLTab">
+      <soap12:operation soapAction="http://www.talisma.com/UpdateRLTab" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLinkedTab">
+      <soap12:operation soapAction="http://www.talisma.com/GetLinkedTab" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Interaction_x0020_Web_x0020_Service">
+    <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Interaction Web Service</wsdl:documentation>
+    <wsdl:port name="Interaction_x0020_Web_x0020_ServiceSoap" binding="tns:Interaction_x0020_Web_x0020_ServiceSoap">
+      <soap:address location="http://kgi-p-app-talisma-1-v089/interactioniservice/interaction.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Interaction_x0020_Web_x0020_ServiceSoap12" binding="tns:Interaction_x0020_Web_x0020_ServiceSoap12">
+      <soap12:address location="http://kgi-p-app-talisma-1-v089/interactioniservice/interaction.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

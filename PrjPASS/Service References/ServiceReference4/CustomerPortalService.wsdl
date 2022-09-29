@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://GCCustomerPortalService" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://GCCustomerPortalService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://GCCustomerPortalService/Imports">
+      <xsd:import schemaLocation="http://10.221.16.22/GCCustomerPortalServiceGateway/CustomerPortalService.svc?xsd=xsd0" namespace="http://GCCustomerPortalService" />
+      <xsd:import schemaLocation="http://10.221.16.22/GCCustomerPortalServiceGateway/CustomerPortalService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://10.221.16.22/GCCustomerPortalServiceGateway/CustomerPortalService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/GCCustomerPortalBL" />
+      <xsd:import schemaLocation="http://10.221.16.22/GCCustomerPortalServiceGateway/CustomerPortalService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/System.Text" />
+      <xsd:import schemaLocation="http://10.221.16.22/GCCustomerPortalServiceGateway/CustomerPortalService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/DbUtility" />
+      <xsd:import schemaLocation="http://10.221.16.22/GCCustomerPortalServiceGateway/CustomerPortalService.svc?xsd=xsd5" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ICustomerPortalService_Authenticate_InputMessage">
+    <wsdl:part name="parameters" element="tns:Authenticate" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_Authenticate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AuthenticateResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_CalculatePremium_InputMessage">
+    <wsdl:part name="parameters" element="tns:CalculatePremium" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_CalculatePremium_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CalculatePremiumResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_SaveProposal_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveProposal" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_SaveProposal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveProposalResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_GetHtmlReport_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetHtmlReport" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_GetHtmlReport_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetHtmlReportResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_GetProposalData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProposalData" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_GetProposalData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProposalDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_AddCustomer_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddCustomer" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_AddCustomer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddCustomerResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_EditCustomer_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditCustomer" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_EditCustomer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditCustomerResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_ViewCustomer_InputMessage">
+    <wsdl:part name="parameters" element="tns:ViewCustomer" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_ViewCustomer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ViewCustomerResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_PolicyRenewal_GetData_InputMessage">
+    <wsdl:part name="parameters" element="tns:PolicyRenewal_GetData" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_PolicyRenewal_GetData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PolicyRenewal_GetDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_PolicyRenewal_SaveData_InputMessage">
+    <wsdl:part name="parameters" element="tns:PolicyRenewal_SaveData" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_PolicyRenewal_SaveData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PolicyRenewal_SaveDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_PolicyRenewal_SaveDataWithoutModification_InputMessage">
+    <wsdl:part name="parameters" element="tns:PolicyRenewal_SaveDataWithoutModification" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_PolicyRenewal_SaveDataWithoutModification_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PolicyRenewal_SaveDataWithoutModificationResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_CaculateRenewalPremium_InputMessage">
+    <wsdl:part name="parameters" element="tns:CaculateRenewalPremium" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_CaculateRenewalPremium_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CaculateRenewalPremiumResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_FetchProposalXml_InputMessage">
+    <wsdl:part name="parameters" element="tns:FetchProposalXml" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_FetchProposalXml_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FetchProposalXmlResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_FetchQuotationXml_InputMessage">
+    <wsdl:part name="parameters" element="tns:FetchQuotationXml" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_FetchQuotationXml_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FetchQuotationXmlResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_GetPolicyScheduleForPortal_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPolicyScheduleForPortal" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_GetPolicyScheduleForPortal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPolicyScheduleForPortalResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_GetPayInSlipSchedule_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPayInSlipSchedule" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_GetPayInSlipSchedule_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPayInSlipScheduleResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_GetECoverNoteForPortal_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetECoverNoteForPortal" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_GetECoverNoteForPortal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetECoverNoteForPortalResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_GetPolicyRenewalMinimumData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPolicyRenewalMinimumData" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_GetPolicyRenewalMinimumData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPolicyRenewalMinimumDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_GetWorkSheet_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWorkSheet" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_GetWorkSheet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWorkSheetResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_GetRenewalNoticeHtml_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRenewalNoticeHtml" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_GetRenewalNoticeHtml_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRenewalNoticeHtmlResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_SaveVehicleInspection_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveVehicleInspection" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_SaveVehicleInspection_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveVehicleInspectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_UploadFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:UploadFile" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_UploadFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UploadFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_GetWorkSheetForPortal_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWorkSheetForPortal" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_GetWorkSheetForPortal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWorkSheetForPortalResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_GetRenwalNoticeForPortal_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRenwalNoticeForPortal" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_GetRenwalNoticeForPortal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRenwalNoticeForPortalResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_GetRenwalRejectionForPortal_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRenwalRejectionForPortal" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_GetRenwalRejectionForPortal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRenwalRejectionForPortalResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_UploadClaimFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:UploadClaimFile" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_UploadClaimFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UploadClaimFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_SaveDeatailQuote_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveDeatailQuote" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_SaveDeatailQuote_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveDeatailQuoteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_GetDocumentDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDocumentDetails" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_GetDocumentDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDocumentDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_SaveDocumentDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveDocumentDetails" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_SaveDocumentDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveDocumentDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_GetPolicyDocumentForPortal_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPolicyDocumentForPortal" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_GetPolicyDocumentForPortal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPolicyDocumentForPortalResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_GetProposalFormForPortal_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProposalFormForPortal" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_GetProposalFormForPortal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProposalFormForPortalResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_SaveOpenCoverNote_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveOpenCoverNote" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_SaveOpenCoverNote_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveOpenCoverNoteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_SaveRouteCoverNote_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveRouteCoverNote" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_SaveRouteCoverNote_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveRouteCoverNoteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_GetBasicPolicyDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBasicPolicyDetails" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_GetBasicPolicyDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBasicPolicyDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_SaveBatchProcessedFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveBatchProcessedFile" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_SaveBatchProcessedFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveBatchProcessedFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_PaymentEntry_InputMessage">
+    <wsdl:part name="parameters" element="tns:PaymentEntry" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_PaymentEntry_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PaymentEntryResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_PaymentAllocation_InputMessage">
+    <wsdl:part name="parameters" element="tns:PaymentAllocation" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_PaymentAllocation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PaymentAllocationResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_PaymentTagging_InputMessage">
+    <wsdl:part name="parameters" element="tns:PaymentTagging" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_PaymentTagging_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PaymentTaggingResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ICustomerPortalService">
+    <wsdl:operation name="Authenticate">
+      <wsdl:input wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/Authenticate" message="tns:ICustomerPortalService_Authenticate_InputMessage" />
+      <wsdl:output wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/AuthenticateResponse" message="tns:ICustomerPortalService_Authenticate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CalculatePremium">
+      <wsdl:input wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/CalculatePremium" message="tns:ICustomerPortalService_CalculatePremium_InputMessage" />
+      <wsdl:output wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/CalculatePremiumResponse" message="tns:ICustomerPortalService_CalculatePremium_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveProposal">
+      <wsdl:input wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/SaveProposal" message="tns:ICustomerPortalService_SaveProposal_InputMessage" />
+      <wsdl:output wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/SaveProposalResponse" message="tns:ICustomerPortalService_SaveProposal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHtmlReport">
+      <wsdl:input wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/GetHtmlReport" message="tns:ICustomerPortalService_GetHtmlReport_InputMessage" />
+      <wsdl:output wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/GetHtmlReportResponse" message="tns:ICustomerPortalService_GetHtmlReport_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProposalData">
+      <wsdl:input wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/GetProposalData" message="tns:ICustomerPortalService_GetProposalData_InputMessage" />
+      <wsdl:output wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/GetProposalDataResponse" message="tns:ICustomerPortalService_GetProposalData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddCustomer">
+      <wsdl:input wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/AddCustomer" message="tns:ICustomerPortalService_AddCustomer_InputMessage" />
+      <wsdl:output wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/AddCustomerResponse" message="tns:ICustomerPortalService_AddCustomer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditCustomer">
+      <wsdl:input wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/EditCustomer" message="tns:ICustomerPortalService_EditCustomer_InputMessage" />
+      <wsdl:output wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/EditCustomerResponse" message="tns:ICustomerPortalService_EditCustomer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ViewCustomer">
+      <wsdl:input wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/ViewCustomer" message="tns:ICustomerPortalService_ViewCustomer_InputMessage" />
+      <wsdl:output wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/ViewCustomerResponse" message="tns:ICustomerPortalService_ViewCustomer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PolicyRenewal_GetData">
+      <wsdl:input wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/PolicyRenewal_GetData" message="tns:ICustomerPortalService_PolicyRenewal_GetData_InputMessage" />
+      <wsdl:output wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/PolicyRenewal_GetDataResponse" message="tns:ICustomerPortalService_PolicyRenewal_GetData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PolicyRenewal_SaveData">
+      <wsdl:input wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/PolicyRenewal_SaveData" message="tns:ICustomerPortalService_PolicyRenewal_SaveData_InputMessage" />
+      <wsdl:output wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/PolicyRenewal_SaveDataResponse" message="tns:ICustomerPortalService_PolicyRenewal_SaveData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PolicyRenewal_SaveDataWithoutModification">
+      <wsdl:input wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/PolicyRenewal_SaveDataWithoutModification" message="tns:ICustomerPortalService_PolicyRenewal_SaveDataWithoutModification_InputMessage" />
+      <wsdl:output wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/PolicyRenewal_SaveDataWithoutModificationResponse" message="tns:ICustomerPortalService_PolicyRenewal_SaveDataWithoutModification_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CaculateRenewalPremium">
+      <wsdl:input wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/CaculateRenewalPremium" message="tns:ICustomerPortalService_CaculateRenewalPremium_InputMessage" />
+      <wsdl:output wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/CaculateRenewalPremiumResponse" message="tns:ICustomerPortalService_CaculateRenewalPremium_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FetchProposalXml">
+      <wsdl:input wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/FetchProposalXml" message="tns:ICustomerPortalService_FetchProposalXml_InputMessage" />
+      <wsdl:output wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/FetchProposalXmlResponse" message="tns:ICustomerPortalService_FetchProposalXml_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FetchQuotationXml">
+      <wsdl:input wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/FetchQuotationXml" message="tns:ICustomerPortalService_FetchQuotationXml_InputMessage" />
+      <wsdl:output wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/FetchQuotationXmlResponse" message="tns:ICustomerPortalService_FetchQuotationXml_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPolicyScheduleForPortal">
+      <wsdl:input wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/GetPolicyScheduleForPortal" message="tns:ICustomerPortalService_GetPolicyScheduleForPortal_InputMessage" />
+      <wsdl:output wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/GetPolicyScheduleForPortalResponse" message="tns:ICustomerPortalService_GetPolicyScheduleForPortal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPayInSlipSchedule">
+      <wsdl:input wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/GetPayInSlipSchedule" message="tns:ICustomerPortalService_GetPayInSlipSchedule_InputMessage" />
+      <wsdl:output wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/GetPayInSlipScheduleResponse" message="tns:ICustomerPortalService_GetPayInSlipSchedule_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetECoverNoteForPortal">
+      <wsdl:input wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/GetECoverNoteForPortal" message="tns:ICustomerPortalService_GetECoverNoteForPortal_InputMessage" />
+      <wsdl:output wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/GetECoverNoteForPortalResponse" message="tns:ICustomerPortalService_GetECoverNoteForPortal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPolicyRenewalMinimumData">
+      <wsdl:input wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/GetPolicyRenewalMinimumData" message="tns:ICustomerPortalService_GetPolicyRenewalMinimumData_InputMessage" />
+      <wsdl:output wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/GetPolicyRenewalMinimumDataResponse" message="tns:ICustomerPortalService_GetPolicyRenewalMinimumData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkSheet">
+      <wsdl:input wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/GetWorkSheet" message="tns:ICustomerPortalService_GetWorkSheet_InputMessage" />
+      <wsdl:output wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/GetWorkSheetResponse" message="tns:ICustomerPortalService_GetWorkSheet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRenewalNoticeHtml">
+      <wsdl:input wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/GetRenewalNoticeHtml" message="tns:ICustomerPortalService_GetRenewalNoticeHtml_InputMessage" />
+      <wsdl:output wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/GetRenewalNoticeHtmlResponse" message="tns:ICustomerPortalService_GetRenewalNoticeHtml_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveVehicleInspection">
+      <wsdl:input wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/SaveVehicleInspection" message="tns:ICustomerPortalService_SaveVehicleInspection_InputMessage" />
+      <wsdl:output wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/SaveVehicleInspectionResponse" message="tns:ICustomerPortalService_SaveVehicleInspection_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadFile">
+      <wsdl:input wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/UploadFile" message="tns:ICustomerPortalService_UploadFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/UploadFileResponse" message="tns:ICustomerPortalService_UploadFile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkSheetForPortal">
+      <wsdl:input wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/GetWorkSheetForPortal" message="tns:ICustomerPortalService_GetWorkSheetForPortal_InputMessage" />
+      <wsdl:output wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/GetWorkSheetForPortalResponse" message="tns:ICustomerPortalService_GetWorkSheetForPortal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRenwalNoticeForPortal">
+      <wsdl:input wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/GetRenwalNoticeForPortal" message="tns:ICustomerPortalService_GetRenwalNoticeForPortal_InputMessage" />
+      <wsdl:output wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/GetRenwalNoticeForPortalResponse" message="tns:ICustomerPortalService_GetRenwalNoticeForPortal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRenwalRejectionForPortal">
+      <wsdl:input wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/GetRenwalRejectionForPortal" message="tns:ICustomerPortalService_GetRenwalRejectionForPortal_InputMessage" />
+      <wsdl:output wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/GetRenwalRejectionForPortalResponse" message="tns:ICustomerPortalService_GetRenwalRejectionForPortal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadClaimFile">
+      <wsdl:input wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/UploadClaimFile" message="tns:ICustomerPortalService_UploadClaimFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/UploadClaimFileResponse" message="tns:ICustomerPortalService_UploadClaimFile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveDeatailQuote">
+      <wsdl:input wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/SaveDeatailQuote" message="tns:ICustomerPortalService_SaveDeatailQuote_InputMessage" />
+      <wsdl:output wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/SaveDeatailQuoteResponse" message="tns:ICustomerPortalService_SaveDeatailQuote_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDocumentDetails">
+      <wsdl:input wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/GetDocumentDetails" message="tns:ICustomerPortalService_GetDocumentDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/GetDocumentDetailsResponse" message="tns:ICustomerPortalService_GetDocumentDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveDocumentDetails">
+      <wsdl:input wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/SaveDocumentDetails" message="tns:ICustomerPortalService_SaveDocumentDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/SaveDocumentDetailsResponse" message="tns:ICustomerPortalService_SaveDocumentDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPolicyDocumentForPortal">
+      <wsdl:input wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/GetPolicyDocumentForPortal" message="tns:ICustomerPortalService_GetPolicyDocumentForPortal_InputMessage" />
+      <wsdl:output wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/GetPolicyDocumentForPortalResponse" message="tns:ICustomerPortalService_GetPolicyDocumentForPortal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProposalFormForPortal">
+      <wsdl:input wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/GetProposalFormForPortal" message="tns:ICustomerPortalService_GetProposalFormForPortal_InputMessage" />
+      <wsdl:output wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/GetProposalFormForPortalResponse" message="tns:ICustomerPortalService_GetProposalFormForPortal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveOpenCoverNote">
+      <wsdl:input wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/SaveOpenCoverNote" message="tns:ICustomerPortalService_SaveOpenCoverNote_InputMessage" />
+      <wsdl:output wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/SaveOpenCoverNoteResponse" message="tns:ICustomerPortalService_SaveOpenCoverNote_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveRouteCoverNote">
+      <wsdl:input wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/SaveRouteCoverNote" message="tns:ICustomerPortalService_SaveRouteCoverNote_InputMessage" />
+      <wsdl:output wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/SaveRouteCoverNoteResponse" message="tns:ICustomerPortalService_SaveRouteCoverNote_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBasicPolicyDetails">
+      <wsdl:input wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/GetBasicPolicyDetails" message="tns:ICustomerPortalService_GetBasicPolicyDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/GetBasicPolicyDetailsResponse" message="tns:ICustomerPortalService_GetBasicPolicyDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveBatchProcessedFile">
+      <wsdl:input wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/SaveBatchProcessedFile" message="tns:ICustomerPortalService_SaveBatchProcessedFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/SaveBatchProcessedFileResponse" message="tns:ICustomerPortalService_SaveBatchProcessedFile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PaymentEntry">
+      <wsdl:input wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/PaymentEntry" message="tns:ICustomerPortalService_PaymentEntry_InputMessage" />
+      <wsdl:output wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/PaymentEntryResponse" message="tns:ICustomerPortalService_PaymentEntry_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PaymentAllocation">
+      <wsdl:input wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/PaymentAllocation" message="tns:ICustomerPortalService_PaymentAllocation_InputMessage" />
+      <wsdl:output wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/PaymentAllocationResponse" message="tns:ICustomerPortalService_PaymentAllocation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PaymentTagging">
+      <wsdl:input wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/PaymentTagging" message="tns:ICustomerPortalService_PaymentTagging_InputMessage" />
+      <wsdl:output wsaw:Action="http://GCCustomerPortalService/ICustomerPortalService/PaymentTaggingResponse" message="tns:ICustomerPortalService_PaymentTagging_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

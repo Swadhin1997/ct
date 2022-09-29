@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="GCCommon" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="webEndPoint2_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <sp:HttpsToken RequireClientCertificate="false" />
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict />
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://kgi-p-app-bridge-1-v126/GCIntegrationServices/GCCommon.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://kgi-p-app-bridge-1-v126/GCIntegrationServices/GCCommon.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://kgi-p-app-bridge-1-v126/GCIntegrationServices/GCCommon.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WCF_Partner_integration" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IGCCommon_GetRenewalPolicyInformation_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRenewalPolicyInformation" />
+  </wsdl:message>
+  <wsdl:message name="IGCCommon_GetRenewalPolicyInformation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRenewalPolicyInformationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGCCommon_GSTBreakUpTaxDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GSTBreakUpTaxDetails" />
+  </wsdl:message>
+  <wsdl:message name="IGCCommon_GSTBreakUpTaxDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GSTBreakUpTaxDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGCCommon_VerifyGCPolicy_InputMessage">
+    <wsdl:part name="parameters" element="tns:VerifyGCPolicy" />
+  </wsdl:message>
+  <wsdl:message name="IGCCommon_VerifyGCPolicy_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VerifyGCPolicyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGCCommon_GetUWPolicyData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUWPolicyData" />
+  </wsdl:message>
+  <wsdl:message name="IGCCommon_GetUWPolicyData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUWPolicyDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGCCommon_UpdateCustomerCRNNumber_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCustomerCRNNumber" />
+  </wsdl:message>
+  <wsdl:message name="IGCCommon_UpdateCustomerCRNNumber_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCustomerCRNNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGCCommon_IDVSyncData_InputMessage">
+    <wsdl:part name="parameters" element="tns:IDVSyncData" />
+  </wsdl:message>
+  <wsdl:message name="IGCCommon_IDVSyncData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IDVSyncDataResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IGCCommon">
+    <wsdl:operation name="GetRenewalPolicyInformation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGCCommon/GetRenewalPolicyInformation" message="tns:IGCCommon_GetRenewalPolicyInformation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGCCommon/GetRenewalPolicyInformationResponse" message="tns:IGCCommon_GetRenewalPolicyInformation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GSTBreakUpTaxDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGCCommon/GSTBreakUpTaxDetails" message="tns:IGCCommon_GSTBreakUpTaxDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGCCommon/GSTBreakUpTaxDetailsResponse" message="tns:IGCCommon_GSTBreakUpTaxDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VerifyGCPolicy">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGCCommon/VerifyGCPolicy" message="tns:IGCCommon_VerifyGCPolicy_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGCCommon/VerifyGCPolicyResponse" message="tns:IGCCommon_VerifyGCPolicy_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUWPolicyData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGCCommon/GetUWPolicyData" message="tns:IGCCommon_GetUWPolicyData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGCCommon/GetUWPolicyDataResponse" message="tns:IGCCommon_GetUWPolicyData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCustomerCRNNumber">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGCCommon/UpdateCustomerCRNNumber" message="tns:IGCCommon_UpdateCustomerCRNNumber_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGCCommon/UpdateCustomerCRNNumberResponse" message="tns:IGCCommon_UpdateCustomerCRNNumber_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IDVSyncData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGCCommon/IDVSyncData" message="tns:IGCCommon_IDVSyncData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGCCommon/IDVSyncDataResponse" message="tns:IGCCommon_IDVSyncData_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="webEndPoint1" type="tns:IGCCommon">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetRenewalPolicyInformation">
+      <soap:operation soapAction="http://tempuri.org/IGCCommon/GetRenewalPolicyInformation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GSTBreakUpTaxDetails">
+      <soap:operation soapAction="http://tempuri.org/IGCCommon/GSTBreakUpTaxDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerifyGCPolicy">
+      <soap:operation soapAction="http://tempuri.org/IGCCommon/VerifyGCPolicy" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUWPolicyData">
+      <soap:operation soapAction="http://tempuri.org/IGCCommon/GetUWPolicyData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCustomerCRNNumber">
+      <soap:operation soapAction="http://tempuri.org/IGCCommon/UpdateCustomerCRNNumber" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IDVSyncData">
+      <soap:operation soapAction="http://tempuri.org/IGCCommon/IDVSyncData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="webEndPoint2" type="tns:IGCCommon">
+    <wsp:PolicyReference URI="#webEndPoint2_policy" />
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetRenewalPolicyInformation">
+      <soap:operation soapAction="http://tempuri.org/IGCCommon/GetRenewalPolicyInformation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GSTBreakUpTaxDetails">
+      <soap:operation soapAction="http://tempuri.org/IGCCommon/GSTBreakUpTaxDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerifyGCPolicy">
+      <soap:operation soapAction="http://tempuri.org/IGCCommon/VerifyGCPolicy" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUWPolicyData">
+      <soap:operation soapAction="http://tempuri.org/IGCCommon/GetUWPolicyData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCustomerCRNNumber">
+      <soap:operation soapAction="http://tempuri.org/IGCCommon/UpdateCustomerCRNNumber" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IDVSyncData">
+      <soap:operation soapAction="http://tempuri.org/IGCCommon/IDVSyncData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="GCCommon">
+    <wsdl:port name="webEndPoint1" binding="tns:webEndPoint1">
+      <soap:address location="http://kgi-p-app-bridge-1-v126/GCIntegrationServices/GCCommon.svc" />
+    </wsdl:port>
+    <wsdl:port name="webEndPoint2" binding="tns:webEndPoint2">
+      <soap:address location="https://kgi-p-app-bridge-1-v126/GCIntegrationServices/GCCommon.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="7eda7cc3-0071-4c0d-a470-15d79be8802c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://10.221.12.124/GCInternetProxy/CustomerPortalService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CustomerPortalService.xsd" MetadataType="Schema" ID="06676995-5621-4fbf-9de6-867dbc01132c" SourceId="1" SourceUrl="http://10.221.12.124/GCInternetProxy/CustomerPortalService.svc?xsd=xsd8" />
+    <MetadataFile FileName="CustomerPortalService1.xsd" MetadataType="Schema" ID="0dd9a0d4-762c-46eb-aac8-87c58d966cff" SourceId="1" SourceUrl="http://10.221.12.124/GCInternetProxy/CustomerPortalService.svc?xsd=xsd3" />
+    <MetadataFile FileName="CustomerPortalService.wsdl" MetadataType="Wsdl" ID="8c850a28-3614-40dc-b64c-9ea316b9174b" SourceId="1" SourceUrl="http://10.221.12.124/GCInternetProxy/CustomerPortalService.svc?wsdl" />
+    <MetadataFile FileName="CustomerPortalService2.xsd" MetadataType="Schema" ID="956f721b-24db-4bb8-988e-ddb44ee4789b" SourceId="1" SourceUrl="http://10.221.12.124/GCInternetProxy/CustomerPortalService.svc?xsd=xsd0" />
+    <MetadataFile FileName="CustomerPortalService3.xsd" MetadataType="Schema" ID="26059789-37ba-4fe1-ba93-5662ea3a4f81" SourceId="1" SourceUrl="http://10.221.12.124/GCInternetProxy/CustomerPortalService.svc?xsd=xsd7" />
+    <MetadataFile FileName="CustomerPortalService4.xsd" MetadataType="Schema" ID="c8c14e7a-b983-4815-af2c-7da635778d17" SourceId="1" SourceUrl="http://10.221.12.124/GCInternetProxy/CustomerPortalService.svc?xsd=xsd5" />
+    <MetadataFile FileName="CustomerPortalService5.xsd" MetadataType="Schema" ID="d6df124f-7a63-4eb7-84ad-659d600ee7c7" SourceId="1" SourceUrl="http://10.221.12.124/GCInternetProxy/CustomerPortalService.svc?xsd=xsd4" />
+    <MetadataFile FileName="CustomerPortalService6.xsd" MetadataType="Schema" ID="814ff374-e8f2-40e1-acdd-49fd8a679b19" SourceId="1" SourceUrl="http://10.221.12.124/GCInternetProxy/CustomerPortalService.svc?xsd=xsd2" />
+    <MetadataFile FileName="CustomerPortalService7.xsd" MetadataType="Schema" ID="244b66b0-bc55-4332-983b-839d3fb08d86" SourceId="1" SourceUrl="http://10.221.12.124/GCInternetProxy/CustomerPortalService.svc?xsd=xsd9" />
+    <MetadataFile FileName="CustomerPortalService8.xsd" MetadataType="Schema" ID="f8255259-6585-4c3d-aaba-b081e8f49225" SourceId="1" SourceUrl="http://10.221.12.124/GCInternetProxy/CustomerPortalService.svc?xsd=xsd10" />
+    <MetadataFile FileName="CustomerPortalService9.xsd" MetadataType="Schema" ID="d53e6460-b343-45f4-a884-8e50ef31ccda" SourceId="1" SourceUrl="http://10.221.12.124/GCInternetProxy/CustomerPortalService.svc?xsd=xsd1" />
+    <MetadataFile FileName="CustomerPortalService.disco" MetadataType="Disco" ID="d7c03890-0a4d-4c9f-ad35-d41b8f9bb747" SourceId="1" SourceUrl="http://10.221.12.124/GCInternetProxy/CustomerPortalService.svc?disco" />
+    <MetadataFile FileName="CustomerPortalService10.xsd" MetadataType="Schema" ID="d666da6e-8b54-4e7c-9e34-f46d6167f000" SourceId="1" SourceUrl="http://10.221.12.124/GCInternetProxy/CustomerPortalService.svc?xsd=xsd6" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

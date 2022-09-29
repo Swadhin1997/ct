@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<Root>
+  <PaymentAllocation>
+    <PayerType Value="" type="string" />
+    <ParentPaymentID Value="1201700001460" type="string" />
+    <LOB Value="28" type="string" />
+    <ProductCd Value="2011" type="string" />
+    <PayerID Value="" type="string" />
+    <CustID Value="1000011985" type="string" />
+    <CustName Value="" type="string" />
+    <TransactionType Value="NEWPOLICY" type="string" />
+    <OfficeCd Value="90001" type="string" />
+    <ApplicationNo Value="20201700001565" type="string" />
+    <Amount Value="11854.00" type="string" />
+    <PolicyNo Value="" type="string" />
+    <CoverNoteNo Value="" type="string" />
+    <PartnerEmployeeCode Value="" type="string" />
+    <InwardNo Value="" type="string" />
+    <FormNo Value="" type="string" />
+    <ChildPaymentID Value="" type="string" />
+    <CallSLEnv Value="SL" type="string" />
+    <TransactionID Value="20201700001565" type="string" />
+    <UserID Value="GC0014" type="string" />
+  </PaymentAllocation>
+</Root>

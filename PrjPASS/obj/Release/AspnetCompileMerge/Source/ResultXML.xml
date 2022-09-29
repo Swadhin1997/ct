@@ -1,0 +1,870 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceResult xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ExtensionData />
+  <BasicPremium>0</BasicPremium>
+  <EndorsementPremium>0</EndorsementPremium>
+  <EndorsementSI>0</EndorsementSI>
+  <EndorsementServiceTax>0</EndorsementServiceTax>
+  <ErrorText />
+  <GetUserData>
+    <PropRisks_BasicODDeviation>0</PropRisks_BasicODDeviation>
+    <PropRisks_AddOnDeviation>0</PropRisks_AddOnDeviation>
+    <PropRisks_AAOmembershipno>0</PropRisks_AAOmembershipno>
+    <PropRisks_AddOnDiscnt>0</PropRisks_AddOnDiscnt>
+    <PropRisks_Age>32</PropRisks_Age>
+    <PropRisks_AgeCoverageDetails>21</PropRisks_AgeCoverageDetails>
+    <PropRisks_AntiTheftCheck>false</PropRisks_AntiTheftCheck>
+    <PropRisks_ApplicableDocuments />
+    <PropRisks_AuthorityLocation>MH01</PropRisks_AuthorityLocation>
+    <PropRisks_AutoMobileAssocName>AAIE</PropRisks_AutoMobileAssocName>
+    <PropRisks_AutomobileAssociC>false</PropRisks_AutomobileAssociC>
+    <PropRisks_Bangladesh>false</PropRisks_Bangladesh>
+    <PropRisks_BasisOfRating>GLM</PropRisks_BasisOfRating>
+    <PropRisks_Bhutan>false</PropRisks_Bhutan>
+    <PropRisks_BreakInInsurance>No Break</PropRisks_BreakInInsurance>
+    <PropRisks_BreakInInsuranceGLMMulti>1</PropRisks_BreakInInsuranceGLMMulti>
+    <PropRisks_BusinessChnlGLMMultiplier>0.95</PropRisks_BusinessChnlGLMMultiplier>
+    <PropRisks_CNGLPGkitValue>0</PropRisks_CNGLPGkitValue>
+    <PropRisks_CSD>false</PropRisks_CSD>
+    <PropRisks_CapitalSIPerPerson>0</PropRisks_CapitalSIPerPerson>
+    <PropRisks_CertifiedVintageCarByCarClub>false</PropRisks_CertifiedVintageCarByCarClub>
+    <PropRisks_ChasisNo />
+    <PropRisks_ChassisNumber>C333335</PropRisks_ChassisNumber>
+    <PropRisks_ChkForGeographical>false</PropRisks_ChkForGeographical>
+    <PropRisks_ChkForRacing>false</PropRisks_ChkForRacing>
+    <PropRisks_CityCode />
+    <PropRisks_ClaimFreeYearGLMDepCvr>1</PropRisks_ClaimFreeYearGLMDepCvr>
+    <PropRisks_Colorofthevehicle>BLACK</PropRisks_Colorofthevehicle>
+    <PropRisks_CompForVolExc1>0</PropRisks_CompForVolExc1>
+    <PropRisks_CompForVolExc2>0</PropRisks_CompForVolExc2>
+    <PropRisks_CompForVolExc3>0</PropRisks_CompForVolExc3>
+    <PropRisks_CompForVolExc4>0</PropRisks_CompForVolExc4>
+    <PropRisks_CompulsoryExcess>2000</PropRisks_CompulsoryExcess>
+    <PropRisks_CompulsoryPAwithOwnerDriver>true</PropRisks_CompulsoryPAwithOwnerDriver>
+    <PropRisks_ConsumableCvrPrm>0.2959</PropRisks_ConsumableCvrPrm>
+    <PropRisks_ConsumablesExpenses>false</PropRisks_ConsumablesExpenses>
+    <PropRisks_CountryCode />
+    <PropRisks_CrossSellDiscount />
+    <PropRisks_CrossSellDiscountGLM>0</PropRisks_CrossSellDiscountGLM>
+    <PropRisks_CubicCapacity>1582</PropRisks_CubicCapacity>
+    <PropRisks_CvrPrm>0</PropRisks_CvrPrm>
+    <PropRisks_DateOfBirth />
+    <PropRisks_DateofBirthofNominee>01/01/1997</PropRisks_DateofBirthofNominee>
+    <PropRisks_DateofRegistration>13/07/2016</PropRisks_DateofRegistration>
+    <PropRisks_Dateofpurchase>13/07/2016</PropRisks_Dateofpurchase>
+    <PropRisks_DepreciationReimbursement>false</PropRisks_DepreciationReimbursement>
+    <PropRisks_DepriciationCvrPrm>0</PropRisks_DepriciationCvrPrm>
+    <PropRisks_DiscntPrm>0</PropRisks_DiscntPrm>
+    <PropRisks_DiscountOnIMTRate>0</PropRisks_DiscountOnIMTRate>
+    <PropRisks_DiscountforOptingSoftCopy>false</PropRisks_DiscountforOptingSoftCopy>
+    <PropRisks_DistrictCode />
+    <PropRisks_Drivingexperience>5</PropRisks_Drivingexperience>
+    <PropRisks_Educationalqualification />
+    <PropRisks_ElectricalAccessories>0</PropRisks_ElectricalAccessories>
+    <PropRisks_EmergencyMedicalExpenses>false</PropRisks_EmergencyMedicalExpenses>
+    <PropRisks_EmployeesDiscount>false</PropRisks_EmployeesDiscount>
+    <PropRisks_EnginePretectPrm>0</PropRisks_EnginePretectPrm>
+    <PropRisks_EngineSecure>false</PropRisks_EngineSecure>
+    <PropRisks_Engineno>E333335</PropRisks_Engineno>
+    <PropRisks_EntitledforNCB />
+    <PropRisks_EventName>gggg</PropRisks_EventName>
+    <PropRisks_FirstName>DUMMY</PropRisks_FirstName>
+    <PropRisks_ForUWLoading>0</PropRisks_ForUWLoading>
+    <PropRisks_FromDateForRacing />
+    <PropRisks_FromDateForRallies />
+    <PropRisks_FromDateUForm />
+    <PropRisks_FuelType>Diesel</PropRisks_FuelType>
+    <PropRisks_FuelTypeGLMConsmCvr>0</PropRisks_FuelTypeGLMConsmCvr>
+    <PropRisks_FuelTypeGLMDepCvr>0</PropRisks_FuelTypeGLMDepCvr>
+    <PropRisks_FuelTypeGLMEngProt>0</PropRisks_FuelTypeGLMEngProt>
+    <PropRisks_FuelTypeGLMMultiplier>1.2053</PropRisks_FuelTypeGLMMultiplier>
+    <PropRisks_FuelTypeGLMRetInv>0</PropRisks_FuelTypeGLMRetInv>
+    <PropRisks_GLMRate>1.7261</PropRisks_GLMRate>
+    <PropRisks_GeneralRemarks />
+    <PropRisks_Geographicalareaextention>false</PropRisks_Geographicalareaextention>
+    <PropRisks_IDVFlag>1360683</PropRisks_IDVFlag>
+    <PropRisks_IDVofTrailer>0</PropRisks_IDVofTrailer>
+    <PropRisks_IDVofthevehicle>1360683</PropRisks_IDVofthevehicle>
+    <PropRisks_IfOthersPleasespecify>sasa</PropRisks_IfOthersPleasespecify>
+    <PropRisks_ImposedExcessAmount>0</PropRisks_ImposedExcessAmount>
+    <PropRisks_ImprtdVehcleWoutPaymtCustmDuty>false</PropRisks_ImprtdVehcleWoutPaymtCustmDuty>
+    <PropRisks_InsuredAge>32</PropRisks_InsuredAge>
+    <PropRisks_InsuredAgeGLMMultiplier>1</PropRisks_InsuredAgeGLMMultiplier>
+    <PropRisks_InsuredCreditScore>0</PropRisks_InsuredCreditScore>
+    <PropRisks_InsuredCreditScoreGLM>1</PropRisks_InsuredCreditScoreGLM>
+    <PropRisks_InsuredGender>MALE</PropRisks_InsuredGender>
+    <PropRisks_InsuredGenderGLMMultiplier>1</PropRisks_InsuredGenderGLMMultiplier>
+    <PropRisks_InsuredHasDrivinglicense>true</PropRisks_InsuredHasDrivinglicense>
+    <PropRisks_InsuredProfession>Others</PropRisks_InsuredProfession>
+    <PropRisks_InsuredProfessionGLMMulti>1</PropRisks_InsuredProfessionGLMMulti>
+    <PropRisks_InsureddrivingScore>0</PropRisks_InsureddrivingScore>
+    <PropRisks_InsureddrivingScoreGLM>1</PropRisks_InsureddrivingScoreGLM>
+    <PropRisks_InteractionWithRatingFactor>1</PropRisks_InteractionWithRatingFactor>
+    <PropRisks_InteractionWithRtngFactGLM>0.85</PropRisks_InteractionWithRtngFactGLM>
+    <PropRisks_IsExternalCNGLPGAvailable>false</PropRisks_IsExternalCNGLPGAvailable>
+    <PropRisks_IsNewRateApplicable>false</PropRisks_IsNewRateApplicable>
+    <PropRisks_IsNonElctrclAcesrsRequired>false</PropRisks_IsNonElctrclAcesrsRequired>
+    <PropRisks_IsPAToOwnerDriverExcluded>false</PropRisks_IsPAToOwnerDriverExcluded>
+    <PropRisks_IsTrailerAvailable>false</PropRisks_IsTrailerAvailable>
+    <PropRisks_IsVehcleUsdForDrivngTuitions>false</PropRisks_IsVehcleUsdForDrivngTuitions>
+    <PropRisks_IsVehicle />
+    <PropRisks_IsVehicleUsedforblindpersons>false</PropRisks_IsVehicleUsedforblindpersons>
+    <PropRisks_IsVehicleusedlimitedtopremises>false</PropRisks_IsVehicleusedlimitedtopremises>
+    <PropRisks_Issuer>0</PropRisks_Issuer>
+    <PropRisks_KotakGrpEmployeeDiscount>0</PropRisks_KotakGrpEmployeeDiscount>
+    <PropRisks_LastName>IND</PropRisks_LastName>
+    <PropRisks_LdngPrm>0</PropRisks_LdngPrm>
+    <PropRisks_LegalLiabilityToEmployees>false</PropRisks_LegalLiabilityToEmployees>
+    <PropRisks_LiabilityToSoldierSailorAirMan>false</PropRisks_LiabilityToSoldierSailorAirMan>
+    <PropRisks_LiscenseNo>777777</PropRisks_LiscenseNo>
+    <PropRisks_LoadEmrgencyMedicalExp>0</PropRisks_LoadEmrgencyMedicalExp>
+    <PropRisks_LoadHomeProtectSublt>0</PropRisks_LoadHomeProtectSublt>
+    <PropRisks_LoadingDiscountOnAddOnCovers>0</PropRisks_LoadingDiscountOnAddOnCovers>
+    <PropRisks_LoadingNewCarRplacmnt>0</PropRisks_LoadingNewCarRplacmnt>
+    <PropRisks_LocationCode>False</PropRisks_LocationCode>
+    <PropRisks_MainDriver>Self - Owner Driver</PropRisks_MainDriver>
+    <PropRisks_MakeGLMDepCvr>0</PropRisks_MakeGLMDepCvr>
+    <PropRisks_MakeGLMEngProt>0</PropRisks_MakeGLMEngProt>
+    <PropRisks_MakeGLMMultiplier>1.0115</PropRisks_MakeGLMMultiplier>
+    <PropRisks_MakeGLMRetInv>0</PropRisks_MakeGLMRetInv>
+    <PropRisks_Maldives>false</PropRisks_Maldives>
+    <PropRisks_Manufacture>HYUNDAI MOTORS</PropRisks_Manufacture>
+    <PropRisks_ManufactureYear>2016</PropRisks_ManufactureYear>
+    <PropRisks_ManufacturerCode>8</PropRisks_ManufacturerCode>
+    <PropRisks_MarketMovement>0</PropRisks_MarketMovement>
+    <PropRisks_MarketMovementGLMMultiplier>0</PropRisks_MarketMovementGLMMultiplier>
+    <PropRisks_Model>ELANTRA</PropRisks_Model>
+    <PropRisks_ModelCluster>CATEGORY 3</PropRisks_ModelCluster>
+    <PropRisks_ModelClusterGLMDepCvr>0</PropRisks_ModelClusterGLMDepCvr>
+    <PropRisks_ModelClusterGLMMultiplier>1</PropRisks_ModelClusterGLMMultiplier>
+    <PropRisks_ModelCode />
+    <PropRisks_ModelVariant>1.6L CRDI VGT  6-SPEED AUTOMATIC (SX)</PropRisks_ModelVariant>
+    <PropRisks_NCBConfirmation>NCB reserving</PropRisks_NCBConfirmation>
+    <PropRisks_NCBProtRatePop>0</PropRisks_NCBProtRatePop>
+    <PropRisks_NCBRatePop>0</PropRisks_NCBRatePop>
+    <PropRisks_NCPrm>23486.75</PropRisks_NCPrm>
+    <PropRisks_NameOfNominee>qqqqq</PropRisks_NameOfNominee>
+    <PropRisks_Nepal>false</PropRisks_Nepal>
+    <PropRisks_NewCarReplacement>false</PropRisks_NewCarReplacement>
+    <PropRisks_NoClaimBonusApplicable>20</PropRisks_NoClaimBonusApplicable>
+    <PropRisks_NoOfClaimFreeYearsCompleted>1</PropRisks_NoOfClaimFreeYearsCompleted>
+    <PropRisks_NoOfPersonWiderLegalLiability>1</PropRisks_NoOfPersonWiderLegalLiability>
+    <PropRisks_NoOfPersonsLiabilityEmployee>0</PropRisks_NoOfPersonsLiabilityEmployee>
+    <PropRisks_NoOfPersonsNamed>0</PropRisks_NoOfPersonsNamed>
+    <PropRisks_NoOfPersonsPaidDriver>0</PropRisks_NoOfPersonsPaidDriver>
+    <PropRisks_NoOfSoldierSailorAirMan>0</PropRisks_NoOfSoldierSailorAirMan>
+    <PropRisks_NonElectricalAccessories>0</PropRisks_NonElectricalAccessories>
+    <PropRisks_NoofClmFreeYearCmpltdGLM>1</PropRisks_NoofClmFreeYearCmpltdGLM>
+    <PropRisks_NoofWheels>4</PropRisks_NoofWheels>
+    <PropRisks_NumberofPersonsUnnamed>0</PropRisks_NumberofPersonsUnnamed>
+    <PropRisks_Occupation />
+    <PropRisks_OpenCvrNo>false</PropRisks_OpenCvrNo>
+    <PropRisks_OriginalNCBPercentage>20</PropRisks_OriginalNCBPercentage>
+    <PropRisks_OtherChk1>false</PropRisks_OtherChk1>
+    <PropRisks_OtherChk2>false</PropRisks_OtherChk2>
+    <PropRisks_OtherChk3>false</PropRisks_OtherChk3>
+    <PropRisks_OtherChk4>false</PropRisks_OtherChk4>
+    <PropRisks_OtherInfo4>0</PropRisks_OtherInfo4>
+    <PropRisks_OtherInfoP>SLDocumentManagement.xap</PropRisks_OtherInfoP>
+    <PropRisks_OtherInformation11>NO 57 3RD MAIN ROAD PERUMAL NAGAR,OLD PALLAVARAM,CHENNAI,CHENNAI,TAMIL NADU,600117</PropRisks_OtherInformation11>
+    <PropRisks_OtherInformation12>NO 57 3RD MAIN ROAD PERUMAL NAGAR,OLD PALLAVARAM,CHENNAI,CHENNAI,TAMIL NADU,600117</PropRisks_OtherInformation12>
+    <PropRisks_OtherInformation13>22/01/1985</PropRisks_OtherInformation13>
+    <PropRisks_OtherInformation14>1800266454</PropRisks_OtherInformation14>
+    <PropRisks_OtherInformation1N>0</PropRisks_OtherInformation1N>
+    <PropRisks_OtherInformation1T />
+    <PropRisks_OtherInformation2n>0</PropRisks_OtherInformation2n>
+    <PropRisks_OtherInformation3T />
+    <PropRisks_OtherInformation4N>0</PropRisks_OtherInformation4N>
+    <PropRisks_OtherInformation4T />
+    <PropRisks_OtherInformation5N>0</PropRisks_OtherInformation5N>
+    <PropRisks_OtherNumeric11>23486.75</PropRisks_OtherNumeric11>
+    <PropRisks_OtherNumeric12>0</PropRisks_OtherNumeric12>
+    <PropRisks_Pakistan>false</PropRisks_Pakistan>
+    <PropRisks_PlaceofRegGLMDepCvr>1</PropRisks_PlaceofRegGLMDepCvr>
+    <PropRisks_PolicyAge>0</PropRisks_PolicyAge>
+    <PropRisks_PolicyAgeGLMMultiplier>1</PropRisks_PolicyAgeGLMMultiplier>
+    <PropRisks_PreInspectionNumber>789456</PropRisks_PreInspectionNumber>
+    <PropRisks_PrevYearNCB>0</PropRisks_PrevYearNCB>
+    <PropRisks_PromoterName>ffff</PropRisks_PromoterName>
+    <PropRisks_ProposalType>Rollover</PropRisks_ProposalType>
+    <PropRisks_RTOCluster>CATEGORY 7</PropRisks_RTOCluster>
+    <PropRisks_RTOClusterGLMMultiplier>0.9157</PropRisks_RTOClusterGLMMultiplier>
+    <PropRisks_RTOCode>21170</PropRisks_RTOCode>
+    <PropRisks_RallyCheck>false</PropRisks_RallyCheck>
+    <PropRisks_RateForReliabOD>0</PropRisks_RateForReliabOD>
+    <PropRisks_RateForReliabTP>0</PropRisks_RateForReliabTP>
+    <PropRisks_RegistrationNoAsPerOldLogic>true</PropRisks_RegistrationNoAsPerOldLogic>
+    <PropRisks_RegistrationNumber />
+    <PropRisks_RegistrationNumber2 />
+    <PropRisks_RegistrationNumber3 />
+    <PropRisks_RegistrationNumber4 />
+    <PropRisks_RegistrationNumber5 />
+    <PropRisks_Relationship>OTHERS</PropRisks_Relationship>
+    <PropRisks_ReliabilityTrialCheck>false</PropRisks_ReliabilityTrialCheck>
+    <PropRisks_Reliabilitytrialorracingdate />
+    <PropRisks_Reliabilitytrialorracingtodate />
+    <PropRisks_RestrictedToGarage>false</PropRisks_RestrictedToGarage>
+    <PropRisks_ReturnToInvoice>false</PropRisks_ReturnToInvoice>
+    <PropRisks_RiskVariant>ComprehensivePolicy</PropRisks_RiskVariant>
+    <PropRisks_RiskVariantSection />
+    <PropRisks_RoadSideAsistancePrm>0</PropRisks_RoadSideAsistancePrm>
+    <PropRisks_RoadsideAssistance>false</PropRisks_RoadsideAssistance>
+    <PropRisks_SeatingCapacity>5</PropRisks_SeatingCapacity>
+    <PropRisks_SourcingChannelGLMConsmCvr>0</PropRisks_SourcingChannelGLMConsmCvr>
+    <PropRisks_SourcingChannelGLMDepCvr>0</PropRisks_SourcingChannelGLMDepCvr>
+    <PropRisks_SourcingChannelGLMEngProt>0</PropRisks_SourcingChannelGLMEngProt>
+    <PropRisks_SourcingChannelGLMRetInv>0</PropRisks_SourcingChannelGLMRetInv>
+    <PropRisks_SpecialCondition>eeee</PropRisks_SpecialCondition>
+    <PropRisks_SriLanka>false</PropRisks_SriLanka>
+    <PropRisks_SumInsuredPaidDriver>0</PropRisks_SumInsuredPaidDriver>
+    <PropRisks_TACMakeCode />
+    <PropRisks_TPCoverCndtn>true</PropRisks_TPCoverCndtn>
+    <PropRisks_TPPDRestricted>false</PropRisks_TPPDRestricted>
+    <PropRisks_ToDateForRacing />
+    <PropRisks_ToDateForRallies />
+    <PropRisks_TotalInsuredDeclaredValue>1360683</PropRisks_TotalInsuredDeclaredValue>
+    <PropRisks_TrailerODPrm>0</PropRisks_TrailerODPrm>
+    <PropRisks_TrailerRegistrationNumber />
+    <PropRisks_TrailerchassisNumber />
+    <PropRisks_TypeOfRoad>Hilly Road</PropRisks_TypeOfRoad>
+    <PropRisks_TypeofPolicyHolder>Individual Owner</PropRisks_TypeofPolicyHolder>
+    <PropRisks_TypeofPolicyHolderGLM>1</PropRisks_TypeofPolicyHolderGLM>
+    <PropRisks_TypeofTransmission>MANNUAL</PropRisks_TypeofTransmission>
+    <PropRisks_Typeofbody />
+    <PropRisks_UserType />
+    <PropRisks_Variant />
+    <PropRisks_VariantCode>567</PropRisks_VariantCode>
+    <PropRisks_VehcleFitWithFibrGlasFuelTank>false</PropRisks_VehcleFitWithFibrGlasFuelTank>
+    <PropRisks_VehicelSegmentGLMConsmCvr>0</PropRisks_VehicelSegmentGLMConsmCvr>
+    <PropRisks_VehicelSegmentGLMEngProt>0</PropRisks_VehicelSegmentGLMEngProt>
+    <PropRisks_VehicelSegmentGLMRetInv>0</PropRisks_VehicelSegmentGLMRetInv>
+    <PropRisks_VehicleAgeGLMConsmCvr>0</PropRisks_VehicleAgeGLMConsmCvr>
+    <PropRisks_VehicleAgeGLMDepCvr>0</PropRisks_VehicleAgeGLMDepCvr>
+    <PropRisks_VehicleAgeGLMEngProt>0</PropRisks_VehicleAgeGLMEngProt>
+    <PropRisks_VehicleAgeGLMMultiplier>0.925</PropRisks_VehicleAgeGLMMultiplier>
+    <PropRisks_VehicleAge_Mandatary>1.164</PropRisks_VehicleAge_Mandatary>
+    <PropRisks_VehicleInspection>false</PropRisks_VehicleInspection>
+    <PropRisks_VehicleSegment>HIGH END CARS</PropRisks_VehicleSegment>
+    <PropRisks_VehicleSegmentGLMDepCvr>0</PropRisks_VehicleSegmentGLMDepCvr>
+    <PropRisks_VehicleSegmentGLMMultiplier>0.9</PropRisks_VehicleSegmentGLMMultiplier>
+    <PropRisks_VehicleSubTypeGLMMultiplier>0</PropRisks_VehicleSubTypeGLMMultiplier>
+    <PropRisks_VehicleType>Indigenous</PropRisks_VehicleType>
+    <PropRisks_VehicleTypeCode>45</PropRisks_VehicleTypeCode>
+    <PropRisks_VehicleUse>Driving Tuitions</PropRisks_VehicleUse>
+    <PropRisks_VlntryDedctbleFrDprctnCover>0</PropRisks_VlntryDedctbleFrDprctnCover>
+    <PropRisks_VolDepCoverDiscPrm>0</PropRisks_VolDepCoverDiscPrm>
+    <PropRisks_VoluntaryDeductGLMDepCvr>0</PropRisks_VoluntaryDeductGLMDepCvr>
+    <PropRisks_VoluntaryDeductibleAmount>0</PropRisks_VoluntaryDeductibleAmount>
+    <PropRisks_Whethervehicleisdeclined>false</PropRisks_Whethervehicleisdeclined>
+    <PropRisks_WiderLegalLiabilityToPaid>true</PropRisks_WiderLegalLiabilityToPaid>
+    <PropRisks_Zone_Mandatary>Zone-A</PropRisks_Zone_Mandatary>
+    <PropRisks_Col>
+      <Risks>
+        <PropRisks_VehicleSIComponent>Vehicle Base Value</PropRisks_VehicleSIComponent>
+        <PropRisks_SumInsured>1360683</PropRisks_SumInsured>
+        <PropRisks_CoverDetails_Col>
+          <Risks_CoverDetails>
+            <PropCoverDetails_Applicable>true</PropCoverDetails_Applicable>
+            <PropCoverDetails_BaseTariffRate>0</PropCoverDetails_BaseTariffRate>
+            <PropCoverDetails_Commission>0</PropCoverDetails_Commission>
+            <PropCoverDetails_CoverGroups>Basic TP  including TPPD premium</PropCoverDetails_CoverGroups>
+            <PropCoverDetails_CumEndSerTax>0</PropCoverDetails_CumEndSerTax>
+            <PropCoverDetails_CumalativEndPrem>0</PropCoverDetails_CumalativEndPrem>
+            <PropCoverDetails_CumulativePremium>0</PropCoverDetails_CumulativePremium>
+            <PropCoverDetails_CumulativeServicetax>0</PropCoverDetails_CumulativeServicetax>
+            <PropCoverDetails_DifferentialSI>750000</PropCoverDetails_DifferentialSI>
+            <PropCoverDetails_EndorsementAmount>7890</PropCoverDetails_EndorsementAmount>
+            <PropCoverDetails_FinalRate>0</PropCoverDetails_FinalRate>
+            <PropCoverDetails_IsDataDeleted>false</PropCoverDetails_IsDataDeleted>
+            <PropCoverDetails_IsOldDataDeleted>false</PropCoverDetails_IsOldDataDeleted>
+            <PropCoverDetails_LoadingDiscount_Col />
+            <PropCoverDetails_MMCPCode />
+            <PropCoverDetails_Premium>7890</PropCoverDetails_Premium>
+            <PropCoverDetails_Rate>7890</PropCoverDetails_Rate>
+            <PropCoverDetails_SumInsured>750000</PropCoverDetails_SumInsured>
+            <PropCoverDetails_TariffRate>7890</PropCoverDetails_TariffRate>
+            <ExtensionData />
+          </Risks_CoverDetails>
+          <Risks_CoverDetails>
+            <PropCoverDetails_Applicable>true</PropCoverDetails_Applicable>
+            <PropCoverDetails_BaseTariffRate>0</PropCoverDetails_BaseTariffRate>
+            <PropCoverDetails_Commission>8</PropCoverDetails_Commission>
+            <PropCoverDetails_CoverGroups>Own Damage</PropCoverDetails_CoverGroups>
+            <PropCoverDetails_CumEndSerTax>0</PropCoverDetails_CumEndSerTax>
+            <PropCoverDetails_CumalativEndPrem>0</PropCoverDetails_CumalativEndPrem>
+            <PropCoverDetails_CumulativePremium>0</PropCoverDetails_CumulativePremium>
+            <PropCoverDetails_CumulativeServicetax>0</PropCoverDetails_CumulativeServicetax>
+            <PropCoverDetails_DifferentialSI>1360683</PropCoverDetails_DifferentialSI>
+            <PropCoverDetails_EndorsementAmount>23486.75</PropCoverDetails_EndorsementAmount>
+            <PropCoverDetails_FinalRate>0</PropCoverDetails_FinalRate>
+            <PropCoverDetails_IsDataDeleted>false</PropCoverDetails_IsDataDeleted>
+            <PropCoverDetails_IsOldDataDeleted>false</PropCoverDetails_IsOldDataDeleted>
+            <PropCoverDetails_LoadingDiscount_Col />
+            <PropCoverDetails_MMCPCode />
+            <PropCoverDetails_Premium>23486.75</PropCoverDetails_Premium>
+            <PropCoverDetails_Rate>1.7261</PropCoverDetails_Rate>
+            <PropCoverDetails_SumInsured>1360683</PropCoverDetails_SumInsured>
+            <PropCoverDetails_TariffRate>1.7261</PropCoverDetails_TariffRate>
+            <ExtensionData />
+          </Risks_CoverDetails>
+          <Risks_CoverDetails>
+            <PropCoverDetails_Applicable>true</PropCoverDetails_Applicable>
+            <PropCoverDetails_BaseTariffRate>0</PropCoverDetails_BaseTariffRate>
+            <PropCoverDetails_Commission>0</PropCoverDetails_Commission>
+            <PropCoverDetails_CoverGroups>Legal Liability for paid driver cleaner conductor</PropCoverDetails_CoverGroups>
+            <PropCoverDetails_CumEndSerTax>0</PropCoverDetails_CumEndSerTax>
+            <PropCoverDetails_CumalativEndPrem>0</PropCoverDetails_CumalativEndPrem>
+            <PropCoverDetails_CumulativePremium>0</PropCoverDetails_CumulativePremium>
+            <PropCoverDetails_CumulativeServicetax>0</PropCoverDetails_CumulativeServicetax>
+            <PropCoverDetails_DifferentialSI>0</PropCoverDetails_DifferentialSI>
+            <PropCoverDetails_EndorsementAmount>50</PropCoverDetails_EndorsementAmount>
+            <PropCoverDetails_FinalRate>0</PropCoverDetails_FinalRate>
+            <PropCoverDetails_IsDataDeleted>false</PropCoverDetails_IsDataDeleted>
+            <PropCoverDetails_IsOldDataDeleted>false</PropCoverDetails_IsOldDataDeleted>
+            <PropCoverDetails_LoadingDiscount_Col />
+            <PropCoverDetails_MMCPCode />
+            <PropCoverDetails_Premium>50</PropCoverDetails_Premium>
+            <PropCoverDetails_Rate>50</PropCoverDetails_Rate>
+            <PropCoverDetails_SumInsured>0</PropCoverDetails_SumInsured>
+            <PropCoverDetails_TariffRate>50</PropCoverDetails_TariffRate>
+            <ExtensionData />
+          </Risks_CoverDetails>
+          <Risks_CoverDetails>
+            <PropCoverDetails_Applicable>true</PropCoverDetails_Applicable>
+            <PropCoverDetails_BaseTariffRate>0</PropCoverDetails_BaseTariffRate>
+            <PropCoverDetails_Commission>0</PropCoverDetails_Commission>
+            <PropCoverDetails_CoverGroups>Owner Driver</PropCoverDetails_CoverGroups>
+            <PropCoverDetails_CumEndSerTax>0</PropCoverDetails_CumEndSerTax>
+            <PropCoverDetails_CumalativEndPrem>0</PropCoverDetails_CumalativEndPrem>
+            <PropCoverDetails_CumulativePremium>0</PropCoverDetails_CumulativePremium>
+            <PropCoverDetails_CumulativeServicetax>0</PropCoverDetails_CumulativeServicetax>
+            <PropCoverDetails_DifferentialSI>200000</PropCoverDetails_DifferentialSI>
+            <PropCoverDetails_EndorsementAmount>100</PropCoverDetails_EndorsementAmount>
+            <PropCoverDetails_FinalRate>0</PropCoverDetails_FinalRate>
+            <PropCoverDetails_IsDataDeleted>false</PropCoverDetails_IsDataDeleted>
+            <PropCoverDetails_IsOldDataDeleted>false</PropCoverDetails_IsOldDataDeleted>
+            <PropCoverDetails_LoadingDiscount_Col />
+            <PropCoverDetails_MMCPCode />
+            <PropCoverDetails_Premium>100</PropCoverDetails_Premium>
+            <PropCoverDetails_Rate>100</PropCoverDetails_Rate>
+            <PropCoverDetails_SumInsured>200000</PropCoverDetails_SumInsured>
+            <PropCoverDetails_TariffRate>100</PropCoverDetails_TariffRate>
+            <ExtensionData />
+          </Risks_CoverDetails>
+        </PropRisks_CoverDetails_Col>
+        <IsOptionalCover>false</IsOptionalCover>
+        <ExtensionData />
+        <PropRisks_DifferentialSI>1360683</PropRisks_DifferentialSI>
+        <PropRisks_EndorsementAmount>31526.75</PropRisks_EndorsementAmount>
+        <PropRisks_IsDataDeleted>false</PropRisks_IsDataDeleted>
+        <PropRisks_IsOldDataDeleted>false</PropRisks_IsOldDataDeleted>
+        <PropRisks_Premium>31526.75</PropRisks_Premium>
+        <PropRisks_Rate>0</PropRisks_Rate>
+      </Risks>
+    </PropRisks_Col>
+    <PropGeneralProposal_PreviousPolicyDetails_Col>
+      <GeneralProposal_PreviousPolicyDetails>
+        <PropPreviousPolicyDetails_AmountOfClaimsReject>0</PropPreviousPolicyDetails_AmountOfClaimsReject>
+        <PropPreviousPolicyDetails_ClaimAmount>0</PropPreviousPolicyDetails_ClaimAmount>
+        <PropPreviousPolicyDetails_ClaimLodgedInPast>false</PropPreviousPolicyDetails_ClaimLodgedInPast>
+        <PropPreviousPolicyDetails_ClaimNo>0</PropPreviousPolicyDetails_ClaimNo>
+        <PropPreviousPolicyDetails_ClaimOutstanding>0</PropPreviousPolicyDetails_ClaimOutstanding>
+        <PropPreviousPolicyDetails_ClaimPremium>0</PropPreviousPolicyDetails_ClaimPremium>
+        <PropPreviousPolicyDetails_ClaimSettled>0</PropPreviousPolicyDetails_ClaimSettled>
+        <PropPreviousPolicyDetails_CorporateCustomerId_Mandatary>BAJAJ ALLIANZ</PropPreviousPolicyDetails_CorporateCustomerId_Mandatary>
+        <PropPreviousPolicyDetails_Deductibles>0</PropPreviousPolicyDetails_Deductibles>
+        <PropPreviousPolicyDetails_DiscountonPremiumoffered>0</PropPreviousPolicyDetails_DiscountonPremiumoffered>
+        <PropPreviousPolicyDetails_DocumentProof>No Claim</PropPreviousPolicyDetails_DocumentProof>
+        <PropPreviousPolicyDetails_IncurredClaimRatio>0</PropPreviousPolicyDetails_IncurredClaimRatio>
+        <PropPreviousPolicyDetails_InspectionDone>false</PropPreviousPolicyDetails_InspectionDone>
+        <PropPreviousPolicyDetails_IsDataDeleted>false</PropPreviousPolicyDetails_IsDataDeleted>
+        <PropPreviousPolicyDetails_IsOldDataDeleted>false</PropPreviousPolicyDetails_IsOldDataDeleted>
+        <PropPreviousPolicyDetails_NCBAbroadCheck>false</PropPreviousPolicyDetails_NCBAbroadCheck>
+        <PropPreviousPolicyDetails_NoOfClaimsOutStanding>0</PropPreviousPolicyDetails_NoOfClaimsOutStanding>
+        <PropPreviousPolicyDetails_NoOfClaimsPaid>0</PropPreviousPolicyDetails_NoOfClaimsPaid>
+        <PropPreviousPolicyDetails_NoOfClaimsReject>0</PropPreviousPolicyDetails_NoOfClaimsReject>
+        <PropPreviousPolicyDetails_NoOfInsuredAtEnd>0</PropPreviousPolicyDetails_NoOfInsuredAtEnd>
+        <PropPreviousPolicyDetails_NoOfInsuredCovered>0</PropPreviousPolicyDetails_NoOfInsuredCovered>
+        <PropPreviousPolicyDetails_OfficeAddress>aaaaaa</PropPreviousPolicyDetails_OfficeAddress>
+        <PropPreviousPolicyDetails_PolicyPremium>0</PropPreviousPolicyDetails_PolicyPremium>
+        <PropPreviousPolicyDetails_PolicyYear_Mandatary>2016</PropPreviousPolicyDetails_PolicyYear_Mandatary>
+        <PropPreviousPolicyDetails_ProductCode>0</PropPreviousPolicyDetails_ProductCode>
+        <PropPreviousPolicyDetails_SumInsuredOpted>0</PropPreviousPolicyDetails_SumInsuredOpted>
+        <PropPreviousPolicyDetails_SumInsuredPerFamily>0</PropPreviousPolicyDetails_SumInsuredPerFamily>
+        <PropPreviousPolicyDetails_TotalClaimsAmount>0</PropPreviousPolicyDetails_TotalClaimsAmount>
+        <PropPreviousPolicyDetails_VehicleSold>false</PropPreviousPolicyDetails_VehicleSold>
+        <PropPreviousPolicyDetails_WhtrPrevPolicyCpySubmitted>false</PropPreviousPolicyDetails_WhtrPrevPolicyCpySubmitted>
+        <ExtensionData />
+        <PropPreviousPolicyDetails_AddressLine2 />
+        <PropPreviousPolicyDetails_AddressLine3 />
+        <PropPreviousPolicyDetails_City />
+        <PropPreviousPolicyDetails_ClaimDate />
+        <PropPreviousPolicyDetails_ClaimReconDate />
+        <PropPreviousPolicyDetails_ClaimsMode />
+        <PropPreviousPolicyDetails_Currency />
+        <PropPreviousPolicyDetails_DateofLoss />
+        <PropPreviousPolicyDetails_DateofSale />
+        <PropPreviousPolicyDetails_DurationOfInterruption />
+        <PropPreviousPolicyDetails_FullPartiIncdtThreats />
+        <PropPreviousPolicyDetails_InspectionDate />
+        <PropPreviousPolicyDetails_InspectionDoneByWhom />
+        <PropPreviousPolicyDetails_IssuingOfficeCode />
+        <PropPreviousPolicyDetails_NameOfTPA />
+        <PropPreviousPolicyDetails_NatureOfDisease />
+        <PropPreviousPolicyDetails_NatureofLoss />
+        <PropPreviousPolicyDetails_NoOfClaims>No Claim</PropPreviousPolicyDetails_NoOfClaims>
+        <PropPreviousPolicyDetails_OfficeCode />
+        <PropPreviousPolicyDetails_PinCode />
+        <PropPreviousPolicyDetails_PolicyEffectiveFrom>13/07/2016</PropPreviousPolicyDetails_PolicyEffectiveFrom>
+        <PropPreviousPolicyDetails_PolicyEffectiveTo>12/07/2017</PropPreviousPolicyDetails_PolicyEffectiveTo>
+        <PropPreviousPolicyDetails_PolicyNo>11223344</PropPreviousPolicyDetails_PolicyNo>
+        <PropPreviousPolicyDetails_PolicyVariant />
+        <PropPreviousPolicyDetails_PreviousInsPincode />
+        <PropPreviousPolicyDetails_QuantumOfClaim />
+        <PropPreviousPolicyDetails_ReasonForNotRenewing />
+        <PropPreviousPolicyDetails_ReferenceNo />
+        <PropPreviousPolicyDetails_RiskCode />
+        <PropPreviousPolicyDetails_State />
+        <PropPreviousPolicyDetails_StpsTknDelInciThrtsPvntRec />
+        <PropPreviousPolicyDetails_claimreportedorsetteled />
+      </GeneralProposal_PreviousPolicyDetails>
+    </PropGeneralProposal_PreviousPolicyDetails_Col>
+    <PropGeneralProposalInformation_TypeOfTax>GST</PropGeneralProposalInformation_TypeOfTax>
+    <PropGeneralProposalInformation_PolicyIssueOfficeCode>0002</PropGeneralProposalInformation_PolicyIssueOfficeCode>
+    <PropGeneralProposalInformation_PolicyIssueOfficeName>MUMBAI (KALINA)</PropGeneralProposalInformation_PolicyIssueOfficeName>
+    <ErrorTrackingNeeded>false</ErrorTrackingNeeded>
+    <ProductType>SB</ProductType>
+    <PropBranchDetails_IMDBranchCode />
+    <PropBranchDetails_IMDBranchName />
+    <PropCalculation_CalculateRate>true</PropCalculation_CalculateRate>
+    <PropCalculation_Validate>true</PropCalculation_Validate>
+    <PropCalculation_ValidateData>false</PropCalculation_ValidateData>
+    <PropClauseDetails_Component51 />
+    <PropClauseDetails_DepartmentCode_Mandatary>0</PropClauseDetails_DepartmentCode_Mandatary>
+    <PropClauseDetails_ProductCode_Mandatary>0</PropClauseDetails_ProductCode_Mandatary>
+    <PropClauseDetails_SectionCode />
+    <PropCoinsuranceDetails_AddRow>true</PropCoinsuranceDetails_AddRow>
+    <PropCoinsuranceDetails_CoinsuranceType />
+    <PropCoinsuranceDetails_Commissiontobepaidbytheleader>false</PropCoinsuranceDetails_Commissiontobepaidbytheleader>
+    <PropCoinsuranceDetails_PolicyNooftheleader />
+    <PropCoinsuranceDetails_ReferenceNumber />
+    <PropCoinsuranceDetails_SERVTAXCOMMRCVRLEADER>false</PropCoinsuranceDetails_SERVTAXCOMMRCVRLEADER>
+    <PropCoinsuranceDetails_Servicetaxtobepaidbytheleader>true</PropCoinsuranceDetails_Servicetaxtobepaidbytheleader>
+    <PropCoinsuranceDetails_Validate />
+    <PropConditionDetails_ConditionDescription />
+    <PropConditionDetails_DepartmentCode>0</PropConditionDetails_DepartmentCode>
+    <PropConditionDetails_ProductCode>0</PropConditionDetails_ProductCode>
+    <PropConditionDetails_SectionCode />
+    <PropConditionDetails_SpecialConditionDescription />
+    <PropCoverNoteDetails_CoverNoteBookNo />
+    <PropCoverNoteDetails_CoverNoteLeafNo />
+    <PropCoverNoteDetails_IssuedOnDt />
+    <PropCoverNoteDetails_IsuedonTime />
+    <PropCoverNoteDetails_LeafNo>0</PropCoverNoteDetails_LeafNo>
+    <PropCoverNoteDetails_RecievedOn />
+    <PropCoverNoteDetails_Validate>true</PropCoverNoteDetails_Validate>
+    <PropCustomerDtls_CustomerID_Mandatary>1000115747</PropCustomerDtls_CustomerID_Mandatary>
+    <PropCustomerDtls_CustomerName>DUMMY IND</PropCustomerDtls_CustomerName>
+    <PropCustomerDtls_CustomerType>I</PropCustomerDtls_CustomerType>
+    <PropCustomerDtls_PayeeCustomerID />
+    <PropCustomerDtls_PayeeCustomerName />
+    <PropCustomerReferenceInfo_OldPolicyNumber />
+    <PropCustomerReferenceInfo_PolicyConversionDate />
+    <PropDistributionChannel_BranchDetails />
+    <PropDistributionChannel_BusineeChannelBrunch />
+    <PropDistributionChannel_BusineeChanneltype>BANCASSURANCE</PropDistributionChannel_BusineeChanneltype>
+    <PropDistributionChannel_BusinessServicingChannelType />
+    <PropDistributionChannel_BusinessSharingPercent>0</PropDistributionChannel_BusinessSharingPercent>
+    <PropDistributionChannel_BusinessSource_Mandatary>INTERMEDIARY</PropDistributionChannel_BusinessSource_Mandatary>
+    <PropDistributionChannel_BusinessSourcetype />
+    <PropDistributionChannel_Commision>8</PropDistributionChannel_Commision>
+    <PropDistributionChannel_EndorsementDtls />
+    <PropDistributionChannel_FieldUserDetails />
+    <PropDistributionChannel_FolderFilePath />
+    <PropDistributionChannel_IntermediaryDetails />
+    <PropDistributionChannel_MODetails />
+    <PropDistributionChannel_OperationMode>NEWPOLICY</PropDistributionChannel_OperationMode>
+    <PropDistributionChannel_SPDetails />
+    <PropDistributionChannel_SerIntermediaryDetails />
+    <PropDistributionChannel_ServiceProvider>0</PropDistributionChannel_ServiceProvider>
+    <PropDistributionChannel_SpecialDiscount>100</PropDistributionChannel_SpecialDiscount>
+    <PropDistributionChannel_TERRORISMCOMMISSION>0</PropDistributionChannel_TERRORISMCOMMISSION>
+    <PropDistributionChannel_Validate>false</PropDistributionChannel_Validate>
+    <PropDistributionChannel_VerticalDtls />
+    <PropEndorsementDtls_CancelDueToClaim>false</PropEndorsementDtls_CancelDueToClaim>
+    <PropEndorsementDtls_CancellationOption />
+    <PropEndorsementDtls_CancellationReason />
+    <PropEndorsementDtls_CertificateofVintageCar>false</PropEndorsementDtls_CertificateofVintageCar>
+    <PropEndorsementDtls_CoverType />
+    <PropEndorsementDtls_DataEntryError>false</PropEndorsementDtls_DataEntryError>
+    <PropEndorsementDtls_DateofEndfrominsured />
+    <PropEndorsementDtls_Description />
+    <PropEndorsementDtls_DocForCommPrivate>false</PropEndorsementDtls_DocForCommPrivate>
+    <PropEndorsementDtls_DocOfRequisition />
+    <PropEndorsementDtls_DocProofothersspecify />
+    <PropEndorsementDtls_DocproofforNCB />
+    <PropEndorsementDtls_DoubleINSOption>Automatic</PropEndorsementDtls_DoubleINSOption>
+    <PropEndorsementDtls_EndorsementTypeCode>0</PropEndorsementDtls_EndorsementTypeCode>
+    <PropEndorsementDtls_INSCoName />
+    <PropEndorsementDtls_INSCoOffCodeAdd />
+    <PropEndorsementDtls_IsSellerInsured>true</PropEndorsementDtls_IsSellerInsured>
+    <PropEndorsementDtls_LaidUpFromDate />
+    <PropEndorsementDtls_LaidUpToDate />
+    <PropEndorsementDtls_LaidupVehicleCheck>false</PropEndorsementDtls_LaidupVehicleCheck>
+    <PropEndorsementDtls_MajorRepairRenovation>false</PropEndorsementDtls_MajorRepairRenovation>
+    <PropEndorsementDtls_NOCFinancier>false</PropEndorsementDtls_NOCFinancier>
+    <PropEndorsementDtls_PolicyFrom />
+    <PropEndorsementDtls_PolicyIssueDate />
+    <PropEndorsementDtls_PolicyNo />
+    <PropEndorsementDtls_PolicyTo />
+    <PropEndorsementDtls_Reasonfornametransfer />
+    <PropEndorsementDtls_SICCode />
+    <PropEndorsementDtls_SICName />
+    <PropEndorsementDtls_TypeOfTransfer />
+    <PropEndorsementDtls_TypeofEndorsement />
+    <PropEndorsementDtls_UFormFromDate />
+    <PropEndorsementDtls_UFormToDate />
+    <PropEndorsementDtls_UsageinInsuredPremises>false</PropEndorsementDtls_UsageinInsuredPremises>
+    <PropEndorsementDtls_ValuationReport>true</PropEndorsementDtls_ValuationReport>
+    <PropEndorsementDtls_VehicleLaidUptype />
+    <PropEndorsementDtls_orgcertificatesurrendered>false</PropEndorsementDtls_orgcertificatesurrendered>
+    <PropEndorsementEffectiveDate_EffectiveDate />
+    <PropEndorsementEffectiveDate_EffectiveTime />
+    <PropExclusionDetails_DepartmentCode>0</PropExclusionDetails_DepartmentCode>
+    <PropExclusionDetails_ProductCode>0</PropExclusionDetails_ProductCode>
+    <PropExclusionDetails_SectionCode />
+    <PropFees_PPCFee>0</PropFees_PPCFee>
+    <PropFieldUserDetails_FieldUserCode />
+    <PropFieldUserDetails_FieldUserLocation />
+    <PropFieldUserDetails_FieldUserName />
+    <PropFieldUserDetails_FieldUserVertical />
+    <PropFieldUserDetails_FiledUserUserID />
+    <PropFinancierDetails_AddRow>false</PropFinancierDetails_AddRow>
+    <PropFinancierDetails_FinancierCodeGenerator>false</PropFinancierDetails_FinancierCodeGenerator>
+    <PropFinancierDetails_Validate>true</PropFinancierDetails_Validate>
+    <PropGeneralNodes_ApplicationDate>13/07/2017</PropGeneralNodes_ApplicationDate>
+    <PropGeneralNodes_ApplicationNo>10201800165343</PropGeneralNodes_ApplicationNo>
+    <PropGeneralNodes_ParentCompanyName />
+    <PropGeneralNodes_PartnerApplicationDate />
+    <PropGeneralNodes_PartnerReferanceNO />
+    <PropGeneralNodes_RIInwardSharePercentage>0</PropGeneralNodes_RIInwardSharePercentage>
+    <PropGeneralProposalGroup_CoverNoteDetails />
+    <PropGeneralProposalGroup_DistributionChannel />
+    <PropGeneralProposalGroup_Fees />
+    <PropGeneralProposalGroup_GeneralProposalInformation />
+    <PropGeneralProposalInformation_ActiveFlag>YES</PropGeneralProposalInformation_ActiveFlag>
+    <PropGeneralProposalInformation_ApplicationNumber />
+    <PropGeneralProposalInformation_BankID>0</PropGeneralProposalInformation_BankID>
+    <PropGeneralProposalInformation_BlnEndtNoBlock>false</PropGeneralProposalInformation_BlnEndtNoBlock>
+    <PropGeneralProposalInformation_BranchInwardDate />
+    <PropGeneralProposalInformation_BranchInwardNumber>KP000116022500013</PropGeneralProposalInformation_BranchInwardNumber>
+    <PropGeneralProposalInformation_BranchOfficeCode>90002</PropGeneralProposalInformation_BranchOfficeCode>
+    <PropGeneralProposalInformation_BusinessSourceInfo />
+    <PropGeneralProposalInformation_BusinessType_Mandatary>Roll Over</PropGeneralProposalInformation_BusinessType_Mandatary>
+    <PropGeneralProposalInformation_CertificateNumber />
+    <PropGeneralProposalInformation_ChannelNumber />
+    <PropGeneralProposalInformation_CoverNotePlace />
+    <PropGeneralProposalInformation_CovernoteGenType>AUTO</PropGeneralProposalInformation_CovernoteGenType>
+    <PropGeneralProposalInformation_CustomerDtls />
+    <PropGeneralProposalInformation_CustomerReferenceInfo />
+    <PropGeneralProposalInformation_DayDiff>365</PropGeneralProposalInformation_DayDiff>
+    <PropGeneralProposalInformation_DealId />
+    <PropGeneralProposalInformation_DepartmentCode>31</PropGeneralProposalInformation_DepartmentCode>
+    <PropGeneralProposalInformation_DepartmentName />
+    <PropGeneralProposalInformation_DisplayOfficeCode>0002</PropGeneralProposalInformation_DisplayOfficeCode>
+    <PropGeneralProposalInformation_DisplayStatus />
+    <PropGeneralProposalInformation_EmployeeName />
+    <PropGeneralProposalInformation_EndorsementDescription />
+    <PropGeneralProposalInformation_EndorsementEffectiveDate />
+    <PropGeneralProposalInformation_EndorsementNo>0</PropGeneralProposalInformation_EndorsementNo>
+    <PropGeneralProposalInformation_EndorsementRequestType />
+    <PropGeneralProposalInformation_EndorsementRequestTypeCode />
+    <PropGeneralProposalInformation_EndorsementSi>1360683</PropGeneralProposalInformation_EndorsementSi>
+    <PropGeneralProposalInformation_EndorsementType />
+    <PropGeneralProposalInformation_EndorsementWording />
+    <PropGeneralProposalInformation_FrontingCompany />
+    <PropGeneralProposalInformation_IfOthersProvideReason />
+    <PropGeneralProposalInformation_IndustryCode />
+    <PropGeneralProposalInformation_InternalUWComments>cccc</PropGeneralProposalInformation_InternalUWComments>
+    <PropGeneralProposalInformation_InwardNo />
+    <PropGeneralProposalInformation_IsNCBApplicable>true</PropGeneralProposalInformation_IsNCBApplicable>
+    <PropGeneralProposalInformation_IsSPCalcByDayDiffReqd />
+    <PropGeneralProposalInformation_LeadGenerator>bbbb</PropGeneralProposalInformation_LeadGenerator>
+    <PropGeneralProposalInformation_ManualCovernoteNo />
+    <PropGeneralProposalInformation_MasterPolicy />
+    <PropGeneralProposalInformation_MasterPolicyVersion />
+    <PropGeneralProposalInformation_MethodOfCalculation>12345</PropGeneralProposalInformation_MethodOfCalculation>
+    <PropGeneralProposalInformation_NCBpercentage>0</PropGeneralProposalInformation_NCBpercentage>
+    <PropGeneralProposalInformation_NextB>false</PropGeneralProposalInformation_NextB>
+    <PropGeneralProposalInformation_NoPrevInsuranceFlag>false</PropGeneralProposalInformation_NoPrevInsuranceFlag>
+    <PropGeneralProposalInformation_NonLiablePeriod />
+    <PropGeneralProposalInformation_NumCovernoteNo>0</PropGeneralProposalInformation_NumCovernoteNo>
+    <PropGeneralProposalInformation_OfficeCode>90002</PropGeneralProposalInformation_OfficeCode>
+    <PropGeneralProposalInformation_OfficeName>MUMBAI-KALINA</PropGeneralProposalInformation_OfficeName>
+    <PropGeneralProposalInformation_OldCovernoteNo />
+    <PropGeneralProposalInformation_OpsSalesPartnerUserComments>dddd</PropGeneralProposalInformation_OpsSalesPartnerUserComments>
+    <PropGeneralProposalInformation_OptionForCalculation>Yearly</PropGeneralProposalInformation_OptionForCalculation>
+    <PropGeneralProposalInformation_PolicyCurrency />
+    <PropGeneralProposalInformation_PolicyEffectivedate>13/07/2017</PropGeneralProposalInformation_PolicyEffectivedate>
+    <PropGeneralProposalInformation_PolicyNo>0</PropGeneralProposalInformation_PolicyNo>
+    <PropGeneralProposalInformation_PolicyNumberChar />
+    <PropGeneralProposalInformation_PolicySchedule_Mandatary>Yes</PropGeneralProposalInformation_PolicySchedule_Mandatary>
+    <PropGeneralProposalInformation_PolicyTerm />
+    <PropGeneralProposalInformation_PrintingType>With Policy Wording</PropGeneralProposalInformation_PrintingType>
+    <PropGeneralProposalInformation_ProductCode>3121</PropGeneralProposalInformation_ProductCode>
+    <PropGeneralProposalInformation_ProductName />
+    <PropGeneralProposalInformation_ProposalDate_Mandatary>13/07/2017</PropGeneralProposalInformation_ProposalDate_Mandatary>
+    <PropGeneralProposalInformation_ProposalFormNumber />
+    <PropGeneralProposalInformation_ProvisionalBooking />
+    <PropGeneralProposalInformation_ProvisionalBookingReason />
+    <PropGeneralProposalInformation_QuickId />
+    <PropGeneralProposalInformation_QuoteNumber />
+    <PropGeneralProposalInformation_ReInsuranceInward>false</PropGeneralProposalInformation_ReInsuranceInward>
+    <PropGeneralProposalInformation_ReSharePer />
+    <PropGeneralProposalInformation_ReferenceNoDate />
+    <PropGeneralProposalInformation_ReferralCode />
+    <PropGeneralProposalInformation_RelationshipType />
+    <PropGeneralProposalInformation_Remarks />
+    <PropGeneralProposalInformation_RetainCancellationPremium />
+    <PropGeneralProposalInformation_SalesTax />
+    <PropGeneralProposalInformation_Sector_Mandatary>Urban</PropGeneralProposalInformation_Sector_Mandatary>
+    <PropGeneralProposalInformation_SerDealId />
+    <PropGeneralProposalInformation_ServiceTaxExemption>false</PropGeneralProposalInformation_ServiceTaxExemption>
+    <PropGeneralProposalInformation_ServiceTaxExemptionCategory_Mandatary>No Exemption</PropGeneralProposalInformation_ServiceTaxExemptionCategory_Mandatary>
+    <PropGeneralProposalInformation_ServiceTaxExemptionReason>No Exemption</PropGeneralProposalInformation_ServiceTaxExemptionReason>
+    <PropGeneralProposalInformation_SourceOfTransaction>aaaa</PropGeneralProposalInformation_SourceOfTransaction>
+    <PropGeneralProposalInformation_TotalSi>1360683</PropGeneralProposalInformation_TotalSi>
+    <PropGeneralProposalInformation_TypeOfBusiness />
+    <PropGeneralProposalInformation_TypeOfCalculation />
+    <PropGeneralProposalInformation_TypeOfIndustry />
+    <PropGeneralProposalInformation_TypeOfPolicy>SYSTEM</PropGeneralProposalInformation_TypeOfPolicy>
+    <PropGeneralProposalInformation_TypeofCancellation />
+    <PropGeneralProposalInformation_UWLocation />
+    <PropGeneralProposalInformation_UWLocationCode />
+    <PropGeneralProposalInformation_ValidationFlag />
+    <PropGeneralProposalInformation_ValuationReport>false</PropGeneralProposalInformation_ValuationReport>
+    <PropGeneralProposalInformation_VehicleLaidUpFrom />
+    <PropGeneralProposalInformation_VehicleLaidUpTo />
+    <PropGeneralProposalInformation_covernoteissuedate />
+    <PropGeneralProposalInformation_covernoteissuetime />
+    <PropGeneralProposalInformation_disprntoffcd />
+    <PropGeneralProposalInformation_iscovernoteused>false</PropGeneralProposalInformation_iscovernoteused>
+    <PropGeneralProposalInformation_numTotalFee>0</PropGeneralProposalInformation_numTotalFee>
+    <PropGeneralProposal_GeneralProposalGroup />
+    <PropGeneralProposal_IsCustomWorkflowCondition>VI,PG,UW,PR</PropGeneralProposal_IsCustomWorkflowCondition>
+    <PropHigherExcessDiscount_HE_Disc_RateType_In>0</PropHigherExcessDiscount_HE_Disc_RateType_In>
+    <PropIntermediaryDetails_BrokeragePercentage />
+    <PropIntermediaryDetails_IntermediaryCityCode />
+    <PropIntermediaryDetails_IntermediaryCityName />
+    <PropIntermediaryDetails_IntermediaryCode>1101550000</PropIntermediaryDetails_IntermediaryCode>
+    <PropIntermediaryDetails_IntermediaryName>Kotak Mahindra Bank Ltd</PropIntermediaryDetails_IntermediaryName>
+    <PropIntermediaryDetails_IntermediaryType>BROKER</PropIntermediaryDetails_IntermediaryType>
+    <PropMODetails_PrimaryMOCode>438</PropMODetails_PrimaryMOCode>
+    <PropMODetails_PrimaryMOName>JAYESH  SANSARE</PropMODetails_PrimaryMOName>
+    <PropMODetails_SecondaryMOCode />
+    <PropMODetails_SecondaryMOLocation />
+    <PropMODetails_SecondaryMOName />
+    <PropMODetails_TertiaryMOCode />
+    <PropMODetails_TertiaryMOName />
+    <PropMotorOtherNodes_AfterFetch />
+    <PropMotorOtherNodes_CancelationDetail />
+    <PropMotorOtherNodes_EndorsementDtls />
+    <PropMotorOtherNodes_GeneralNodes />
+    <PropMotorOtherNodes_validate_aftercalc>True</PropMotorOtherNodes_validate_aftercalc>
+    <PropMotorOtherNodes_validate_beforecalc />
+    <PropNonLiablePeriod_NonLiableEndTime />
+    <PropNonLiablePeriod_NonLiableFromDate />
+    <PropNonLiablePeriod_NonLiableStartTime />
+    <PropNonLiablePeriod_NonLiableToDate />
+    <PropParameters_AddClause>false</PropParameters_AddClause>
+    <PropParameters_AddCondition>false</PropParameters_AddCondition>
+    <PropParameters_AddExclusion>false</PropParameters_AddExclusion>
+    <PropParameters_AddWarranty>false</PropParameters_AddWarranty>
+    <PropParameters_AfterFetch>true</PropParameters_AfterFetch>
+    <PropParameters_ClauseApplicable>true</PropParameters_ClauseApplicable>
+    <PropParameters_CoInsuranceApplicability>true</PropParameters_CoInsuranceApplicability>
+    <PropParameters_CommissionApplicable>true</PropParameters_CommissionApplicable>
+    <PropParameters_ConditionApplicable>true</PropParameters_ConditionApplicable>
+    <PropParameters_CoverNoteApplicability>true</PropParameters_CoverNoteApplicability>
+    <PropParameters_EQHigherExcessDiscount>false</PropParameters_EQHigherExcessDiscount>
+    <PropParameters_ExclusionApplicable>true</PropParameters_ExclusionApplicable>
+    <PropParameters_FamilyPackageDiscount>false</PropParameters_FamilyPackageDiscount>
+    <PropParameters_FinancierApplicability>true</PropParameters_FinancierApplicability>
+    <PropParameters_FloaterRiskLoading>false</PropParameters_FloaterRiskLoading>
+    <PropParameters_GroupDiscount>false</PropParameters_GroupDiscount>
+    <PropParameters_HighClaimLoading>false</PropParameters_HighClaimLoading>
+    <PropParameters_HigherExcessDiscount>false</PropParameters_HigherExcessDiscount>
+    <PropParameters_Installment>false</PropParameters_Installment>
+    <PropParameters_LongTermPolicy>false</PropParameters_LongTermPolicy>
+    <PropParameters_LowClaimDiscount>false</PropParameters_LowClaimDiscount>
+    <PropParameters_MinimumPremium>true</PropParameters_MinimumPremium>
+    <PropParameters_NoClaimDiscount>false</PropParameters_NoClaimDiscount>
+    <PropParameters_OverageLoading>false</PropParameters_OverageLoading>
+    <PropParameters_PasPolicyApplicable />
+    <PropParameters_PastPolicyApplicable>false</PropParameters_PastPolicyApplicable>
+    <PropParameters_PolicyCancellation>false</PropParameters_PolicyCancellation>
+    <PropParameters_PopulateTransactionBegin>true</PropParameters_PopulateTransactionBegin>
+    <PropParameters_PreviousPolicyApplicable />
+    <PropParameters_RenewalAllowed>true</PropParameters_RenewalAllowed>
+    <PropParameters_SectionDiscount>false</PropParameters_SectionDiscount>
+    <PropParameters_ServiceTaxExempted>false</PropParameters_ServiceTaxExempted>
+    <PropParameters_ShortPeriodLongPeriod>true</PropParameters_ShortPeriodLongPeriod>
+    <PropParameters_SpecialDiscountApplicable>true</PropParameters_SpecialDiscountApplicable>
+    <PropParameters_StaffDiscount>false</PropParameters_StaffDiscount>
+    <PropParameters_StampDutyChargeable>false</PropParameters_StampDutyChargeable>
+    <PropParameters_TariffProduct>true</PropParameters_TariffProduct>
+    <PropParameters_TransferFees>false</PropParameters_TransferFees>
+    <PropParameters_VDFDiscountAllowed>false</PropParameters_VDFDiscountAllowed>
+    <PropParameters_ValidateClause>true</PropParameters_ValidateClause>
+    <PropParameters_ValidateCondition>true</PropParameters_ValidateCondition>
+    <PropParameters_ValidateEndorsementData>true</PropParameters_ValidateEndorsementData>
+    <PropParameters_ValidateExclusion>true</PropParameters_ValidateExclusion>
+    <PropParameters_ValidateWarranty>true</PropParameters_ValidateWarranty>
+    <PropParameters_WarrentyApplicable>true</PropParameters_WarrentyApplicable>
+    <PropPolicyCoverDetails_Applicable>false</PropPolicyCoverDetails_Applicable>
+    <PropPolicyCoverDetails_CoverGroups />
+    <PropPolicyCoverDetails_DifferentialSI>0</PropPolicyCoverDetails_DifferentialSI>
+    <PropPolicyCoverDetails_EndorsementAmount>0</PropPolicyCoverDetails_EndorsementAmount>
+    <PropPolicyCoverDetails_Premium>0</PropPolicyCoverDetails_Premium>
+    <PropPolicyCoverDetails_Rate>0</PropPolicyCoverDetails_Rate>
+    <PropPolicyCoverDetails_SumInsured>0</PropPolicyCoverDetails_SumInsured>
+    <PropPolicyEffectivedate_Fromdate_Mandatary>13/07/2017</PropPolicyEffectivedate_Fromdate_Mandatary>
+    <PropPolicyEffectivedate_Fromhour_Mandatary>00:00</PropPolicyEffectivedate_Fromhour_Mandatary>
+    <PropPolicyEffectivedate_Todate_Mandatary>12/07/2018</PropPolicyEffectivedate_Todate_Mandatary>
+    <PropPolicyEffectivedate_Tohour_Mandatary>23:59</PropPolicyEffectivedate_Tohour_Mandatary>
+    <PropPremiumCalculation_BasicPremium>31376.75</PropPremiumCalculation_BasicPremium>
+    <PropPremiumCalculation_Cess>0</PropPremiumCalculation_Cess>
+    <PropPremiumCalculation_CustomCoverLDPremium>23486.75</PropPremiumCalculation_CustomCoverLDPremium>
+    <PropPremiumCalculation_ERFAmount>0</PropPremiumCalculation_ERFAmount>
+    <PropPremiumCalculation_EndorsementERFAmount>0</PropPremiumCalculation_EndorsementERFAmount>
+    <PropPremiumCalculation_EndorsementPremium>26829.4</PropPremiumCalculation_EndorsementPremium>
+    <PropPremiumCalculation_EndorsementServiceTax>4829.29</PropPremiumCalculation_EndorsementServiceTax>
+    <PropPremiumCalculation_EndorsementStampDuty>0.5</PropPremiumCalculation_EndorsementStampDuty>
+    <PropPremiumCalculation_EndorsementTerrorismPremium>0</PropPremiumCalculation_EndorsementTerrorismPremium>
+    <PropPremiumCalculation_GrossCoverPremium>23486.75</PropPremiumCalculation_GrossCoverPremium>
+    <PropPremiumCalculation_NetODPremium>18789.4</PropPremiumCalculation_NetODPremium>
+    <PropPremiumCalculation_NetPremium>26829.4</PropPremiumCalculation_NetPremium>
+    <PropPremiumCalculation_NetTPPremium>8040</PropPremiumCalculation_NetTPPremium>
+    <PropPremiumCalculation_SP_PR_LTFactor>1</PropPremiumCalculation_SP_PR_LTFactor>
+    <PropPremiumCalculation_ServiceTax>4829.29</PropPremiumCalculation_ServiceTax>
+    <PropPremiumCalculation_StampDuty>0.5</PropPremiumCalculation_StampDuty>
+    <PropPremiumCalculation_StampDutyApplicability>false</PropPremiumCalculation_StampDutyApplicability>
+    <PropPremiumCalculation_TerrorismPremium>0</PropPremiumCalculation_TerrorismPremium>
+    <PropPremiumCalculation_TotalPremium>31659</PropPremiumCalculation_TotalPremium>
+    <PropPremiumCalculation_TransferFeeAmount>0</PropPremiumCalculation_TransferFeeAmount>
+    <PropPreviousPolicyDetails_AddRow>false</PropPreviousPolicyDetails_AddRow>
+    <PropPreviousPolicyDetails_CalculateClaimRatio>true</PropPreviousPolicyDetails_CalculateClaimRatio>
+    <PropPreviousPolicyDetails_ClaimRatio>0</PropPreviousPolicyDetails_ClaimRatio>
+    <PropPreviousPolicyDetails_Combo1 />
+    <PropPreviousPolicyDetails_Excess />
+    <PropPreviousPolicyDetails_FirstPolicyInceptionDate />
+    <PropPreviousPolicyDetails_InceptionYear>0</PropPreviousPolicyDetails_InceptionYear>
+    <PropPreviousPolicyDetails_NCBPercentage>0</PropPreviousPolicyDetails_NCBPercentage>
+    <PropPreviousPolicyDetails_OldTariffSlab>false</PropPreviousPolicyDetails_OldTariffSlab>
+    <PropPreviousPolicyDetails_PrevInsPincode />
+    <PropPreviousPolicyDetails_PreviousPolicyType>ComprehensivePolicy</PropPreviousPolicyDetails_PreviousPolicyType>
+    <PropPreviousPolicyDetails_RenewalCounter>0</PropPreviousPolicyDetails_RenewalCounter>
+    <PropPreviousPolicyDetails_TPAName />
+    <PropPreviousPolicyDetails_Validate>true</PropPreviousPolicyDetails_Validate>
+    <PropProductDetails_Component17 />
+    <PropProductDetails_DepartmentCode>31</PropProductDetails_DepartmentCode>
+    <PropProductDetails_ProductCode>3121</PropProductDetails_ProductCode>
+    <PropProductDetails_ProductName />
+    <PropProductName>Comprehensive Policy</PropProductName>
+    <PropReferenceNoDate_ReferenceDate_Mandatary>13/07/2017</PropReferenceNoDate_ReferenceDate_Mandatary>
+    <PropReferenceNoDate_ReferenceNo_Mandatary>201707130005267</PropReferenceNoDate_ReferenceNo_Mandatary>
+    <PropSPDetails_SPCode>0</PropSPDetails_SPCode>
+    <PropSPDetails_SPName />
+    <PropSerIntermediaryDetails_SerIntermediaryCode />
+    <PropSerIntermediaryDetails_SerIntermediaryName />
+    <PropSerIntermediaryDetails_SerIntermediaryType />
+    <PropServiceTaxExemptionCategory_Component43 />
+    <PropVerticalDtls_PrimaryVerticalCode />
+    <PropVerticalDtls_PrimaryVerticalName />
+    <PropVerticalDtls_SecondaryVerticalCode />
+    <PropVerticalDtls_SecondaryVerticalName />
+    <PropVerticalDtls_ServicingPrimaryVerticalCode />
+    <PropVerticalDtls_ServicingPrimaryVerticalName />
+    <PropVerticalDtls_ServicingSecondaryVerticalCode />
+    <PropVerticalDtls_ServicingSecondaryVerticalName />
+    <PropVerticalDtls_ServicingTertiaryVerticalCode />
+    <PropVerticalDtls_ServicingTertiaryVerticalName />
+    <PropVerticalDtls_TertiaryVerticalCode />
+    <PropVerticalDtls_TertiaryVerticalName />
+    <PropWarranty_DepartmentCode>0</PropWarranty_DepartmentCode>
+    <PropWarranty_ProductCode>0</PropWarranty_ProductCode>
+    <PropWarranty_SectionCode />
+    <PropLoadingDiscount_Col>
+      <LoadingDiscount>
+        <PropLoadingDiscount_Applicable>true</PropLoadingDiscount_Applicable>
+        <PropLoadingDiscount_CalculatedAmount>4697.35</PropLoadingDiscount_CalculatedAmount>
+        <PropLoadingDiscount_Description>No Claim Bonus</PropLoadingDiscount_Description>
+        <PropLoadingDiscount_DifferentialSI>0</PropLoadingDiscount_DifferentialSI>
+        <PropLoadingDiscount_EndorsementAmount>4697.35</PropLoadingDiscount_EndorsementAmount>
+        <PropLoadingDiscount_FixedAmount>0</PropLoadingDiscount_FixedAmount>
+        <PropLoadingDiscount_IsDataDeleted>false</PropLoadingDiscount_IsDataDeleted>
+        <PropLoadingDiscount_IsOldDataDeleted>false</PropLoadingDiscount_IsOldDataDeleted>
+        <PropLoadingDiscount_MaxCap>0</PropLoadingDiscount_MaxCap>
+        <PropLoadingDiscount_MinCap>0</PropLoadingDiscount_MinCap>
+        <PropLoadingDiscount_Premium>23486.75</PropLoadingDiscount_Premium>
+        <PropLoadingDiscount_Rate>20</PropLoadingDiscount_Rate>
+        <PropLoadingDiscount_SumInsured>1360683</PropLoadingDiscount_SumInsured>
+        <ExtensionData />
+      </LoadingDiscount>
+    </PropLoadingDiscount_Col>
+    <ExtensionData />
+    <PropGeneralProposal_ClauseDetails_Col />
+    <PropGeneralProposal_CoinsuranceDetails_Col />
+    <PropGeneralProposal_ConditionDetails_Col />
+    <PropGeneralProposal_ExclusionDetails_Col />
+    <PropGeneralProposal_FinancierDetails_Col />
+    <PropGeneralProposal_Warranty_Col />
+    <PropPremiumCalculation_CGSTAmount>0</PropPremiumCalculation_CGSTAmount>
+    <PropPremiumCalculation_CGSTPercentage>0</PropPremiumCalculation_CGSTPercentage>
+    <PropPremiumCalculation_IGSTAmount>4829.29</PropPremiumCalculation_IGSTAmount>
+    <PropPremiumCalculation_IGSTPercentage>18</PropPremiumCalculation_IGSTPercentage>
+    <PropPremiumCalculation_SGSTAmount>0</PropPremiumCalculation_SGSTAmount>
+    <PropPremiumCalculation_SGSTPercentage>0</PropPremiumCalculation_SGSTPercentage>
+    <PropPremiumCalculation_TotalGSTAmount>4829.29</PropPremiumCalculation_TotalGSTAmount>
+    <PropPremiumCalculation_UGSTAmount>0</PropPremiumCalculation_UGSTAmount>
+    <PropPremiumCalculation_UGSTPercentage>0</PropPremiumCalculation_UGSTPercentage>
+    <PropRisks_ExtraDD1 />
+    <PropRisks_ExtraDD2 />
+    <PropRisks_ExtraDD3 />
+    <PropRisks_ExtraDD4 />
+    <PropRisks_ExtraDD5 />
+    <PropRisks_ExtraDD6 />
+    <PropRisks_Extrachk1>false</PropRisks_Extrachk1>
+    <PropRisks_Extrachk2>false</PropRisks_Extrachk2>
+    <PropRisks_Extrachk3>false</PropRisks_Extrachk3>
+    <PropRisks_Extrachk4>false</PropRisks_Extrachk4>
+    <PropRisks_Extrachk5>false</PropRisks_Extrachk5>
+    <PropRisks_Extrachk6>false</PropRisks_Extrachk6>
+    <PropRisks_Extratxt1 />
+    <PropRisks_Extratxt2>0</PropRisks_Extratxt2>
+    <PropRisks_Extratxt3 />
+    <PropRisks_Extratxt4 />
+    <PropRisks_Extratxt5 />
+    <PropRisks_Extratxt6 />
+    <PropRisks_IsPrePolicyDepreciationCover>false</PropRisks_IsPrePolicyDepreciationCover>
+  </GetUserData>
+  <IndividualPremiumDetails>
+    <ExtensionData />
+    <BasicPremium>0</BasicPremium>
+    <BlockID>0</BlockID>
+    <ExchangeRate>0</ExchangeRate>
+    <NetPremium>0</NetPremium>
+    <SectionID>0</SectionID>
+    <TotalSI>0</TotalSI>
+  </IndividualPremiumDetails>
+  <NetPremium>26829.4</NetPremium>
+  <ProductType>SB</ProductType>
+  <ServiceTax>4829.29</ServiceTax>
+  <StampDuty>0</StampDuty>
+  <TotalPremium>31659</TotalPremium>
+  <TotalSI>1360683</TotalSI>
+  <UWPartialDataXml />
+  <WarningText>Approval is Pending for Registration Number - Others is Opted in the Policy.
+Escalate to Motor CO-UW
+Application number is blank, so system is generating new Application Number.</WarningText>
+</ServiceResult>

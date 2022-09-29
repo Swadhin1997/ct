@@ -1,0 +1,1 @@
+Error: The type initializer for 'Google.Apis.Json.NewtonsoftJsonSerializer' threw an exception.

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/Arrays" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://10.221.12.124/GCInternetProxy/CustomerPortalService.svc?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/ClaimEntities" />
+  <xs:complexType name="ArrayOfKeyValueOfanyTypeanyType">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsDictionary xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsDictionary>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="KeyValueOfanyTypeanyType">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Key" nillable="true" type="xs:anyType" />
+            <xs:element name="Value" nillable="true" type="xs:anyType" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfKeyValueOfanyTypeanyType" nillable="true" type="tns:ArrayOfKeyValueOfanyTypeanyType" />
+  <xs:complexType name="ArrayOfstring">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfstring" nillable="true" type="tns:ArrayOfstring" />
+  <xs:complexType name="ArrayOfKeyValueOfstringstring">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsDictionary xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsDictionary>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="KeyValueOfstringstring">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Key" nillable="true" type="xs:string" />
+            <xs:element name="Value" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfKeyValueOfstringstring" nillable="true" type="tns:ArrayOfKeyValueOfstringstring" />
+  <xs:complexType name="ArrayOfKeyValueOfstringArrayOfclsDynamicComboBoxItemsFjht7RGh">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsDictionary xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsDictionary>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="KeyValueOfstringArrayOfclsDynamicComboBoxItemsFjht7RGh">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Key" nillable="true" type="xs:string" />
+            <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/ClaimEntities" name="Value" nillable="true" type="q1:ArrayOfclsDynamicComboBoxItems" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfKeyValueOfstringArrayOfclsDynamicComboBoxItemsFjht7RGh" nillable="true" type="tns:ArrayOfKeyValueOfstringArrayOfclsDynamicComboBoxItemsFjht7RGh" />
+  <xs:complexType name="ArrayOfKeyValueOfstringArrayOfDynamicControlsDetailsFjht7RGh">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsDictionary xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsDictionary>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="KeyValueOfstringArrayOfDynamicControlsDetailsFjht7RGh">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Key" nillable="true" type="xs:string" />
+            <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/ClaimEntities" name="Value" nillable="true" type="q2:ArrayOfDynamicControlsDetails" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfKeyValueOfstringArrayOfDynamicControlsDetailsFjht7RGh" nillable="true" type="tns:ArrayOfKeyValueOfstringArrayOfDynamicControlsDetailsFjht7RGh" />
+</xs:schema>

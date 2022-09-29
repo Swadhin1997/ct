@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://10.221.16.23/CMCDocsService/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/CMCDocsService" />
+  <xs:element name="SearchDocument">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="InwardId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ApplicationNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CustomerId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DocumentUniqNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="PolicyNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ClaimNo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SearchDocumentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/CMCDocsService" minOccurs="0" name="SearchDocumentResult" nillable="true" type="q1:ArrayOfImagePath" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateDocument">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="InwardId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ApplicationNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CustomerId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DocumentUniqNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="PolicyNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ClaimNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DocumentPath" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateDocumentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CreateDocumentResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Validate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ValidateResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SearchDocumentDMS">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="InwardId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ApplicationNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CustomerId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DocumentUniqNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="PolicyNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ClaimNo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SearchDocumentDMSResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/CMCDocsService" minOccurs="0" name="SearchDocumentDMSResult" nillable="true" type="q2:ArrayOfImagePath" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateDocumentDMS">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="InwardId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ApplicationNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CustomerId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DocumentUniqNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="PolicyNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ClaimNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Source" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FileName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="requestedByte" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateDocumentDMSResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CreateDocumentDMSResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ViewDocumentDMS">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="usename" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Filename" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FilePath" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ViewDocumentDMSResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/CMCDocsService" minOccurs="0" name="ViewDocumentDMSResult" nillable="true" type="q3:ArrayOfImagePathDMS" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

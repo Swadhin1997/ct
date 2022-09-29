@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<Root>
+  <PaymentEntry>
+    <TransactionId Value="555" type="long" />
+    <TransactionTime Value="26/09/2016" nillable="true" type="string" />
+    <BusinessLocation Value="90001" type="int" />
+    <DepositOfficeCode Value="90001" type="int" />
+    <PayerCustomerId Value="1000010399" nillable="true" type="string" />
+    <PayerTypeCd Value="1" type="int" />
+    <PaymentMode Value="DA" nillable="true" type="string" />
+    <PaymentType Value="1" type="long" />
+    <PaymentNumber Value="10201700001791" nillable="true" type="string" />
+    <PaymentDate Value="26/09/2016" nillable="true" type="string" />
+    <DepositAdviceDate Value="26/09/2016" nillable="true" type="string" />
+    <MICRTag Value="0" type="int" />
+    <BranchName Value="" nillable="true" type="string" />
+    <BankCode Value="0" type="long" />
+    <BankName Value="" nillable="true" type="string" />
+    <DecimalPaymentAmount Value="39390.00" type="decimal" />
+    <Remarks Value="payment done" nillable="true" type="string" />
+    <IntermediaryCode Value="2102420000" nillable="true" type="string" />
+    <InwardNumber Value="0" nillable="true" type="string" />
+    <ITSPaymentId Value="0" nillable="true" type="string" />
+    <Status Value="" nillable="true" type="string" />
+    <InvoiceId Value="" nillable="true" type="string" />
+    <BGTag Value="5" type="int" />
+    <MICRNumber Value="" nillable="true" type="string" />
+    <BusinessTypeCd Value="1" type="int" />
+    <DraweeBankLoc Value="" nillable="true" type="string" />
+    <CallEnv Value="CP" nillable="true" type="string" />
+    <UserId Value="GC0014" nillable="true" type="string" />
+    <HoRefNo Value="" nillable="true" type="string" />
+    <HoRefDate Value="01/01/1990" nillable="true" type="string" />
+    <CurrencyConcateString  nillable="true" type="string" />
+    <MultiCustomerConcat Value="" nillable="true" type="string" />
+    <MultiCustomerFlag Value="N" nillable="true" type="string" />
+    <AllocationReqd Value="Y" nillable="true" type="string" />
+    <IFSCCode Value="" nillable="true" type="string" />
+    <TAGICAccNo Value="" nillable="true" type="string" />
+    <ProducerCode Value="2102420000" nillable="true" type="string" />
+    <YNOthersType Value="" nillable="true" type="string" />
+    <BankAccountNo Value="" nillable="true" type="string" />
+    <HouseBankBranchCode Value="10001" nillable="true" type="string" />
+    <ReceiptDate  Value="26/09/2016" nillable="true" type="string" />
+    <GuidWorkFlow Value="0" type="long" />
+    <UserRole Value="ADMIN" nillable="true" type="string" />
+    <RelationShip Value="" nillable="true" type="string" />
+    <TransactionType Value="1" type="int" />
+    <MID Value="" nillable="true" type="string" />
+    <TID Value="" nillable="true" type="string" />
+    <GBMRefNO Value="" nillable="true" type="string" />
+    <IsGBMReceipt Value="false" type="boolean" />
+  </PaymentEntry>
+</Root>

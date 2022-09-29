@@ -1,0 +1,1449 @@
+<?xml version="1.0"?>
+<Root Code="3121" Name="PrivateCarInsurancePolicy">
+  <ProposalDetails>
+    <RiskDetails>
+      <Block>
+        <PropRisks_AAOmembershipno Type="String" Value="666666" />
+        <PropRisks_AddOnDiscnt Type="Double" Value="500" />
+        <PropRisks_Age Type="Double" Value="46" />
+        <PropRisks_AgeCoverageDetails Type="Double" Value="16" />
+        <PropRisks_AntiTheftCheck Type="Boolean" Value="True" />
+        <PropRisks_ApplicableDocuments Type="String" Value="" />
+        <PropRisks_AuthorityLocation Type="String" Value="MUMBAI" />
+        <PropRisks_AutoMobileAssocName Type="String" Value="AAIE" />
+        <PropRisks_AutomobileAssociC Type="Boolean" Value="True" />
+        <PropRisks_Bangladesh Type="Boolean" Value="True" />
+        <PropRisks_BasisOfRating Type="String" Value="GLM" />
+        <PropRisks_Bhutan Type="Boolean" Value="True" />
+        <PropRisks_BreakInInsurance Type="String" Value="No Break" />
+        <PropRisks_BreakInInsuranceGLMMulti Type="Double" Value="0.88" />
+        <PropRisks_BusinessChnlGLMMultiplier Type="Double" Value="1" />
+        <PropRisks_CNGLPGkitValue Type="Double" Value="50000" />
+        <PropRisks_CSD Type="Boolean" Value="True" />
+        <PropRisks_CapitalSIPerPerson Type="Double" Value="10000" />
+        <PropRisks_CertifiedVintageCarByCarClub Type="Boolean" Value="True" />
+        <PropRisks_ChasisNo Type="String" Value="" />
+        <PropRisks_ChassisNumber Type="String" Value="CH13245" />
+        <PropRisks_ChkForGeographical Type="Boolean" Value="True" />
+        <PropRisks_ChkForRacing Type="Boolean" Value="True" />
+        <PropRisks_CityCode Type="String" Value="" />
+        <PropRisks_ClaimFreeYearGLMDepCvr Type="Double" Value="1" />
+        <PropRisks_Colorofthevehicle Type="String" Value="BLAK" />
+        <PropRisks_CompForVolExc1 Type="Double" Value="0" />
+        <PropRisks_CompForVolExc2 Type="Double" Value="0" />
+        <PropRisks_CompForVolExc3 Type="Double" Value="0" />
+        <PropRisks_CompForVolExc4 Type="Double" Value="0" />
+        <PropRisks_CompulsoryExcess Type="Double" Value="1000" />
+        <PropRisks_CompulsoryPAwithOwnerDriver Type="Boolean" Value="TRUE" />
+        <PropRisks_ConsumableCvrPrm Type="Double" Value="0.2959" />
+        <PropRisks_ConsumablesExpenses Type="Boolean" Value="TRUE" />
+        <PropRisks_CountryCode Type="String" Value="" />
+        <PropRisks_CrossSellDiscount Type="String" Value="" />
+        <PropRisks_CrossSellDiscountGLM Type="Double" Value="10" />
+        <PropRisks_CubicCapacity Type="Double" Value="998" />
+        <PropRisks_CvrPrm Type="Double" Value="1" />
+        <PropRisks_DateOfBirth Type="String" Value="" />
+        <PropRisks_DateofBirthofNominee Type="String" Value="29/04/2000" />
+        <PropRisks_DateofRegistration Type="String" Value="17/04/2015" />
+        <PropRisks_Dateofpurchase Type="String" Value="17/04/2015" />
+        <PropRisks_DepreciationReimbursement Type="Boolean" Value="FALSE" />
+        <PropRisks_DepriciationCvrPrm Type="Double" Value="1.0063" />
+        <PropRisks_DiscntPrm Type="Double" Value="0" />
+        <PropRisks_DiscountOnIMTRate Type="Double" Value="0" />
+        <PropRisks_DiscountforOptingSoftCopy Type="Boolean" Value="True" />
+        <PropRisks_DistrictCode Type="String" Value="" />
+        <PropRisks_Drivingexperience Type="Double" Value="5" />
+        <PropRisks_Educationalqualification Type="String" Value="OTHERS" />
+        <PropRisks_ElectricalAccessories Type="Double" Value="" />
+        <PropRisks_EmergencyMedicalExpenses Type="Boolean" Value="True" />
+        <PropRisks_EmployeesDiscount Type="Boolean" Value="True" />
+        <PropRisks_EnginePretectPrm Type="Double" Value="0.8266" />
+        <PropRisks_EngineSecure Type="Boolean" Value="FALSE" />
+        <PropRisks_Engineno Type="String" Value="EC12345" />
+        <PropRisks_EntitledforNCB Type="String" Value="" />
+        <PropRisks_EventName Type="String" Value="gggg" />
+        <PropRisks_FirstName Type="String" Value="Murli" />
+        <PropRisks_ForUWLoading Type="Double" Value="0" />
+        <PropRisks_FromDateForRacing Type="String" Value="19/08/2016" />
+        <PropRisks_FromDateForRallies Type="String" Value="30/09/2016" />
+        <PropRisks_FromDateUForm Type="String" Value="" />
+        <PropRisks_FuelType Type="String" Value="LPG" />
+        <PropRisks_FuelTypeGLMConsmCvr Type="Double" Value="1.18" />
+        <PropRisks_FuelTypeGLMDepCvr Type="Double" Value="1.47" />
+        <PropRisks_FuelTypeGLMEngProt Type="Double" Value="1.28" />
+        <PropRisks_FuelTypeGLMMultiplier Type="Double" Value="1.16" />
+        <PropRisks_FuelTypeGLMRetInv Type="Double" Value="1.38" />
+        <PropRisks_GLMRate Type="Double" Value="2.2612" />
+        <PropRisks_GeneralRemarks Type="String" Value="" />
+        <PropRisks_Geographicalareaextention Type="Boolean" Value="True" />
+        <PropRisks_IDVFlag Type="Double" Value="699777" />
+        <PropRisks_IDVofTrailer Type="Double" Value="40000" />
+        <PropRisks_IDVofthevehicle Type="Double" Value="15000" />
+        <PropRisks_IfOthersPleasespecify Type="String" Value="Brother" />
+        <PropRisks_ImposedExcessAmount Type="Double" Value="333333" />
+        <PropRisks_ImprtdVehcleWoutPaymtCustmDuty Type="Boolean" Value="True" />
+        <PropRisks_InsuredAge Type="Double" Value="1988" />
+        <PropRisks_InsuredAgeGLMMultiplier Type="Double" Value="0.97" />
+        <PropRisks_InsuredCreditScore Type="Double" Value="5555" />
+        <PropRisks_InsuredCreditScoreGLM Type="Double" Value="1" />
+        <PropRisks_InsuredGender Type="String" Value="Male" />
+        <PropRisks_InsuredGenderGLMMultiplier Type="Double" Value="0.85" />
+        <PropRisks_InsuredHasDrivinglicense Type="Boolean" Value="TRUE" />
+        <PropRisks_InsuredProfession Type="String" Value="Others" />
+        <PropRisks_InsuredProfessionGLMMulti Type="Double" Value="1.01" />
+        <PropRisks_InsureddrivingScore Type="Double" Value="6666" />
+        <PropRisks_InsureddrivingScoreGLM Type="Double" Value="1" />
+        <PropRisks_InteractionWithRatingFactor Type="Double" Value="0.9" />
+        <PropRisks_InteractionWithRtngFactGLM Type="Double" Value="1" />
+        <PropRisks_IsExternalCNGLPGAvailable Type="Boolean" Value="FALSE" />
+        <PropRisks_IsNewRateApplicable Type="Boolean" Value="False" />
+        <PropRisks_IsNonElctrclAcesrsRequired Type="Boolean" Value="FALSE" />
+        <PropRisks_IsPAToOwnerDriverExcluded Type="Boolean" Value="TRUE" />
+        <PropRisks_IsTrailerAvailable Type="Boolean" Value="True" />
+        <PropRisks_IsVehcleUsdForDrivngTuitions Type="Boolean" Value="True" />
+        <PropRisks_IsVehicle Type="String" Value="" />
+        <PropRisks_IsVehicleUsedforblindpersons Type="Boolean" Value="True" />
+        <PropRisks_IsVehicleusedlimitedtopremises Type="Boolean" Value="True" />
+        <PropRisks_Issuer Type="Double" Value="0" />
+        <PropRisks_KotakGrpEmployeeDiscount Type="Double" Value="0" />
+        <PropRisks_LastName Type="String" Value="cfhdhdh" />
+        <PropRisks_LdngPrm Type="Double" Value="0" />
+        <PropRisks_LegalLiabilityToEmployees Type="Boolean" Value="FALSE" />
+        <PropRisks_LiabilityToSoldierSailorAirMan Type="Boolean" Value="True" />
+        <PropRisks_LiscenseNo Type="String" Value="777777" />
+        <PropRisks_LoadEmrgencyMedicalExp Type="Double" Value="0" />
+        <PropRisks_LoadHomeProtectSublt Type="Double" Value="0" />
+        <PropRisks_LoadingDiscountOnAddOnCovers Type="Double" Value="0" />
+        <PropRisks_LoadingNewCarRplacmnt Type="Double" Value="0" />
+        <PropRisks_LocationCode Type="String" Value="False" />
+        <PropRisks_MainDriver Type="String" Value="Any Other" />
+        <PropRisks_MakeGLMDepCvr Type="Double" Value="1.03" />
+        <PropRisks_MakeGLMEngProt Type="Double" Value="1.03" />
+        <PropRisks_MakeGLMMultiplier Type="Double" Value="1.08" />
+        <PropRisks_MakeGLMRetInv Type="Double" Value="1.03" />
+        <PropRisks_Maldives Type="Boolean" Value="True" />
+        <PropRisks_Manufacture Type="String" Value="MARUTI" />
+        <PropRisks_ManufactureYear Type="Double" Value="2015" />
+        <PropRisks_ManufacturerCode Type="String" Value="14" />
+        <PropRisks_MarketMovement Type="Double" Value="10" />
+        <PropRisks_MarketMovementGLMMultiplier Type="Double" Value="10" />
+        <PropRisks_Model Type="String" Value="WAGON R" />
+        <PropRisks_ModelCluster Type="String" Value="Category 1" />
+        <PropRisks_ModelClusterGLMDepCvr Type="Double" Value="1" />
+        <PropRisks_ModelClusterGLMMultiplier Type="Double" Value="1.03" />
+        <PropRisks_ModelCode Type="String" Value="1352" />
+        <PropRisks_ModelVariant Type="String" Value="DUO LPG (M)" />
+        <PropRisks_NCBConfirmation Type="String" Value="NCB reserving" />
+        <PropRisks_NCBProtRatePop Type="Double" Value="0" />
+        <PropRisks_NCBRatePop Type="Double" Value="0" />
+        <PropRisks_NCPrm Type="Double" Value="14583.32" />
+        <PropRisks_NameOfNominee Type="String" Value="Devanand" />
+        <PropRisks_Nepal Type="Boolean" Value="True" />
+        <PropRisks_NewCarReplacement Type="Boolean" Value="False" />
+        <PropRisks_NoClaimBonusApplicable Type="Double" Value="20" />
+        <PropRisks_NoOfClaimFreeYearsCompleted Type="Double" Value="1" />
+        <PropRisks_NoOfPersonWiderLegalLiability Type="Double" Value="3" />
+        <PropRisks_NoOfPersonsLiabilityEmployee Type="Double" Value="" />
+        <PropRisks_NoOfPersonsNamed Type="Double" Value="" />
+        <PropRisks_NoOfPersonsPaidDriver Type="Double" Value="" />
+        <PropRisks_NoOfSoldierSailorAirMan Type="Double" Value="6" />
+        <PropRisks_NonElectricalAccessories Type="Double" Value="" />
+        <PropRisks_NoofClmFreeYearCmpltdGLM Type="Double" Value="1" />
+        <PropRisks_NoofWheels Type="Double" Value="4" />
+        <PropRisks_NumberofPersonsUnnamed Type="Double" Value="" />
+        <PropRisks_Occupation Type="String" Value="" />
+        <PropRisks_OpenCvrNo Type="Boolean" Value="False" />
+        <PropRisks_OriginalNCBPercentage Type="Double" Value="20" />
+        <PropRisks_OtherChk1 Type="Boolean" Value="True" />
+        <PropRisks_OtherChk2 Type="Boolean" Value="True" />
+        <PropRisks_OtherChk3 Type="Boolean" Value="True" />
+        <PropRisks_OtherChk4 Type="Boolean" Value="False" />
+        <PropRisks_OtherInfo4 Type="String" Value="0" />
+        <PropRisks_OtherInfoP Type="String" Value="SLDocumentManagement.xap" />
+        <PropRisks_OtherInformation11 Type="String" Value="ERWERW,MUMBAI,MUMBAI,MAHARASHTRA,400022" />
+        <PropRisks_OtherInformation12 Type="String" Value="ERWERW,MUMBAI,MUMBAI,MAHARASHTRA,400022" />
+        <PropRisks_OtherInformation13 Type="String" Value="01/01/1970" />
+        <PropRisks_OtherInformation14 Type="String" Value="9876543210" />
+        <PropRisks_OtherInformation1N Type="Double" Value="0" />
+        <PropRisks_OtherInformation1T Type="String" Value="" />
+        <PropRisks_OtherInformation2n Type="Double" Value="0" />
+        <PropRisks_OtherInformation3T Type="String" Value="" />
+        <PropRisks_OtherInformation4N Type="Double" Value="0.3127" />
+        <PropRisks_OtherInformation4T Type="String" Value="" />
+        <PropRisks_OtherInformation5N Type="Double" Value="0" />
+        <PropRisks_OtherNumeric11 Type="Double" Value="15823.36" />
+        <PropRisks_OtherNumeric12 Type="Double" Value="0" />
+        <PropRisks_Pakistan Type="Boolean" Value="True" />
+        <PropRisks_PlaceofRegGLMDepCvr Type="Double" Value="1" />
+        <PropRisks_PolicyAge Type="Double" Value="0" />
+        <PropRisks_PolicyAgeGLMMultiplier Type="Double" Value="0.98" />
+        <PropRisks_PreInspectionNumber Type="String" Value="789456" />
+        <PropRisks_PrevYearNCB Type="String" Value="" />
+        <PropRisks_PromoterName Type="String" Value="ffff" />
+        <PropRisks_ProposalType Type="String" Value="Rollover" />
+        <PropRisks_RTOCluster Type="String" Value="Category 7" />
+        <PropRisks_RTOClusterGLMMultiplier Type="Double" Value="1" />
+        <PropRisks_RTOCode Type="String" Value="21170" />
+        <PropRisks_RallyCheck Type="Boolean" Value="False" />
+        <PropRisks_RateForReliabOD Type="Double" Value="60" />
+        <PropRisks_RateForReliabTP Type="Double" Value="25" />
+        <PropRisks_RegistrationNoAsPerOldLogic Type="Boolean" Value="False" />
+        <PropRisks_RegistrationNumber Type="String" Value="MH" />
+        <PropRisks_RegistrationNumber2 Type="String" Value="01" />
+        <PropRisks_RegistrationNumber3 Type="String" Value="E" />
+        <PropRisks_RegistrationNumber4 Type="String" Value="4567" />
+        <PropRisks_RegistrationNumber5 Type="String" Value="" />
+        <PropRisks_Relationship Type="String" Value="OTHERS" />
+        <PropRisks_ReliabilityTrialCheck Type="Boolean" Value="True" />
+        <PropRisks_Reliabilitytrialorracingdate Type="String" Value="30/09/2016" />
+        <PropRisks_Reliabilitytrialorracingtodate Type="String" Value="30/09/2016" />
+        <PropRisks_RestrictedToGarage Type="Boolean" Value="False" />
+        <PropRisks_ReturnToInvoice Type="Boolean" Value="FALSE" />
+        <PropRisks_RiskVariant Type="String" Value="ComprehensivePolicy" />
+        <PropRisks_RiskVariantSection Type="String" Value="" />
+        <PropRisks_RoadSideAsistancePrm Type="Double" Value="500" />
+        <PropRisks_RoadsideAssistance Type="Boolean" Value="TRUE" />
+        <PropRisks_SeatingCapacity Type="Double" Value="5" />
+        <PropRisks_SourcingChannelGLMConsmCvr Type="Double" Value="1" />
+        <PropRisks_SourcingChannelGLMDepCvr Type="Double" Value="1" />
+        <PropRisks_SourcingChannelGLMEngProt Type="Double" Value="1" />
+        <PropRisks_SourcingChannelGLMRetInv Type="Double" Value="1" />
+        <PropRisks_SpecialCondition Type="String" Value="eeee" />
+        <PropRisks_SriLanka Type="Boolean" Value="True" />
+        <PropRisks_SumInsuredPaidDriver Type="Double" Value="" />
+        <PropRisks_TACMakeCode Type="String" Value="" />
+        <PropRisks_TPCoverCndtn Type="Boolean" Value="False" />
+        <PropRisks_TPPDRestricted Type="Boolean" Value="True" />
+        <PropRisks_ToDateForRacing Type="String" Value="30/09/2016" />
+        <PropRisks_ToDateForRallies Type="String" Value="02/08/2017" />
+        <PropRisks_TotalInsuredDeclaredValue Type="Double" Value="15000" />
+        <PropRisks_TrailerODPrm Type="Double" Value="250" />
+        <PropRisks_TrailerRegistrationNumber Type="String" Value="32455567" />
+        <PropRisks_TrailerchassisNumber Type="String" Value="CH13245" />
+        <PropRisks_TypeOfRoad Type="String" Value="Hilly Road" />
+        <PropRisks_TypeofPolicyHolder Type="String" Value="Individual Owner" />
+        <PropRisks_TypeofPolicyHolderGLM Type="Double" Value="0.94" />
+        <PropRisks_TypeofTransmission Type="String" Value="AUTOMATIC" />
+        <PropRisks_Typeofbody Type="String" Value="" />
+        <PropRisks_UserType Type="String" Value="" />
+        <PropRisks_Variant Type="String" Value="" />
+        <PropRisks_VariantCode Type="String" Value="1354" />
+        <PropRisks_VehcleFitWithFibrGlasFuelTank Type="Boolean" Value="True" />
+        <PropRisks_VehicelSegmentGLMConsmCvr Type="Double" Value="1" />
+        <PropRisks_VehicelSegmentGLMEngProt Type="Double" Value="1" />
+        <PropRisks_VehicelSegmentGLMRetInv Type="Double" Value="1" />
+        <PropRisks_VehicleAgeGLMConsmCvr Type="Double" Value="1.14" />
+        <PropRisks_VehicleAgeGLMDepCvr Type="Double" Value="1.14" />
+        <PropRisks_VehicleAgeGLMEngProt Type="Double" Value="1.14" />
+        <PropRisks_VehicleAgeGLMMultiplier Type="Double" Value="1.14" />
+        <PropRisks_VehicleAge_Mandatary Type="Double" Value="0.175" />
+        <PropRisks_VehicleInspection Type="Boolean" Value="False" />
+        <PropRisks_VehicleSegment Type="String" Value="COMPACT CARS" />
+        <PropRisks_VehicleSegmentGLMDepCvr Type="Double" Value="1" />
+        <PropRisks_VehicleSegmentGLMMultiplier Type="String" Value="1" />
+        <PropRisks_VehicleSubTypeGLMMultiplier Type="Double" Value="0" />
+        <PropRisks_VehicleType Type="String" Value="Indigenous" />
+        <PropRisks_VehicleTypeCode Type="String" Value="45" />
+        <PropRisks_VehicleUse Type="String" Value="Driving Tuitions" />
+        <PropRisks_VlntryDedctbleFrDprctnCover Type="Double" Value="1000" />
+        <PropRisks_VolDepCoverDiscPrm Type="Double" Value="0" />
+        <PropRisks_VoluntaryDeductGLMDepCvr Type="Double" Value="1.06" />
+        <PropRisks_VoluntaryDeductibleAmount Type="Double" Value="2500" />
+        <PropRisks_Whethervehicleisdeclined Type="Boolean" Value="False" />
+        <PropRisks_WiderLegalLiabilityToPaid Type="Boolean" Value="TRUE" />
+        <PropRisks_Zone_Mandatary Type="String" Value="Zone-A" />
+        <OtherDetailsGrid>
+          <NonElectricalAccessiories Name="NonElectricalAccessiories" Value="GRP288">
+            <NonElectricalAccessiories Type="GroupData">
+              <Make Name="Make" Value="MARUTI" Type="String" />
+              <Model Name="Model" Value="WAGON R" Type="String" />
+              <Year Name="Year" Value="2015" Type="Double" />
+              <IDV Name="IDV" Value="15000" Type="Double" />
+              <TypeofAccessories Name="TypeofAccessories" Value="Lugguage Carrier" Type="String" />
+              <Description Name="Description" Value="iiii" Type="String" />
+              <SerialNo Name="SerialNo" Value="h1111" Type="String" />
+              <Remarks Name="Remarks" Value="jjjj" Type="String" />
+            </NonElectricalAccessiories>
+          </NonElectricalAccessiories>
+          <ElectricalAccessiories Name="ElectricalAccessiories" Value="GRP289">
+            <ElectricalAccessiories Type="GroupData">
+              <Make Name="Make" Value="MARUTI" Type="String" />
+              <Model Name="Model" Value="WAGON R" Type="String" />
+              <Year Name="Year" Value="2015" Type="Double" />
+              <IDV Name="IDV" Value="15000" Type="Double" />
+              <TypeofAccessories Name="TypeofAccessories" Value="Fan" Type="String" />
+              <Description Name="Description" Value="lllll" Type="String" />
+              <SerialNo Name="SerialNo" Value="l22" Type="String" />
+              <Remarks Name="Remarks" Value="mmmm" Type="String" />
+            </ElectricalAccessiories>
+          </ElectricalAccessiories>
+          <NamedpassengerNomineeDetail Name="NamedpassengerNomineeDetail" Value="GRP291">
+            <NamedpassengerNomineeDetail Type="GroupData">
+              <NamedPerson Name="NamedPerson" Value="Devanand" Type="String" />
+              <CapitalSIPerPerson Name="CapitalSIPerPerson" Value="100000" Type="Double" />
+              <Nominee Name="Nominee" Value="ooooo" Type="String" />
+              <Relationship Name="Relationship" Value="OTHERS" Type="String" />
+              <AgeofNominee Name="AgeofNominee" Value="2000" Type="Double" />
+              <Nameofappointee Name="Nameofappointee" Value="Dhan" Type="String" />
+              <RelationshipToNominee Name="RelationshipToNominee" Value="Father" Type="String" />
+            </NamedpassengerNomineeDetail>
+          </NamedpassengerNomineeDetail>
+          <OwnerDriverNomineeDetails Name="OwnerDriverNomineeDetails" Value="GRP292">
+            <OwnerDriverNomineeDetails Type="GroupData">
+              <Nominee Name="Nominee" Value="Devanand" Type="String" />
+              <NomineeDOB Name="NomineeDOB" Value="29/04/2000" Type="String" />
+              <Age Name="Age" Value="16" Type="Double" />
+              <Relationship Name="Relationship" Value="OTHERS" Type="String" />
+              <Nameofappointee Name="Nameofappointee" Value="Dhan" Type="String" />
+              <Relationshiptonominee Name="Relationshiptonominee" Value="Father" Type="String" />
+            </OwnerDriverNomineeDetails>
+          </OwnerDriverNomineeDetails>
+          <TrailerDetails Name="Trailer" Value="0">
+            <TrailerDetails Type="GroupData">
+              <SI Name="SI" Value="40000" Type="Double" />
+            </TrailerDetails>
+          </TrailerDetails>
+          <ElectronicAccessoriesDetails Name="Electronic Accessories" Value="0">
+            <ElectronicAccessoriesDetails Type="GroupData">
+              <SI Name="SI" Value="15000" Type="Double" />
+            </ElectronicAccessoriesDetails>
+          </ElectronicAccessoriesDetails>
+          <NonElectricalAccessoriesDetails Name="Non Electrical Accessories" Value="0">
+            <NonElectricalAccessoriesDetails Type="GroupData">
+              <SI Name="SI" Value="25000" Type="Double" />
+            </NonElectricalAccessoriesDetails>
+          </NonElectricalAccessoriesDetails>
+          <CNGandLPGKitDetails Name="CNG and LPG Kit" Value="0">
+            <CNGandLPGKitDetails Type="GroupData">
+              <SI Name="SI" Value="50000" Type="Double" />
+            </CNGandLPGKitDetails>
+          </CNGandLPGKitDetails>
+          <NamedPACoverDetails Name="Named PA Cover" Value="0">
+            <NamedPACoverDetails Type="GroupData">
+              <SI Name="SI" Value="100000" Type="Double" />
+            </NamedPACoverDetails>
+          </NamedPACoverDetails>
+          <UnnamedPAcoverDetails Name="Unnamed PA cover" Value="0">
+            <UnnamedPAcoverDetails Type="GroupData">
+              <SI Name="SI" Value="50000" Type="Double" />
+            </UnnamedPAcoverDetails>
+          </UnnamedPAcoverDetails>
+          <PaiddriverPAcoverDetails Name="Paid driver PA cover" Value="0">
+            <PaiddriverPAcoverDetails Type="GroupData">
+              <SI Name="SI" Value="80000" Type="Double" />
+            </PaiddriverPAcoverDetails>
+          </PaiddriverPAcoverDetails>
+        </OtherDetailsGrid>
+        <RiskCoverDetailsGrid>
+          <RiskGroup Name="Vehicle Base Value" Value="Risk Wise Cover Details" Type="GroupData">
+            <CoverSIComponant Name="Basic TP  including TPPD premium" Value="6000" Type="">
+              <PropCoverDetails_Applicable Name="PropCoverDetails_Applicable" Type="Boolean" Value="True" />
+              <PropCoverDetails_BaseTariffRate Name="PropCoverDetails_BaseTariffRate" Type="Double" Value="0" />
+              <PropCoverDetails_Commission Name="PropCoverDetails_Commission" Type="Double" Value="0" />
+              <PropCoverDetails_CoverGroups Name="PropCoverDetails_CoverGroups" Type="String" Value="Basic TP  including TPPD premium" />
+              <PropCoverDetails_CumEndSerTax Name="PropCoverDetails_CumEndSerTax" Type="Double" Value="0" />
+              <PropCoverDetails_CumalativEndPrem Name="PropCoverDetails_CumalativEndPrem" Type="Double" Value="0" />
+              <PropCoverDetails_CumulativePremium Name="PropCoverDetails_CumulativePremium" Type="Double" Value="0" />
+              <PropCoverDetails_CumulativeServicetax Name="PropCoverDetails_CumulativeServicetax" Type="Double" Value="0" />
+              <PropCoverDetails_DifferentialSI Name="PropCoverDetails_DifferentialSI" Type="Double" Value="6000" />
+              <PropCoverDetails_EndorsementAmount Name="PropCoverDetails_EndorsementAmount" Type="Double" Value="1598" />
+              <PropCoverDetails_FinalRate Name="PropCoverDetails_FinalRate" Type="Double" Value="0" />
+              <PropCoverDetails_IsDataDeleted Name="PropCoverDetails_IsDataDeleted" Type="Boolean" Value="False" />
+              <PropCoverDetails_IsOldDataDeleted Name="PropCoverDetails_IsOldDataDeleted" Type="Boolean" Value="False" />
+              <PropCoverDetails_LoadingDiscount_Col Name="PropCoverDetails_LoadingDiscount_Col" Type="CoverDetails_LoadingDiscount[]" Value="" />
+              <PropCoverDetails_MMCPCode Name="PropCoverDetails_MMCPCode" Type="String" Value="" />
+              <PropCoverDetails_Premium Name="PropCoverDetails_Premium" Type="Double" Value="1598" />
+              <PropCoverDetails_Rate Name="PropCoverDetails_Rate" Type="Double" Value="0" />
+              <PropCoverDetails_SumInsured Name="PropCoverDetails_SumInsured" Type="Double" Value="699777" />
+              <PropCoverDetails_TariffRate Name="PropCoverDetails_TariffRate" Type="Double" Value="0" />
+            </CoverSIComponant>
+            <CoverSIComponant Name="Own Damage" Value="699777" Type="">
+              <PropCoverDetails_LoadingDiscount_Col Name="PropCoverDetails_LoadingDiscount_Col" Type="CoverDetails_LoadingDiscount[]" Value="" />
+              <PropCoverDetails_Applicable Name="PropCoverDetails_Applicable" Type="Boolean" Value="True" />
+              <PropCoverDetails_BaseTariffRate Name="PropCoverDetails_BaseTariffRate" Type="Double" Value="0" />
+              <PropCoverDetails_Commission Name="PropCoverDetails_Commission" Type="Double" Value="17.5" />
+              <PropCoverDetails_CoverGroups Name="PropCoverDetails_CoverGroups" Type="String" Value="Own Damage" />
+              <PropCoverDetails_CumEndSerTax Name="PropCoverDetails_CumEndSerTax" Type="Double" Value="0" />
+              <PropCoverDetails_CumalativEndPrem Name="PropCoverDetails_CumalativEndPrem" Type="Double" Value="0" />
+              <PropCoverDetails_CumulativePremium Name="PropCoverDetails_CumulativePremium" Type="Double" Value="0" />
+              <PropCoverDetails_CumulativeServicetax Name="PropCoverDetails_CumulativeServicetax" Type="Double" Value="0" />
+              <PropCoverDetails_DifferentialSI Name="PropCoverDetails_DifferentialSI" Type="Double" Value="699777" />
+              <PropCoverDetails_EndorsementAmount Name="PropCoverDetails_EndorsementAmount" Type="Double" Value="15823.36" />
+              <PropCoverDetails_FinalRate Name="PropCoverDetails_FinalRate" Type="Double" Value="0" />
+              <PropCoverDetails_IsDataDeleted Name="PropCoverDetails_IsDataDeleted" Type="Boolean" Value="False" />
+              <PropCoverDetails_IsOldDataDeleted Name="PropCoverDetails_IsOldDataDeleted" Type="Boolean" Value="False" />
+              <PropCoverDetails_MMCPCode Name="PropCoverDetails_MMCPCode" Type="String" Value="" />
+              <PropCoverDetails_Premium Name="PropCoverDetails_Premium" Type="Double" Value="15823.36" />
+              <PropCoverDetails_Rate Name="PropCoverDetails_Rate" Type="Double" Value="0" />
+              <PropCoverDetails_SumInsured Name="PropCoverDetails_SumInsured" Type="Double" Value="699777" />
+              <PropCoverDetails_TariffRate Name="PropCoverDetails_TariffRate" Type="Double" Value="0" />
+            </CoverSIComponant>
+            <CoverSIComponant Name="Engine Protect" Value="789777" Type="">
+              <PropCoverDetails_LoadingDiscount_Col Name="PropCoverDetails_LoadingDiscount_Col" Type="CoverDetails_LoadingDiscount[]" Value="" />
+              <PropCoverDetails_Applicable Name="PropCoverDetails_Applicable" Type="Boolean" Value="True" />
+              <PropCoverDetails_BaseTariffRate Name="PropCoverDetails_BaseTariffRate" Type="Double" Value="0" />
+              <PropCoverDetails_Commission Name="PropCoverDetails_Commission" Type="Double" Value="17.5" />
+              <PropCoverDetails_CoverGroups Name="PropCoverDetails_CoverGroups" Type="String" Value="Engine Protect" />
+              <PropCoverDetails_CumEndSerTax Name="PropCoverDetails_CumEndSerTax" Type="Double" Value="0" />
+              <PropCoverDetails_CumalativEndPrem Name="PropCoverDetails_CumalativEndPrem" Type="Double" Value="0" />
+              <PropCoverDetails_CumulativePremium Name="PropCoverDetails_CumulativePremium" Type="Double" Value="0" />
+              <PropCoverDetails_CumulativeServicetax Name="PropCoverDetails_CumulativeServicetax" Type="Double" Value="0" />
+              <PropCoverDetails_DifferentialSI Name="PropCoverDetails_DifferentialSI" Type="Double" Value="789777" />
+              <PropCoverDetails_EndorsementAmount Name="PropCoverDetails_EndorsementAmount" Type="Double" Value="6528.3" />
+              <PropCoverDetails_FinalRate Name="PropCoverDetails_FinalRate" Type="Double" Value="0" />
+              <PropCoverDetails_IsDataDeleted Name="PropCoverDetails_IsDataDeleted" Type="Boolean" Value="False" />
+              <PropCoverDetails_IsOldDataDeleted Name="PropCoverDetails_IsOldDataDeleted" Type="Boolean" Value="False" />
+              <PropCoverDetails_MMCPCode Name="PropCoverDetails_MMCPCode" Type="String" Value="" />
+              <PropCoverDetails_Premium Name="PropCoverDetails_Premium" Type="Double" Value="6528.3" />
+              <PropCoverDetails_Rate Name="PropCoverDetails_Rate" Type="Double" Value="0" />
+              <PropCoverDetails_SumInsured Name="PropCoverDetails_SumInsured" Type="Double" Value="789777" />
+              <PropCoverDetails_TariffRate Name="PropCoverDetails_TariffRate" Type="Double" Value="0" />
+            </CoverSIComponant>
+            <CoverSIComponant Name="Return to Invoice" Value="789777" Type="">
+              <PropCoverDetails_LoadingDiscount_Col Name="PropCoverDetails_LoadingDiscount_Col" Type="CoverDetails_LoadingDiscount[]" Value="" />
+              <PropCoverDetails_Applicable Name="PropCoverDetails_Applicable" Type="Boolean" Value="True" />
+              <PropCoverDetails_BaseTariffRate Name="PropCoverDetails_BaseTariffRate" Type="Double" Value="0" />
+              <PropCoverDetails_Commission Name="PropCoverDetails_Commission" Type="Double" Value="17.5" />
+              <PropCoverDetails_CoverGroups Name="PropCoverDetails_CoverGroups" Type="String" Value="Return to Invoice" />
+              <PropCoverDetails_CumEndSerTax Name="PropCoverDetails_CumEndSerTax" Type="Double" Value="0" />
+              <PropCoverDetails_CumalativEndPrem Name="PropCoverDetails_CumalativEndPrem" Type="Double" Value="0" />
+              <PropCoverDetails_CumulativePremium Name="PropCoverDetails_CumulativePremium" Type="Double" Value="0" />
+              <PropCoverDetails_CumulativeServicetax Name="PropCoverDetails_CumulativeServicetax" Type="Double" Value="0" />
+              <PropCoverDetails_DifferentialSI Name="PropCoverDetails_DifferentialSI" Type="Double" Value="789777" />
+              <PropCoverDetails_EndorsementAmount Name="PropCoverDetails_EndorsementAmount" Type="Double" Value="2469.63" />
+              <PropCoverDetails_FinalRate Name="PropCoverDetails_FinalRate" Type="Double" Value="0" />
+              <PropCoverDetails_IsDataDeleted Name="PropCoverDetails_IsDataDeleted" Type="Boolean" Value="False" />
+              <PropCoverDetails_IsOldDataDeleted Name="PropCoverDetails_IsOldDataDeleted" Type="Boolean" Value="False" />
+              <PropCoverDetails_MMCPCode Name="PropCoverDetails_MMCPCode" Type="String" Value="" />
+              <PropCoverDetails_Premium Name="PropCoverDetails_Premium" Type="Double" Value="2469.63" />
+              <PropCoverDetails_Rate Name="PropCoverDetails_Rate" Type="Double" Value="0" />
+              <PropCoverDetails_SumInsured Name="PropCoverDetails_SumInsured" Type="Double" Value="789777" />
+              <PropCoverDetails_TariffRate Name="PropCoverDetails_TariffRate" Type="Double" Value="0" />
+            </CoverSIComponant>
+            <CoverSIComponant Name="Consumable Cover" Value="789777" Type="">
+              <PropCoverDetails_LoadingDiscount_Col Name="PropCoverDetails_LoadingDiscount_Col" Type="CoverDetails_LoadingDiscount[]" Value="" />
+              <PropCoverDetails_Applicable Name="PropCoverDetails_Applicable" Type="Boolean" Value="True" />
+              <PropCoverDetails_BaseTariffRate Name="PropCoverDetails_BaseTariffRate" Type="Double" Value="0" />
+              <PropCoverDetails_Commission Name="PropCoverDetails_Commission" Type="Double" Value="17.5" />
+              <PropCoverDetails_CoverGroups Name="PropCoverDetails_CoverGroups" Type="String" Value="Consumable Cover" />
+              <PropCoverDetails_CumEndSerTax Name="PropCoverDetails_CumEndSerTax" Type="Double" Value="0" />
+              <PropCoverDetails_CumalativEndPrem Name="PropCoverDetails_CumalativEndPrem" Type="Double" Value="0" />
+              <PropCoverDetails_CumulativePremium Name="PropCoverDetails_CumulativePremium" Type="Double" Value="0" />
+              <PropCoverDetails_CumulativeServicetax Name="PropCoverDetails_CumulativeServicetax" Type="Double" Value="0" />
+              <PropCoverDetails_DifferentialSI Name="PropCoverDetails_DifferentialSI" Type="Double" Value="789777" />
+              <PropCoverDetails_EndorsementAmount Name="PropCoverDetails_EndorsementAmount" Type="Double" Value="2336.95" />
+              <PropCoverDetails_FinalRate Name="PropCoverDetails_FinalRate" Type="Double" Value="0" />
+              <PropCoverDetails_IsDataDeleted Name="PropCoverDetails_IsDataDeleted" Type="Boolean" Value="False" />
+              <PropCoverDetails_IsOldDataDeleted Name="PropCoverDetails_IsOldDataDeleted" Type="Boolean" Value="False" />
+              <PropCoverDetails_MMCPCode Name="PropCoverDetails_MMCPCode" Type="String" Value="" />
+              <PropCoverDetails_Premium Name="PropCoverDetails_Premium" Type="Double" Value="2336.95" />
+              <PropCoverDetails_Rate Name="PropCoverDetails_Rate" Type="Double" Value="0" />
+              <PropCoverDetails_SumInsured Name="PropCoverDetails_SumInsured" Type="Double" Value="789777" />
+              <PropCoverDetails_TariffRate Name="PropCoverDetails_TariffRate" Type="Double" Value="0" />
+            </CoverSIComponant>
+            <CoverSIComponant Name="Legal Liability for paid driver cleaner conductor" Value="0" Type="">
+              <PropCoverDetails_LoadingDiscount_Col Name="PropCoverDetails_LoadingDiscount_Col" Type="CoverDetails_LoadingDiscount[]" Value="" />
+              <PropCoverDetails_Applicable Name="PropCoverDetails_Applicable" Type="Boolean" Value="True" />
+              <PropCoverDetails_BaseTariffRate Name="PropCoverDetails_BaseTariffRate" Type="Double" Value="0" />
+              <PropCoverDetails_Commission Name="PropCoverDetails_Commission" Type="Double" Value="0" />
+              <PropCoverDetails_CoverGroups Name="PropCoverDetails_CoverGroups" Type="String" Value="Legal Liability for paid driver cleaner conductor" />
+              <PropCoverDetails_CumEndSerTax Name="PropCoverDetails_CumEndSerTax" Type="Double" Value="0" />
+              <PropCoverDetails_CumalativEndPrem Name="PropCoverDetails_CumalativEndPrem" Type="Double" Value="0" />
+              <PropCoverDetails_CumulativePremium Name="PropCoverDetails_CumulativePremium" Type="Double" Value="0" />
+              <PropCoverDetails_CumulativeServicetax Name="PropCoverDetails_CumulativeServicetax" Type="Double" Value="0" />
+              <PropCoverDetails_DifferentialSI Name="PropCoverDetails_DifferentialSI" Type="Double" Value="0" />
+              <PropCoverDetails_EndorsementAmount Name="PropCoverDetails_EndorsementAmount" Type="Double" Value="150" />
+              <PropCoverDetails_FinalRate Name="PropCoverDetails_FinalRate" Type="Double" Value="0" />
+              <PropCoverDetails_IsDataDeleted Name="PropCoverDetails_IsDataDeleted" Type="Boolean" Value="False" />
+              <PropCoverDetails_IsOldDataDeleted Name="PropCoverDetails_IsOldDataDeleted" Type="Boolean" Value="False" />
+              <PropCoverDetails_MMCPCode Name="PropCoverDetails_MMCPCode" Type="String" Value="" />
+              <PropCoverDetails_Premium Name="PropCoverDetails_Premium" Type="Double" Value="150" />
+              <PropCoverDetails_Rate Name="PropCoverDetails_Rate" Type="Double" Value="0" />
+              <PropCoverDetails_SumInsured Name="PropCoverDetails_SumInsured" Type="Double" Value="0" />
+              <PropCoverDetails_TariffRate Name="PropCoverDetails_TariffRate" Type="Double" Value="0" />
+            </CoverSIComponant>
+            <CoverSIComponant Name="Legal Liability for Employees other than paid driver conductor cleaner" Value="0" Type="">
+              <PropCoverDetails_LoadingDiscount_Col Name="PropCoverDetails_LoadingDiscount_Col" Type="CoverDetails_LoadingDiscount[]" Value="" />
+              <PropCoverDetails_Applicable Name="PropCoverDetails_Applicable" Type="Boolean" Value="True" />
+              <PropCoverDetails_BaseTariffRate Name="PropCoverDetails_BaseTariffRate" Type="Double" Value="0" />
+              <PropCoverDetails_Commission Name="PropCoverDetails_Commission" Type="Double" Value="0" />
+              <PropCoverDetails_CoverGroups Name="PropCoverDetails_CoverGroups" Type="String" Value="Legal Liability for Employees other than paid driver conductor cleaner" />
+              <PropCoverDetails_CumEndSerTax Name="PropCoverDetails_CumEndSerTax" Type="Double" Value="0" />
+              <PropCoverDetails_CumalativEndPrem Name="PropCoverDetails_CumalativEndPrem" Type="Double" Value="0" />
+              <PropCoverDetails_CumulativePremium Name="PropCoverDetails_CumulativePremium" Type="Double" Value="0" />
+              <PropCoverDetails_CumulativeServicetax Name="PropCoverDetails_CumulativeServicetax" Type="Double" Value="0" />
+              <PropCoverDetails_DifferentialSI Name="PropCoverDetails_DifferentialSI" Type="Double" Value="0" />
+              <PropCoverDetails_EndorsementAmount Name="PropCoverDetails_EndorsementAmount" Type="Double" Value="250" />
+              <PropCoverDetails_FinalRate Name="PropCoverDetails_FinalRate" Type="Double" Value="0" />
+              <PropCoverDetails_IsDataDeleted Name="PropCoverDetails_IsDataDeleted" Type="Boolean" Value="False" />
+              <PropCoverDetails_IsOldDataDeleted Name="PropCoverDetails_IsOldDataDeleted" Type="Boolean" Value="False" />
+              <PropCoverDetails_MMCPCode Name="PropCoverDetails_MMCPCode" Type="String" Value="" />
+              <PropCoverDetails_Premium Name="PropCoverDetails_Premium" Type="Double" Value="250" />
+              <PropCoverDetails_Rate Name="PropCoverDetails_Rate" Type="Double" Value="0" />
+              <PropCoverDetails_SumInsured Name="PropCoverDetails_SumInsured" Type="Double" Value="0" />
+              <PropCoverDetails_TariffRate Name="PropCoverDetails_TariffRate" Type="Double" Value="0" />
+            </CoverSIComponant>
+            <CoverSIComponant Name="Road Side Assistance" Value="0" Type="">
+              <PropCoverDetails_LoadingDiscount_Col Name="PropCoverDetails_LoadingDiscount_Col" Type="CoverDetails_LoadingDiscount[]" Value="" />
+              <PropCoverDetails_Applicable Name="PropCoverDetails_Applicable" Type="Boolean" Value="True" />
+              <PropCoverDetails_BaseTariffRate Name="PropCoverDetails_BaseTariffRate" Type="Double" Value="0" />
+              <PropCoverDetails_Commission Name="PropCoverDetails_Commission" Type="Double" Value="17.5" />
+              <PropCoverDetails_CoverGroups Name="PropCoverDetails_CoverGroups" Type="String" Value="Road Side Assistance" />
+              <PropCoverDetails_CumEndSerTax Name="PropCoverDetails_CumEndSerTax" Type="Double" Value="0" />
+              <PropCoverDetails_CumalativEndPrem Name="PropCoverDetails_CumalativEndPrem" Type="Double" Value="0" />
+              <PropCoverDetails_CumulativePremium Name="PropCoverDetails_CumulativePremium" Type="Double" Value="0" />
+              <PropCoverDetails_CumulativeServicetax Name="PropCoverDetails_CumulativeServicetax" Type="Double" Value="0" />
+              <PropCoverDetails_DifferentialSI Name="PropCoverDetails_DifferentialSI" Type="Double" Value="0" />
+              <PropCoverDetails_EndorsementAmount Name="PropCoverDetails_EndorsementAmount" Type="Double" Value="500" />
+              <PropCoverDetails_FinalRate Name="PropCoverDetails_FinalRate" Type="Double" Value="0" />
+              <PropCoverDetails_IsDataDeleted Name="PropCoverDetails_IsDataDeleted" Type="Boolean" Value="False" />
+              <PropCoverDetails_IsOldDataDeleted Name="PropCoverDetails_IsOldDataDeleted" Type="Boolean" Value="False" />
+              <PropCoverDetails_MMCPCode Name="PropCoverDetails_MMCPCode" Type="String" Value="" />
+              <PropCoverDetails_Premium Name="PropCoverDetails_Premium" Type="Double" Value="500" />
+              <PropCoverDetails_Rate Name="PropCoverDetails_Rate" Type="Double" Value="0" />
+              <PropCoverDetails_SumInsured Name="PropCoverDetails_SumInsured" Type="Double" Value="0" />
+              <PropCoverDetails_TariffRate Name="PropCoverDetails_TariffRate" Type="Double" Value="0" />
+            </CoverSIComponant>
+            <CoverSIComponant Name="Rallies TP" Value="0" Type="">
+              <PropCoverDetails_LoadingDiscount_Col Name="PropCoverDetails_LoadingDiscount_Col" Type="CoverDetails_LoadingDiscount[]" Value="" />
+              <PropCoverDetails_Applicable Name="PropCoverDetails_Applicable" Type="Boolean" Value="True" />
+              <PropCoverDetails_BaseTariffRate Name="PropCoverDetails_BaseTariffRate" Type="Double" Value="0" />
+              <PropCoverDetails_Commission Name="PropCoverDetails_Commission" Type="Double" Value="0" />
+              <PropCoverDetails_CoverGroups Name="PropCoverDetails_CoverGroups" Type="String" Value="Rallies TP" />
+              <PropCoverDetails_CumEndSerTax Name="PropCoverDetails_CumEndSerTax" Type="Double" Value="0" />
+              <PropCoverDetails_CumalativEndPrem Name="PropCoverDetails_CumalativEndPrem" Type="Double" Value="0" />
+              <PropCoverDetails_CumulativePremium Name="PropCoverDetails_CumulativePremium" Type="Double" Value="0" />
+              <PropCoverDetails_CumulativeServicetax Name="PropCoverDetails_CumulativeServicetax" Type="Double" Value="0" />
+              <PropCoverDetails_DifferentialSI Name="PropCoverDetails_DifferentialSI" Type="Double" Value="0" />
+              <PropCoverDetails_EndorsementAmount Name="PropCoverDetails_EndorsementAmount" Type="Double" Value="25" />
+              <PropCoverDetails_FinalRate Name="PropCoverDetails_FinalRate" Type="Double" Value="0" />
+              <PropCoverDetails_IsDataDeleted Name="PropCoverDetails_IsDataDeleted" Type="Boolean" Value="False" />
+              <PropCoverDetails_IsOldDataDeleted Name="PropCoverDetails_IsOldDataDeleted" Type="Boolean" Value="False" />
+              <PropCoverDetails_MMCPCode Name="PropCoverDetails_MMCPCode" Type="String" Value="" />
+              <PropCoverDetails_Premium Name="PropCoverDetails_Premium" Type="Double" Value="25" />
+              <PropCoverDetails_Rate Name="PropCoverDetails_Rate" Type="Double" Value="0" />
+              <PropCoverDetails_SumInsured Name="PropCoverDetails_SumInsured" Type="Double" Value="0" />
+              <PropCoverDetails_TariffRate Name="PropCoverDetails_TariffRate" Type="Double" Value="0" />
+            </CoverSIComponant>
+            <CoverSIComponant Name="Depreciation Cover" Value="789777" Type="">
+              <PropCoverDetails_LoadingDiscount_Col Name="PropCoverDetails_LoadingDiscount_Col" Type="CoverDetails_LoadingDiscount[]" Value="" />
+              <PropCoverDetails_Applicable Name="PropCoverDetails_Applicable" Type="Boolean" Value="True" />
+              <PropCoverDetails_BaseTariffRate Name="PropCoverDetails_BaseTariffRate" Type="Double" Value="0" />
+              <PropCoverDetails_Commission Name="PropCoverDetails_Commission" Type="Double" Value="17.5" />
+              <PropCoverDetails_CoverGroups Name="PropCoverDetails_CoverGroups" Type="String" Value="Depreciation Cover" />
+              <PropCoverDetails_CumEndSerTax Name="PropCoverDetails_CumEndSerTax" Type="Double" Value="0" />
+              <PropCoverDetails_CumalativEndPrem Name="PropCoverDetails_CumalativEndPrem" Type="Double" Value="0" />
+              <PropCoverDetails_CumulativePremium Name="PropCoverDetails_CumulativePremium" Type="Double" Value="0" />
+              <PropCoverDetails_CumulativeServicetax Name="PropCoverDetails_CumulativeServicetax" Type="Double" Value="0" />
+              <PropCoverDetails_DifferentialSI Name="PropCoverDetails_DifferentialSI" Type="Double" Value="789777" />
+              <PropCoverDetails_EndorsementAmount Name="PropCoverDetails_EndorsementAmount" Type="Double" Value="7947.53" />
+              <PropCoverDetails_FinalRate Name="PropCoverDetails_FinalRate" Type="Double" Value="0" />
+              <PropCoverDetails_IsDataDeleted Name="PropCoverDetails_IsDataDeleted" Type="Boolean" Value="False" />
+              <PropCoverDetails_IsOldDataDeleted Name="PropCoverDetails_IsOldDataDeleted" Type="Boolean" Value="False" />
+              <PropCoverDetails_MMCPCode Name="PropCoverDetails_MMCPCode" Type="String" Value="" />
+              <PropCoverDetails_Premium Name="PropCoverDetails_Premium" Type="Double" Value="7947.53" />
+              <PropCoverDetails_Rate Name="PropCoverDetails_Rate" Type="Double" Value="0" />
+              <PropCoverDetails_SumInsured Name="PropCoverDetails_SumInsured" Type="Double" Value="789777" />
+              <PropCoverDetails_TariffRate Name="PropCoverDetails_TariffRate" Type="Double" Value="0" />
+            </CoverSIComponant>
+            <CoverSIComponant Name="Rallies OD" Value="789777" Type="">
+              <PropCoverDetails_LoadingDiscount_Col Name="PropCoverDetails_LoadingDiscount_Col" Type="CoverDetails_LoadingDiscount[]" Value="" />
+              <PropCoverDetails_Applicable Name="PropCoverDetails_Applicable" Type="Boolean" Value="True" />
+              <PropCoverDetails_BaseTariffRate Name="PropCoverDetails_BaseTariffRate" Type="Double" Value="0" />
+              <PropCoverDetails_Commission Name="PropCoverDetails_Commission" Type="Double" Value="17.5" />
+              <PropCoverDetails_CoverGroups Name="PropCoverDetails_CoverGroups" Type="String" Value="Rallies OD" />
+              <PropCoverDetails_CumEndSerTax Name="PropCoverDetails_CumEndSerTax" Type="Double" Value="0" />
+              <PropCoverDetails_CumalativEndPrem Name="PropCoverDetails_CumalativEndPrem" Type="Double" Value="0" />
+              <PropCoverDetails_CumulativePremium Name="PropCoverDetails_CumulativePremium" Type="Double" Value="0" />
+              <PropCoverDetails_CumulativeServicetax Name="PropCoverDetails_CumulativeServicetax" Type="Double" Value="0" />
+              <PropCoverDetails_DifferentialSI Name="PropCoverDetails_DifferentialSI" Type="Double" Value="789777" />
+              <PropCoverDetails_EndorsementAmount Name="PropCoverDetails_EndorsementAmount" Type="Double" Value="60" />
+              <PropCoverDetails_FinalRate Name="PropCoverDetails_FinalRate" Type="Double" Value="0" />
+              <PropCoverDetails_IsDataDeleted Name="PropCoverDetails_IsDataDeleted" Type="Boolean" Value="False" />
+              <PropCoverDetails_IsOldDataDeleted Name="PropCoverDetails_IsOldDataDeleted" Type="Boolean" Value="False" />
+              <PropCoverDetails_MMCPCode Name="PropCoverDetails_MMCPCode" Type="String" Value="" />
+              <PropCoverDetails_Premium Name="PropCoverDetails_Premium" Type="Double" Value="60" />
+              <PropCoverDetails_Rate Name="PropCoverDetails_Rate" Type="Double" Value="0" />
+              <PropCoverDetails_SumInsured Name="PropCoverDetails_SumInsured" Type="Double" Value="789777" />
+              <PropCoverDetails_TariffRate Name="PropCoverDetails_TariffRate" Type="Double" Value="0" />
+            </CoverSIComponant>
+            <CoverSIComponant Name="Liability to soldier sailor airman" Value="0" Type="">
+              <PropCoverDetails_LoadingDiscount_Col Name="PropCoverDetails_LoadingDiscount_Col" Type="CoverDetails_LoadingDiscount[]" Value="" />
+              <PropCoverDetails_Applicable Name="PropCoverDetails_Applicable" Type="Boolean" Value="True" />
+              <PropCoverDetails_BaseTariffRate Name="PropCoverDetails_BaseTariffRate" Type="Double" Value="0" />
+              <PropCoverDetails_Commission Name="PropCoverDetails_Commission" Type="Double" Value="0" />
+              <PropCoverDetails_CoverGroups Name="PropCoverDetails_CoverGroups" Type="String" Value="Liability to soldier sailor airman" />
+              <PropCoverDetails_CumEndSerTax Name="PropCoverDetails_CumEndSerTax" Type="Double" Value="0" />
+              <PropCoverDetails_CumalativEndPrem Name="PropCoverDetails_CumalativEndPrem" Type="Double" Value="0" />
+              <PropCoverDetails_CumulativePremium Name="PropCoverDetails_CumulativePremium" Type="Double" Value="0" />
+              <PropCoverDetails_CumulativeServicetax Name="PropCoverDetails_CumulativeServicetax" Type="Double" Value="0" />
+              <PropCoverDetails_DifferentialSI Name="PropCoverDetails_DifferentialSI" Type="Double" Value="0" />
+              <PropCoverDetails_EndorsementAmount Name="PropCoverDetails_EndorsementAmount" Type="Double" Value="100" />
+              <PropCoverDetails_FinalRate Name="PropCoverDetails_FinalRate" Type="Double" Value="0" />
+              <PropCoverDetails_IsDataDeleted Name="PropCoverDetails_IsDataDeleted" Type="Boolean" Value="False" />
+              <PropCoverDetails_IsOldDataDeleted Name="PropCoverDetails_IsOldDataDeleted" Type="Boolean" Value="False" />
+              <PropCoverDetails_MMCPCode Name="PropCoverDetails_MMCPCode" Type="String" Value="" />
+              <PropCoverDetails_Premium Name="PropCoverDetails_Premium" Type="Double" Value="100" />
+              <PropCoverDetails_Rate Name="PropCoverDetails_Rate" Type="Double" Value="0" />
+              <PropCoverDetails_SumInsured Name="PropCoverDetails_SumInsured" Type="Double" Value="0" />
+              <PropCoverDetails_TariffRate Name="PropCoverDetails_TariffRate" Type="Double" Value="100" />
+            </CoverSIComponant>
+            <CoverSIComponant Name="Geographical Extension TP" Value="0" Type="">
+              <PropCoverDetails_LoadingDiscount_Col Name="PropCoverDetails_LoadingDiscount_Col" Type="CoverDetails_LoadingDiscount[]" Value="" />
+              <PropCoverDetails_Applicable Name="PropCoverDetails_Applicable" Type="Boolean" Value="True" />
+              <PropCoverDetails_BaseTariffRate Name="PropCoverDetails_BaseTariffRate" Type="Double" Value="0" />
+              <PropCoverDetails_Commission Name="PropCoverDetails_Commission" Type="Double" Value="0" />
+              <PropCoverDetails_CoverGroups Name="PropCoverDetails_CoverGroups" Type="String" Value="Geographical Extension TP" />
+              <PropCoverDetails_CumEndSerTax Name="PropCoverDetails_CumEndSerTax" Type="Double" Value="0" />
+              <PropCoverDetails_CumalativEndPrem Name="PropCoverDetails_CumalativEndPrem" Type="Double" Value="0" />
+              <PropCoverDetails_CumulativePremium Name="PropCoverDetails_CumulativePremium" Type="Double" Value="0" />
+              <PropCoverDetails_CumulativeServicetax Name="PropCoverDetails_CumulativeServicetax" Type="Double" Value="0" />
+              <PropCoverDetails_DifferentialSI Name="PropCoverDetails_DifferentialSI" Type="Double" Value="0" />
+              <PropCoverDetails_EndorsementAmount Name="PropCoverDetails_EndorsementAmount" Type="Double" Value="100" />
+              <PropCoverDetails_FinalRate Name="PropCoverDetails_FinalRate" Type="Double" Value="0" />
+              <PropCoverDetails_IsDataDeleted Name="PropCoverDetails_IsDataDeleted" Type="Boolean" Value="False" />
+              <PropCoverDetails_IsOldDataDeleted Name="PropCoverDetails_IsOldDataDeleted" Type="Boolean" Value="False" />
+              <PropCoverDetails_MMCPCode Name="PropCoverDetails_MMCPCode" Type="String" Value="" />
+              <PropCoverDetails_Premium Name="PropCoverDetails_Premium" Type="Double" Value="100" />
+              <PropCoverDetails_Rate Name="PropCoverDetails_Rate" Type="Double" Value="0" />
+              <PropCoverDetails_SumInsured Name="PropCoverDetails_SumInsured" Type="Double" Value="0" />
+              <PropCoverDetails_TariffRate Name="PropCoverDetails_TariffRate" Type="Double" Value="0" />
+            </CoverSIComponant>
+            <CoverSIComponant Name="Geographical Extension OD" Value="0" Type="">
+              <PropCoverDetails_LoadingDiscount_Col Name="PropCoverDetails_LoadingDiscount_Col" Type="CoverDetails_LoadingDiscount[]" Value="" />
+              <PropCoverDetails_Applicable Name="PropCoverDetails_Applicable" Type="Boolean" Value="True" />
+              <PropCoverDetails_BaseTariffRate Name="PropCoverDetails_BaseTariffRate" Type="Double" Value="0" />
+              <PropCoverDetails_Commission Name="PropCoverDetails_Commission" Type="Double" Value="17.5" />
+              <PropCoverDetails_CoverGroups Name="PropCoverDetails_CoverGroups" Type="String" Value="Geographical Extension OD" />
+              <PropCoverDetails_CumEndSerTax Name="PropCoverDetails_CumEndSerTax" Type="Double" Value="0" />
+              <PropCoverDetails_CumalativEndPrem Name="PropCoverDetails_CumalativEndPrem" Type="Double" Value="0" />
+              <PropCoverDetails_CumulativePremium Name="PropCoverDetails_CumulativePremium" Type="Double" Value="0" />
+              <PropCoverDetails_CumulativeServicetax Name="PropCoverDetails_CumulativeServicetax" Type="Double" Value="0" />
+              <PropCoverDetails_DifferentialSI Name="PropCoverDetails_DifferentialSI" Type="Double" Value="0" />
+              <PropCoverDetails_EndorsementAmount Name="PropCoverDetails_EndorsementAmount" Type="Double" Value="400" />
+              <PropCoverDetails_FinalRate Name="PropCoverDetails_FinalRate" Type="Double" Value="0" />
+              <PropCoverDetails_IsDataDeleted Name="PropCoverDetails_IsDataDeleted" Type="Boolean" Value="False" />
+              <PropCoverDetails_IsOldDataDeleted Name="PropCoverDetails_IsOldDataDeleted" Type="Boolean" Value="False" />
+              <PropCoverDetails_MMCPCode Name="PropCoverDetails_MMCPCode" Type="String" Value="" />
+              <PropCoverDetails_Premium Name="PropCoverDetails_Premium" Type="Double" Value="400" />
+              <PropCoverDetails_Rate Name="PropCoverDetails_Rate" Type="Double" Value="0" />
+              <PropCoverDetails_SumInsured Name="PropCoverDetails_SumInsured" Type="Double" Value="0" />
+              <PropCoverDetails_TariffRate Name="PropCoverDetails_TariffRate" Type="Double" Value="0" />
+            </CoverSIComponant>
+            <CoverSIComponant Name="Owner Driver" Value="200000" Type="">
+              <PropCoverDetails_LoadingDiscount_Col Name="PropCoverDetails_LoadingDiscount_Col" Type="CoverDetails_LoadingDiscount[]" Value="" />
+              <PropCoverDetails_Applicable Name="PropCoverDetails_Applicable" Type="Boolean" Value="True" />
+              <PropCoverDetails_BaseTariffRate Name="PropCoverDetails_BaseTariffRate" Type="Double" Value="0" />
+              <PropCoverDetails_Commission Name="PropCoverDetails_Commission" Type="Double" Value="0" />
+              <PropCoverDetails_CoverGroups Name="PropCoverDetails_CoverGroups" Type="String" Value="Owner Driver" />
+              <PropCoverDetails_CumEndSerTax Name="PropCoverDetails_CumEndSerTax" Type="Double" Value="0" />
+              <PropCoverDetails_CumalativEndPrem Name="PropCoverDetails_CumalativEndPrem" Type="Double" Value="0" />
+              <PropCoverDetails_CumulativePremium Name="PropCoverDetails_CumulativePremium" Type="Double" Value="0" />
+              <PropCoverDetails_CumulativeServicetax Name="PropCoverDetails_CumulativeServicetax" Type="Double" Value="0" />
+              <PropCoverDetails_DifferentialSI Name="PropCoverDetails_DifferentialSI" Type="Double" Value="200000" />
+              <PropCoverDetails_EndorsementAmount Name="PropCoverDetails_EndorsementAmount" Type="Double" Value="100" />
+              <PropCoverDetails_FinalRate Name="PropCoverDetails_FinalRate" Type="Double" Value="0" />
+              <PropCoverDetails_IsDataDeleted Name="PropCoverDetails_IsDataDeleted" Type="Boolean" Value="False" />
+              <PropCoverDetails_IsOldDataDeleted Name="PropCoverDetails_IsOldDataDeleted" Type="Boolean" Value="False" />
+              <PropCoverDetails_MMCPCode Name="PropCoverDetails_MMCPCode" Type="String" Value="" />
+              <PropCoverDetails_Premium Name="PropCoverDetails_Premium" Type="Double" Value="100" />
+              <PropCoverDetails_Rate Name="PropCoverDetails_Rate" Type="Double" Value="0" />
+              <PropCoverDetails_SumInsured Name="PropCoverDetails_SumInsured" Type="Double" Value="200000" />
+              <PropCoverDetails_TariffRate Name="PropCoverDetails_TariffRate" Type="Double" Value="0" />
+            </CoverSIComponant>
+            <CoverSIComponant Name="CNG Kit TP" Value="0" Type="">
+              <PropCoverDetails_LoadingDiscount_Col Name="PropCoverDetails_LoadingDiscount_Col" Type="CoverDetails_LoadingDiscount[]" Value="" />
+              <PropCoverDetails_Applicable Name="PropCoverDetails_Applicable" Type="Boolean" Value="True" />
+              <PropCoverDetails_BaseTariffRate Name="PropCoverDetails_BaseTariffRate" Type="Double" Value="0" />
+              <PropCoverDetails_Commission Name="PropCoverDetails_Commission" Type="Double" Value="0" />
+              <PropCoverDetails_CoverGroups Name="PropCoverDetails_CoverGroups" Type="String" Value="CNG Kit TP" />
+              <PropCoverDetails_CumEndSerTax Name="PropCoverDetails_CumEndSerTax" Type="Double" Value="0" />
+              <PropCoverDetails_CumalativEndPrem Name="PropCoverDetails_CumalativEndPrem" Type="Double" Value="0" />
+              <PropCoverDetails_CumulativePremium Name="PropCoverDetails_CumulativePremium" Type="Double" Value="0" />
+              <PropCoverDetails_CumulativeServicetax Name="PropCoverDetails_CumulativeServicetax" Type="Double" Value="0" />
+              <PropCoverDetails_DifferentialSI Name="PropCoverDetails_DifferentialSI" Type="Double" Value="0" />
+              <PropCoverDetails_EndorsementAmount Name="PropCoverDetails_EndorsementAmount" Type="Double" Value="60" />
+              <PropCoverDetails_FinalRate Name="PropCoverDetails_FinalRate" Type="Double" Value="0" />
+              <PropCoverDetails_IsDataDeleted Name="PropCoverDetails_IsDataDeleted" Type="Boolean" Value="False" />
+              <PropCoverDetails_IsOldDataDeleted Name="PropCoverDetails_IsOldDataDeleted" Type="Boolean" Value="False" />
+              <PropCoverDetails_MMCPCode Name="PropCoverDetails_MMCPCode" Type="String" Value="" />
+              <PropCoverDetails_Premium Name="PropCoverDetails_Premium" Type="Double" Value="60" />
+              <PropCoverDetails_Rate Name="PropCoverDetails_Rate" Type="Double" Value="0" />
+              <PropCoverDetails_SumInsured Name="PropCoverDetails_SumInsured" Type="Double" Value="0" />
+              <PropCoverDetails_TariffRate Name="PropCoverDetails_TariffRate" Type="Double" Value="0" />
+            </CoverSIComponant>
+          </RiskGroup>
+          <RiskGroup Name="Trailer" Value="Risk Wise Cover Details" Type="GroupData">
+            <CoverSIComponant Name="Trailer OD" Value="40000" Type="">
+              <PropCoverDetails_LoadingDiscount_Col Name="PropCoverDetails_LoadingDiscount_Col" Type="CoverDetails_LoadingDiscount[]" Value="" />
+              <PropCoverDetails_Applicable Name="PropCoverDetails_Applicable" Type="Boolean" Value="True" />
+              <PropCoverDetails_BaseTariffRate Name="PropCoverDetails_BaseTariffRate" Type="Double" Value="0" />
+              <PropCoverDetails_Commission Name="PropCoverDetails_Commission" Type="Double" Value="17.5" />
+              <PropCoverDetails_CoverGroups Name="PropCoverDetails_CoverGroups" Type="String" Value="Trailer OD" />
+              <PropCoverDetails_CumEndSerTax Name="PropCoverDetails_CumEndSerTax" Type="Double" Value="0" />
+              <PropCoverDetails_CumalativEndPrem Name="PropCoverDetails_CumalativEndPrem" Type="Double" Value="0" />
+              <PropCoverDetails_CumulativePremium Name="PropCoverDetails_CumulativePremium" Type="Double" Value="0" />
+              <PropCoverDetails_CumulativeServicetax Name="PropCoverDetails_CumulativeServicetax" Type="Double" Value="0" />
+              <PropCoverDetails_DifferentialSI Name="PropCoverDetails_DifferentialSI" Type="Double" Value="40000" />
+              <PropCoverDetails_EndorsementAmount Name="PropCoverDetails_EndorsementAmount" Type="Double" Value="250" />
+              <PropCoverDetails_FinalRate Name="PropCoverDetails_FinalRate" Type="Double" Value="0" />
+              <PropCoverDetails_IsDataDeleted Name="PropCoverDetails_IsDataDeleted" Type="Boolean" Value="False" />
+              <PropCoverDetails_IsOldDataDeleted Name="PropCoverDetails_IsOldDataDeleted" Type="Boolean" Value="False" />
+              <PropCoverDetails_MMCPCode Name="PropCoverDetails_MMCPCode" Type="String" Value="" />
+              <PropCoverDetails_Premium Name="PropCoverDetails_Premium" Type="Double" Value="250" />
+              <PropCoverDetails_Rate Name="PropCoverDetails_Rate" Type="Double" Value="0" />
+              <PropCoverDetails_SumInsured Name="PropCoverDetails_SumInsured" Type="Double" Value="40000" />
+              <PropCoverDetails_TariffRate Name="PropCoverDetails_TariffRate" Type="Double" Value="0" />
+            </CoverSIComponant>
+            <CoverSIComponant Name="Trailer TP" Value="0" Type="">
+              <PropCoverDetails_LoadingDiscount_Col Name="PropCoverDetails_LoadingDiscount_Col" Type="CoverDetails_LoadingDiscount[]" Value="" />
+              <PropCoverDetails_Applicable Name="PropCoverDetails_Applicable" Type="Boolean" Value="True" />
+              <PropCoverDetails_BaseTariffRate Name="PropCoverDetails_BaseTariffRate" Type="Double" Value="0" />
+              <PropCoverDetails_Commission Name="PropCoverDetails_Commission" Type="Double" Value="0" />
+              <PropCoverDetails_CoverGroups Name="PropCoverDetails_CoverGroups" Type="String" Value="Trailer TP" />
+              <PropCoverDetails_CumEndSerTax Name="PropCoverDetails_CumEndSerTax" Type="Double" Value="0" />
+              <PropCoverDetails_CumalativEndPrem Name="PropCoverDetails_CumalativEndPrem" Type="Double" Value="0" />
+              <PropCoverDetails_CumulativePremium Name="PropCoverDetails_CumulativePremium" Type="Double" Value="0" />
+              <PropCoverDetails_CumulativeServicetax Name="PropCoverDetails_CumulativeServicetax" Type="Double" Value="0" />
+              <PropCoverDetails_DifferentialSI Name="PropCoverDetails_DifferentialSI" Type="Double" Value="0" />
+              <PropCoverDetails_EndorsementAmount Name="PropCoverDetails_EndorsementAmount" Type="Double" Value="125" />
+              <PropCoverDetails_FinalRate Name="PropCoverDetails_FinalRate" Type="Double" Value="0" />
+              <PropCoverDetails_IsDataDeleted Name="PropCoverDetails_IsDataDeleted" Type="Boolean" Value="False" />
+              <PropCoverDetails_IsOldDataDeleted Name="PropCoverDetails_IsOldDataDeleted" Type="Boolean" Value="False" />
+              <PropCoverDetails_MMCPCode Name="PropCoverDetails_MMCPCode" Type="String" Value="" />
+              <PropCoverDetails_Premium Name="PropCoverDetails_Premium" Type="Double" Value="125" />
+              <PropCoverDetails_Rate Name="PropCoverDetails_Rate" Type="Double" Value="0" />
+              <PropCoverDetails_SumInsured Name="PropCoverDetails_SumInsured" Type="Double" Value="0" />
+              <PropCoverDetails_TariffRate Name="PropCoverDetails_TariffRate" Type="Double" Value="0" />
+            </CoverSIComponant>
+          </RiskGroup>
+          <RiskGroup Name="Electronic Accessories" Value="Risk Wise Cover Details" Type="GroupData">
+            <CoverSIComponant Name="Electronic Accessories OD" Value="15000" Type="">
+              <PropCoverDetails_LoadingDiscount_Col Name="PropCoverDetails_LoadingDiscount_Col" Type="CoverDetails_LoadingDiscount[]" Value="" />
+              <PropCoverDetails_Applicable Name="PropCoverDetails_Applicable" Type="Boolean" Value="True" />
+              <PropCoverDetails_BaseTariffRate Name="PropCoverDetails_BaseTariffRate" Type="Double" Value="0" />
+              <PropCoverDetails_Commission Name="PropCoverDetails_Commission" Type="Double" Value="17.5" />
+              <PropCoverDetails_CoverGroups Name="PropCoverDetails_CoverGroups" Type="String" Value="Electronic Accessories OD" />
+              <PropCoverDetails_CumEndSerTax Name="PropCoverDetails_CumEndSerTax" Type="Double" Value="0" />
+              <PropCoverDetails_CumalativEndPrem Name="PropCoverDetails_CumalativEndPrem" Type="Double" Value="0" />
+              <PropCoverDetails_CumulativePremium Name="PropCoverDetails_CumulativePremium" Type="Double" Value="0" />
+              <PropCoverDetails_CumulativeServicetax Name="PropCoverDetails_CumulativeServicetax" Type="Double" Value="0" />
+              <PropCoverDetails_DifferentialSI Name="PropCoverDetails_DifferentialSI" Type="Double" Value="15000" />
+              <PropCoverDetails_EndorsementAmount Name="PropCoverDetails_EndorsementAmount" Type="Double" Value="600" />
+              <PropCoverDetails_FinalRate Name="PropCoverDetails_FinalRate" Type="Double" Value="0" />
+              <PropCoverDetails_IsDataDeleted Name="PropCoverDetails_IsDataDeleted" Type="Boolean" Value="False" />
+              <PropCoverDetails_IsOldDataDeleted Name="PropCoverDetails_IsOldDataDeleted" Type="Boolean" Value="False" />
+              <PropCoverDetails_MMCPCode Name="PropCoverDetails_MMCPCode" Type="String" Value="" />
+              <PropCoverDetails_Premium Name="PropCoverDetails_Premium" Type="Double" Value="600" />
+              <PropCoverDetails_Rate Name="PropCoverDetails_Rate" Type="Double" Value="0" />
+              <PropCoverDetails_SumInsured Name="PropCoverDetails_SumInsured" Type="Double" Value="15000" />
+              <PropCoverDetails_TariffRate Name="PropCoverDetails_TariffRate" Type="Double" Value="0" />
+            </CoverSIComponant>
+          </RiskGroup>
+          <RiskGroup Name="Non Electrical Accessories" Value="Risk Wise Cover Details" Type="GroupData">
+            <CoverSIComponant Name="Non Electrical Accessories OD" Value="25000" Type="">
+              <PropCoverDetails_LoadingDiscount_Col Name="PropCoverDetails_LoadingDiscount_Col" Type="CoverDetails_LoadingDiscount[]" Value="" />
+              <PropCoverDetails_Applicable Name="PropCoverDetails_Applicable" Type="Boolean" Value="True" />
+              <PropCoverDetails_BaseTariffRate Name="PropCoverDetails_BaseTariffRate" Type="Double" Value="0" />
+              <PropCoverDetails_Commission Name="PropCoverDetails_Commission" Type="Double" Value="17.5" />
+              <PropCoverDetails_CoverGroups Name="PropCoverDetails_CoverGroups" Type="String" Value="Non Electrical Accessories OD" />
+              <PropCoverDetails_CumEndSerTax Name="PropCoverDetails_CumEndSerTax" Type="Double" Value="0" />
+              <PropCoverDetails_CumalativEndPrem Name="PropCoverDetails_CumalativEndPrem" Type="Double" Value="0" />
+              <PropCoverDetails_CumulativePremium Name="PropCoverDetails_CumulativePremium" Type="Double" Value="0" />
+              <PropCoverDetails_CumulativeServicetax Name="PropCoverDetails_CumulativeServicetax" Type="Double" Value="0" />
+              <PropCoverDetails_DifferentialSI Name="PropCoverDetails_DifferentialSI" Type="Double" Value="25000" />
+              <PropCoverDetails_EndorsementAmount Name="PropCoverDetails_EndorsementAmount" Type="Double" Value="565.3" />
+              <PropCoverDetails_FinalRate Name="PropCoverDetails_FinalRate" Type="Double" Value="0" />
+              <PropCoverDetails_IsDataDeleted Name="PropCoverDetails_IsDataDeleted" Type="Boolean" Value="False" />
+              <PropCoverDetails_IsOldDataDeleted Name="PropCoverDetails_IsOldDataDeleted" Type="Boolean" Value="False" />
+              <PropCoverDetails_MMCPCode Name="PropCoverDetails_MMCPCode" Type="String" Value="" />
+              <PropCoverDetails_Premium Name="PropCoverDetails_Premium" Type="Double" Value="565.3" />
+              <PropCoverDetails_Rate Name="PropCoverDetails_Rate" Type="Double" Value="0" />
+              <PropCoverDetails_SumInsured Name="PropCoverDetails_SumInsured" Type="Double" Value="25000" />
+              <PropCoverDetails_TariffRate Name="PropCoverDetails_TariffRate" Type="Double" Value="0" />
+            </CoverSIComponant>
+          </RiskGroup>
+          <RiskGroup Name="CNG and LPG Kit" Value="Risk Wise Cover Details" Type="GroupData">
+            <CoverSIComponant Name="CNG Kit OD" Value="50000" Type="">
+              <PropCoverDetails_LoadingDiscount_Col Name="PropCoverDetails_LoadingDiscount_Col" Type="CoverDetails_LoadingDiscount[]" Value="" />
+              <PropCoverDetails_Applicable Name="PropCoverDetails_Applicable" Type="Boolean" Value="True" />
+              <PropCoverDetails_BaseTariffRate Name="PropCoverDetails_BaseTariffRate" Type="Double" Value="0" />
+              <PropCoverDetails_Commission Name="PropCoverDetails_Commission" Type="Double" Value="17.5" />
+              <PropCoverDetails_CoverGroups Name="PropCoverDetails_CoverGroups" Type="String" Value="CNG Kit OD" />
+              <PropCoverDetails_CumEndSerTax Name="PropCoverDetails_CumEndSerTax" Type="Double" Value="0" />
+              <PropCoverDetails_CumalativEndPrem Name="PropCoverDetails_CumalativEndPrem" Type="Double" Value="0" />
+              <PropCoverDetails_CumulativePremium Name="PropCoverDetails_CumulativePremium" Type="Double" Value="0" />
+              <PropCoverDetails_CumulativeServicetax Name="PropCoverDetails_CumulativeServicetax" Type="Double" Value="0" />
+              <PropCoverDetails_DifferentialSI Name="PropCoverDetails_DifferentialSI" Type="Double" Value="50000" />
+              <PropCoverDetails_EndorsementAmount Name="PropCoverDetails_EndorsementAmount" Type="Double" Value="2000" />
+              <PropCoverDetails_FinalRate Name="PropCoverDetails_FinalRate" Type="Double" Value="0" />
+              <PropCoverDetails_IsDataDeleted Name="PropCoverDetails_IsDataDeleted" Type="Boolean" Value="False" />
+              <PropCoverDetails_IsOldDataDeleted Name="PropCoverDetails_IsOldDataDeleted" Type="Boolean" Value="False" />
+              <PropCoverDetails_MMCPCode Name="PropCoverDetails_MMCPCode" Type="String" Value="" />
+              <PropCoverDetails_Premium Name="PropCoverDetails_Premium" Type="Double" Value="2000" />
+              <PropCoverDetails_Rate Name="PropCoverDetails_Rate" Type="Double" Value="0" />
+              <PropCoverDetails_SumInsured Name="PropCoverDetails_SumInsured" Type="Double" Value="50000" />
+              <PropCoverDetails_TariffRate Name="PropCoverDetails_TariffRate" Type="Double" Value="0" />
+            </CoverSIComponant>
+          </RiskGroup>
+          <RiskGroup Name="Named PA Cover" Value="Risk Wise Cover Details" Type="GroupData">
+            <CoverSIComponant Name="Named Passengers Personal Accident" Value="100000" Type="">
+              <PropCoverDetails_LoadingDiscount_Col Name="PropCoverDetails_LoadingDiscount_Col" Type="CoverDetails_LoadingDiscount[]" Value="" />
+              <PropCoverDetails_Applicable Name="PropCoverDetails_Applicable" Type="Boolean" Value="True" />
+              <PropCoverDetails_BaseTariffRate Name="PropCoverDetails_BaseTariffRate" Type="Double" Value="0" />
+              <PropCoverDetails_Commission Name="PropCoverDetails_Commission" Type="Double" Value="0" />
+              <PropCoverDetails_CoverGroups Name="PropCoverDetails_CoverGroups" Type="String" Value="Named Passengers Personal Accident" />
+              <PropCoverDetails_CumEndSerTax Name="PropCoverDetails_CumEndSerTax" Type="Double" Value="0" />
+              <PropCoverDetails_CumalativEndPrem Name="PropCoverDetails_CumalativEndPrem" Type="Double" Value="0" />
+              <PropCoverDetails_CumulativePremium Name="PropCoverDetails_CumulativePremium" Type="Double" Value="0" />
+              <PropCoverDetails_CumulativeServicetax Name="PropCoverDetails_CumulativeServicetax" Type="Double" Value="0" />
+              <PropCoverDetails_DifferentialSI Name="PropCoverDetails_DifferentialSI" Type="Double" Value="100000" />
+              <PropCoverDetails_EndorsementAmount Name="PropCoverDetails_EndorsementAmount" Type="Double" Value="50" />
+              <PropCoverDetails_FinalRate Name="PropCoverDetails_FinalRate" Type="Double" Value="0" />
+              <PropCoverDetails_IsDataDeleted Name="PropCoverDetails_IsDataDeleted" Type="Boolean" Value="False" />
+              <PropCoverDetails_IsOldDataDeleted Name="PropCoverDetails_IsOldDataDeleted" Type="Boolean" Value="False" />
+              <PropCoverDetails_MMCPCode Name="PropCoverDetails_MMCPCode" Type="String" Value="" />
+              <PropCoverDetails_Premium Name="PropCoverDetails_Premium" Type="Double" Value="50" />
+              <PropCoverDetails_Rate Name="PropCoverDetails_Rate" Type="Double" Value="0" />
+              <PropCoverDetails_SumInsured Name="PropCoverDetails_SumInsured" Type="Double" Value="100000" />
+              <PropCoverDetails_TariffRate Name="PropCoverDetails_TariffRate" Type="Double" Value="0" />
+            </CoverSIComponant>
+          </RiskGroup>
+          <RiskGroup Name="Unnamed PA cover" Value="Risk Wise Cover Details" Type="GroupData">
+            <CoverSIComponant Name="Unnamed Passengers Personal Accident" Value="50000" Type="">
+              <PropCoverDetails_LoadingDiscount_Col Name="PropCoverDetails_LoadingDiscount_Col" Type="CoverDetails_LoadingDiscount[]" Value="" />
+              <PropCoverDetails_Applicable Name="PropCoverDetails_Applicable" Type="Boolean" Value="True" />
+              <PropCoverDetails_BaseTariffRate Name="PropCoverDetails_BaseTariffRate" Type="Double" Value="0" />
+              <PropCoverDetails_Commission Name="PropCoverDetails_Commission" Type="Double" Value="0" />
+              <PropCoverDetails_CoverGroups Name="PropCoverDetails_CoverGroups" Type="String" Value="Unnamed Passengers Personal Accident" />
+              <PropCoverDetails_CumEndSerTax Name="PropCoverDetails_CumEndSerTax" Type="Double" Value="0" />
+              <PropCoverDetails_CumalativEndPrem Name="PropCoverDetails_CumalativEndPrem" Type="Double" Value="0" />
+              <PropCoverDetails_CumulativePremium Name="PropCoverDetails_CumulativePremium" Type="Double" Value="0" />
+              <PropCoverDetails_CumulativeServicetax Name="PropCoverDetails_CumulativeServicetax" Type="Double" Value="0" />
+              <PropCoverDetails_DifferentialSI Name="PropCoverDetails_DifferentialSI" Type="Double" Value="50000" />
+              <PropCoverDetails_EndorsementAmount Name="PropCoverDetails_EndorsementAmount" Type="Double" Value="25" />
+              <PropCoverDetails_FinalRate Name="PropCoverDetails_FinalRate" Type="Double" Value="0" />
+              <PropCoverDetails_IsDataDeleted Name="PropCoverDetails_IsDataDeleted" Type="Boolean" Value="False" />
+              <PropCoverDetails_IsOldDataDeleted Name="PropCoverDetails_IsOldDataDeleted" Type="Boolean" Value="False" />
+              <PropCoverDetails_MMCPCode Name="PropCoverDetails_MMCPCode" Type="String" Value="" />
+              <PropCoverDetails_Premium Name="PropCoverDetails_Premium" Type="Double" Value="25" />
+              <PropCoverDetails_Rate Name="PropCoverDetails_Rate" Type="Double" Value="0" />
+              <PropCoverDetails_SumInsured Name="PropCoverDetails_SumInsured" Type="Double" Value="50000" />
+              <PropCoverDetails_TariffRate Name="PropCoverDetails_TariffRate" Type="Double" Value="0" />
+            </CoverSIComponant>
+          </RiskGroup>
+          <RiskGroup Name="Paid driver PA cover" Value="Risk Wise Cover Details" Type="GroupData">
+            <CoverSIComponant Name="Paid Driver PA Cover" Value="80000" Type="">
+              <PropCoverDetails_LoadingDiscount_Col Name="PropCoverDetails_LoadingDiscount_Col" Type="CoverDetails_LoadingDiscount[]" Value="" />
+              <PropCoverDetails_Applicable Name="PropCoverDetails_Applicable" Type="Boolean" Value="True" />
+              <PropCoverDetails_BaseTariffRate Name="PropCoverDetails_BaseTariffRate" Type="Double" Value="0" />
+              <PropCoverDetails_Commission Name="PropCoverDetails_Commission" Type="Double" Value="0" />
+              <PropCoverDetails_CoverGroups Name="PropCoverDetails_CoverGroups" Type="String" Value="Paid Driver PA Cover" />
+              <PropCoverDetails_CumEndSerTax Name="PropCoverDetails_CumEndSerTax" Type="Double" Value="0" />
+              <PropCoverDetails_CumalativEndPrem Name="PropCoverDetails_CumalativEndPrem" Type="Double" Value="0" />
+              <PropCoverDetails_CumulativePremium Name="PropCoverDetails_CumulativePremium" Type="Double" Value="0" />
+              <PropCoverDetails_CumulativeServicetax Name="PropCoverDetails_CumulativeServicetax" Type="Double" Value="0" />
+              <PropCoverDetails_DifferentialSI Name="PropCoverDetails_DifferentialSI" Type="Double" Value="80000" />
+              <PropCoverDetails_EndorsementAmount Name="PropCoverDetails_EndorsementAmount" Type="Double" Value="40" />
+              <PropCoverDetails_FinalRate Name="PropCoverDetails_FinalRate" Type="Double" Value="0" />
+              <PropCoverDetails_IsDataDeleted Name="PropCoverDetails_IsDataDeleted" Type="Boolean" Value="False" />
+              <PropCoverDetails_IsOldDataDeleted Name="PropCoverDetails_IsOldDataDeleted" Type="Boolean" Value="False" />
+              <PropCoverDetails_MMCPCode Name="PropCoverDetails_MMCPCode" Type="String" Value="" />
+              <PropCoverDetails_Premium Name="PropCoverDetails_Premium" Type="Double" Value="40" />
+              <PropCoverDetails_Rate Name="PropCoverDetails_Rate" Type="Double" Value="0" />
+              <PropCoverDetails_SumInsured Name="PropCoverDetails_SumInsured" Type="Double" Value="80000" />
+              <PropCoverDetails_TariffRate Name="PropCoverDetails_TariffRate" Type="Double" Value="0" />
+            </CoverSIComponant>
+          </RiskGroup>
+        </RiskCoverDetailsGrid>
+      </Block>
+    </RiskDetails>
+    <GeneralProposalInformation>
+      <ErrorTrackingNeeded Type="Boolean" Value="False" />
+      <ProductType Type="String" Value="SB" />
+      <PropBranchDetails_IMDBranchCode Type="String" Value="" />
+      <PropBranchDetails_IMDBranchName Type="String" Value="" />
+      <PropCalculation_CalculateRate Type="Boolean" Value="True" />
+      <PropCalculation_Validate Type="Boolean" Value="False" />
+      <PropCalculation_ValidateData Type="Boolean" Value="False" />
+      <PropClauseDetails_Component51 Type="String" Value="" />
+      <PropClauseDetails_DepartmentCode_Mandatary Type="Double" Value="0" />
+      <PropClauseDetails_ProductCode_Mandatary Type="Double" Value="3121" />
+      <PropClauseDetails_SectionCode Type="String" Value="" />
+      <PropCoinsuranceDetails_AddRow Type="Boolean" Value="True" />
+      <PropCoinsuranceDetails_CoinsuranceType Type="String" Value="" />
+      <PropCoinsuranceDetails_Commissiontobepaidbytheleader Type="Boolean" Value="False" />
+      <PropCoinsuranceDetails_PolicyNooftheleader Type="String" Value="" />
+      <PropCoinsuranceDetails_ReferenceNumber Type="String" Value="" />
+      <PropCoinsuranceDetails_SERVTAXCOMMRCVRLEADER Type="Boolean" Value="False" />
+      <PropCoinsuranceDetails_Servicetaxtobepaidbytheleader Type="Boolean" Value="True" />
+      <PropCoinsuranceDetails_Validate Type="String" Value="" />
+      <PropConditionDetails_ConditionDescription Type="String" Value="" />
+      <PropConditionDetails_DepartmentCode Type="Double" Value="0" />
+      <PropConditionDetails_ProductCode Type="Double" Value="3121" />
+      <PropConditionDetails_SectionCode Type="String" Value="" />
+      <PropConditionDetails_SpecialConditionDescription Type="String" Value="" />
+      <PropCoverNoteDetails_CoverNoteBookNo Type="String" Value="" />
+      <PropCoverNoteDetails_CoverNoteLeafNo Type="String" Value="" />
+      <PropCoverNoteDetails_IssuedOnDt Type="String" Value="" />
+      <PropCoverNoteDetails_IsuedonTime Type="String" Value="" />
+      <PropCoverNoteDetails_LeafNo Type="Double" Value="0" />
+      <PropCoverNoteDetails_RecievedOn Type="String" Value="" />
+      <PropCoverNoteDetails_Validate Type="Boolean" Value="False" />
+      <PropCustomerDtls_CustomerID_Mandatary Type="String" Value="1000012379" />
+      <PropCustomerDtls_CustomerName Type="String" Value="MURLI E CFHDHDH" />
+      <PropCustomerDtls_CustomerType Type="String" Value="I" />
+      <PropCustomerDtls_PayeeCustomerID Type="String" Value="" />
+      <PropCustomerDtls_PayeeCustomerName Type="String" Value="" />
+      <PropCustomerReferenceInfo_OldPolicyNumber Type="String" Value="" />
+      <PropCustomerReferenceInfo_PolicyConversionDate Type="String" Value="" />
+      <PropDistributionChannel_BranchDetails Type="String" Value="" />
+      <PropDistributionChannel_BusineeChannelBrunch Type="String" Value="" />
+      <PropDistributionChannel_BusineeChanneltype Type="String" Value="BROKER CORPORATE" />
+      <PropDistributionChannel_BusinessServicingChannelType Type="String" Value="" />
+      <PropDistributionChannel_BusinessSharingPercent Type="Double" Value="0" />
+      <PropDistributionChannel_BusinessSource_Mandatary Type="String" Value="INTERMEDIARY" />
+      <PropDistributionChannel_BusinessSourcetype Type="String" Value="" />
+      <PropDistributionChannel_Commision Type="Double" Value="10" />
+      <PropDistributionChannel_EndorsementDtls Type="String" Value="" />
+      <PropDistributionChannel_FieldUserDetails Type="String" Value="" />
+      <PropDistributionChannel_FolderFilePath Type="String" Value="" />
+      <PropDistributionChannel_IntermediaryDetails Type="String" Value="" />
+      <PropDistributionChannel_MODetails Type="String" Value="" />
+      <PropDistributionChannel_OperationMode Type="String" Value="VIEWPROPOSAL" />
+      <PropDistributionChannel_SPDetails Type="String" Value="" />
+      <PropDistributionChannel_SerIntermediaryDetails Type="String" Value="" />
+      <PropDistributionChannel_ServiceProvider Type="Double" Value="0" />
+      <PropDistributionChannel_SpecialDiscount Type="Double" Value="100" />
+      <PropDistributionChannel_TERRORISMCOMMISSION Type="String" Value="0" />
+      <PropDistributionChannel_Validate Type="Boolean" Value="False" />
+      <PropDistributionChannel_VerticalDtls Type="String" Value="" />
+      <PropEndorsementDtls_CancelDueToClaim Type="Boolean" Value="False" />
+      <PropEndorsementDtls_CancellationOption Type="String" Value="" />
+      <PropEndorsementDtls_CancellationReason Type="String" Value="" />
+      <PropEndorsementDtls_CertificateofVintageCar Type="Boolean" Value="False" />
+      <PropEndorsementDtls_CoverType Type="String" Value="" />
+      <PropEndorsementDtls_DataEntryError Type="Boolean" Value="False" />
+      <PropEndorsementDtls_DateofEndfrominsured Type="String" Value="" />
+      <PropEndorsementDtls_Description Type="String" Value="" />
+      <PropEndorsementDtls_DocForCommPrivate Type="Boolean" Value="False" />
+      <PropEndorsementDtls_DocOfRequisition Type="String" Value="" />
+      <PropEndorsementDtls_DocProofothersspecify Type="String" Value="" />
+      <PropEndorsementDtls_DocproofforNCB Type="String" Value="" />
+      <PropEndorsementDtls_DoubleINSOption Type="String" Value="Automatic" />
+      <PropEndorsementDtls_EndorsementTypeCode Type="Double" Value="0" />
+      <PropEndorsementDtls_INSCoName Type="String" Value="" />
+      <PropEndorsementDtls_INSCoOffCodeAdd Type="String" Value="" />
+      <PropEndorsementDtls_IsSellerInsured Type="Boolean" Value="True" />
+      <PropEndorsementDtls_LaidUpFromDate Type="String" Value="" />
+      <PropEndorsementDtls_LaidUpToDate Type="String" Value="" />
+      <PropEndorsementDtls_LaidupVehicleCheck Type="Boolean" Value="False" />
+      <PropEndorsementDtls_MajorRepairRenovation Type="Boolean" Value="False" />
+      <PropEndorsementDtls_NOCFinancier Type="Boolean" Value="False" />
+      <PropEndorsementDtls_PolicyFrom Type="String" Value="" />
+      <PropEndorsementDtls_PolicyIssueDate Type="String" Value="" />
+      <PropEndorsementDtls_PolicyNo Type="String" Value="" />
+      <PropEndorsementDtls_PolicyTo Type="String" Value="" />
+      <PropEndorsementDtls_Reasonfornametransfer Type="String" Value="" />
+      <PropEndorsementDtls_SICCode Type="String" Value="" />
+      <PropEndorsementDtls_SICName Type="String" Value="" />
+      <PropEndorsementDtls_TypeOfTransfer Type="String" Value="" />
+      <PropEndorsementDtls_TypeofEndorsement Type="String" Value="" />
+      <PropEndorsementDtls_UFormFromDate Type="String" Value="" />
+      <PropEndorsementDtls_UFormToDate Type="String" Value="" />
+      <PropEndorsementDtls_UsageinInsuredPremises Type="Boolean" Value="False" />
+      <PropEndorsementDtls_ValuationReport Type="Boolean" Value="True" />
+      <PropEndorsementDtls_VehicleLaidUptype Type="String" Value="" />
+      <PropEndorsementDtls_orgcertificatesurrendered Type="Boolean" Value="False" />
+      <PropEndorsementEffectiveDate_EffectiveDate Type="String" Value="" />
+      <PropEndorsementEffectiveDate_EffectiveTime Type="String" Value="" />
+      <PropExclusionDetails_DepartmentCode Type="Double" Value="0" />
+      <PropExclusionDetails_ProductCode Type="Double" Value="3121" />
+      <PropExclusionDetails_SectionCode Type="String" Value="" />
+      <PropFees_PPCFee Type="Double" Value="0" />
+      <PropFieldUserDetails_FieldUserCode Type="String" Value="" />
+      <PropFieldUserDetails_FieldUserLocation Type="String" Value="" />
+      <PropFieldUserDetails_FieldUserName Type="String" Value="" />
+      <PropFieldUserDetails_FieldUserVertical Type="String" Value="" />
+      <PropFieldUserDetails_FiledUserUserID Type="String" Value="" />
+      <PropFinancierDetails_AddRow Type="Boolean" Value="False" />
+      <PropFinancierDetails_FinancierCodeGenerator Type="Boolean" Value="False" />
+      <PropFinancierDetails_Validate Type="Boolean" Value="True" />
+      <PropGeneralNodes_ApplicationDate Type="String" Value="30/09/2016" />
+      <PropGeneralNodes_ApplicationNo Type="String" Value="10201600000700" />
+      <PropGeneralNodes_ParentCompanyName Type="String" Value="" />
+      <PropGeneralNodes_PartnerApplicationDate Type="String" Value="30/09/2016" />
+      <PropGeneralNodes_PartnerReferanceNO Type="String" Value="111111" />
+      <PropGeneralNodes_RIInwardSharePercentage Type="Double" Value="0" />
+      <PropGeneralProposalGroup_CoverNoteDetails Type="String" Value="" />
+      <PropGeneralProposalGroup_DistributionChannel Type="String" Value="" />
+      <PropGeneralProposalGroup_Fees Type="String" Value="" />
+      <PropGeneralProposalGroup_GeneralProposalInformation Type="String" Value="" />
+      <PropGeneralProposalInformation_ActiveFlag Type="String" Value="YES" />
+      <PropGeneralProposalInformation_ApplicationNumber Type="String" Value="" />
+      <PropGeneralProposalInformation_BankID Type="Double" Value="0" />
+      <PropGeneralProposalInformation_BlnEndtNoBlock Type="Boolean" Value="False" />
+      <PropGeneralProposalInformation_BranchInwardDate Type="String" Value="26/02/2016" />
+      <PropGeneralProposalInformation_BranchInwardNumber Type="String" Value="KP000116022500013" />
+      <PropGeneralProposalInformation_BranchOfficeCode Type="String" Value="90001" />
+      <PropGeneralProposalInformation_BusinessSourceInfo Type="String" Value="" />
+      <PropGeneralProposalInformation_BusinessType_Mandatary Type="String" Value="Rollover" />
+      <PropGeneralProposalInformation_CertificateNumber Type="String" Value="" />
+      <PropGeneralProposalInformation_ChannelNumber Type="String" Value="" />
+      <PropGeneralProposalInformation_CoverNotePlace Type="String" Value="" />
+      <PropGeneralProposalInformation_CovernoteGenType Type="String" Value="AUTO" />
+      <PropGeneralProposalInformation_CustomerDtls Type="String" Value="" />
+      <PropGeneralProposalInformation_CustomerReferenceInfo Type="String" Value="" />
+      <PropGeneralProposalInformation_DayDiff Type="String" Value="" />
+      <PropGeneralProposalInformation_DealId Type="String" Value="" />
+      <PropGeneralProposalInformation_DepartmentCode Type="Double" Value="31" />
+      <PropGeneralProposalInformation_DepartmentName Type="String" Value="" />
+      <PropGeneralProposalInformation_DisplayOfficeCode Type="String" Value="0001" />
+      <PropGeneralProposalInformation_DisplayStatus Type="String" Value="" />
+      <PropGeneralProposalInformation_EmployeeName Type="String" Value="" />
+      <PropGeneralProposalInformation_EndorsementDescription Type="String" Value="" />
+      <PropGeneralProposalInformation_EndorsementEffectiveDate Type="String" Value="" />
+      <PropGeneralProposalInformation_EndorsementNo Type="Double" Value="0" />
+      <PropGeneralProposalInformation_EndorsementRequestType Type="String" Value="" />
+      <PropGeneralProposalInformation_EndorsementRequestTypeCode Type="String" Value="" />
+      <PropGeneralProposalInformation_EndorsementSi Type="Double" Value="829777" />
+      <PropGeneralProposalInformation_EndorsementType Type="String" Value="" />
+      <PropGeneralProposalInformation_EndorsementWording Type="String" Value="" />
+      <PropGeneralProposalInformation_FrontingCompany Type="String" Value="" />
+      <PropGeneralProposalInformation_IfOthersProvideReason Type="String" Value="" />
+      <PropGeneralProposalInformation_IndustryCode Type="String" Value="" />
+      <PropGeneralProposalInformation_InternalUWComments Type="String" Value="cccc" />
+      <PropGeneralProposalInformation_InwardNo Type="String" Value="" />
+      <PropGeneralProposalInformation_IsNCBApplicable Type="Boolean" Value="False" />
+      <PropGeneralProposalInformation_IsSPCalcByDayDiffReqd Type="String" Value="" />
+      <PropGeneralProposalInformation_LeadGenerator Type="String" Value="bbbb" />
+      <PropGeneralProposalInformation_ManualCovernoteNo Type="String" Value="" />
+      <PropGeneralProposalInformation_MasterPolicy Type="String" Value="" />
+      <PropGeneralProposalInformation_MasterPolicyVersion Type="String" Value="" />
+      <PropGeneralProposalInformation_MethodOfCalculation Type="String" Value="12345" />
+      <PropGeneralProposalInformation_NCBpercentage Type="Double" Value="0" />
+      <PropGeneralProposalInformation_NextB Type="Boolean" Value="False" />
+      <PropGeneralProposalInformation_NoPrevInsuranceFlag Type="Boolean" Value="False" />
+      <PropGeneralProposalInformation_NonLiablePeriod Type="String" Value="" />
+      <PropGeneralProposalInformation_NumCovernoteNo Type="Double" Value="0" />
+      <PropGeneralProposalInformation_OfficeCode Type="String" Value="" />
+      <PropGeneralProposalInformation_OfficeName Type="String" Value="HO" />
+      <PropGeneralProposalInformation_OldCovernoteNo Type="String" Value="" />
+      <PropGeneralProposalInformation_OpsSalesPartnerUserComments Type="String" Value="dddd" />
+      <PropGeneralProposalInformation_OptionForCalculation Type="String" Value="Yearly" />
+      <PropGeneralProposalInformation_PolicyCurrency Type="String" Value="" />
+      <PropGeneralProposalInformation_PolicyEffectivedate Type="String" Value="01/10/2016" />
+      <PropGeneralProposalInformation_PolicyNo Type="Double" Value="0" />
+      <PropGeneralProposalInformation_PolicyNumberChar Type="String" Value="" />
+      <PropGeneralProposalInformation_PolicySchedule_Mandatary Type="String" Value="Yes" />
+      <PropGeneralProposalInformation_PolicyTerm Type="String" Value="" />
+      <PropGeneralProposalInformation_PrintingType Type="String" Value="With Policy Wording" />
+      <PropGeneralProposalInformation_ProductCode Type="Double" Value="3121" />
+      <PropGeneralProposalInformation_ProductName Type="String" Value="" />
+      <PropGeneralProposalInformation_ProposalDate_Mandatary Type="String" Value="30/09/2016" />
+      <PropGeneralProposalInformation_ProposalFormNumber Type="String" Value="" />
+      <PropGeneralProposalInformation_ProvisionalBooking Type="String" Value="" />
+      <PropGeneralProposalInformation_ProvisionalBookingReason Type="String" Value="" />
+      <PropGeneralProposalInformation_QuickId Type="String" Value="" />
+      <PropGeneralProposalInformation_QuoteNumber Type="String" Value="" />
+      <PropGeneralProposalInformation_ReInsuranceInward Type="Boolean" Value="False" />
+      <PropGeneralProposalInformation_ReSharePer Type="String" Value="" />
+      <PropGeneralProposalInformation_ReferenceNoDate Type="String" Value="" />
+      <PropGeneralProposalInformation_ReferralCode Type="String" Value="" />
+      <PropGeneralProposalInformation_RelationshipType Type="String" Value="" />
+      <PropGeneralProposalInformation_Remarks Type="String" Value="" />
+      <PropGeneralProposalInformation_RetainCancellationPremium Type="String" Value="" />
+      <PropGeneralProposalInformation_SalesTax Type="String" Value="" />
+      <PropGeneralProposalInformation_Sector_Mandatary Type="String" Value="Urban" />
+      <PropGeneralProposalInformation_SerDealId Type="String" Value="" />
+      <PropGeneralProposalInformation_ServiceTaxExemption Type="Boolean" Value="False" />
+      <PropGeneralProposalInformation_ServiceTaxExemptionCategory_Mandatary Type="String" Value="No Exemption" />
+      <PropGeneralProposalInformation_ServiceTaxExemptionReason Type="String" Value="No Exemption" />
+      <PropGeneralProposalInformation_SourceOfTransaction Type="String" Value="aaaa" />
+      <PropGeneralProposalInformation_TotalSi Type="Double" Value="829777" />
+      <PropGeneralProposalInformation_TypeOfBusiness Type="String" Value="" />
+      <PropGeneralProposalInformation_TypeOfCalculation Type="String" Value="" />
+      <PropGeneralProposalInformation_TypeOfIndustry Type="String" Value="" />
+      <PropGeneralProposalInformation_TypeOfPolicy Type="String" Value="SYSTEM" />
+      <PropGeneralProposalInformation_TypeofCancellation Type="String" Value="" />
+      <PropGeneralProposalInformation_UWLocation Type="String" Value="" />
+      <PropGeneralProposalInformation_UWLocationCode Type="String" Value="" />
+      <PropGeneralProposalInformation_ValidationFlag Type="String" Value="" />
+      <PropGeneralProposalInformation_ValuationReport Type="Boolean" Value="False" />
+      <PropGeneralProposalInformation_VehicleLaidUpFrom Type="String" Value="" />
+      <PropGeneralProposalInformation_VehicleLaidUpTo Type="String" Value="" />
+      <PropGeneralProposalInformation_covernoteissuedate Type="String" Value="" />
+      <PropGeneralProposalInformation_covernoteissuetime Type="String" Value="" />
+      <PropGeneralProposalInformation_disprntoffcd Type="String" Value="" />
+      <PropGeneralProposalInformation_iscovernoteused Type="Boolean" Value="False" />
+      <PropGeneralProposalInformation_numTotalFee Type="Double" Value="0" />
+      <PropGeneralProposal_GeneralProposalGroup Type="String" Value="" />
+      <PropGeneralProposal_IsCustomWorkflowCondition Type="String" Value="" />
+      <PropHigherExcessDiscount_HE_Disc_RateType_In Type="Double" Value="0" />
+      <PropIntermediaryDetails_BrokeragePercentage Type="String" Value="" />
+      <PropIntermediaryDetails_IntermediaryCityCode Type="String" Value="" />
+      <PropIntermediaryDetails_IntermediaryCityName Type="String" Value="" />
+      <PropIntermediaryDetails_IntermediaryCode Type="String" Value="1101180000" />
+      <PropIntermediaryDetails_IntermediaryName Type="String" Value="BAS EK  KING RAJPUT" />
+      <PropIntermediaryDetails_IntermediaryType Type="String" Value="BROKER" />
+      <PropMODetails_PrimaryMOCode Type="String" Value="367" />
+      <PropMODetails_PrimaryMOName Type="String" Value="BAS EK KING  RAJPUT" />
+      <PropMODetails_SecondaryMOCode Type="String" Value="" />
+      <PropMODetails_SecondaryMOLocation Type="String" Value="" />
+      <PropMODetails_SecondaryMOName Type="String" Value="" />
+      <PropMODetails_TertiaryMOCode Type="String" Value="" />
+      <PropMODetails_TertiaryMOName Type="String" Value="" />
+      <PropMotorOtherNodes_AfterFetch Type="String" Value="" />
+      <PropMotorOtherNodes_CancelationDetail Type="String" Value="" />
+      <PropMotorOtherNodes_EndorsementDtls Type="String" Value="" />
+      <PropMotorOtherNodes_GeneralNodes Type="String" Value="" />
+      <PropMotorOtherNodes_validate_aftercalc Type="String" Value="" />
+      <PropMotorOtherNodes_validate_beforecalc Type="String" Value="" />
+      <PropNonLiablePeriod_NonLiableEndTime Type="String" Value="" />
+      <PropNonLiablePeriod_NonLiableFromDate Type="String" Value="" />
+      <PropNonLiablePeriod_NonLiableStartTime Type="String" Value="" />
+      <PropNonLiablePeriod_NonLiableToDate Type="String" Value="" />
+      <PropParameters_AddClause Type="Boolean" Value="False" />
+      <PropParameters_AddCondition Type="Boolean" Value="False" />
+      <PropParameters_AddExclusion Type="Boolean" Value="False" />
+      <PropParameters_AddWarranty Type="Boolean" Value="False" />
+      <PropParameters_AfterFetch Type="Boolean" Value="True" />
+      <PropParameters_ClauseApplicable Type="Boolean" Value="True" />
+      <PropParameters_CoInsuranceApplicability Type="Boolean" Value="True" />
+      <PropParameters_CommissionApplicable Type="Boolean" Value="True" />
+      <PropParameters_ConditionApplicable Type="Boolean" Value="True" />
+      <PropParameters_CoverNoteApplicability Type="Boolean" Value="True" />
+      <PropParameters_EQHigherExcessDiscount Type="Boolean" Value="False" />
+      <PropParameters_ExclusionApplicable Type="Boolean" Value="True" />
+      <PropParameters_FamilyPackageDiscount Type="Boolean" Value="False" />
+      <PropParameters_FinancierApplicability Type="Boolean" Value="True" />
+      <PropParameters_FloaterRiskLoading Type="Boolean" Value="False" />
+      <PropParameters_GroupDiscount Type="Boolean" Value="False" />
+      <PropParameters_HighClaimLoading Type="Boolean" Value="False" />
+      <PropParameters_HigherExcessDiscount Type="Boolean" Value="False" />
+      <PropParameters_Installment Type="Boolean" Value="False" />
+      <PropParameters_LongTermPolicy Type="Boolean" Value="False" />
+      <PropParameters_LowClaimDiscount Type="Boolean" Value="False" />
+      <PropParameters_MinimumPremium Type="Boolean" Value="True" />
+      <PropParameters_NoClaimDiscount Type="Boolean" Value="False" />
+      <PropParameters_OverageLoading Type="Boolean" Value="False" />
+      <PropParameters_PasPolicyApplicable Type="String" Value="" />
+      <PropParameters_PastPolicyApplicable Type="Boolean" Value="False" />
+      <PropParameters_PolicyCancellation Type="Boolean" Value="False" />
+      <PropParameters_PopulateTransactionBegin Type="Boolean" Value="True" />
+      <PropParameters_PreviousPolicyApplicable Type="String" Value="" />
+      <PropParameters_RenewalAllowed Type="Boolean" Value="True" />
+      <PropParameters_SectionDiscount Type="Boolean" Value="False" />
+      <PropParameters_ServiceTaxExempted Type="Boolean" Value="False" />
+      <PropParameters_ShortPeriodLongPeriod Type="Boolean" Value="True" />
+      <PropParameters_SpecialDiscountApplicable Type="Boolean" Value="True" />
+      <PropParameters_StaffDiscount Type="Boolean" Value="False" />
+      <PropParameters_StampDutyChargeable Type="Boolean" Value="False" />
+      <PropParameters_TariffProduct Type="Boolean" Value="True" />
+      <PropParameters_TransferFees Type="Boolean" Value="False" />
+      <PropParameters_VDFDiscountAllowed Type="Boolean" Value="False" />
+      <PropParameters_ValidateClause Type="Boolean" Value="True" />
+      <PropParameters_ValidateCondition Type="Boolean" Value="True" />
+      <PropParameters_ValidateEndorsementData Type="Boolean" Value="True" />
+      <PropParameters_ValidateExclusion Type="Boolean" Value="True" />
+      <PropParameters_ValidateWarranty Type="Boolean" Value="True" />
+      <PropParameters_WarrentyApplicable Type="Boolean" Value="True" />
+      <PropPolicyCoverDetails_Applicable Type="Boolean" Value="False" />
+      <PropPolicyCoverDetails_CoverGroups Type="String" Value="" />
+      <PropPolicyCoverDetails_DifferentialSI Type="Double" Value="0" />
+      <PropPolicyCoverDetails_EndorsementAmount Type="Double" Value="0" />
+      <PropPolicyCoverDetails_Premium Type="Double" Value="0" />
+      <PropPolicyCoverDetails_Rate Type="Double" Value="0" />
+      <PropPolicyCoverDetails_SumInsured Type="Double" Value="0" />
+      <PropPolicyEffectivedate_Fromdate_Mandatary Type="String" Value="30/09/2016" />
+      <PropPolicyEffectivedate_Fromhour_Mandatary Type="String" Value="22:10" />
+      <PropPolicyEffectivedate_Todate_Mandatary Type="String" Value="29/09/2017" />
+      <PropPolicyEffectivedate_Tohour_Mandatary Type="String" Value="23:59" />
+      <PropPremiumCalculation_BasicPremium Type="Double" Value="21076.66" />
+      <PropPremiumCalculation_Cess Type="Double" Value="-0.22" />
+      <PropPremiumCalculation_CustomCoverLDPremium Type="Double" Value="0" />
+      <PropPremiumCalculation_ERFAmount Type="Double" Value="0" />
+      <PropPremiumCalculation_EndorsementERFAmount Type="Double" Value="0" />
+      <PropPremiumCalculation_EndorsementPremium Type="Double" Value="33532.07" />
+      <PropPremiumCalculation_EndorsementServiceTax Type="Double" Value="4862.15" />
+      <PropPremiumCalculation_EndorsementStampDuty Type="Double" Value="0.5" />
+      <PropPremiumCalculation_EndorsementTerrorismPremium Type="Double" Value="0" />
+      <PropPremiumCalculation_GrossCoverPremium Type="Double" Value="18988.66" />
+      <PropPremiumCalculation_NetODPremium Type="Double" Value="31009.07" />
+      <PropPremiumCalculation_NetPremium Type="Double" Value="33532.07" />
+      <PropPremiumCalculation_NetTPPremium Type="Double" Value="2523" />
+      <PropPremiumCalculation_SP_PR_LTFactor Type="Double" Value="1" />
+      <PropPremiumCalculation_ServiceTax Type="Double" Value="4862.15" />
+      <PropPremiumCalculation_StampDuty Type="Double" Value="0.5" />
+      <PropPremiumCalculation_StampDutyApplicability Type="Boolean" Value="False" />
+      <PropPremiumCalculation_TerrorismPremium Type="Double" Value="0" />
+      <PropPremiumCalculation_TotalPremium Type="Double" Value="38394" />
+      <PropPremiumCalculation_TransferFeeAmount Type="Double" Value="0" />
+      <PropPreviousPolicyDetails_AddRow Type="Boolean" Value="False" />
+      <PropPreviousPolicyDetails_CalculateClaimRatio Type="Boolean" Value="True" />
+      <PropPreviousPolicyDetails_ClaimRatio Type="Double" Value="0" />
+      <PropPreviousPolicyDetails_Combo1 Type="String" Value="" />
+      <PropPreviousPolicyDetails_Excess Type="String" Value="" />
+      <PropPreviousPolicyDetails_FirstPolicyInceptionDate Type="String" Value="29/09/2017" />
+      <PropPreviousPolicyDetails_InceptionYear Type="Double" Value="0" />
+      <PropPreviousPolicyDetails_NCBPercentage Type="Double" Value="0" />
+      <PropPreviousPolicyDetails_OldTariffSlab Type="Boolean" Value="False" />
+      <PropPreviousPolicyDetails_PrevInsPincode Type="String" Value="" />
+      <PropPreviousPolicyDetails_PreviousPolicyType Type="String" Value="" />
+      <PropPreviousPolicyDetails_RenewalCounter Type="Double" Value="0" />
+      <PropPreviousPolicyDetails_TPAName Type="String" Value="" />
+      <PropPreviousPolicyDetails_Validate Type="Boolean" Value="True" />
+      <PropProductDetails_Component17 Type="String" Value="" />
+      <PropProductDetails_DepartmentCode Type="Double" Value="31" />
+      <PropProductDetails_ProductCode Type="Double" Value="3121" />
+      <PropProductDetails_ProductName Type="String" Value="" />
+      <PropProductName Type="String" Value="Comprehensive Policy" />
+      <PropReferenceNoDate_ReferenceDate_Mandatary Type="String" Value="26/02/2016" />
+      <PropReferenceNoDate_ReferenceNo_Mandatary Type="Double" Value="201602260000166" />
+      <PropSPDetails_SPCode Type="Double" Value="0" />
+      <PropSPDetails_SPName Type="String" Value="" />
+      <PropSerIntermediaryDetails_SerIntermediaryCode Type="String" Value="" />
+      <PropSerIntermediaryDetails_SerIntermediaryName Type="String" Value="" />
+      <PropSerIntermediaryDetails_SerIntermediaryType Type="String" Value="" />
+      <PropServiceTaxExemptionCategory_Component43 Type="String" Value="" />
+      <PropVerticalDtls_PrimaryVerticalCode Type="String" Value="" />
+      <PropVerticalDtls_PrimaryVerticalName Type="String" Value="" />
+      <PropVerticalDtls_SecondaryVerticalCode Type="String" Value="" />
+      <PropVerticalDtls_SecondaryVerticalName Type="String" Value="" />
+      <PropVerticalDtls_ServicingPrimaryVerticalCode Type="String" Value="" />
+      <PropVerticalDtls_ServicingPrimaryVerticalName Type="String" Value="" />
+      <PropVerticalDtls_ServicingSecondaryVerticalCode Type="String" Value="" />
+      <PropVerticalDtls_ServicingSecondaryVerticalName Type="String" Value="" />
+      <PropVerticalDtls_ServicingTertiaryVerticalCode Type="String" Value="" />
+      <PropVerticalDtls_ServicingTertiaryVerticalName Type="String" Value="" />
+      <PropVerticalDtls_TertiaryVerticalCode Type="String" Value="" />
+      <PropVerticalDtls_TertiaryVerticalName Type="String" Value="" />
+      <PropWarranty_DepartmentCode Type="Double" Value="0" />
+      <PropWarranty_ProductCode Type="Double" Value="3121" />
+      <PropWarranty_SectionCode Type="String" Value="" />
+    </GeneralProposalInformation>
+    <PolicyLoadingDiscountDetails>
+      <PolicyLoadingDiscountDetails Type="GroupData">
+        <PropLoadingDiscount_Applicable Type="Boolean" Value="True" />
+        <PropLoadingDiscount_CalculatedAmount Type="Double" Value="50" />
+        <PropLoadingDiscount_Description Type="String" Value="Fiber Glass Fuel Tank" />
+        <PropLoadingDiscount_DifferentialSI Type="Double" Value="0" />
+        <PropLoadingDiscount_EndorsementAmount Type="Double" Value="50" />
+        <PropLoadingDiscount_FixedAmount Type="Double" Value="0" />
+        <PropLoadingDiscount_IsDataDeleted Type="Boolean" Value="False" />
+        <PropLoadingDiscount_IsOldDataDeleted Type="Boolean" Value="False" />
+        <PropLoadingDiscount_MaxCap Type="Double" Value="0" />
+        <PropLoadingDiscount_MinCap Type="Double" Value="0" />
+        <PropLoadingDiscount_Premium Type="Double" Value="18988.66" />
+        <PropLoadingDiscount_Rate Type="Double" Value="50" />
+        <PropLoadingDiscount_SumInsured Type="Double" Value="829777" />
+      </PolicyLoadingDiscountDetails>
+      <PolicyLoadingDiscountDetails Type="GroupData">
+        <PropLoadingDiscount_Applicable Type="Boolean" Value="True" />
+        <PropLoadingDiscount_CalculatedAmount Type="Double" Value="5696.6" />
+        <PropLoadingDiscount_Description Type="String" Value="Foreign Embassy" />
+        <PropLoadingDiscount_DifferentialSI Type="Double" Value="0" />
+        <PropLoadingDiscount_EndorsementAmount Type="Double" Value="5696.6" />
+        <PropLoadingDiscount_FixedAmount Type="Double" Value="0" />
+        <PropLoadingDiscount_IsDataDeleted Type="Boolean" Value="False" />
+        <PropLoadingDiscount_IsOldDataDeleted Type="Boolean" Value="False" />
+        <PropLoadingDiscount_MaxCap Type="Double" Value="0" />
+        <PropLoadingDiscount_MinCap Type="Double" Value="0" />
+        <PropLoadingDiscount_Premium Type="Double" Value="18988.66" />
+        <PropLoadingDiscount_Rate Type="Double" Value="30" />
+        <PropLoadingDiscount_SumInsured Type="Double" Value="829777" />
+      </PolicyLoadingDiscountDetails>
+      <PolicyLoadingDiscountDetails Type="GroupData">
+        <PropLoadingDiscount_Applicable Type="Boolean" Value="True" />
+        <PropLoadingDiscount_CalculatedAmount Type="Double" Value="11393.2" />
+        <PropLoadingDiscount_Description Type="String" Value="Driving Tuitions" />
+        <PropLoadingDiscount_DifferentialSI Type="Double" Value="0" />
+        <PropLoadingDiscount_EndorsementAmount Type="Double" Value="11393.2" />
+        <PropLoadingDiscount_FixedAmount Type="Double" Value="0" />
+        <PropLoadingDiscount_IsDataDeleted Type="Boolean" Value="False" />
+        <PropLoadingDiscount_IsOldDataDeleted Type="Boolean" Value="False" />
+        <PropLoadingDiscount_MaxCap Type="Double" Value="0" />
+        <PropLoadingDiscount_MinCap Type="Double" Value="0" />
+        <PropLoadingDiscount_Premium Type="Double" Value="18988.66" />
+        <PropLoadingDiscount_Rate Type="Double" Value="60" />
+        <PropLoadingDiscount_SumInsured Type="Double" Value="829777" />
+      </PolicyLoadingDiscountDetails>
+      <PolicyLoadingDiscountDetails Type="GroupData">
+        <PropLoadingDiscount_Applicable Type="Boolean" Value="True" />
+        <PropLoadingDiscount_CalculatedAmount Type="Double" Value="9494.33" />
+        <PropLoadingDiscount_Description Type="String" Value="Handicapped Discount" />
+        <PropLoadingDiscount_DifferentialSI Type="Double" Value="0" />
+        <PropLoadingDiscount_EndorsementAmount Type="Double" Value="9494.33" />
+        <PropLoadingDiscount_FixedAmount Type="Double" Value="0" />
+        <PropLoadingDiscount_IsDataDeleted Type="Boolean" Value="False" />
+        <PropLoadingDiscount_IsOldDataDeleted Type="Boolean" Value="False" />
+        <PropLoadingDiscount_MaxCap Type="Double" Value="0" />
+        <PropLoadingDiscount_MinCap Type="Double" Value="0" />
+        <PropLoadingDiscount_Premium Type="Double" Value="18988.66" />
+        <PropLoadingDiscount_Rate Type="Double" Value="50" />
+        <PropLoadingDiscount_SumInsured Type="Double" Value="829777" />
+      </PolicyLoadingDiscountDetails>
+      <PolicyLoadingDiscountDetails Type="GroupData">
+        <PropLoadingDiscount_Applicable Type="Boolean" Value="True" />
+        <PropLoadingDiscount_CalculatedAmount Type="Double" Value="750" />
+        <PropLoadingDiscount_Description Type="String" Value="Voluntary Excess Discount" />
+        <PropLoadingDiscount_DifferentialSI Type="Double" Value="0" />
+        <PropLoadingDiscount_EndorsementAmount Type="Double" Value="750" />
+        <PropLoadingDiscount_FixedAmount Type="Double" Value="750" />
+        <PropLoadingDiscount_IsDataDeleted Type="Boolean" Value="False" />
+        <PropLoadingDiscount_IsOldDataDeleted Type="Boolean" Value="False" />
+        <PropLoadingDiscount_MaxCap Type="Double" Value="0" />
+        <PropLoadingDiscount_MinCap Type="Double" Value="0" />
+        <PropLoadingDiscount_Premium Type="Double" Value="18988.66" />
+        <PropLoadingDiscount_Rate Type="Double" Value="20" />
+        <PropLoadingDiscount_SumInsured Type="Double" Value="829777" />
+      </PolicyLoadingDiscountDetails>
+      <PolicyLoadingDiscountDetails Type="GroupData">
+        <PropLoadingDiscount_Applicable Type="Boolean" Value="True" />
+        <PropLoadingDiscount_CalculatedAmount Type="Double" Value="6328.92" />
+        <PropLoadingDiscount_Description Type="String" Value="Own Premises Discount OD" />
+        <PropLoadingDiscount_DifferentialSI Type="Double" Value="0" />
+        <PropLoadingDiscount_EndorsementAmount Type="Double" Value="6328.92" />
+        <PropLoadingDiscount_FixedAmount Type="Double" Value="0" />
+        <PropLoadingDiscount_IsDataDeleted Type="Boolean" Value="False" />
+        <PropLoadingDiscount_IsOldDataDeleted Type="Boolean" Value="False" />
+        <PropLoadingDiscount_MaxCap Type="Double" Value="0" />
+        <PropLoadingDiscount_MinCap Type="Double" Value="0" />
+        <PropLoadingDiscount_Premium Type="Double" Value="18988.66" />
+        <PropLoadingDiscount_Rate Type="Double" Value="33.33" />
+        <PropLoadingDiscount_SumInsured Type="Double" Value="829777" />
+      </PolicyLoadingDiscountDetails>
+      <PolicyLoadingDiscountDetails Type="GroupData">
+        <PropLoadingDiscount_Applicable Type="Boolean" Value="True" />
+        <PropLoadingDiscount_CalculatedAmount Type="Double" Value="4747.17" />
+        <PropLoadingDiscount_Description Type="String" Value="Vintage Car discount" />
+        <PropLoadingDiscount_DifferentialSI Type="Double" Value="0" />
+        <PropLoadingDiscount_EndorsementAmount Type="Double" Value="4747.17" />
+        <PropLoadingDiscount_FixedAmount Type="Double" Value="0" />
+        <PropLoadingDiscount_IsDataDeleted Type="Boolean" Value="False" />
+        <PropLoadingDiscount_IsOldDataDeleted Type="Boolean" Value="False" />
+        <PropLoadingDiscount_MaxCap Type="Double" Value="0" />
+        <PropLoadingDiscount_MinCap Type="Double" Value="0" />
+        <PropLoadingDiscount_Premium Type="Double" Value="18988.66" />
+        <PropLoadingDiscount_Rate Type="Double" Value="25" />
+        <PropLoadingDiscount_SumInsured Type="Double" Value="829777" />
+      </PolicyLoadingDiscountDetails>
+      <PolicyLoadingDiscountDetails Type="GroupData">
+        <PropLoadingDiscount_Applicable Type="Boolean" Value="True" />
+        <PropLoadingDiscount_CalculatedAmount Type="Double" Value="100" />
+        <PropLoadingDiscount_Description Type="String" Value="TPPD Restriction" />
+        <PropLoadingDiscount_DifferentialSI Type="Double" Value="0" />
+        <PropLoadingDiscount_EndorsementAmount Type="Double" Value="100" />
+        <PropLoadingDiscount_FixedAmount Type="Double" Value="0" />
+        <PropLoadingDiscount_IsDataDeleted Type="Boolean" Value="False" />
+        <PropLoadingDiscount_IsOldDataDeleted Type="Boolean" Value="False" />
+        <PropLoadingDiscount_MaxCap Type="Double" Value="0" />
+        <PropLoadingDiscount_MinCap Type="Double" Value="0" />
+        <PropLoadingDiscount_Premium Type="Double" Value="2623" />
+        <PropLoadingDiscount_Rate Type="Double" Value="100" />
+        <PropLoadingDiscount_SumInsured Type="Double" Value="829777" />
+      </PolicyLoadingDiscountDetails>
+      <PolicyLoadingDiscountDetails Type="GroupData">
+        <PropLoadingDiscount_Applicable Type="Boolean" Value="True" />
+        <PropLoadingDiscount_CalculatedAmount Type="Double" Value="500" />
+        <PropLoadingDiscount_Description Type="String" Value="Voluntary Deductible For Depreciation Cover discount" />
+        <PropLoadingDiscount_DifferentialSI Type="Double" Value="0" />
+        <PropLoadingDiscount_EndorsementAmount Type="Double" Value="500" />
+        <PropLoadingDiscount_FixedAmount Type="Double" Value="500" />
+        <PropLoadingDiscount_IsDataDeleted Type="Boolean" Value="False" />
+        <PropLoadingDiscount_IsOldDataDeleted Type="Boolean" Value="False" />
+        <PropLoadingDiscount_MaxCap Type="Double" Value="0" />
+        <PropLoadingDiscount_MinCap Type="Double" Value="0" />
+        <PropLoadingDiscount_Premium Type="Double" Value="18988.66" />
+        <PropLoadingDiscount_Rate Type="Double" Value="10" />
+        <PropLoadingDiscount_SumInsured Type="Double" Value="829777" />
+      </PolicyLoadingDiscountDetails>
+      <PolicyLoadingDiscountDetails Type="GroupData">
+        <PropLoadingDiscount_Applicable Type="Boolean" Value="True" />
+        <PropLoadingDiscount_CalculatedAmount Type="Double" Value="474.72" />
+        <PropLoadingDiscount_Description Type="String" Value="Discount for Anti-Theft Devices" />
+        <PropLoadingDiscount_DifferentialSI Type="Double" Value="0" />
+        <PropLoadingDiscount_EndorsementAmount Type="Double" Value="474.72" />
+        <PropLoadingDiscount_FixedAmount Type="Double" Value="0" />
+        <PropLoadingDiscount_IsDataDeleted Type="Boolean" Value="False" />
+        <PropLoadingDiscount_IsOldDataDeleted Type="Boolean" Value="False" />
+        <PropLoadingDiscount_MaxCap Type="Double" Value="0" />
+        <PropLoadingDiscount_MinCap Type="Double" Value="0" />
+        <PropLoadingDiscount_Premium Type="Double" Value="18988.66" />
+        <PropLoadingDiscount_Rate Type="Double" Value="2.5" />
+        <PropLoadingDiscount_SumInsured Type="Double" Value="829777" />
+      </PolicyLoadingDiscountDetails>
+      <PolicyLoadingDiscountDetails Type="GroupData">
+        <PropLoadingDiscount_Applicable Type="Boolean" Value="True" />
+        <PropLoadingDiscount_CalculatedAmount Type="Double" Value="200" />
+        <PropLoadingDiscount_Description Type="String" Value="Automobile Association Discount" />
+        <PropLoadingDiscount_DifferentialSI Type="Double" Value="0" />
+        <PropLoadingDiscount_EndorsementAmount Type="Double" Value="200" />
+        <PropLoadingDiscount_FixedAmount Type="Double" Value="0" />
+        <PropLoadingDiscount_IsDataDeleted Type="Boolean" Value="False" />
+        <PropLoadingDiscount_IsOldDataDeleted Type="Boolean" Value="False" />
+        <PropLoadingDiscount_MaxCap Type="Double" Value="0" />
+        <PropLoadingDiscount_MinCap Type="Double" Value="0" />
+        <PropLoadingDiscount_Premium Type="Double" Value="18988.66" />
+        <PropLoadingDiscount_Rate Type="Double" Value="5" />
+        <PropLoadingDiscount_SumInsured Type="Double" Value="829777" />
+      </PolicyLoadingDiscountDetails>
+      <PolicyLoadingDiscountDetails Type="GroupData">
+        <PropLoadingDiscount_Applicable Type="Boolean" Value="True" />
+        <PropLoadingDiscount_CalculatedAmount Type="Double" Value="200" />
+        <PropLoadingDiscount_Description Type="String" Value="Discount for Opting Soft Copy" />
+        <PropLoadingDiscount_DifferentialSI Type="Double" Value="0" />
+        <PropLoadingDiscount_EndorsementAmount Type="Double" Value="200" />
+        <PropLoadingDiscount_FixedAmount Type="Double" Value="0" />
+        <PropLoadingDiscount_IsDataDeleted Type="Boolean" Value="False" />
+        <PropLoadingDiscount_IsOldDataDeleted Type="Boolean" Value="False" />
+        <PropLoadingDiscount_MaxCap Type="Double" Value="0" />
+        <PropLoadingDiscount_MinCap Type="Double" Value="0" />
+        <PropLoadingDiscount_Premium Type="Double" Value="15823.36" />
+        <PropLoadingDiscount_Rate Type="Double" Value="2.5" />
+        <PropLoadingDiscount_SumInsured Type="Double" Value="829777" />
+      </PolicyLoadingDiscountDetails>
+      <PolicyLoadingDiscountDetails Type="GroupData">
+        <PropLoadingDiscount_Applicable Type="Boolean" Value="True" />
+        <PropLoadingDiscount_CalculatedAmount Type="Double" Value="2916.66" />
+        <PropLoadingDiscount_Description Type="String" Value="No Claim Bonus" />
+        <PropLoadingDiscount_DifferentialSI Type="Double" Value="0" />
+        <PropLoadingDiscount_EndorsementAmount Type="Double" Value="2916.66" />
+        <PropLoadingDiscount_FixedAmount Type="Double" Value="0" />
+        <PropLoadingDiscount_IsDataDeleted Type="Boolean" Value="False" />
+        <PropLoadingDiscount_IsOldDataDeleted Type="Boolean" Value="False" />
+        <PropLoadingDiscount_MaxCap Type="Double" Value="0" />
+        <PropLoadingDiscount_MinCap Type="Double" Value="0" />
+        <PropLoadingDiscount_Premium Type="Double" Value="14583.32" />
+        <PropLoadingDiscount_Rate Type="Double" Value="20" />
+        <PropLoadingDiscount_SumInsured Type="Double" Value="829777" />
+      </PolicyLoadingDiscountDetails>
+    </PolicyLoadingDiscountDetails>
+    <OtherMappingFields>
+      <BasicTPincludingTPPDpremium Type="Vehicle Base Value" Name="Basic TP  including TPPD premium" Value="6000" />
+      <OwnDamage Type="Vehicle Base Value" Name="Own Damage" Value="699777" />
+      <EngineProtect Type="Vehicle Base Value" Name="Engine Protect" Value="789777" />
+      <ReturntoInvoice Type="Vehicle Base Value" Name="Return to Invoice" Value="789777" />
+      <ConsumableCover Type="Vehicle Base Value" Name="Consumable Cover" Value="789777" />
+      <LegalLiabilityforpaiddrivercleanerconductor Type="Vehicle Base Value" Name="Legal Liability for paid driver cleaner conductor" Value="0" />
+      <LegalLiabilityforEmployeesotherthanpaiddriverconductorcleaner Type="Vehicle Base Value" Name="Legal Liability for Employees other than paid driver conductor cleaner" Value="0" />
+      <RoadSideAssistance Type="Vehicle Base Value" Name="Road Side Assistance" Value="0" />
+      <RalliesTP Type="Vehicle Base Value" Name="Rallies TP" Value="0" />
+      <DepreciationCover Type="Vehicle Base Value" Name="Depreciation Cover" Value="789777" />
+      <RalliesOD Type="Vehicle Base Value" Name="Rallies OD" Value="789777" />
+      <Liabilitytosoldiersailorairman Type="Vehicle Base Value" Name="Liability to soldier sailor airman" Value="0" />
+      <GeographicalExtensionTP Type="Vehicle Base Value" Name="Geographical Extension TP" Value="0" />
+      <GeographicalExtensionOD Type="Vehicle Base Value" Name="Geographical Extension OD" Value="0" />
+      <OwnerDriver Type="Vehicle Base Value" Name="Owner Driver" Value="200000" />
+      <CNGKitTP Type="Vehicle Base Value" Name="CNG Kit TP" Value="0" />
+      <TrailerOD Type="Trailer" Name="Trailer OD" Value="40000" />
+      <TrailerTP Type="Trailer" Name="Trailer TP" Value="0" />
+      <ElectronicAccessoriesOD Type="Electronic Accessories" Name="Electronic Accessories OD" Value="15000" />
+      <NonElectricalAccessoriesOD Type="Non Electrical Accessories" Name="Non Electrical Accessories OD" Value="25000" />
+      <CNGKitOD Type="CNG and LPG Kit" Name="CNG Kit OD" Value="50000" />
+      <NamedPassengersPersonalAccident Type="Named PA Cover" Name="Named Passengers Personal Accident" Value="100000" />
+      <UnnamedPassengersPersonalAccident Type="Unnamed PA cover" Name="Unnamed Passengers Personal Accident" Value="50000" />
+      <PaidDriverPACover Type="Paid driver PA cover" Name="Paid Driver PA Cover" Value="80000" />
+    </OtherMappingFields>
+  </ProposalDetails>
+</Root>

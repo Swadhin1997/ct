@@ -1,0 +1,3327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6AF5AB3C-2465-46D4-8BE9-D4753EDCCF25}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PrjPASS</RootNamespace>
+    <AssemblyName>PrjPASS</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DocumentationFile>bin\PrjPASS.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <FilesToIncludeForPublish>OnlyFilesToRunTheApp</FilesToIncludeForPublish>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=15.1.4.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <HintPath>..\packages\AjaxControlToolkit.15.1.4.0\lib\net40\AjaxControlToolkit.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="bc, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\bc.dll</HintPath>
+    </Reference>
+    <Reference Include="ClosedXML, Version=0.95.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\ClosedXML.dll</HintPath>
+    </Reference>
+    <Reference Include="cryptoPDF, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\cryptoPDF.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus, Version=3.1.2.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis">
+      <HintPath>..\..\Hasmukh\TestProjects\PayUTestApp\packages\Google.Apis.1.16.0\lib\net45\Google.Apis.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Auth">
+      <HintPath>..\..\Hasmukh\TestProjects\PayUTestApp\packages\Google.Apis.Auth.1.16.0\lib\net45\Google.Apis.Auth.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Auth.PlatformServices">
+      <HintPath>..\..\Hasmukh\TestProjects\PayUTestApp\packages\Google.Apis.Auth.1.16.0\lib\net45\Google.Apis.Auth.PlatformServices.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Core">
+      <HintPath>..\..\Hasmukh\TestProjects\PayUTestApp\packages\Google.Apis.Core.1.16.0\lib\net45\Google.Apis.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.PlatformServices">
+      <HintPath>..\..\Hasmukh\TestProjects\PayUTestApp\packages\Google.Apis.1.16.0\lib\net45\Google.Apis.PlatformServices.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Urlshortener.v1">
+      <HintPath>..\..\Hasmukh\TestProjects\PayUTestApp\packages\Google.Apis.Urlshortener.v1.1.16.0.138\lib\portable-net45+netcore45+wpa81+wp8\Google.Apis.Urlshortener.v1.dll</HintPath>
+    </Reference>
+    <Reference Include="GoogleAPI.UrlShortener">
+      <HintPath>..\..\Downloads\UrlShortener Binaries v1\UrlShortener Binaries v1\GoogleAPI.UrlShortener.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.9.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\gc0062\Downloads\ExportPanelToPDF\Bin\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="MCPG.CCA.Util, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3d7072b2634875da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\PASS_UAT\PrjPASS\bin\MCPG.CCA.Util.dll</HintPath>
+    </Reference>
+    <Reference Include="MessagingToolkit.QRCode, Version=1.0.3541.23206, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\MessagingToolkit.QRCode.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=5.0.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=5.0.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=2.1.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration, Version=2.1.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception, Version=2.1.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.Practices.Unity.Interception.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception.Configuration, Version=2.1.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.Practices.Unity.Interception.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.Web.Administration, Version=7.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Web.Services3, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\PASS_UAT\PrjPASS\bin\Microsoft.Web.Services3.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\Hasmukh\TestProjects\PayUTestApp\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="obout_Calendar2_Net, Version=3.0.7.0, Culture=neutral, PublicKeyToken=b114d8766feff9ce, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\DEVELOPER-5\Documents\Visual Studio 2012\Controls\obout Suite for ASP.NET 3.5 and up\obout_Calendar2_Net.dll</HintPath>
+    </Reference>
+    <Reference Include="obout_ComboBox, Version=4.0.8.0, Culture=neutral, PublicKeyToken=8921cd007946710d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\DEVELOPER-5\Documents\Visual Studio 2012\Controls\obout Suite for ASP.NET 3.5 and up\obout_ComboBox.dll</HintPath>
+    </Reference>
+    <Reference Include="obout_Grid_NET, Version=7.0.10.0, Culture=neutral, PublicKeyToken=5ddc49d3b53e3f98, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\DEVELOPER-5\Documents\Visual Studio 2012\Controls\obout Suite for ASP.NET 3.5 and up\obout_Grid_NET.dll</HintPath>
+    </Reference>
+    <Reference Include="obout_Interface, Version=4.0.10.0, Culture=neutral, PublicKeyToken=d5dff6913a9d6649, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\obout_Interface.dll</HintPath>
+    </Reference>
+    <Reference Include="obout_ListBox, Version=1.0.8.0, Culture=neutral, PublicKeyToken=5a727501b20f450d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\DEVELOPER-5\Documents\Visual Studio 2012\Controls\obout Suite for ASP.NET 3.5 and up\obout_ListBox.dll</HintPath>
+    </Reference>
+    <Reference Include="obout_SuperForm, Version=1.0.7.0, Culture=neutral, PublicKeyToken=9349eebacd58e679, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\DEVELOPER-5\Documents\Visual Studio 2012\Controls\obout Suite for ASP.NET 3.5 and up\obout_SuperForm.dll</HintPath>
+    </Reference>
+    <Reference Include="obout_Window_NET, Version=1.7.0.0, Culture=neutral, PublicKeyToken=67a4511cc2f909f5, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\DEVELOPER-5\Documents\Visual Studio 2012\Controls\obout Suite for ASP.NET 3.5 and up\obout_Window_NET.dll</HintPath>
+    </Reference>
+    <Reference Include="QRCoder, Version=1.0.0.3, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\QRCoder.dll</HintPath>
+    </Reference>
+    <Reference Include="Recaptcha, Version=1.0.5.0, Culture=neutral, PublicKeyToken=9afc4d65b28c38c2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Recaptcha.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.DirectoryServices.AccountManagement" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.1.7.1\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery.UI.Combined">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.UI.Combined.1.8.20\lib\net45\AspNet.ScriptManager.jQuery.UI.Combined.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.MSAjax, Version=4.5.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.MSAjax.4.5.6\lib\net45\Microsoft.ScriptManager.MSAjax.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms, Version=4.5.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.WebForms.4.5.6\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.0.0\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Providers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.1.1\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.Core.4.0.3.12153\lib\net40-full\DotNetOpenAuth.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OAuth.Core.4.0.3.12153\lib\net40-full\DotNetOpenAuth.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth.Consumer, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OAuth.Consumer.4.0.3.12153\lib\net40-full\DotNetOpenAuth.OAuth.Consumer.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OpenId.Core.4.0.3.12153\lib\net40-full\DotNetOpenAuth.OpenId.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId.RelyingParty, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OpenId.RelyingParty.4.0.3.12153\lib\net40-full\DotNetOpenAuth.OpenId.RelyingParty.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.AspNet, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.AspNet.4.0.3.12153\lib\net40-full\DotNetOpenAuth.AspNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Membership.OpenAuth, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Membership.OpenAuth.1.0.0\lib\net45\Microsoft.AspNet.Membership.OpenAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.1.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.1.0\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.WebForms.1.0.0\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="wnvhtmltopdf">
+      <HintPath>..\..\Downloads\WnvHtmlToPdf-v12.16\wnvhtmltopdf.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\OpenAuthProviders.ascx" />
+    <Content Include="App_Data\ErrorLog.txt" />
+    <Content Include="App_Obout\Captcha\Sounds\0.wav" />
+    <Content Include="App_Obout\Captcha\Sounds\1.wav" />
+    <Content Include="App_Obout\Captcha\Sounds\2.wav" />
+    <Content Include="App_Obout\Captcha\Sounds\3.wav" />
+    <Content Include="App_Obout\Captcha\Sounds\4.wav" />
+    <Content Include="App_Obout\Captcha\Sounds\5.wav" />
+    <Content Include="App_Obout\Captcha\Sounds\6.wav" />
+    <Content Include="App_Obout\Captcha\Sounds\7.wav" />
+    <Content Include="App_Obout\Captcha\Sounds\8.wav" />
+    <Content Include="App_Obout\Captcha\Sounds\9.wav" />
+    <Content Include="App_Obout\Captcha\Sounds\a.wav" />
+    <Content Include="App_Obout\Captcha\Sounds\b.wav" />
+    <Content Include="App_Obout\Captcha\Sounds\c.wav" />
+    <Content Include="App_Obout\Captcha\Sounds\d.wav" />
+    <Content Include="App_Obout\Captcha\Sounds\e.wav" />
+    <Content Include="App_Obout\Captcha\Sounds\f.wav" />
+    <Content Include="App_Obout\Captcha\Sounds\g.wav" />
+    <Content Include="App_Obout\Captcha\Sounds\h.wav" />
+    <Content Include="App_Obout\Captcha\Sounds\i.wav" />
+    <Content Include="App_Obout\Captcha\Sounds\j.wav" />
+    <Content Include="App_Obout\Captcha\Sounds\k.wav" />
+    <Content Include="App_Obout\Captcha\Sounds\l.wav" />
+    <Content Include="App_Obout\Captcha\Sounds\m.wav" />
+    <Content Include="App_Obout\Captcha\Sounds\n.wav" />
+    <Content Include="App_Obout\Captcha\Sounds\o.wav" />
+    <Content Include="App_Obout\Captcha\Sounds\p.wav" />
+    <Content Include="App_Obout\Captcha\Sounds\q.wav" />
+    <Content Include="App_Obout\Captcha\Sounds\r.wav" />
+    <Content Include="App_Obout\Captcha\Sounds\s.wav" />
+    <Content Include="App_Obout\Captcha\Sounds\t.wav" />
+    <Content Include="App_Obout\Captcha\Sounds\u.wav" />
+    <Content Include="App_Obout\Captcha\Sounds\v.wav" />
+    <Content Include="App_Obout\Captcha\Sounds\w.wav" />
+    <Content Include="App_Obout\Captcha\Sounds\x.wav" />
+    <Content Include="App_Obout\Captcha\Sounds\y.wav" />
+    <Content Include="App_Obout\Captcha\Sounds\z.wav" />
+    <Content Include="App_Obout\FileUpload\Scripts\sidupload4.swf" />
+    <Content Include="App_Obout\HTMLEditor\CSS\prettify_editor.css" />
+    <Content Include="App_Obout\HTMLEditor\CSS\quickformat.css" />
+    <Content Include="App_Obout\HTMLEditor\customButtons\CustomManagerButton1_a.gif" />
+    <Content Include="App_Obout\HTMLEditor\customButtons\CustomManagerButton1_n.gif" />
+    <Content Include="App_Obout\HTMLEditor\customButtons\ed_addShadow_n.gif" />
+    <Content Include="App_Obout\HTMLEditor\customButtons\ed_date_a.gif" />
+    <Content Include="App_Obout\HTMLEditor\customButtons\ed_date_n.gif" />
+    <Content Include="App_Obout\HTMLEditor\customButtons\ed_empty_a.gif" />
+    <Content Include="App_Obout\HTMLEditor\customButtons\ed_empty_n.gif" />
+    <Content Include="App_Obout\HTMLEditor\customButtons\ed_insertFieldset_a.gif" />
+    <Content Include="App_Obout\HTMLEditor\customButtons\ed_insertFieldset_n.gif" />
+    <Content Include="App_Obout\HTMLEditor\customButtons\ed_insertIcon_a.gif" />
+    <Content Include="App_Obout\HTMLEditor\customButtons\ed_insertIcon_n.gif" />
+    <Content Include="App_Obout\HTMLEditor\customButtons\ed_MakeCodeBlock_a.gif" />
+    <Content Include="App_Obout\HTMLEditor\customButtons\ed_MakeCodeBlock_n.gif" />
+    <Content Include="App_Obout\HTMLEditor\customButtons\ed_RemoveCodeBlock_a.gif" />
+    <Content Include="App_Obout\HTMLEditor\customButtons\ed_RemoveCodeBlock_n.gif" />
+    <Content Include="App_Obout\HTMLEditor\customButtons\ed_removeFieldset.gif" />
+    <Content Include="App_Obout\HTMLEditor\customButtons\ed_removeShadow_n.gif" />
+    <Content Include="App_Obout\HTMLEditor\customButtons\ed_search_a.gif" />
+    <Content Include="App_Obout\HTMLEditor\customButtons\ed_search_n.gif" />
+    <Content Include="App_Obout\HTMLEditor\customButtons\ed_upload_document_a.gif" />
+    <Content Include="App_Obout\HTMLEditor\customButtons\ed_upload_document_n.gif" />
+    <Content Include="App_Obout\HTMLEditor\customButtons\ed_upload_image_a.gif" />
+    <Content Include="App_Obout\HTMLEditor\customButtons\ed_upload_image_n.gif" />
+    <Content Include="App_Obout\HTMLEditor\FlashGallery\31032010.swf" />
+    <Content Include="App_Obout\HTMLEditor\FlashGallery\Crazy.swf" />
+    <Content Include="App_Obout\HTMLEditor\FlashGallery\E-Shop.swf" />
+    <Content Include="App_Obout\HTMLEditor\FlashGallery\People.swf" />
+    <Content Include="App_Obout\HTMLEditor\icons\angel.gif" />
+    <Content Include="App_Obout\HTMLEditor\icons\angry.gif" />
+    <Content Include="App_Obout\HTMLEditor\icons\beer.gif" />
+    <Content Include="App_Obout\HTMLEditor\icons\bomb.gif" />
+    <Content Include="App_Obout\HTMLEditor\icons\disappointed.gif" />
+    <Content Include="App_Obout\HTMLEditor\icons\Embarrassed.gif" />
+    <Content Include="App_Obout\HTMLEditor\icons\flower.gif" />
+    <Content Include="App_Obout\HTMLEditor\icons\grin.gif" />
+    <Content Include="App_Obout\HTMLEditor\icons\grumpy.gif" />
+    <Content Include="App_Obout\HTMLEditor\icons\hot.gif" />
+    <Content Include="App_Obout\HTMLEditor\icons\kiss.gif" />
+    <Content Include="App_Obout\HTMLEditor\icons\kiss2.gif" />
+    <Content Include="App_Obout\HTMLEditor\icons\kissing.gif" />
+    <Content Include="App_Obout\HTMLEditor\icons\laugh.gif" />
+    <Content Include="App_Obout\HTMLEditor\icons\love.gif" />
+    <Content Include="App_Obout\HTMLEditor\icons\music.gif" />
+    <Content Include="App_Obout\HTMLEditor\icons\sad.gif" />
+    <Content Include="App_Obout\HTMLEditor\icons\shutup.gif" />
+    <Content Include="App_Obout\HTMLEditor\icons\sleepy.gif" />
+    <Content Include="App_Obout\HTMLEditor\icons\smile.gif" />
+    <Content Include="App_Obout\HTMLEditor\icons\stop.gif" />
+    <Content Include="App_Obout\HTMLEditor\icons\Surprised.gif" />
+    <Content Include="App_Obout\HTMLEditor\icons\tear.gif" />
+    <Content Include="App_Obout\HTMLEditor\icons\thinking.gif" />
+    <Content Include="App_Obout\HTMLEditor\icons\thumb_up.gif" />
+    <Content Include="App_Obout\HTMLEditor\icons\tired.gif" />
+    <Content Include="App_Obout\HTMLEditor\icons\tongue.gif" />
+    <Content Include="App_Obout\HTMLEditor\icons\wink.gif" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Background Images\LINES\BLACKO1.GIF" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Background Images\LINES\BLUESQ1.GIF" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Background Images\LINES\COLORF2.GIF" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Background Images\LINES\Commline.gif" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Background Images\LINES\Contline.gif" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Background Images\LINES\Div1.gif" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Background Images\LINES\Div2.gif" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Background Images\LINES\ELEGAN1.GIF" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Background Images\LINES\Elegline.gif" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Background Images\LINES\Festline.gif" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Background Images\LINES\Index_6.jpg" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Background Images\LINES\Jazzline.gif" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Background Images\LINES\Outdline.gif" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Background Images\LINES\Profline.gif" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Background Images\LINES\REDBAR1.GIF" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Background Images\LINES\REDLIN1.GIF" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Background Images\LINES\ROCKS.GIF" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Background Images\LINES\SHINYR2.GIF" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Background Images\LINES\SPECKL1.GIF" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Background Images\LINES\SQUARE1.GIF" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Background Images\LINES\THINRE1.GIF" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Background Images\LINES\THINWA1.GIF" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Background Images\LINES\TURQUO1.GIF" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Background Images\LINES\TURQUO2.GIF" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Background Images\LINES\ZIPPER.GIF" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Background Images\MATERIAL\Nero.jpg" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Background Images\MATERIAL\Ntx0010.jpg" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Background Images\MATERIAL\Nuts_03.jpg" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Background Images\MATERIAL\Paper-1.jpg" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Background Images\MATERIAL\Parchmtd.jpg" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Background Images\MATERIAL\Parchmtl.jpg" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Background Images\MATERIAL\Pinkan1.gif" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Background Images\MATERIAL\Pinkgran.jpg" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Background Images\MATERIAL\Pnkmarbl.jpg" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Background Images\MATERIAL\Rubble-1.jpg" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Background Images\MATERIAL\Sandstnd.jpg" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Background Images\MATERIAL\Sandstnl.jpg" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Background Images\MATERIAL\Satin-2.jpg" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Background Images\MATERIAL\Scale.jpg" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Background Images\MATERIAL\Shark.jpg" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Background Images\MATERIAL\Shingle1.jpg" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Background Images\MATERIAL\Shoulder.jpg" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Background Images\MATERIAL\Soapston.jpg" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Background Images\MATERIAL\Spectra.jpg" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Background Images\MATERIAL\Ss080161.jpg" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Background Images\MATERIAL\Strato.jpg" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Background Images\MATERIAL\Substanc.jpg" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Background Images\MATERIAL\Textr_02.jpg" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Background Images\Tree\BARK.JPG" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Background Images\Tree\BEECH.JPG" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Background Images\Tree\CHERRYWO.JPG" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Background Images\Tree\CHIPBORD.JPG" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Background Images\Tree\CORK.JPG" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Background Images\Tree\CORKL.JPG" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Background Images\Tree\DARKMAHO.JPG" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Background Images\Tree\DARKOAK.JPG" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Background Images\Tree\DRIFTWD.JPG" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Background Images\Tree\GOLDENPI.JPG" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Background Images\Tree\LIGHTOAK.JPG" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Background Images\Tree\LIGHTPIN.JPG" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Background Images\Tree\LIGHTPOP.JPG" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Background Images\Tree\LT_WOOD.JPG" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Background Images\Tree\MAHOGANY.JPG" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Background Images\Tree\MAPLE.JPG" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Background Images\Tree\OAK.JPG" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Background Images\Tree\OAKFLOOR.JPG" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Background Images\Tree\PINE.JPG" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\examples\Cindy.gif" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Nature\brown_field_and_sky.jpg" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Nature\field_from_woods.jpg" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Nature\field_green_sky.jpg" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Nature\flowers_on_slope.jpg" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Nature\fog_river_hills.jpg" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Nature\grass.jpg" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Nature\green_fields.jpg" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Nature\green_grass.jpg" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Nature\ice_fragments.jpg" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Nature\meadow_cows.jpg" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Nature\red_flowers.jpg" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Nature\river_bank.jpg" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Nature\road_blue_sky.jpg" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Nature\romashki.jpg" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Nature\sky_clouds.jpg" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Nature\tree_on_sky.jpg" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Nature\wheat_blue_sky.jpg" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Nature\wheat_red_road.jpg" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Nature\wheat_yellow_sky.jpg" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Nature\yellow_flowers_and_pines2.jpg" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\users_images\fog_river_hills.jpg" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\users_images\S4020909.JPG" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\users_images\S4020922.JPG" />
+    <Content Include="App_Obout\HTMLEditor\MediaGallery\Computer.avi" />
+    <Content Include="App_Obout\HTMLEditor\MediaGallery\Jet.avi" />
+    <Content Include="App_Obout\HTMLEditor\MediaGallery\Rider.avi" />
+    <Content Include="App_Obout\HTMLEditor\Scripts\ClassNameButton.js" />
+    <Content Include="App_Obout\HTMLEditor\Scripts\ClassNamesPopup.js" />
+    <Content Include="App_Obout\HTMLEditor\Scripts\CustomImageBrowser1.js" />
+    <Content Include="App_Obout\HTMLEditor\Scripts\flvplayer.swf" />
+    <Content Include="App_Obout\HTMLEditor\Scripts\ImmediateFileInsert.js" />
+    <Content Include="App_Obout\HTMLEditor\Scripts\InsertCodeBlockPopup.js" />
+    <Content Include="App_Obout\HTMLEditor\Scripts\InsertDate.js" />
+    <Content Include="App_Obout\HTMLEditor\Scripts\InsertIconPopup.js" />
+    <Content Include="App_Obout\HTMLEditor\Scripts\MakeCodeBlock.js" />
+    <Content Include="App_Obout\HTMLEditor\Scripts\RemoveCodeBlock.js" />
+    <Content Include="App_Obout\HTMLEditor\Scripts\SearchAndReplacePopup.js" />
+    <Content Include="App_Obout\HTMLEditor\XML\ButtonsSet1.xml" />
+    <Content Include="App_Obout\HTMLEditor\XML\DemandPopups1.xml" />
+    <Content Include="App_Obout\HTMLEditor\XML\FullItemsSet.xml" />
+    <Content Include="App_Obout\HTMLEditor\XML\FullSet.xml" />
+    <Content Include="App_Obout\HTMLEditor\XML\ItemsSet1.xml" />
+    <Content Include="App_Obout\HTMLEditor\XML\PredefinedLinks.xml" />
+    <Content Include="App_Obout\HTMLEditor\XML\PreloadedPopups1.xml" />
+    <Content Include="App_Obout\Poll\styles\black_glass\images\horizontal.png" />
+    <Content Include="App_Obout\Poll\styles\black_glass\images\results_fill.png" />
+    <Content Include="App_Obout\Poll\styles\black_glass\images\vertical.png" />
+    <Content Include="App_Obout\Poll\styles\black_glass\style.css" />
+    <Content Include="App_Obout\Poll\styles\grand_gray\images\horizontal.png" />
+    <Content Include="App_Obout\Poll\styles\grand_gray\images\results_fill.png" />
+    <Content Include="App_Obout\Poll\styles\grand_gray\images\vertical.png" />
+    <Content Include="App_Obout\Poll\styles\grand_gray\style.css" />
+    <Content Include="App_Obout\Poll\styles\plain\images\horizontal.png" />
+    <Content Include="App_Obout\Poll\styles\plain\images\results_fill.png" />
+    <Content Include="App_Obout\Poll\styles\plain\images\vertical.png" />
+    <Content Include="App_Obout\Poll\styles\plain\style.css" />
+    <Content Include="App_Obout\Poll\styles\premiere_blue\images\horizontal.png" />
+    <Content Include="App_Obout\Poll\styles\premiere_blue\images\results_fill.png" />
+    <Content Include="App_Obout\Poll\styles\premiere_blue\images\vertical.png" />
+    <Content Include="App_Obout\Poll\styles\premiere_blue\style.css" />
+    <Content Include="bin\AjaxControlToolkit.dll" />
+    <Content Include="bin\Antlr3.Runtime.dll" />
+    <Content Include="bin\AspNet.ScriptManager.jQuery.dll" />
+    <Content Include="bin\AspNet.ScriptManager.jQuery.UI.Combined.dll" />
+    <Content Include="bin\bc.dll" />
+    <Content Include="bin\bin\wnvinternal.dat" />
+    <Content Include="bin\cryptoPDF.dll" />
+    <Content Include="bin\de\PrjPASS.resources.dll" />
+    <Content Include="bin\DotNetOpenAuth.AspNet.dll" />
+    <Content Include="bin\DotNetOpenAuth.Core.dll" />
+    <Content Include="bin\DotNetOpenAuth.OAuth.Consumer.dll" />
+    <Content Include="bin\DotNetOpenAuth.OAuth.dll" />
+    <Content Include="bin\DotNetOpenAuth.OpenId.dll" />
+    <Content Include="bin\DotNetOpenAuth.OpenId.RelyingParty.dll" />
+    <Content Include="bin\EntityFramework.dll" />
+    <Content Include="bin\EntityFramework.PowerShell.dll" />
+    <Content Include="bin\EntityFramework.PowerShell.Utility.dll" />
+    <Content Include="bin\en\PrjPASS.resources.dll" />
+    <Content Include="bin\EPPlus.dll" />
+    <Content Include="bin\fr\PrjPASS.resources.dll" />
+    <Content Include="bin\Google.Apis.Auth.dll" />
+    <Content Include="bin\Google.Apis.Auth.PlatformServices.dll" />
+    <Content Include="bin\Google.Apis.Core.dll" />
+    <Content Include="bin\Google.Apis.dll" />
+    <Content Include="bin\Google.Apis.PlatformServices.dll" />
+    <Content Include="bin\Google.Apis.Urlshortener.v1.dll" />
+    <Content Include="bin\GoogleAPI.UrlShortener.dll" />
+    <Content Include="bin\he\PrjPASS.resources.dll" />
+    <Content Include="bin\itextsharp.dll" />
+    <Content Include="bin\it\PrjPASS.resources.dll" />
+    <Content Include="bin\MessagingToolkit.QRCode.dll" />
+    <Content Include="bin\Microsoft.AspNet.Membership.OpenAuth.dll" />
+    <Content Include="bin\Microsoft.AspNet.Web.Optimization.WebForms.dll" />
+    <Content Include="bin\Microsoft.Office.Interop.Excel.dll" />
+    <Content Include="bin\Microsoft.Practices.EnterpriseLibrary.Common.dll" />
+    <Content Include="bin\Microsoft.Practices.EnterpriseLibrary.Configuration.Design.dll" />
+    <Content Include="bin\Microsoft.Practices.EnterpriseLibrary.Data.dll" />
+    <Content Include="bin\Microsoft.Practices.ObjectBuilder2.dll" />
+    <Content Include="bin\Microsoft.Practices.ServiceLocation.dll" />
+    <Content Include="bin\Microsoft.Practices.Unity.Configuration.dll" />
+    <Content Include="bin\Microsoft.Practices.Unity.dll" />
+    <Content Include="bin\Microsoft.Practices.Unity.Interception.Configuration.dll" />
+    <Content Include="bin\Microsoft.Practices.Unity.Interception.dll" />
+    <Content Include="bin\Microsoft.ScriptManager.MSAjax.dll" />
+    <Content Include="bin\Microsoft.ScriptManager.WebForms.dll" />
+    <Content Include="bin\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="bin\Newtonsoft.Json.dll" />
+    <Content Include="bin\nl\PrjPASS.resources.dll" />
+    <Content Include="bin\obout_Calendar2_Net.dll" />
+    <Content Include="bin\obout_ComboBox.dll" />
+    <Content Include="bin\obout_Grid_NET.dll" />
+    <Content Include="bin\obout_Interface.dll" />
+    <Content Include="bin\obout_ListBox.dll" />
+    <Content Include="bin\obout_SuperForm.dll" />
+    <Content Include="bin\obout_Window_NET.dll" />
+    <Content Include="bin\PrjPASS.dll" />
+    <Content Include="bin\PrjPASS.dll.config" />
+    <Content Include="bin\PrjPASS.pdb" />
+    <Content Include="bin\pt\PrjPASS.resources.dll" />
+    <Content Include="bin\QRCoder.dll" />
+    <Content Include="bin\ro\PrjPASS.resources.dll" />
+    <Content Include="bin\ru\PrjPASS.resources.dll" />
+    <Content Include="bin\sv\PrjPASS.resources.dll" />
+    <Content Include="bin\System.Web.Optimization.dll" />
+    <Content Include="bin\System.Web.Providers.dll" />
+    <Content Include="bin\WebGrease.dll" />
+    <Content Include="bin\wnvhtmltopdf.dll" />
+    <Content Include="bin\wnvinternal.dat" />
+    <Content Include="Calendar\styles\blocky_revert\arrowDown.gif" />
+    <Content Include="Calendar\styles\blocky_revert\arrowUp.gif" />
+    <Content Include="Calendar\styles\blocky_revert\bgday.gif" />
+    <Content Include="Calendar\styles\blocky_revert\bgdaysel.gif" />
+    <Content Include="Calendar\styles\blocky_revert\cal_title_left.gif" />
+    <Content Include="Calendar\styles\blocky_revert\cal_title_mid.gif" />
+    <Content Include="Calendar\styles\blocky_revert\cal_title_right.gif" />
+    <Content Include="Calendar\styles\blocky_revert\monthname.gif" />
+    <Content Include="Calendar\styles\blocky_revert\style.css" />
+    <Content Include="Calendar\styles\blue\arrowDown.gif" />
+    <Content Include="Calendar\styles\blue\arrowUp.gif" />
+    <Content Include="Calendar\styles\blue\bgmonthtitle.gif" />
+    <Content Include="Calendar\styles\blue\bgsel.gif" />
+    <Content Include="Calendar\styles\blue\bgspecial.gif" />
+    <Content Include="Calendar\styles\blue\bgtitle.gif" />
+    <Content Include="Calendar\styles\blue\bgtoday.gif" />
+    <Content Include="Calendar\styles\blue\style.css" />
+    <Content Include="Calendar\styles\dark\arrowDown.gif" />
+    <Content Include="Calendar\styles\dark\arrowUp.gif" />
+    <Content Include="Calendar\styles\dark\style.css" />
+    <Content Include="Calendar\styles\date_picker1.gif" />
+    <Content Include="Calendar\styles\date_picker2.gif" />
+    <Content Include="Calendar\styles\default\arrowDown.gif" />
+    <Content Include="Calendar\styles\default\arrowUp.gif" />
+    <Content Include="Calendar\styles\default\style.css" />
+    <Content Include="Calendar\styles\desert\arrowDown.gif" />
+    <Content Include="Calendar\styles\desert\arrowUp.gif" />
+    <Content Include="Calendar\styles\desert\arrow_left.gif" />
+    <Content Include="Calendar\styles\desert\arrow_right.gif" />
+    <Content Include="Calendar\styles\desert\background.gif" />
+    <Content Include="Calendar\styles\desert\background_day_special.gif" />
+    <Content Include="Calendar\styles\desert\background_day_today.gif" />
+    <Content Include="Calendar\styles\desert\background_month.gif" />
+    <Content Include="Calendar\styles\desert\date_selected.gif" />
+    <Content Include="Calendar\styles\desert\style.css" />
+    <Content Include="Calendar\styles\expedia\arrowDown.gif" />
+    <Content Include="Calendar\styles\expedia\arrowUp.gif" />
+    <Content Include="Calendar\styles\expedia\arr_left.gif" />
+    <Content Include="Calendar\styles\expedia\arr_right.gif" />
+    <Content Include="Calendar\styles\expedia\style.css" />
+    <Content Include="Calendar\styles\flag_usa.gif" />
+    <Content Include="Calendar\styles\graphite\arrowDown.gif" />
+    <Content Include="Calendar\styles\graphite\arrowUp.gif" />
+    <Content Include="Calendar\styles\graphite\arr_left.gif" />
+    <Content Include="Calendar\styles\graphite\arr_right.gif" />
+    <Content Include="Calendar\styles\graphite\cal_bg.gif" />
+    <Content Include="Calendar\styles\graphite\month_bg.gif" />
+    <Content Include="Calendar\styles\graphite\style.css" />
+    <Content Include="Calendar\styles\icon2.gif" />
+    <Content Include="Calendar\styles\lite\style.css" />
+    <Content Include="Calendar\styles\orbitz\arrowDown.gif" />
+    <Content Include="Calendar\styles\orbitz\arrowUp.gif" />
+    <Content Include="Calendar\styles\orbitz\button.GIF" />
+    <Content Include="Calendar\styles\orbitz\left.GIF" />
+    <Content Include="Calendar\styles\orbitz\right.GIF" />
+    <Content Include="Calendar\styles\orbitz\style.css" />
+    <Content Include="Calendar\styles\simple\arrowDown.gif" />
+    <Content Include="Calendar\styles\simple\arrowUp.gif" />
+    <Content Include="Calendar\styles\simple\style.css" />
+    <Content Include="Calendar\styles\simple\style_mine.css" />
+    <Content Include="Calendar\styles\style10\arrowDown.gif" />
+    <Content Include="Calendar\styles\style10\arrowUp.gif" />
+    <Content Include="Calendar\styles\style10\arrow_left.gif" />
+    <Content Include="Calendar\styles\style10\arrow_right.gif" />
+    <Content Include="Calendar\styles\style10\border.gif" />
+    <Content Include="Calendar\styles\style10\style.css" />
+    <Content Include="Captcha.aspx" />
+    <Content Include="ClaimServiceAdjusterAppointment.aspx" />
+    <Content Include="ComboBox\styles\black_glass\images\drop-down-horizontal-header-footer-2.gif" />
+    <Content Include="ComboBox\styles\black_glass\images\drop-down-horizontal-header-footer-2.png" />
+    <Content Include="ComboBox\styles\black_glass\images\drop-down-horizontal-header-footer.gif" />
+    <Content Include="ComboBox\styles\black_glass\images\drop-down-horizontal-header-footer.png" />
+    <Content Include="ComboBox\styles\black_glass\images\drop-down-horizontal.gif" />
+    <Content Include="ComboBox\styles\black_glass\images\drop-down-horizontal.png" />
+    <Content Include="ComboBox\styles\black_glass\images\drop-down-vertical.gif" />
+    <Content Include="ComboBox\styles\black_glass\images\drop-down-vertical.png" />
+    <Content Include="ComboBox\styles\black_glass\images\footer-middle.png" />
+    <Content Include="ComboBox\styles\black_glass\images\header-footer.png" />
+    <Content Include="ComboBox\styles\black_glass\images\horizontal-textbox.gif" />
+    <Content Include="ComboBox\styles\black_glass\images\horizontal-textbox.png" />
+    <Content Include="ComboBox\styles\black_glass\images\horizontal.gif" />
+    <Content Include="ComboBox\styles\black_glass\images\horizontal.png" />
+    <Content Include="ComboBox\styles\black_glass\images\lighted.gif" />
+    <Content Include="ComboBox\styles\black_glass\images\lighted.png" />
+    <Content Include="ComboBox\styles\black_glass\images\loading.gif" />
+    <Content Include="ComboBox\styles\black_glass\images\loading.png" />
+    <Content Include="ComboBox\styles\black_glass\images\vertical.gif" />
+    <Content Include="ComboBox\styles\black_glass\images\vertical.png" />
+    <Content Include="ComboBox\styles\black_glass\style.css" />
+    <Content Include="ComboBox\styles\grand_gray\images\drop-down-horizontal-header-footer.gif" />
+    <Content Include="ComboBox\styles\grand_gray\images\drop-down-horizontal-header-footer.png" />
+    <Content Include="ComboBox\styles\grand_gray\images\drop-down-horizontal.gif" />
+    <Content Include="ComboBox\styles\grand_gray\images\drop-down-horizontal.png" />
+    <Content Include="ComboBox\styles\grand_gray\images\drop-down-vertical.gif" />
+    <Content Include="ComboBox\styles\grand_gray\images\drop-down-vertical.png" />
+    <Content Include="ComboBox\styles\grand_gray\images\header-footer.png" />
+    <Content Include="ComboBox\styles\grand_gray\images\horizontal-textbox.gif" />
+    <Content Include="ComboBox\styles\grand_gray\images\horizontal-textbox.png" />
+    <Content Include="ComboBox\styles\grand_gray\images\horizontal.gif" />
+    <Content Include="ComboBox\styles\grand_gray\images\horizontal.png" />
+    <Content Include="ComboBox\styles\grand_gray\images\lighted.gif" />
+    <Content Include="ComboBox\styles\grand_gray\images\lighted.png" />
+    <Content Include="ComboBox\styles\grand_gray\images\loading.gif" />
+    <Content Include="ComboBox\styles\grand_gray\images\loading.png" />
+    <Content Include="ComboBox\styles\grand_gray\images\vertical.gif" />
+    <Content Include="ComboBox\styles\grand_gray\images\vertical.png" />
+    <Content Include="ComboBox\styles\grand_gray\style.css" />
+    <Content Include="ComboBox\styles\plain\images\drop-down-horizontal-header-footer.gif" />
+    <Content Include="ComboBox\styles\plain\images\drop-down-horizontal-header-footer.png" />
+    <Content Include="ComboBox\styles\plain\images\drop-down-horizontal.gif" />
+    <Content Include="ComboBox\styles\plain\images\drop-down-horizontal.png" />
+    <Content Include="ComboBox\styles\plain\images\drop-down-vertical.gif" />
+    <Content Include="ComboBox\styles\plain\images\drop-down-vertical.png" />
+    <Content Include="ComboBox\styles\plain\images\footer-middle.png" />
+    <Content Include="ComboBox\styles\plain\images\header-footer.png" />
+    <Content Include="ComboBox\styles\plain\images\horizontal-textbox.gif" />
+    <Content Include="ComboBox\styles\plain\images\horizontal-textbox.png" />
+    <Content Include="ComboBox\styles\plain\images\horizontal.gif" />
+    <Content Include="ComboBox\styles\plain\images\horizontal.png" />
+    <Content Include="ComboBox\styles\plain\images\lighted.gif" />
+    <Content Include="ComboBox\styles\plain\images\lighted.png" />
+    <Content Include="ComboBox\styles\plain\images\loading.gif" />
+    <Content Include="ComboBox\styles\plain\images\loading.png" />
+    <Content Include="ComboBox\styles\plain\images\vertical.gif" />
+    <Content Include="ComboBox\styles\plain\images\vertical.png" />
+    <Content Include="ComboBox\styles\plain\style.css" />
+    <Content Include="ComboBox\styles\premiere_blue\images\drop-down-horizontal-header-footer.gif" />
+    <Content Include="ComboBox\styles\premiere_blue\images\drop-down-horizontal-header-footer.png" />
+    <Content Include="ComboBox\styles\premiere_blue\images\drop-down-horizontal.gif" />
+    <Content Include="ComboBox\styles\premiere_blue\images\drop-down-horizontal.png" />
+    <Content Include="ComboBox\styles\premiere_blue\images\drop-down-vertical.gif" />
+    <Content Include="ComboBox\styles\premiere_blue\images\drop-down-vertical.png" />
+    <Content Include="ComboBox\styles\premiere_blue\images\horizontal-textbox.gif" />
+    <Content Include="ComboBox\styles\premiere_blue\images\horizontal-textbox.png" />
+    <Content Include="ComboBox\styles\premiere_blue\images\horizontal.gif" />
+    <Content Include="ComboBox\styles\premiere_blue\images\horizontal.png" />
+    <Content Include="ComboBox\styles\premiere_blue\images\lighted.gif" />
+    <Content Include="ComboBox\styles\premiere_blue\images\lighted.png" />
+    <Content Include="ComboBox\styles\premiere_blue\images\loading.gif" />
+    <Content Include="ComboBox\styles\premiere_blue\images\loading.png" />
+    <Content Include="ComboBox\styles\premiere_blue\images\vertical.gif" />
+    <Content Include="ComboBox\styles\premiere_blue\images\vertical.png" />
+    <Content Include="ComboBox\styles\premiere_blue\style.css" />
+    <Content Include="Contents\Images\3001213211200000.png" />
+    <Content Include="Contents\Images\3001324232200000.png" />
+    <Content Include="Contents\Images\30013762727200000.png" />
+    <Content Include="Contents\Images\300502213200000.png" />
+    <Content Include="Contents\Images\A0005.png" />
+    <Content Include="Contents\Images\child_plans.png" />
+    <Content Include="Contents\main.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\jquery-ui.css" />
+    <Content Include="Content\themes\base\jquery.ui.accordion.css" />
+    <Content Include="Content\themes\base\jquery.ui.all.css" />
+    <Content Include="Content\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="Content\themes\base\jquery.ui.base.css" />
+    <Content Include="Content\themes\base\jquery.ui.button.css" />
+    <Content Include="Content\themes\base\jquery.ui.core.css" />
+    <Content Include="Content\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="Content\themes\base\jquery.ui.dialog.css" />
+    <Content Include="Content\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="Content\themes\base\jquery.ui.resizable.css" />
+    <Content Include="Content\themes\base\jquery.ui.selectable.css" />
+    <Content Include="Content\themes\base\jquery.ui.slider.css" />
+    <Content Include="Content\themes\base\jquery.ui.tabs.css" />
+    <Content Include="Content\themes\base\jquery.ui.theme.css" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\minified\jquery-ui.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.accordion.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.autocomplete.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.button.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.core.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.datepicker.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.dialog.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.progressbar.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.resizable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.selectable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="CreditScoreRequestXML_Inner.xml" />
+    <Content Include="css\2ColumnFormLayout.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\datepickercss\arrowDown.gif" />
+    <Content Include="css\datepickercss\arrowUp.gif" />
+    <Content Include="css\datepickercss\icon2.gif" />
+    <Content Include="css\datepickercss\style.css" />
+    <Content Include="css\datepickercss\style_mine.css" />
+    <Content Include="css\jquery\jquery-ui.css" />
+    <Content Include="css\Layoutstyles.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\ui-lightness\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="css\ui-lightness\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="css\ui-lightness\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="css\ui-lightness\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="css\ui-lightness\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="css\ui-lightness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="css\ui-lightness\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="css\ui-lightness\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="css\ui-lightness\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="css\ui-lightness\images\ui-icons_222222_256x240.png" />
+    <Content Include="css\ui-lightness\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="css\ui-lightness\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="css\ui-lightness\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="css\ui-lightness\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="css\ui-lightness\jquery-ui-1.8.19.custom.css" />
+    <Content Include="digitalsign.aspx" />
+    <Content Include="digitalSignTest.html" />
+    <Content Include="downloadquotepdf.aspx" />
+    <Content Include="EmailBoby_KGHA_OTP.html" />
+    <Content Include="EmailBoby_STP_OTP.html" />
+    <Content Include="EmailBodyForAPAC.html" />
+    <Content Include="EmailBodyForgotPassword.html" />
+    <Content Include="EmailBody.html" />
+    <Content Include="EmailBody_AADHAAR_OTP.html" />
+    <Content Include="EmailBody_EProposal_Review.html" />
+    <Content Include="EProposalEmailbody.html" />
+    <Content Include="EProposal_Approve_MailBody.html" />
+    <Content Include="Eproposal_Reject_MailBody.html" />
+    <Content Include="Error.txt" />
+    <Content Include="ErrorPage.aspx" />
+    <Content Include="ExperianRequest.xml" />
+    <Content Include="ExperianResult.xml" />
+    <Content Include="fonts\Bree_Serif\OFL.txt" />
+    <Content Include="Footer_HTML.html" />
+    <Content Include="FrmAadhaarUpdate.aspx" />
+    <Content Include="FrmArogyaSanjeevniDataUpload.aspx" />
+    <Content Include="FrmCMCDocsViewer.aspx" />
+    <Content Include="FrmContactPage.aspx" />
+    <Content Include="FrmCPRenewalUpload.aspx" />
+    <Content Include="FrmCreateInvoiceLink.aspx" />
+    <Content Include="FrmCreateInvoiceLinkKpay.aspx" />
+    <Content Include="FrmCustomerInvoiceStatus.aspx" />
+    <Content Include="FrmCustomerInvoiceStatusKPay.aspx" />
+    <Content Include="FrmCustomErrorPage.aspx" />
+    <Content Include="FrmDownloadGPAPolicy.aspx" />
+    <Content Include="FrmDownloadMIS_TPA.aspx" />
+    <Content Include="FrmDownloadPolicy.aspx" />
+    <Content Include="FrmDownloadPolicySchedule.aspx" />
+    <Content Include="FrmDownloadPolicyScheduleNew.aspx" />
+    <Content Include="FrmDownloadRenewalNotice.aspx" />
+    <Content Include="FrmEHDCClaimDocUpload.aspx" />
+    <Content Include="FrmEProposalReview.aspx" />
+    <Content Include="FrmEProposalVerification.aspx" />
+    <Content Include="FrmErrorPage.aspx" />
+    <Content Include="FrmForgotPassword.aspx" />
+    <Content Include="FrmCoverMasterNew.aspx" />
+    <Content Include="FrmChangePassword.aspx" />
+    <Content Include="FrmCreateUserMasterNewEdit.aspx" />
+    <Content Include="FrmGHICustomerInfo.aspx" />
+    <Content Include="FrmGistSandBox.aspx" />
+    <Content Include="FrmGistSandBoxCustomerConfirmation.aspx" />
+    <Content Include="FrmGIStSandBoxThankYouPage.aspx" />
+    <Content Include="FrmGPACancelUpload.aspx" />
+    <Content Include="FrmGPACancelUploadStatus.aspx" />
+    <Content Include="FrmGPAClaimsUpload.aspx" />
+    <Content Include="FrmGPAClaimsUploadStatus.aspx" />
+    <Content Include="FrmGPADispatchUpload.aspx" />
+    <Content Include="FrmGPAGetPolicy_New.aspx" />
+    <Content Include="FrmGPAGetPolicy.aspx" />
+    <Content Include="FrmGPAPolicyEndorsementUpdate.aspx" />
+    <Content Include="FrmGPAPolicyUpload.aspx" />
+    <Content Include="FrmGPAPolicyUploadStatus.aspx" />
+    <Content Include="FrmGPAUploadConfiguration.aspx" />
+    <Content Include="FrmHDCCancelUpload.aspx" />
+    <Content Include="FrmHDCCancelUploadStatus.aspx" />
+    <Content Include="FrmHDCChallanUpload.aspx" />
+    <Content Include="FrmHDCClaimDetails.aspx" />
+    <Content Include="FrmHDCClaimDocUpload.aspx" />
+    <Content Include="FrmHDCClaimEdit.aspx" />
+    <Content Include="FrmHDCClaimProcess.aspx" />
+    <Content Include="FrmHDCClaimReg.aspx" />
+    <Content Include="FrmHDCClaimReopen.aspx" />
+    <Content Include="FrmHDCClaimStatus.aspx" />
+    <Content Include="FrmHDCMISDownload.aspx" />
+    <Content Include="FrmHDCPaymentDownload.aspx" />
+    <Content Include="FrmHDCPaymentProcessUpload.aspx" />
+    <Content Include="FrmHDCPolicyUpload.aspx" />
+    <Content Include="FrmHDCPolicyUploadStatus.aspx" />
+    <Content Include="FrmHealthClaimsUpload.aspx" />
+    <Content Include="FrmHealthClaimsUploadStatus.aspx" />
+    <Content Include="FrmHealthClaimsUTRUpload.aspx" />
+    <Content Include="FrmHealthClaimsUTRUploadStatus.aspx" />
+    <Content Include="FrmHealthRenewalPolicyUpload.aspx" />
+    <Content Include="FrmHealthWellness.aspx" />
+    <Content Include="FrmIIBClaimDataDownload.aspx" />
+    <Content Include="FrmIIBClaimDataUpload.aspx" />
+    <Content Include="FrmIIBClaimDataUploadNew.aspx" />
+    <Content Include="FrmIRDARegisterComplaint.aspx" />
+    <Content Include="FrmKavachCancelUpload.aspx" />
+    <Content Include="FrmKavachCancelUploadStatus.aspx" />
+    <Content Include="FrmKavachPolicyUpload.aspx" />
+    <Content Include="FrmKavachPolicyUploadStatus.aspx" />
+    <Content Include="frmKGHAFileUpload.aspx" />
+    <Content Include="frmKGHARegistrationdetails.aspx" />
+    <Content Include="FrmKGHC.aspx" />
+    <Content Include="FrmLogout.aspx" />
+    <Content Include="FrmMainMenu.aspx" />
+    <Content Include="FrmMiscServiceTracker.aspx" />
+    <Content Include="FrmMobileRenewalUpload.aspx" />
+    <Content Include="FrmMotorLeadCapture.aspx" />
+    <Content Include="FrmOutBoundUpload.aspx" />
+    <Content Include="FrmOutBoundUploadStatus.aspx" />
+    <Content Include="FrmPartner.aspx" />
+    <Content Include="FrmPaymentConfirmation.aspx" />
+    <Content Include="FrmPlanMasterEdit.aspx" />
+    <Content Include="FrmPlanMasterNew.aspx" />
+    <Content Include="FrmFinalizeQuotations.aspx" />
+    <Content Include="FrmPremiumCalculatorMotor.aspx" />
+    <Content Include="FrmPremiumCalculatorMotorODOnly.aspx" />
+    <Content Include="FrmPrivateCarLongTermPolicyBooking.aspx" />
+    <Content Include="FrmQuoteReassignment.aspx" />
+    <Content Include="FrmRenewalPolicyUpload.aspx" />
+    <Content Include="FrmReviewConfirm.aspx" />
+    <Content Include="FrmSecuredLogin.aspx" />
+    <Content Include="FrmSMSAndDailyReports.aspx" />
+    <Content Include="FrmSTP.aspx" />
+    <Content Include="FrmSTPRenewal.aspx" />
+    <Content Include="FrmSTPSearchEmp.aspx" />
+    <Content Include="FrmTalismaInteraction.aspx" />
+    <Content Include="FrmTechno.aspx" />
+    <Content Include="FrmThankYouPage.aspx" />
+    <Content Include="FrmUpdateNominee.aspx" />
+    <Content Include="FrmUpdateQuery.aspx" />
+    <Content Include="FrmUploadCTIFile.aspx" />
+    <Content Include="FrmUserRightsToRoleMapping.aspx" />
+    <Content Include="FrmUserRoleMaster.aspx" />
+    <Content Include="FrmUserToRoleMapping.aspx" />
+    <Content Include="GCVMotorSaveProposal_Request.xml" />
+    <Content Include="Header_HTML_WithoutFooter.html" />
+    <Content Include="Header_HTML_WithoutHeader.html" />
+    <Content Include="Header_HTML.html" />
+    <Content Include="HealthSaveProposal.aspx" />
+    <Content Include="HealthSaveProposal_Request.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="HealthSaveProposal_Request24112016.xml" />
+    <Content Include="HealthSaveProposal_Request_Ashutosh.xml" />
+    <Content Include="HealthSaveProposal_Request_Ashutosh_1Members.xml" />
+    <Content Include="HealthSaveProposal_Request_Ashutosh_1Members_19_SEP.xml" />
+    <Content Include="HealthSaveProposal_Request_Ashutosh_2Members.xml" />
+    <Content Include="HealthSaveProposal_Request_Bhavik.xml" />
+    <Content Include="HealthSaveProposal_Request_Murli.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="htmlbodytemplates\EmailBody_BundlePolicy.html" />
+    <Content Include="htmlbodytemplates\Footer_HTML.html" />
+    <Content Include="htmlbodytemplates\Header_HTML.html" />
+    <Content Include="htmlbodytemplates\Header_HTML_WithoutFooter.html" />
+    <Content Include="htmlbodytemplates\Header_HTML_WithoutHeader.html" />
+    <Content Include="htmlbodytemplates\QuotePDF3121.html" />
+    <Content Include="htmlbodytemplates\QuotePDF3151.html" />
+    <Content Include="HtmlPage1.html" />
+    <Content Include="Images\accent.png" />
+    <Content Include="Images\ajax-loader.gif" />
+    <Content Include="Images\bg.png" />
+    <Content Include="Images\blueslate_background.gif" />
+    <Content Include="Images\bullet.png" />
+    <Content Include="Images\bullet_toggle_minus.png" />
+    <Content Include="Images\bullet_toggle_plus.png" />
+    <Content Include="Images\calendar.png" />
+    <Content Include="Images\child_plans.png" />
+    <Content Include="Images\claims.png" />
+    <Content Include="Images\close-icon.png" />
+    <Content Include="Images\customer_login_section.png" />
+    <Content Include="Images\demo_wait.gif" />
+    <Content Include="Images\do.png" />
+    <Content Include="Images\employees_life_advisor.png" />
+    <Content Include="Images\error4.png" />
+    <Content Include="Images\gradient.png" />
+    <Content Include="Images\grievances.png" />
+    <Content Include="Images\group_plans.png" />
+    <Content Include="Images\heroAccent.png" />
+    <Content Include="Images\kgipasslogo.png" />
+    <Content Include="Images\kgisignature_fake.png" />
+    <Content Include="Images\KotakWithRedBackground.png" />
+    <Content Include="Images\loader.gif" />
+    <Content Include="Images\locat.png" />
+    <Content Include="Images\lock.png" />
+    <Content Include="Images\Logo.jpg" />
+    <Content Include="Images\Logo1.jpg" />
+    <Content Include="Images\logo1.png" />
+    <Content Include="Images\logo2.jpg" />
+    <Content Include="Images\Logo_Transparent.png" />
+    <Content Include="Images\mail.png" />
+    <Content Include="Images\MenuOver.gif" />
+    <Content Include="Images\mybackend.png" />
+    <Content Include="Images\orderedList0.png" />
+    <Content Include="Images\orderedList1.png" />
+    <Content Include="Images\orderedList2.png" />
+    <Content Include="Images\orderedList3.png" />
+    <Content Include="Images\orderedList4.png" />
+    <Content Include="Images\orderedList5.png" />
+    <Content Include="Images\orderedList6.png" />
+    <Content Include="Images\orderedList7.png" />
+    <Content Include="Images\orderedList8.png" />
+    <Content Include="Images\orderedList9.png" />
+    <Content Include="Images\pass-icon.png" />
+    <Content Include="Images\pay_premium_online.png" />
+    <Content Include="Images\phn.png" />
+    <Content Include="Images\protection_plans.png" />
+    <Content Include="Images\retirement_plans.png" />
+    <Content Include="Images\savings_investment_plans.png" />
+    <Content Include="Images\tick.png" />
+    <Content Include="Images\user-icon.png" />
+    <Content Include="Images\user.png" />
+    <Content Include="js\circular-countdown.js" />
+    <Content Include="js\SweetAlert.min.js" />
+    <Content Include="KGHAOnlinePaymentProcess.aspx" />
+    <Content Include="KGHA_GOOD_DEC.html" />
+    <Content Include="KGHA_POLICY_PDF.html" />
+    <Content Include="KHGA_SUCCESS_PAYMENT_MAIL_BODY.html" />
+    <Content Include="KHGA_TRANSCRIPT_MAIL_BODY.html" />
+    <Content Include="OnlinePaymentProcess.aspx" />
+    <Content Include="PageNotFound.aspx" />
+    <Content Include="PartnerRequest.xml" />
+    <Content Include="PartnerResult.xml" />
+    <Content Include="PartnerXML_Copy.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="PaymentAllocation_Request2.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="PaymentAllocation_Request.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="PaymentAllocation_Request_Ashutosh.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="PaymentEntry_Request_Ashutosh.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="PaymentEntry_Request_Bhavik.xml" />
+    <Content Include="Interface\styles\black_glass\OboutButton\images\button.gif" />
+    <Content Include="Interface\styles\black_glass\OboutButton\images\button.png" />
+    <Content Include="Interface\styles\black_glass\OboutButton\images\overlay.gif" />
+    <Content Include="Interface\styles\black_glass\OboutButton\style.css" />
+    <Content Include="Interface\styles\black_glass\OboutCheckBox\images\CheckBox.gif" />
+    <Content Include="Interface\styles\black_glass\OboutCheckBox\images\CheckBox.png" />
+    <Content Include="Interface\styles\black_glass\OboutCheckBox\style.css" />
+    <Content Include="Interface\styles\black_glass\OboutDropDownList\images\drop-down-horizontal.gif" />
+    <Content Include="Interface\styles\black_glass\OboutDropDownList\images\drop-down-horizontal.png" />
+    <Content Include="Interface\styles\black_glass\OboutDropDownList\images\drop-down-vertical.gif" />
+    <Content Include="Interface\styles\black_glass\OboutDropDownList\images\drop-down-vertical.png" />
+    <Content Include="Interface\styles\black_glass\OboutDropDownList\images\horizontal.gif" />
+    <Content Include="Interface\styles\black_glass\OboutDropDownList\images\horizontal.png" />
+    <Content Include="Interface\styles\black_glass\OboutDropDownList\images\lighted.gif" />
+    <Content Include="Interface\styles\black_glass\OboutDropDownList\images\lighted.png" />
+    <Content Include="Interface\styles\black_glass\OboutDropDownList\images\vertical.gif" />
+    <Content Include="Interface\styles\black_glass\OboutDropDownList\images\vertical.png" />
+    <Content Include="Interface\styles\black_glass\OboutDropDownList\style.css" />
+    <Content Include="Interface\styles\black_glass\OboutRadioButton\images\Radio.gif" />
+    <Content Include="Interface\styles\black_glass\OboutRadioButton\images\Radio.png" />
+    <Content Include="Interface\styles\black_glass\OboutRadioButton\style.css" />
+    <Content Include="Interface\styles\black_glass\OboutTextBox\images\textarea-horizontal.gif" />
+    <Content Include="Interface\styles\black_glass\OboutTextBox\images\textarea-horizontal.png" />
+    <Content Include="Interface\styles\black_glass\OboutTextBox\images\textarea-vertical.gif" />
+    <Content Include="Interface\styles\black_glass\OboutTextBox\images\textarea-vertical.png" />
+    <Content Include="Interface\styles\black_glass\OboutTextBox\images\textbox.gif" />
+    <Content Include="Interface\styles\black_glass\OboutTextBox\images\textbox.png" />
+    <Content Include="Interface\styles\black_glass\OboutTextBox\style.css" />
+    <Content Include="Interface\styles\black_glass\OboutTextBox\style_multiline.css" />
+    <Content Include="Interface\styles\grand_gray\OboutButton\images\button.gif" />
+    <Content Include="Interface\styles\grand_gray\OboutButton\images\button.png" />
+    <Content Include="Interface\styles\grand_gray\OboutButton\images\overlay.gif" />
+    <Content Include="Interface\styles\grand_gray\OboutButton\style.css" />
+    <Content Include="Interface\styles\grand_gray\OboutCheckBox\images\CheckBox.gif" />
+    <Content Include="Interface\styles\grand_gray\OboutCheckBox\images\CheckBox.png" />
+    <Content Include="Interface\styles\grand_gray\OboutCheckBox\style.css" />
+    <Content Include="Interface\styles\grand_gray\OboutDropDownList\images\drop-down-horizontal.gif" />
+    <Content Include="Interface\styles\grand_gray\OboutDropDownList\images\drop-down-horizontal.png" />
+    <Content Include="Interface\styles\grand_gray\OboutDropDownList\images\drop-down-vertical.gif" />
+    <Content Include="Interface\styles\grand_gray\OboutDropDownList\images\drop-down-vertical.png" />
+    <Content Include="Interface\styles\grand_gray\OboutDropDownList\images\horizontal.gif" />
+    <Content Include="Interface\styles\grand_gray\OboutDropDownList\images\horizontal.png" />
+    <Content Include="Interface\styles\grand_gray\OboutDropDownList\images\lighted.gif" />
+    <Content Include="Interface\styles\grand_gray\OboutDropDownList\images\lighted.png" />
+    <Content Include="Interface\styles\grand_gray\OboutDropDownList\images\vertical.gif" />
+    <Content Include="Interface\styles\grand_gray\OboutDropDownList\images\vertical.png" />
+    <Content Include="Interface\styles\grand_gray\OboutDropDownList\style.css" />
+    <Content Include="Interface\styles\grand_gray\OboutRadioButton\images\Radio.gif" />
+    <Content Include="Interface\styles\grand_gray\OboutRadioButton\images\Radio.png" />
+    <Content Include="Interface\styles\grand_gray\OboutRadioButton\style.css" />
+    <Content Include="Interface\styles\grand_gray\OboutTextBox\images\textarea-horizontal.gif" />
+    <Content Include="Interface\styles\grand_gray\OboutTextBox\images\textarea-horizontal.png" />
+    <Content Include="Interface\styles\grand_gray\OboutTextBox\images\textarea-vertical.gif" />
+    <Content Include="Interface\styles\grand_gray\OboutTextBox\images\textarea-vertical.png" />
+    <Content Include="Interface\styles\grand_gray\OboutTextBox\images\textbox.gif" />
+    <Content Include="Interface\styles\grand_gray\OboutTextBox\images\textbox.png" />
+    <Content Include="Interface\styles\grand_gray\OboutTextBox\style.css" />
+    <Content Include="Interface\styles\grand_gray\OboutTextBox\style_multiline.css" />
+    <Content Include="Interface\styles\plain\OboutButton\images\button.gif" />
+    <Content Include="Interface\styles\plain\OboutButton\images\button.png" />
+    <Content Include="Interface\styles\plain\OboutButton\images\overlay.gif" />
+    <Content Include="Interface\styles\plain\OboutButton\style.css" />
+    <Content Include="Interface\styles\plain\OboutCheckBox\images\CheckBox.gif" />
+    <Content Include="Interface\styles\plain\OboutCheckBox\images\CheckBox.png" />
+    <Content Include="Interface\styles\plain\OboutCheckBox\style.css" />
+    <Content Include="Interface\styles\plain\OboutDropDownList\images\drop-down-horizontal.gif" />
+    <Content Include="Interface\styles\plain\OboutDropDownList\images\drop-down-horizontal.png" />
+    <Content Include="Interface\styles\plain\OboutDropDownList\images\drop-down-vertical.gif" />
+    <Content Include="Interface\styles\plain\OboutDropDownList\images\drop-down-vertical.png" />
+    <Content Include="Interface\styles\plain\OboutDropDownList\images\horizontal.gif" />
+    <Content Include="Interface\styles\plain\OboutDropDownList\images\horizontal.png" />
+    <Content Include="Interface\styles\plain\OboutDropDownList\images\lighted.gif" />
+    <Content Include="Interface\styles\plain\OboutDropDownList\images\lighted.png" />
+    <Content Include="Interface\styles\plain\OboutDropDownList\images\vertical.gif" />
+    <Content Include="Interface\styles\plain\OboutDropDownList\images\vertical.png" />
+    <Content Include="Interface\styles\plain\OboutDropDownList\style.css" />
+    <Content Include="Interface\styles\plain\OboutRadioButton\images\Radio.gif" />
+    <Content Include="Interface\styles\plain\OboutRadioButton\images\Radio.png" />
+    <Content Include="Interface\styles\plain\OboutRadioButton\style.css" />
+    <Content Include="Interface\styles\plain\OboutTextBox\images\textarea-horizontal.gif" />
+    <Content Include="Interface\styles\plain\OboutTextBox\images\textarea-horizontal.png" />
+    <Content Include="Interface\styles\plain\OboutTextBox\images\textarea-vertical.gif" />
+    <Content Include="Interface\styles\plain\OboutTextBox\images\textarea-vertical.png" />
+    <Content Include="Interface\styles\plain\OboutTextBox\images\textbox.gif" />
+    <Content Include="Interface\styles\plain\OboutTextBox\images\textbox.png" />
+    <Content Include="Interface\styles\plain\OboutTextBox\style.css" />
+    <Content Include="Interface\styles\plain\OboutTextBox\style_multiline.css" />
+    <Content Include="Interface\styles\plain\OboutTextBox\style_multiline_reorganized.css" />
+    <Content Include="Interface\styles\premiere_blue\OboutButton\images\button.gif" />
+    <Content Include="Interface\styles\premiere_blue\OboutButton\images\button.png" />
+    <Content Include="Interface\styles\premiere_blue\OboutButton\images\overlay.gif" />
+    <Content Include="Interface\styles\premiere_blue\OboutButton\style.css" />
+    <Content Include="Interface\styles\premiere_blue\OboutCheckBox\images\CheckBox.gif" />
+    <Content Include="Interface\styles\premiere_blue\OboutCheckBox\images\CheckBox.png" />
+    <Content Include="Interface\styles\premiere_blue\OboutCheckBox\style.css" />
+    <Content Include="Interface\styles\premiere_blue\OboutDropDownList\images\drop-down-horizontal.gif" />
+    <Content Include="Interface\styles\premiere_blue\OboutDropDownList\images\drop-down-horizontal.png" />
+    <Content Include="Interface\styles\premiere_blue\OboutDropDownList\images\drop-down-vertical.gif" />
+    <Content Include="Interface\styles\premiere_blue\OboutDropDownList\images\drop-down-vertical.png" />
+    <Content Include="Interface\styles\premiere_blue\OboutDropDownList\images\horizontal.gif" />
+    <Content Include="Interface\styles\premiere_blue\OboutDropDownList\images\horizontal.png" />
+    <Content Include="Interface\styles\premiere_blue\OboutDropDownList\images\lighted.gif" />
+    <Content Include="Interface\styles\premiere_blue\OboutDropDownList\images\lighted.png" />
+    <Content Include="Interface\styles\premiere_blue\OboutDropDownList\images\vertical.gif" />
+    <Content Include="Interface\styles\premiere_blue\OboutDropDownList\images\vertical.png" />
+    <Content Include="Interface\styles\premiere_blue\OboutDropDownList\style.css" />
+    <Content Include="Interface\styles\premiere_blue\OboutRadioButton\images\Radio.gif" />
+    <Content Include="Interface\styles\premiere_blue\OboutRadioButton\images\Radio.png" />
+    <Content Include="Interface\styles\premiere_blue\OboutRadioButton\style.css" />
+    <Content Include="Interface\styles\premiere_blue\OboutTextBox\images\textarea-horizontal.gif" />
+    <Content Include="Interface\styles\premiere_blue\OboutTextBox\images\textarea-horizontal.png" />
+    <Content Include="Interface\styles\premiere_blue\OboutTextBox\images\textarea-vertical.gif" />
+    <Content Include="Interface\styles\premiere_blue\OboutTextBox\images\textarea-vertical.png" />
+    <Content Include="Interface\styles\premiere_blue\OboutTextBox\images\textbox.gif" />
+    <Content Include="Interface\styles\premiere_blue\OboutTextBox\images\textbox.png" />
+    <Content Include="Interface\styles\premiere_blue\OboutTextBox\style.css" />
+    <Content Include="Interface\styles\premiere_blue\OboutTextBox\style_multiline.css" />
+    <Content Include="js\bootstrap\bootstrap.min.js" />
+    <Content Include="css\bootstrap\bootstrap.min.css" />
+    <Content Include="js\html5shiv.js" />
+    <Content Include="js\jquery-1.12.2.min.js" />
+    <Content Include="js\jquery-1.5.1.min.js" />
+    <Content Include="js\jquery-1.7.2.min.js" />
+    <Content Include="js\jquery-ui-1.8.19.custom.min.js" />
+    <Content Include="js\jquery-ui-1.9.2.min.js" />
+    <Content Include="js\Respond.js" />
+    <Content Include="ListBox\styles\black_glass\images\drop-down-horizontal-header-footer.gif" />
+    <Content Include="ListBox\styles\black_glass\images\drop-down-horizontal-header-footer.png" />
+    <Content Include="ListBox\styles\black_glass\images\drop-down-horizontal.gif" />
+    <Content Include="ListBox\styles\black_glass\images\drop-down-horizontal.png" />
+    <Content Include="ListBox\styles\black_glass\images\drop-down-horizontal1.png" />
+    <Content Include="ListBox\styles\black_glass\images\drop-down-vertical.gif" />
+    <Content Include="ListBox\styles\black_glass\images\drop-down-vertical.png" />
+    <Content Include="ListBox\styles\black_glass\images\footer-middle.png" />
+    <Content Include="ListBox\styles\black_glass\images\horizontal-textbox.gif" />
+    <Content Include="ListBox\styles\black_glass\images\horizontal-textbox.png" />
+    <Content Include="ListBox\styles\black_glass\images\horizontal.gif" />
+    <Content Include="ListBox\styles\black_glass\images\horizontal.png" />
+    <Content Include="ListBox\styles\black_glass\images\lighted.gif" />
+    <Content Include="ListBox\styles\black_glass\images\lighted.png" />
+    <Content Include="ListBox\styles\black_glass\images\loading.gif" />
+    <Content Include="ListBox\styles\black_glass\images\loading.png" />
+    <Content Include="ListBox\styles\black_glass\images\vertical.gif" />
+    <Content Include="ListBox\styles\black_glass\images\vertical.png" />
+    <Content Include="ListBox\styles\black_glass\style.css" />
+    <Content Include="ListBox\styles\grand_gray\images\drop-down-horizontal-header-footer.gif" />
+    <Content Include="ListBox\styles\grand_gray\images\drop-down-horizontal-header-footer.png" />
+    <Content Include="ListBox\styles\grand_gray\images\drop-down-horizontal.gif" />
+    <Content Include="ListBox\styles\grand_gray\images\drop-down-horizontal.png" />
+    <Content Include="ListBox\styles\grand_gray\images\drop-down-vertical.gif" />
+    <Content Include="ListBox\styles\grand_gray\images\drop-down-vertical.png" />
+    <Content Include="ListBox\styles\grand_gray\images\horizontal.gif" />
+    <Content Include="ListBox\styles\grand_gray\images\horizontal.png" />
+    <Content Include="ListBox\styles\grand_gray\images\lighted.gif" />
+    <Content Include="ListBox\styles\grand_gray\images\lighted.png" />
+    <Content Include="ListBox\styles\grand_gray\images\loading.gif" />
+    <Content Include="ListBox\styles\grand_gray\images\loading.png" />
+    <Content Include="ListBox\styles\grand_gray\images\vertical.gif" />
+    <Content Include="ListBox\styles\grand_gray\images\vertical.png" />
+    <Content Include="ListBox\styles\grand_gray\style.css" />
+    <Content Include="ListBox\styles\plain\images\drop-down-horizontal-header-footer.gif" />
+    <Content Include="ListBox\styles\plain\images\drop-down-horizontal-header-footer.png" />
+    <Content Include="ListBox\styles\plain\images\drop-down-horizontal.gif" />
+    <Content Include="ListBox\styles\plain\images\drop-down-horizontal.png" />
+    <Content Include="ListBox\styles\plain\images\drop-down-vertical.gif" />
+    <Content Include="ListBox\styles\plain\images\drop-down-vertical.png" />
+    <Content Include="ListBox\styles\plain\images\footer-middle.png" />
+    <Content Include="ListBox\styles\plain\images\header-footer.png" />
+    <Content Include="ListBox\styles\plain\images\horizontal-textbox.gif" />
+    <Content Include="ListBox\styles\plain\images\horizontal-textbox.png" />
+    <Content Include="ListBox\styles\plain\images\horizontal.gif" />
+    <Content Include="ListBox\styles\plain\images\horizontal.png" />
+    <Content Include="ListBox\styles\plain\images\lighted.gif" />
+    <Content Include="ListBox\styles\plain\images\lighted.png" />
+    <Content Include="ListBox\styles\plain\images\loading.gif" />
+    <Content Include="ListBox\styles\plain\images\loading.png" />
+    <Content Include="ListBox\styles\plain\images\vertical.gif" />
+    <Content Include="ListBox\styles\plain\images\vertical.png" />
+    <Content Include="ListBox\styles\plain\style.css" />
+    <Content Include="ListBox\styles\premiere_blue\images\drop-down-horizontal-header-footer.gif" />
+    <Content Include="ListBox\styles\premiere_blue\images\drop-down-horizontal-header-footer.png" />
+    <Content Include="ListBox\styles\premiere_blue\images\drop-down-horizontal.gif" />
+    <Content Include="ListBox\styles\premiere_blue\images\drop-down-horizontal.png" />
+    <Content Include="ListBox\styles\premiere_blue\images\drop-down-vertical.gif" />
+    <Content Include="ListBox\styles\premiere_blue\images\drop-down-vertical.png" />
+    <Content Include="ListBox\styles\premiere_blue\images\horizontal.gif" />
+    <Content Include="ListBox\styles\premiere_blue\images\horizontal.png" />
+    <Content Include="ListBox\styles\premiere_blue\images\lighted.gif" />
+    <Content Include="ListBox\styles\premiere_blue\images\lighted.png" />
+    <Content Include="ListBox\styles\premiere_blue\images\loading.gif" />
+    <Content Include="ListBox\styles\premiere_blue\images\loading.png" />
+    <Content Include="ListBox\styles\premiere_blue\images\vertical.gif" />
+    <Content Include="ListBox\styles\premiere_blue\images\vertical.png" />
+    <Content Include="ListBox\styles\premiere_blue\style.css" />
+    <Content Include="MessageBoxUsc\uscMsgBox.ascx" />
+    <Content Include="PartnerXML.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="new.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="packages.config" />
+    <Content Include="Contents\PDFs\3001324232200000.pdf" />
+    <Content Include="Contents\PDFs\30013762727200000.pdf" />
+    <Content Include="Contents\PDFs\300502213200000.pdf" />
+    <Content Include="Contents\PDFs\A0005.pdf" />
+    <Content Include="Contents\PDFs\test.pdf" />
+    <Content Include="fonts\Bree_Serif\BreeSerif-Regular.ttf" />
+    <Content Include="fonts\PoiretOne-Regular.ttf" />
+    <Content Include="PASS.Master" />
+    <Content Include="App_Obout\HTMLEditor\DocumentsGallery\Word document 1.doc" />
+    <Content Include="App_Obout\HTMLEditor\DocumentsGallery\Word document 2.doc" />
+    <Content Include="App_Obout\HTMLEditor\FlashVideoGallery\fun.flv" />
+    <Content Include="App_Obout\HTMLEditor\ImageGallery\Background Images\Tree\DESCRIPT.ION" />
+    <Content Include="App_Obout\SpellChecker\Dictionaries\en-GB.dic" />
+    <Content Include="App_Obout\SpellChecker\Dictionaries\en-US.dic" />
+    <Content Include="App_Obout\SpellChecker\Dictionaries\user.dic" />
+    <Content Include="PaymentEntryStub.aspx" />
+    <Content Include="PaymentEntry_Request.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="PaymentTagging.aspx" />
+    <Content Include="PaymentTagging_Request.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="PDFImageCoordinates.aspx" />
+    <Content Include="PolicyScheduleHtmlFiles\CarSecure3121\KotakCarSecurePolicySchedule.html" />
+    <Content Include="PrivateCarSaveProposal.aspx" />
+    <Content Include="PrivateCarSaveProposal_CP.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="PrivateCarSaveProposal_Request_30SEP.xml" />
+    <Content Include="PrivateCarSaveProposal_Request_New.xml" />
+    <Content Include="PrivateCarSaveProposal__Request_Pramod.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="QH20160916518PAYMENTTAGGING.xml" />
+    <Content Include="QH20160920655SaveProposal_Request.xml" />
+    <None Include="Properties\PublishProfiles\KGIPASSPUBLISH_PROD.pubxml" />
+    <None Include="Properties\PublishProfiles\KGIPASSPUBLISH_UAT.pubxml" />
+    <Content Include="QM20161129893PaymentEntry_Request.xml" />
+    <Content Include="QM20161130917PaymentEntry_Request.xml" />
+    <Content Include="Service References\ADBank_ServiceReference\PrjPASS.ADBank_ServiceReference.CompositeType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\ADBank_ServiceReference\Service1.wsdl" />
+    <None Include="Service References\ADBank_ServiceReference\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ADBank_ServiceReference\Service11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ADBank_ServiceReference\Service12.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ADBank_ServiceReference\Service1.disco" />
+    <None Include="Service References\ADBank_ServiceReference\configuration91.svcinfo" />
+    <None Include="Service References\ADBank_ServiceReference\configuration.svcinfo" />
+    <None Include="Service References\ADBank_ServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\GBMServiceReference\GCCommon.wsdl" />
+    <None Include="Service References\GBMServiceReference\GCCommon.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\GBMServiceReference\GCCommon1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\GBMServiceReference\GCCommon2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Service References\GBMServiceReference\PrjPASS.GBMServiceReference.GSTBreakUpTaxDetails.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\GBMServiceReference\PrjPASS.GBMServiceReference.PolicyVerifcation.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\GCGenericService\GenericService.wsdl" />
+    <None Include="Service References\GCGenericService\GenericService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\GCGenericService\GenericService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\GCGenericService\GenericService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\GCGenericService\GenericService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\GCGenericService\GenericService4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\GBMServiceReference\GCCommon.disco" />
+    <None Include="Service References\GBMServiceReference\configuration91.svcinfo" />
+    <None Include="Service References\GBMServiceReference\configuration.svcinfo" />
+    <None Include="Service References\GBMServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Service References\GCGenericService\PrjPASS.GCGenericService.CoverNoteEntry.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\GCGenericService\PrjPASS.GCGenericService.Customer.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\GCGenericService\PrjPASS.GCGenericService.Employee.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\GCGenericService\PrjPASS.GCGenericService.GeneralServiceResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\GCGenericService\PrjPASS.GCGenericService.GenericMasterResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\GCGenericService\PrjPASS.GCGenericService.GenericResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\GCGenericService\PrjPASS.GCGenericService.GMCPlan.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\GCGenericService\PrjPASS.GCGenericService.Intermediary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\GCGenericService\PrjPASS.GCGenericService.Location.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\GCGenericService\PrjPASS.GCGenericService.PolicyCustData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\GCGenericService\PrjPASS.GCGenericService.PolicyService.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\GCGenericService\PrjPASS.GCGenericService.User.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\GSTService\GCCommon.wsdl" />
+    <None Include="Service References\GSTService\GCCommon.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\GSTService\GCCommon1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\GSTService\GCCommon2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\GCGenericService\GenericService.disco" />
+    <None Include="Service References\GCGenericService\configuration91.svcinfo" />
+    <None Include="Service References\GCGenericService\configuration.svcinfo" />
+    <None Include="Service References\GCGenericService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Service References\GSTService\PrjPASS.GSTService.GSTBreakUpTaxDetails.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\GSTService\PrjPASS.GSTService.PolicyVerifcation.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\MISCReportServiceReference\MISCReportService.wsdl" />
+    <None Include="Service References\MISCReportServiceReference\MISCReportService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MISCReportServiceReference\MISCReportService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PdfService\KGIService.wsdl" />
+    <None Include="Service References\PdfService\KGIService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PdfService\KGIService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\GSTService\GCCommon.disco" />
+    <None Include="Service References\GSTService\configuration91.svcinfo" />
+    <None Include="Service References\GSTService\configuration.svcinfo" />
+    <None Include="Service References\GSTService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Service References\PdfService\PrjPASS.PdfService.ConvertLongURLToShortURLResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\PdfService\PrjPASS.PdfService.KGIGetPolicyDocumentForPASSResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\PdfService\PrjPASS.PdfService.KGIGetPolicyDocumentForPortalResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\PdfService\PrjPASS.PdfService.KGIGetProposalStatusByPartnerApplicationNumberResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\PdfService\PrjPASS.PdfService.KGIGetProposalStatusResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\ServiceReference1\CustomerPortalService1.disco" />
+    <None Include="Service References\ServiceReference1\CustomerPortalService1.wsdl" />
+    <None Include="Service References\ServiceReference1\CustomerPortalService11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference1\CustomerPortalService111.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference1\CustomerPortalService1110.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference1\CustomerPortalService112.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference1\CustomerPortalService113.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference1\CustomerPortalService114.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference1\CustomerPortalService115.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference1\CustomerPortalService116.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference1\CustomerPortalService117.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference1\CustomerPortalService118.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference1\CustomerPortalService119.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="RequestXML.xml" />
+    <Content Include="ResultXML.xml" />
+    <None Include="Service References\MISCReportServiceReference\configuration91.svcinfo" />
+    <None Include="Service References\MISCReportServiceReference\configuration.svcinfo" />
+    <None Include="Service References\MISCReportServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\PdfService\KGIService.disco" />
+    <None Include="Service References\PdfService\configuration91.svcinfo" />
+    <None Include="Service References\PdfService\configuration.svcinfo" />
+    <None Include="Service References\PdfService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\ServiceReference1\CustomerPortalService19.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference1\CustomerPortalService2.disco" />
+    <Content Include="Service References\ServiceReference1\PrjPASS.ServiceReference1.AddCustomerResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReference1\PrjPASS.ServiceReference1.CalculatePremiumResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReference1\PrjPASS.ServiceReference1.ClaimAdjusterAppointmentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReference1\PrjPASS.ServiceReference1.ClaimPopulateAdjusterAppointmentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReference1\PrjPASS.ServiceReference1.ClaimSaveAssessmentSheetResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReference1\PrjPASS.ServiceReference1.ClaimSaveRegistrationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReference1\PrjPASS.ServiceReference1.ClaimSaveWorkshopResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReference1\PrjPASS.ServiceReference1.ClaimServiceResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReference1\PrjPASS.ServiceReference1.ClaimServiceResult_AdjusterAppointment.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReference1\PrjPASS.ServiceReference1.ClaimServiceResult_SurveyorDataEntry.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReference1\PrjPASS.ServiceReference1.ClaimServiceSaveNoteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReference1\PrjPASS.ServiceReference1.ClaimServiceSaveReportSubmissionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReference1\PrjPASS.ServiceReference1.ClaimServiceUpdateDriverDetailsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReference1\PrjPASS.ServiceReference1.CUD_Note.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReference1\PrjPASS.ServiceReference1.CUD_Registration.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReference1\PrjPASS.ServiceReference1.DriverDetails.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReference1\PrjPASS.ServiceReference1.EditCustomerResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReference1\PrjPASS.ServiceReference1.GDt_RepairerDetails.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReference1\PrjPASS.ServiceReference1.GetPolicyDocumentForPortalResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReference1\PrjPASS.ServiceReference1.ImagePath.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReference1\PrjPASS.ServiceReference1.ImagePathDMS.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReference1\PrjPASS.ServiceReference1.ImagePathDMSSearch.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReference1\PrjPASS.ServiceReference1.PaymentAllocationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReference1\PrjPASS.ServiceReference1.PaymentEntryResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReference1\PrjPASS.ServiceReference1.PaymentTaggingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReference1\PrjPASS.ServiceReference1.SaveProposalResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReference1\PrjPASS.ServiceReference1.ServiceResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReference1\PrjPASS.ServiceReference1.ViewCustomerResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReference1\PrjPASS.ServiceReference1.FetchProposalResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReference1\PrjPASS.ServiceReference1.GetCreditScoreResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReference1\PrjPASS.ServiceReference1.GetPeerlessResponseResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReference1\PrjPASS.ServiceReference1.GetPolicyScheduleForPortalResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\ServiceReference1\CustomerPortalService12.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference1\CustomerPortalService13.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference1\CustomerPortalService14.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference1\CustomerPortalService15.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference1\CustomerPortalService16.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference1\CustomerPortalService17.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference1\CustomerPortalService18.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference1\CustomerPortalService2.wsdl" />
+    <None Include="Service References\ServiceReference1\CustomerPortalService20.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference1\CustomerPortalService21.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference1\CustomerPortalService22.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Service References\ServiceReference1\PrjPASS.ServiceReference1.DigitalPayPropAllInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\ServiceReference2\configuration91.svcinfo" />
+    <None Include="Service References\ServiceReference2\configuration.svcinfo" />
+    <None Include="Service References\ServiceReference2\PartnerIntegrationService1.wsdl" />
+    <None Include="Service References\ServiceReference2\PartnerIntegrationService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference2\PartnerIntegrationService21.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference2\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\ServiceReference1\configuration91.svcinfo" />
+    <None Include="Service References\ServiceReference1\configuration.svcinfo" />
+    <None Include="Service References\ServiceReference1\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Service References\ServiceReference3\PrjPASS.ServiceReference3.ImagePath.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReference3\PrjPASS.ServiceReference3.ImagePathDMS.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\ServiceReference3\Service1.disco" />
+    <None Include="Service References\ServiceReference3\configuration91.svcinfo" />
+    <None Include="Service References\ServiceReference3\configuration.svcinfo" />
+    <None Include="Service References\ServiceReference3\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\ServiceReference4\CustomerPortalService.disco" />
+    <None Include="Service References\ServiceReference4\configuration91.svcinfo" />
+    <None Include="Service References\ServiceReference4\configuration.svcinfo" />
+    <Content Include="Service References\ServiceReference4\PrjPASS.ServiceReference4.AddCustomerResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReference4\PrjPASS.ServiceReference4.CaculateRenewalPremiumResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReference4\PrjPASS.ServiceReference4.CalculatePremiumResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReference4\PrjPASS.ServiceReference4.clsBasicPolicyDetails.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReference4\PrjPASS.ServiceReference4.clsClaimUploadResultSet.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReference4\PrjPASS.ServiceReference4.EditCustomerResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReference4\PrjPASS.ServiceReference4.FetchProposalXmlResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReference4\PrjPASS.ServiceReference4.FetchQuotationXmlResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReference4\PrjPASS.ServiceReference4.GetBasicPolicyDetailsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReference4\PrjPASS.ServiceReference4.GetECoverNoteForPortalResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReference4\PrjPASS.ServiceReference4.GetHtmlReportResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReference4\PrjPASS.ServiceReference4.GetPayInSlipScheduleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReference4\PrjPASS.ServiceReference4.GetPolicyDocumentForPortalResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReference4\PrjPASS.ServiceReference4.GetPolicyRenewalMinimumDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReference4\PrjPASS.ServiceReference4.GetPolicyScheduleForPortalResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReference4\PrjPASS.ServiceReference4.GetProposalDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReference4\PrjPASS.ServiceReference4.GetProposalFormForPortalResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReference4\PrjPASS.ServiceReference4.GetRenewalNoticeHtmlResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReference4\PrjPASS.ServiceReference4.GetRenwalNoticeForPortalResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReference4\PrjPASS.ServiceReference4.GetRenwalRejectionForPortalResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReference4\PrjPASS.ServiceReference4.GetWorkSheetForPortalResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReference4\PrjPASS.ServiceReference4.GetWorkSheetResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReference4\PrjPASS.ServiceReference4.PaymentAllocationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReference4\PrjPASS.ServiceReference4.PaymentEntryResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReference4\PrjPASS.ServiceReference4.PaymentTaggingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReference4\PrjPASS.ServiceReference4.PolicyRenewal_GetDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReference4\PrjPASS.ServiceReference4.PolicyRenewal_SaveDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReference4\PrjPASS.ServiceReference4.PolicyRenewal_SaveDataWithoutModificationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReference4\PrjPASS.ServiceReference4.SaveDeatailQuoteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReference4\PrjPASS.ServiceReference4.SaveProposalResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReference4\PrjPASS.ServiceReference4.SaveVehicleInspectionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReference4\PrjPASS.ServiceReference4.ServiceResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReference4\PrjPASS.ServiceReference4.UploadFileResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReference4\PrjPASS.ServiceReference4.ViewCustomerResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\ServiceReference4\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\ServiceReference5\configuration91.svcinfo" />
+    <None Include="Service References\ServiceReference5\configuration.svcinfo" />
+    <None Include="Service References\ServiceReference5\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\svcGCInternetProxy\CustomerPortalService.disco" />
+    <None Include="Service References\svcGCInternetProxy\configuration91.svcinfo" />
+    <None Include="Service References\svcGCInternetProxy\configuration.svcinfo" />
+    <Content Include="Service References\svcGCInternetProxy\PrjPASS.svcGCInternetProxy.AddCustomerResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\svcGCInternetProxy\PrjPASS.svcGCInternetProxy.CalculatePremiumResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\svcGCInternetProxy\PrjPASS.svcGCInternetProxy.ClaimAdjusterAppointmentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\svcGCInternetProxy\PrjPASS.svcGCInternetProxy.ClaimPopulateAdjusterAppointmentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\svcGCInternetProxy\PrjPASS.svcGCInternetProxy.ClaimSaveAssessmentSheetResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\svcGCInternetProxy\PrjPASS.svcGCInternetProxy.ClaimSaveClaimDetailsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\svcGCInternetProxy\PrjPASS.svcGCInternetProxy.ClaimSaveRegistrationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\svcGCInternetProxy\PrjPASS.svcGCInternetProxy.ClaimSaveReportSubmissionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\svcGCInternetProxy\PrjPASS.svcGCInternetProxy.ClaimSaveWorkshopResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\svcGCInternetProxy\PrjPASS.svcGCInternetProxy.ClaimServiceResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\svcGCInternetProxy\PrjPASS.svcGCInternetProxy.ClaimServiceResult_AdjusterAppointment.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\svcGCInternetProxy\PrjPASS.svcGCInternetProxy.ClaimServiceResult_ClaimDetails.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\svcGCInternetProxy\PrjPASS.svcGCInternetProxy.ClaimServiceResult_IntermediaryAppointmentDetails.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\svcGCInternetProxy\PrjPASS.svcGCInternetProxy.ClaimServiceResult_IntermediaryReportSubmission.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\svcGCInternetProxy\PrjPASS.svcGCInternetProxy.ClaimServiceResult_SurveyorDataEntry.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\svcGCInternetProxy\PrjPASS.svcGCInternetProxy.ClaimServiceSaveNoteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\svcGCInternetProxy\PrjPASS.svcGCInternetProxy.ClaimServiceSaveReportSubmissionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\svcGCInternetProxy\PrjPASS.svcGCInternetProxy.ClaimServiceUpdateDriverDetailsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\svcGCInternetProxy\PrjPASS.svcGCInternetProxy.CUD_Note.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\svcGCInternetProxy\PrjPASS.svcGCInternetProxy.CUD_Registration.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\svcGCInternetProxy\PrjPASS.svcGCInternetProxy.DigitalPayPropAllInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\svcGCInternetProxy\PrjPASS.svcGCInternetProxy.DriverDetails.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\svcGCInternetProxy\PrjPASS.svcGCInternetProxy.EditCustomerResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\svcGCInternetProxy\PrjPASS.svcGCInternetProxy.FetchProposalResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\svcGCInternetProxy\PrjPASS.svcGCInternetProxy.GDt_RepairerDetails.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\svcGCInternetProxy\PrjPASS.svcGCInternetProxy.GetClaimFormForPortalResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\svcGCInternetProxy\PrjPASS.svcGCInternetProxy.GetCreditScoreResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\svcGCInternetProxy\PrjPASS.svcGCInternetProxy.GetPeerlessResponseResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\svcGCInternetProxy\PrjPASS.svcGCInternetProxy.GetPolicyDocumentForPortalResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\svcGCInternetProxy\PrjPASS.svcGCInternetProxy.GetPolicyScheduleForPortalResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\svcGCInternetProxy\PrjPASS.svcGCInternetProxy.ImagePath.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\svcGCInternetProxy\PrjPASS.svcGCInternetProxy.ImagePathDMS.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\svcGCInternetProxy\PrjPASS.svcGCInternetProxy.ImagePathDMSSearch.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\svcGCInternetProxy\PrjPASS.svcGCInternetProxy.PaymentAllocationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\svcGCInternetProxy\PrjPASS.svcGCInternetProxy.PaymentEntryResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\svcGCInternetProxy\PrjPASS.svcGCInternetProxy.PaymentTaggingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\svcGCInternetProxy\PrjPASS.svcGCInternetProxy.SaveProposalResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\svcGCInternetProxy\PrjPASS.svcGCInternetProxy.ServiceResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\svcGCInternetProxy\PrjPASS.svcGCInternetProxy.ViewCustomerResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\svcGCInternetProxy\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="SmartForms\css\font-awesome.min.css" />
+    <Content Include="SmartForms\css\smart-addons.css" />
+    <Content Include="SmartForms\css\smart-forms-ie8.css" />
+    <Content Include="SmartForms\css\smart-forms.css" />
+    <Content Include="SmartForms\css\smart-themes\black.css" />
+    <Content Include="SmartForms\css\smart-themes\blue.css" />
+    <Content Include="SmartForms\css\smart-themes\green.css" />
+    <Content Include="SmartForms\css\smart-themes\purple.css" />
+    <Content Include="SmartForms\css\smart-themes\red.css" />
+    <Content Include="SmartForms\css\smart-themes\yellow.css" />
+    <Content Include="SmartForms\images\dark.png" />
+    <Content Include="SmartForms\images\foobg.png" />
+    <Content Include="SmartForms\images\wood.png" />
+    <Content Include="SmartForms\js\jquery-1.9.1.min.js" />
+    <Content Include="SmartForms\js\jquery.placeholder.min.js" />
+    <Content Include="PrivateCar.XML" />
+    <Content Include="GPA_PDF.html" />
+    <Content Include="TalismaPullSMS.aspx" />
+    <Content Include="Techno_Deposit_Receipt.html" />
+    <Content Include="TEST.txt" />
+    <Content Include="ThinCustomer.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web References\ContactWS\AttachmentData.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Web References\ContactWS\CommentsData.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <None Include="Service References\svcGCInternetProxy\CustomerPortalService.wsdl" />
+    <None Include="Service References\svcGCInternetProxy\CustomerPortalService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcGCInternetProxy\CustomerPortalService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcGCInternetProxy\CustomerPortalService10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcGCInternetProxy\CustomerPortalService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcGCInternetProxy\CustomerPortalService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcGCInternetProxy\CustomerPortalService4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcGCInternetProxy\CustomerPortalService5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcGCInternetProxy\CustomerPortalService6.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcGCInternetProxy\CustomerPortalService7.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcGCInternetProxy\CustomerPortalService8.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcGCInternetProxy\CustomerPortalService9.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\ContactWS\contact.disco" />
+    <Content Include="Web References\InteractionWS\ActivityInfo.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Web References\InteractionWS\AttachmentInfo.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <None Include="Web References\InteractionWS\interaction.disco" />
+    <Content Include="Window\images\outlook.png" />
+    <Content Include="Window\wdstyles\aura\aura.css" />
+    <Content Include="Window\wdstyles\aura\aura.js" />
+    <Content Include="Window\wdstyles\aura\BottomLineCenter.gif" />
+    <Content Include="Window\wdstyles\aura\BottomLineLeft.gif" />
+    <Content Include="Window\wdstyles\aura\BottomLineRight.gif" />
+    <Content Include="Window\wdstyles\aura\BuiltinButtonsContainer.gif" />
+    <Content Include="Window\wdstyles\aura\CloseDown.gif" />
+    <Content Include="Window\wdstyles\aura\CloseOut.gif" />
+    <Content Include="Window\wdstyles\aura\CloseOver.gif" />
+    <Content Include="Window\wdstyles\aura\ContentMiddleLeft.gif" />
+    <Content Include="Window\wdstyles\aura\ContentMiddleRight.gif" />
+    <Content Include="Window\wdstyles\aura\FooterMiddleCenter.gif" />
+    <Content Include="Window\wdstyles\aura\FooterMiddleRight.gif" />
+    <Content Include="Window\wdstyles\aura\HeaderMiddleCenter.gif" />
+    <Content Include="Window\wdstyles\aura\HeaderMiddleLeft.gif" />
+    <Content Include="Window\wdstyles\aura\HeaderMiddleRight.gif" />
+    <Content Include="Window\wdstyles\aura\MaximizeDown.gif" />
+    <Content Include="Window\wdstyles\aura\MaximizeOut.gif" />
+    <Content Include="Window\wdstyles\aura\MaximizeOver.gif" />
+    <Content Include="Window\wdstyles\aura\MinimizeDown.gif" />
+    <Content Include="Window\wdstyles\aura\MinimizeOut.gif" />
+    <Content Include="Window\wdstyles\aura\MinimizeOver.gif" />
+    <Content Include="Window\wdstyles\aura\none.gif" />
+    <Content Include="Window\wdstyles\aura\RestoreDownDown.gif" />
+    <Content Include="Window\wdstyles\aura\RestoreDownOut.gif" />
+    <Content Include="Window\wdstyles\aura\RestoreDownOver.gif" />
+    <Content Include="Window\wdstyles\aura\windows-error.png" />
+    <Content Include="Window\wdstyles\aura\windows-info.png" />
+    <Content Include="Window\wdstyles\aura\windows-warning.png" />
+    <Content Include="Window\wdstyles\blue\blue.css" />
+    <Content Include="Window\wdstyles\blue\blue.js" />
+    <Content Include="Window\wdstyles\blue\Border.gif" />
+    <Content Include="Window\wdstyles\blue\CloseDown.gif" />
+    <Content Include="Window\wdstyles\blue\CloseOut.gif" />
+    <Content Include="Window\wdstyles\blue\CloseOverDown.gif" />
+    <Content Include="Window\wdstyles\blue\FooterMiddleCenter.gif" />
+    <Content Include="Window\wdstyles\blue\HeaderMiddleCenter.gif" />
+    <Content Include="Window\wdstyles\blue\HeaderMiddleLeft.gif" />
+    <Content Include="Window\wdstyles\blue\HeaderMiddleRight.gif" />
+    <Content Include="Window\wdstyles\blue\HeaderTopLeft.gif" />
+    <Content Include="Window\wdstyles\blue\MaximizeOut.gif" />
+    <Content Include="Window\wdstyles\blue\MaximizeOverDown.gif" />
+    <Content Include="Window\wdstyles\blue\none.gif" />
+    <Content Include="Window\wdstyles\blue\windows-error.png" />
+    <Content Include="Window\wdstyles\blue\windows-info.png" />
+    <Content Include="Window\wdstyles\blue\windows-warning.png" />
+    <Content Include="Window\wdstyles\default\BottomLineCenter.gif" />
+    <Content Include="Window\wdstyles\default\BottomLineLeft.gif" />
+    <Content Include="Window\wdstyles\default\BottomLineRight.gif" />
+    <Content Include="Window\wdstyles\default\CloseDown.gif" />
+    <Content Include="Window\wdstyles\default\CloseOut.gif" />
+    <Content Include="Window\wdstyles\default\CloseOver.gif" />
+    <Content Include="Window\wdstyles\default\ContentMiddleLeft.gif" />
+    <Content Include="Window\wdstyles\default\ContentMiddleRight.gif" />
+    <Content Include="Window\wdstyles\default\default.css" />
+    <Content Include="Window\wdstyles\default\default.js" />
+    <Content Include="Window\wdstyles\default\FooterMiddleCenter.gif" />
+    <Content Include="Window\wdstyles\default\FooterMiddleLeft.gif" />
+    <Content Include="Window\wdstyles\default\FooterMiddleRight.gif" />
+    <Content Include="Window\wdstyles\default\HeaderMiddleCenter.gif" />
+    <Content Include="Window\wdstyles\default\HeaderMiddleLeft.gif" />
+    <Content Include="Window\wdstyles\default\HeaderMiddleRight.gif" />
+    <Content Include="Window\wdstyles\default\HeaderTopCenter.gif" />
+    <Content Include="Window\wdstyles\default\HeaderTopLeft.gif" />
+    <Content Include="Window\wdstyles\default\HeaderTopRight.gif" />
+    <Content Include="Window\wdstyles\default\MaximizeDown.gif" />
+    <Content Include="Window\wdstyles\default\MaximizeOut.gif" />
+    <Content Include="Window\wdstyles\default\none.gif" />
+    <Content Include="Window\wdstyles\default\RestoreDownDown.gif" />
+    <Content Include="Window\wdstyles\default\RestoreDownOut.gif" />
+    <Content Include="Window\wdstyles\default\windows-error.png" />
+    <Content Include="Window\wdstyles\default\windows-info.png" />
+    <Content Include="Window\wdstyles\default\windows-warning.png" />
+    <Content Include="Window\wdstyles\dogma\BottomLineCenter.gif" />
+    <Content Include="Window\wdstyles\dogma\BottomLineLeft.gif" />
+    <Content Include="Window\wdstyles\dogma\BottomLineRight.gif" />
+    <Content Include="Window\wdstyles\dogma\BuiltinButtonsContainer.gif" />
+    <Content Include="Window\wdstyles\dogma\CloseDown.gif" />
+    <Content Include="Window\wdstyles\dogma\CloseOut.gif" />
+    <Content Include="Window\wdstyles\dogma\CloseOver.gif" />
+    <Content Include="Window\wdstyles\dogma\ContentMiddleLeft.gif" />
+    <Content Include="Window\wdstyles\dogma\ContentMiddleRight.gif" />
+    <Content Include="Window\wdstyles\dogma\dogma.css" />
+    <Content Include="Window\wdstyles\dogma\dogma.js" />
+    <Content Include="Window\wdstyles\dogma\FooterMiddleCenter.gif" />
+    <Content Include="Window\wdstyles\dogma\FooterMiddleRight.gif" />
+    <Content Include="Window\wdstyles\dogma\HeaderMiddleCenter.gif" />
+    <Content Include="Window\wdstyles\dogma\HeaderMiddleLeft.gif" />
+    <Content Include="Window\wdstyles\dogma\HeaderMiddleRight.gif" />
+    <Content Include="Window\wdstyles\dogma\MaximizeDown.gif" />
+    <Content Include="Window\wdstyles\dogma\MaximizeOut.gif" />
+    <Content Include="Window\wdstyles\dogma\MaximizeOver.gif" />
+    <Content Include="Window\wdstyles\dogma\MinimizeDown.gif" />
+    <Content Include="Window\wdstyles\dogma\MinimizeOut.gif" />
+    <Content Include="Window\wdstyles\dogma\MinimizeOver.gif" />
+    <Content Include="Window\wdstyles\dogma\none.gif" />
+    <Content Include="Window\wdstyles\dogma\RestoreDownDown.gif" />
+    <Content Include="Window\wdstyles\dogma\RestoreDownOut.gif" />
+    <Content Include="Window\wdstyles\dogma\RestoreDownOver.gif" />
+    <Content Include="Window\wdstyles\dogma\windows-error.png" />
+    <Content Include="Window\wdstyles\dogma\windows-info.png" />
+    <Content Include="Window\wdstyles\dogma\windows-warning.png" />
+    <Content Include="Window\wdstyles\geryon\BottomLineCenter.gif" />
+    <Content Include="Window\wdstyles\geryon\BottomLineLeft.gif" />
+    <Content Include="Window\wdstyles\geryon\BottomLineRight.gif" />
+    <Content Include="Window\wdstyles\geryon\BuiltinButtonsContainer.gif" />
+    <Content Include="Window\wdstyles\geryon\CloseDown.gif" />
+    <Content Include="Window\wdstyles\geryon\CloseOut.gif" />
+    <Content Include="Window\wdstyles\geryon\CloseOver.gif" />
+    <Content Include="Window\wdstyles\geryon\ContentMiddleLeft.gif" />
+    <Content Include="Window\wdstyles\geryon\ContentMiddleRight.gif" />
+    <Content Include="Window\wdstyles\geryon\FooterMiddleCenter.gif" />
+    <Content Include="Window\wdstyles\geryon\FooterMiddleRight.gif" />
+    <Content Include="Window\wdstyles\geryon\geryon.css" />
+    <Content Include="Window\wdstyles\geryon\geryon.js" />
+    <Content Include="Window\wdstyles\geryon\HeaderMiddleCenter.gif" />
+    <Content Include="Window\wdstyles\geryon\HeaderMiddleLeft.gif" />
+    <Content Include="Window\wdstyles\geryon\HeaderMiddleRight.gif" />
+    <Content Include="Window\wdstyles\geryon\MaximizeDown.gif" />
+    <Content Include="Window\wdstyles\geryon\MaximizeOut.gif" />
+    <Content Include="Window\wdstyles\geryon\MaximizeOver.gif" />
+    <Content Include="Window\wdstyles\geryon\MinimizeDown.gif" />
+    <Content Include="Window\wdstyles\geryon\MinimizeOut.gif" />
+    <Content Include="Window\wdstyles\geryon\MinimizeOver.gif" />
+    <Content Include="Window\wdstyles\geryon\none.gif" />
+    <Content Include="Window\wdstyles\geryon\RestoreDownDown.gif" />
+    <Content Include="Window\wdstyles\geryon\RestoreDownOut.gif" />
+    <Content Include="Window\wdstyles\geryon\RestoreDownOver.gif" />
+    <Content Include="Window\wdstyles\geryon\windows-error.png" />
+    <Content Include="Window\wdstyles\geryon\windows-info.png" />
+    <Content Include="Window\wdstyles\geryon\windows-warning.png" />
+    <Content Include="Window\wdstyles\grandgray\background_parent.gif" />
+    <Content Include="Window\wdstyles\grandgray\background_parentover.gif" />
+    <Content Include="Window\wdstyles\grandgray\background_parentselected.gif" />
+    <Content Include="Window\wdstyles\grandgray\Border.gif" />
+    <Content Include="Window\wdstyles\grandgray\child.gif" />
+    <Content Include="Window\wdstyles\grandgray\childover.gif" />
+    <Content Include="Window\wdstyles\grandgray\childselected.gif" />
+    <Content Include="Window\wdstyles\grandgray\CloseOut.gif" />
+    <Content Include="Window\wdstyles\grandgray\FooterMiddleCenter.gif" />
+    <Content Include="Window\wdstyles\grandgray\FooterMiddleLeft.gif" />
+    <Content Include="Window\wdstyles\grandgray\FooterMiddleRight.gif" />
+    <Content Include="Window\wdstyles\grandgray\grandgray.css" />
+    <Content Include="Window\wdstyles\grandgray\grandgray.js" />
+    <Content Include="Window\wdstyles\grandgray\HeaderMiddleCenter.gif" />
+    <Content Include="Window\wdstyles\grandgray\HeaderMiddleLeft.gif" />
+    <Content Include="Window\wdstyles\grandgray\HeaderMiddleRight.gif" />
+    <Content Include="Window\wdstyles\grandgray\HeaderTopLeft.gif" />
+    <Content Include="Window\wdstyles\grandgray\MaximizeOut.gif" />
+    <Content Include="Window\wdstyles\grandgray\menuitem.gif" />
+    <Content Include="Window\wdstyles\grandgray\menuitem_hover.gif" />
+    <Content Include="Window\wdstyles\grandgray\none.gif" />
+    <Content Include="Window\wdstyles\grandgray\parent.gif" />
+    <Content Include="Window\wdstyles\grandgray\parentover.gif" />
+    <Content Include="Window\wdstyles\grandgray\parentselected.gif" />
+    <Content Include="Window\wdstyles\grandgray\slide_lighted.gif" />
+    <Content Include="Window\wdstyles\grandgray\style.css" />
+    <Content Include="Window\wdstyles\grandgray\windows-error.png" />
+    <Content Include="Window\wdstyles\grandgray\windows-info.png" />
+    <Content Include="Window\wdstyles\grandgray\windows-warning.png" />
+    <Content Include="Window\wdstyles\xpluna\CloseDown.gif" />
+    <Content Include="Window\wdstyles\xpluna\CloseOut.gif" />
+    <Content Include="Window\wdstyles\xpluna\CloseOver.gif" />
+    <Content Include="Window\wdstyles\xpluna\ContentMiddleLeft.gif" />
+    <Content Include="Window\wdstyles\xpluna\ContentMiddleRight.gif" />
+    <Content Include="Window\wdstyles\xpluna\FooterBottomCenter.gif" />
+    <Content Include="Window\wdstyles\xpluna\FooterBottomLeft.gif" />
+    <Content Include="Window\wdstyles\xpluna\FooterBottomRight.gif" />
+    <Content Include="Window\wdstyles\xpluna\FooterMiddleCenter.gif" />
+    <Content Include="Window\wdstyles\xpluna\FooterMiddleLeft.gif" />
+    <Content Include="Window\wdstyles\xpluna\FooterMiddleRight.gif" />
+    <Content Include="Window\wdstyles\xpluna\HeaderMiddleCenter.gif" />
+    <Content Include="Window\wdstyles\xpluna\HeaderMiddleLeft.gif" />
+    <Content Include="Window\wdstyles\xpluna\HeaderMiddleRight.gif" />
+    <Content Include="Window\wdstyles\xpluna\MaximizeDown.gif" />
+    <Content Include="Window\wdstyles\xpluna\MaximizeOut.gif" />
+    <Content Include="Window\wdstyles\xpluna\MaximizeOver.gif" />
+    <Content Include="Window\wdstyles\xpluna\none.gif" />
+    <Content Include="Window\wdstyles\xpluna\RestoreDownDown.gif" />
+    <Content Include="Window\wdstyles\xpluna\RestoreDownOut.gif" />
+    <Content Include="Window\wdstyles\xpluna\RestoreDownOver.gif" />
+    <Content Include="Window\wdstyles\xpluna\windows-error.png" />
+    <Content Include="Window\wdstyles\xpluna\windows-info.png" />
+    <Content Include="Window\wdstyles\xpluna\windows-warning.png" />
+    <Content Include="Window\wdstyles\xpluna\xpluna.css" />
+    <Content Include="Window\wdstyles\xpluna\xpluna.js" />
+    <None Include="Scripts\jquery-1.7.1.intellisense.js" />
+    <Content Include="Scripts\jquery-1.7.1.js" />
+    <Content Include="Scripts\jquery-1.7.1.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.20.js" />
+    <Content Include="Scripts\jquery-ui-1.8.20.min.js" />
+    <Content Include="Scripts\modernizr-2.5.3.js" />
+    <Content Include="Scripts\WebForms\DetailsView.js" />
+    <Content Include="Scripts\WebForms\Focus.js" />
+    <Content Include="Scripts\WebForms\GridView.js" />
+    <Content Include="Scripts\WebForms\Menu.js" />
+    <Content Include="Scripts\WebForms\MenuStandards.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="Scripts\WebForms\SmartNav.js" />
+    <Content Include="Scripts\WebForms\TreeView.js" />
+    <Content Include="Scripts\WebForms\WebForms.js" />
+    <Content Include="Scripts\WebForms\WebParts.js" />
+    <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Bundle.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Alert.cs" />
+    <Compile Include="Captcha.aspx.cs">
+      <DependentUpon>Captcha.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Captcha.aspx.designer.cs">
+      <DependentUpon>Captcha.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClaimServiceAdjusterAppointment.aspx.cs">
+      <DependentUpon>ClaimServiceAdjusterAppointment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClaimServiceAdjusterAppointment.aspx.designer.cs">
+      <DependentUpon>ClaimServiceAdjusterAppointment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="clsAESEncrytDecry.cs" />
+    <Compile Include="clsAppLogs.cs" />
+    <Compile Include="clsConvertHtmlToPdf.cs" />
+    <Compile Include="clsDigitalCertificate.cs" />
+    <Compile Include="clsInvisibleCaptchaRequestResponse.cs" />
+    <Compile Include="clsKGHAGeneric.cs" />
+    <Compile Include="CreateQuotePDF.cs" />
+    <Compile Include="digitalsign.aspx.cs">
+      <DependentUpon>digitalsign.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="digitalsign.aspx.designer.cs">
+      <DependentUpon>digitalsign.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="downloadquotepdf.aspx.cs">
+      <DependentUpon>downloadquotepdf.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="downloadquotepdf.aspx.designer.cs">
+      <DependentUpon>downloadquotepdf.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Encryption.cs" />
+    <Compile Include="ExceptionUtility.cs" />
+    <Compile Include="FrmAadhaarUpdate.aspx.cs">
+      <DependentUpon>FrmAadhaarUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmAadhaarUpdate.aspx.designer.cs">
+      <DependentUpon>FrmAadhaarUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmArogyaSanjeevniDataUpload.aspx.cs">
+      <DependentUpon>FrmArogyaSanjeevniDataUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmArogyaSanjeevniDataUpload.aspx.designer.cs">
+      <DependentUpon>FrmArogyaSanjeevniDataUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCMCDocsViewer.aspx.cs">
+      <DependentUpon>FrmCMCDocsViewer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmCMCDocsViewer.aspx.designer.cs">
+      <DependentUpon>FrmCMCDocsViewer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmContactPage.aspx.cs">
+      <DependentUpon>FrmContactPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmContactPage.aspx.designer.cs">
+      <DependentUpon>FrmContactPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCPRenewalUpload.aspx.cs">
+      <DependentUpon>FrmCPRenewalUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmCPRenewalUpload.aspx.designer.cs">
+      <DependentUpon>FrmCPRenewalUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCreateInvoiceLinkKpay.aspx.cs">
+      <DependentUpon>FrmCreateInvoiceLinkKpay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCreateInvoiceLinkKpay.aspx.designer.cs">
+      <DependentUpon>FrmCreateInvoiceLinkKpay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCustomerInvoiceStatus.aspx.cs">
+      <DependentUpon>FrmCustomerInvoiceStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmCustomerInvoiceStatus.aspx.designer.cs">
+      <DependentUpon>FrmCustomerInvoiceStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCustomerInvoiceStatusKPay.aspx.cs">
+      <DependentUpon>FrmCustomerInvoiceStatusKPay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmCustomerInvoiceStatusKPay.aspx.designer.cs">
+      <DependentUpon>FrmCustomerInvoiceStatusKPay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCustomErrorPage.aspx.cs">
+      <DependentUpon>FrmCustomErrorPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmCustomErrorPage.aspx.designer.cs">
+      <DependentUpon>FrmCustomErrorPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDownloadGPAPolicy.aspx.cs">
+      <DependentUpon>FrmDownloadGPAPolicy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmDownloadGPAPolicy.aspx.designer.cs">
+      <DependentUpon>FrmDownloadGPAPolicy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDownloadMIS_TPA.aspx.cs">
+      <DependentUpon>FrmDownloadMIS_TPA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmDownloadMIS_TPA.aspx.designer.cs">
+      <DependentUpon>FrmDownloadMIS_TPA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDownloadPolicy.aspx.cs">
+      <DependentUpon>FrmDownloadPolicy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmDownloadPolicy.aspx.designer.cs">
+      <DependentUpon>FrmDownloadPolicy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDownloadPolicySchedule.aspx.cs">
+      <DependentUpon>FrmDownloadPolicySchedule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmDownloadPolicySchedule.aspx.designer.cs">
+      <DependentUpon>FrmDownloadPolicySchedule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDownloadPolicyScheduleNew.aspx.cs">
+      <DependentUpon>FrmDownloadPolicyScheduleNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmDownloadPolicyScheduleNew.aspx.designer.cs">
+      <DependentUpon>FrmDownloadPolicyScheduleNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDownloadRenewalNotice.aspx.cs">
+      <DependentUpon>FrmDownloadRenewalNotice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmDownloadRenewalNotice.aspx.designer.cs">
+      <DependentUpon>FrmDownloadRenewalNotice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEHDCClaimDocUpload.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>FrmEHDCClaimDocUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEHDCClaimDocUpload.aspx.designer.cs">
+      <DependentUpon>FrmEHDCClaimDocUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEProposalReview.aspx.cs">
+      <DependentUpon>FrmEProposalReview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmEProposalReview.aspx.designer.cs">
+      <DependentUpon>FrmEProposalReview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEProposalVerification.aspx.cs">
+      <DependentUpon>FrmEProposalVerification.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmEProposalVerification.aspx.designer.cs">
+      <DependentUpon>FrmEProposalVerification.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmErrorPage.aspx.cs">
+      <DependentUpon>FrmErrorPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmErrorPage.aspx.designer.cs">
+      <DependentUpon>FrmErrorPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmForgotPassword.aspx.cs">
+      <DependentUpon>FrmForgotPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmForgotPassword.aspx.designer.cs">
+      <DependentUpon>FrmForgotPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCreateInvoiceLink.aspx.cs">
+      <DependentUpon>FrmCreateInvoiceLink.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmCreateInvoiceLink.aspx.designer.cs">
+      <DependentUpon>FrmCreateInvoiceLink.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGHICustomerInfo.aspx.cs">
+      <DependentUpon>FrmGHICustomerInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGHICustomerInfo.aspx.designer.cs">
+      <DependentUpon>FrmGHICustomerInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGistSandBox.aspx.cs">
+      <DependentUpon>FrmGistSandBox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmGistSandBox.aspx.designer.cs">
+      <DependentUpon>FrmGistSandBox.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGistSandBoxCustomerConfirmation.aspx.cs">
+      <DependentUpon>FrmGistSandBoxCustomerConfirmation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmGistSandBoxCustomerConfirmation.aspx.designer.cs">
+      <DependentUpon>FrmGistSandBoxCustomerConfirmation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGIStSandBoxThankYouPage.aspx.cs">
+      <DependentUpon>FrmGIStSandBoxThankYouPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmGIStSandBoxThankYouPage.aspx.designer.cs">
+      <DependentUpon>FrmGIStSandBoxThankYouPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGPACancelUpload.aspx.cs">
+      <DependentUpon>FrmGPACancelUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmGPACancelUpload.aspx.designer.cs">
+      <DependentUpon>FrmGPACancelUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGPACancelUploadStatus.aspx.cs">
+      <DependentUpon>FrmGPACancelUploadStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmGPACancelUploadStatus.aspx.designer.cs">
+      <DependentUpon>FrmGPACancelUploadStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGPADispatchUpload.aspx.cs">
+      <DependentUpon>FrmGPADispatchUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmGPADispatchUpload.aspx.designer.cs">
+      <DependentUpon>FrmGPADispatchUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGPAGetPolicy_New.aspx.cs">
+      <DependentUpon>FrmGPAGetPolicy_New.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmGPAGetPolicy_New.aspx.designer.cs">
+      <DependentUpon>FrmGPAGetPolicy_New.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFinalizeQuotations.aspx.cs">
+      <DependentUpon>FrmFinalizeQuotations.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmFinalizeQuotations.aspx.designer.cs">
+      <DependentUpon>FrmFinalizeQuotations.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHDCCancelUpload.aspx.cs">
+      <DependentUpon>FrmHDCCancelUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmHDCCancelUpload.aspx.designer.cs">
+      <DependentUpon>FrmHDCCancelUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHDCCancelUploadStatus.aspx.cs">
+      <DependentUpon>FrmHDCCancelUploadStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmHDCCancelUploadStatus.aspx.designer.cs">
+      <DependentUpon>FrmHDCCancelUploadStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHDCChallanUpload.aspx.cs">
+      <DependentUpon>FrmHDCChallanUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmHDCChallanUpload.aspx.designer.cs">
+      <DependentUpon>FrmHDCChallanUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHDCClaimDetails.aspx.cs">
+      <DependentUpon>FrmHDCClaimDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmHDCClaimDetails.aspx.designer.cs">
+      <DependentUpon>FrmHDCClaimDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHDCClaimDocUpload.aspx.cs">
+      <DependentUpon>FrmHDCClaimDocUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmHDCClaimDocUpload.aspx.designer.cs">
+      <DependentUpon>FrmHDCClaimDocUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHDCClaimEdit.aspx.cs">
+      <DependentUpon>FrmHDCClaimEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmHDCClaimEdit.aspx.designer.cs">
+      <DependentUpon>FrmHDCClaimEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHDCClaimProcess.aspx.cs">
+      <DependentUpon>FrmHDCClaimProcess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmHDCClaimProcess.aspx.designer.cs">
+      <DependentUpon>FrmHDCClaimProcess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHDCClaimReg.aspx.cs">
+      <DependentUpon>FrmHDCClaimReg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmHDCClaimReg.aspx.designer.cs">
+      <DependentUpon>FrmHDCClaimReg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHDCClaimReopen.aspx.cs">
+      <DependentUpon>FrmHDCClaimReopen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmHDCClaimReopen.aspx.designer.cs">
+      <DependentUpon>FrmHDCClaimReopen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHDCClaimStatus.aspx.cs">
+      <DependentUpon>FrmHDCClaimStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmHDCClaimStatus.aspx.designer.cs">
+      <DependentUpon>FrmHDCClaimStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHDCMISDownload.aspx.cs">
+      <DependentUpon>FrmHDCMISDownload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmHDCMISDownload.aspx.designer.cs">
+      <DependentUpon>FrmHDCMISDownload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHDCPaymentDownload.aspx.cs">
+      <DependentUpon>FrmHDCPaymentDownload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmHDCPaymentDownload.aspx.designer.cs">
+      <DependentUpon>FrmHDCPaymentDownload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHDCPaymentProcessUpload.aspx.cs">
+      <DependentUpon>FrmHDCPaymentProcessUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmHDCPaymentProcessUpload.aspx.designer.cs">
+      <DependentUpon>FrmHDCPaymentProcessUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHDCPolicyUpload.aspx.cs">
+      <DependentUpon>FrmHDCPolicyUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmHDCPolicyUpload.aspx.designer.cs">
+      <DependentUpon>FrmHDCPolicyUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHDCPolicyUploadStatus.aspx.cs">
+      <DependentUpon>FrmHDCPolicyUploadStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmHDCPolicyUploadStatus.aspx.designer.cs">
+      <DependentUpon>FrmHDCPolicyUploadStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHealthClaimsUpload.aspx.cs">
+      <DependentUpon>FrmHealthClaimsUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmHealthClaimsUpload.aspx.designer.cs">
+      <DependentUpon>FrmHealthClaimsUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHealthClaimsUploadStatus.aspx.cs">
+      <DependentUpon>FrmHealthClaimsUploadStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmHealthClaimsUploadStatus.aspx.designer.cs">
+      <DependentUpon>FrmHealthClaimsUploadStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHealthClaimsUTRUpload.aspx.cs">
+      <DependentUpon>FrmHealthClaimsUTRUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmHealthClaimsUTRUpload.aspx.designer.cs">
+      <DependentUpon>FrmHealthClaimsUTRUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHealthClaimsUTRUploadStatus.aspx.cs">
+      <DependentUpon>FrmHealthClaimsUTRUploadStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmHealthClaimsUTRUploadStatus.aspx.designer.cs">
+      <DependentUpon>FrmHealthClaimsUTRUploadStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHealthRenewalPolicyUpload.aspx.cs">
+      <DependentUpon>FrmHealthRenewalPolicyUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmHealthRenewalPolicyUpload.aspx.designer.cs">
+      <DependentUpon>FrmHealthRenewalPolicyUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHealthWellness.aspx.cs">
+      <DependentUpon>FrmHealthWellness.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHealthWellness.aspx.designer.cs">
+      <DependentUpon>FrmHealthWellness.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIIBClaimDataDownload.aspx.cs">
+      <DependentUpon>FrmIIBClaimDataDownload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmIIBClaimDataDownload.aspx.designer.cs">
+      <DependentUpon>FrmIIBClaimDataDownload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIIBClaimDataUpload.aspx.cs">
+      <DependentUpon>FrmIIBClaimDataUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmIIBClaimDataUpload.aspx.designer.cs">
+      <DependentUpon>FrmIIBClaimDataUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIIBClaimDataUploadNew.aspx.cs">
+      <DependentUpon>FrmIIBClaimDataUploadNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmIIBClaimDataUploadNew.aspx.designer.cs">
+      <DependentUpon>FrmIIBClaimDataUploadNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKavachCancelUpload.aspx.cs">
+      <DependentUpon>FrmKavachCancelUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmKavachCancelUpload.aspx.designer.cs">
+      <DependentUpon>FrmKavachCancelUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKavachCancelUploadStatus.aspx.cs">
+      <DependentUpon>FrmKavachCancelUploadStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmKavachCancelUploadStatus.aspx.designer.cs">
+      <DependentUpon>FrmKavachCancelUploadStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKavachPolicyUpload.aspx.cs">
+      <DependentUpon>FrmKavachPolicyUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmKavachPolicyUpload.aspx.designer.cs">
+      <DependentUpon>FrmKavachPolicyUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKavachPolicyUploadStatus.aspx.cs">
+      <DependentUpon>FrmKavachPolicyUploadStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmKavachPolicyUploadStatus.aspx.designer.cs">
+      <DependentUpon>FrmKavachPolicyUploadStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmKGHAFileUpload.aspx.cs">
+      <DependentUpon>frmKGHAFileUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmKGHAFileUpload.aspx.designer.cs">
+      <DependentUpon>frmKGHAFileUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmKGHARegistrationdetails.aspx.cs">
+      <DependentUpon>frmKGHARegistrationdetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmKGHARegistrationdetails.aspx.designer.cs">
+      <DependentUpon>frmKGHARegistrationdetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKGHC.aspx.cs">
+      <DependentUpon>FrmKGHC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKGHC.aspx.designer.cs">
+      <DependentUpon>FrmKGHC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMiscServiceTracker.aspx.cs">
+      <DependentUpon>FrmMiscServiceTracker.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmMiscServiceTracker.aspx.designer.cs">
+      <DependentUpon>FrmMiscServiceTracker.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMobileRenewalUpload.aspx.cs">
+      <DependentUpon>FrmMobileRenewalUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmMobileRenewalUpload.aspx.designer.cs">
+      <DependentUpon>FrmMobileRenewalUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMotorLeadCapture.aspx.cs">
+      <DependentUpon>FrmMotorLeadCapture.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmMotorLeadCapture.aspx.designer.cs">
+      <DependentUpon>FrmMotorLeadCapture.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOutBoundUpload.aspx.cs">
+      <DependentUpon>FrmOutBoundUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOutBoundUpload.aspx.designer.cs">
+      <DependentUpon>FrmOutBoundUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOutBoundUploadStatus.aspx.cs">
+      <DependentUpon>FrmOutBoundUploadStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmOutBoundUploadStatus.aspx.designer.cs">
+      <DependentUpon>FrmOutBoundUploadStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPaymentConfirmation.aspx.cs">
+      <DependentUpon>FrmPaymentConfirmation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmPaymentConfirmation.aspx.designer.cs">
+      <DependentUpon>FrmPaymentConfirmation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPremiumCalculatorMotorODOnly.aspx.cs">
+      <DependentUpon>FrmPremiumCalculatorMotorODOnly.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmPremiumCalculatorMotorODOnly.aspx.designer.cs">
+      <DependentUpon>FrmPremiumCalculatorMotorODOnly.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrivateCarLongTermPolicyBooking.aspx.cs">
+      <DependentUpon>FrmPrivateCarLongTermPolicyBooking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmPrivateCarLongTermPolicyBooking.aspx.designer.cs">
+      <DependentUpon>FrmPrivateCarLongTermPolicyBooking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmQuoteReassignment.aspx.cs">
+      <DependentUpon>FrmQuoteReassignment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmQuoteReassignment.aspx.designer.cs">
+      <DependentUpon>FrmQuoteReassignment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRenewalPolicyUpload.aspx.cs">
+      <DependentUpon>FrmRenewalPolicyUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmRenewalPolicyUpload.aspx.designer.cs">
+      <DependentUpon>FrmRenewalPolicyUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReviewConfirm.aspx.cs">
+      <DependentUpon>FrmReviewConfirm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmReviewConfirm.aspx.designer.cs">
+      <DependentUpon>FrmReviewConfirm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSMSAndDailyReports.aspx.cs">
+      <DependentUpon>FrmSMSAndDailyReports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmSMSAndDailyReports.aspx.designer.cs">
+      <DependentUpon>FrmSMSAndDailyReports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSTP.aspx.cs">
+      <DependentUpon>FrmSTP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSTP.aspx.designer.cs">
+      <DependentUpon>FrmSTP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSTPRenewal.aspx.cs">
+      <DependentUpon>FrmSTPRenewal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmSTPRenewal.aspx.designer.cs">
+      <DependentUpon>FrmSTPRenewal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSTPSearchEmp.aspx.cs">
+      <DependentUpon>FrmSTPSearchEmp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmSTPSearchEmp.aspx.designer.cs">
+      <DependentUpon>FrmSTPSearchEmp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTalismaInteraction.aspx.cs">
+      <DependentUpon>FrmTalismaInteraction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmTalismaInteraction.aspx.designer.cs">
+      <DependentUpon>FrmTalismaInteraction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTechno.aspx.cs">
+      <DependentUpon>FrmTechno.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmTechno.aspx.designer.cs">
+      <DependentUpon>FrmTechno.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmThankYouPage.aspx.cs">
+      <DependentUpon>FrmThankYouPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmThankYouPage.aspx.designer.cs">
+      <DependentUpon>FrmThankYouPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUpdateNominee.aspx.cs">
+      <DependentUpon>FrmUpdateNominee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmUpdateNominee.aspx.designer.cs">
+      <DependentUpon>FrmUpdateNominee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUpdateQuery.aspx.cs">
+      <DependentUpon>FrmUpdateQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmUpdateQuery.aspx.designer.cs">
+      <DependentUpon>FrmUpdateQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUploadCTIFile.aspx.cs">
+      <DependentUpon>FrmUploadCTIFile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmUploadCTIFile.aspx.designer.cs">
+      <DependentUpon>FrmUploadCTIFile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GeneratePDF_Bundled.cs" />
+    <Compile Include="GeneratePDF_ForGPA.cs" />
+    <Compile Include="HealthSaveProposal.aspx.cs">
+      <DependentUpon>HealthSaveProposal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HealthSaveProposal.aspx.designer.cs">
+      <DependentUpon>HealthSaveProposal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KGHAOnlinePaymentProcess.aspx.cs">
+      <DependentUpon>KGHAOnlinePaymentProcess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KGHAOnlinePaymentProcess.aspx.designer.cs">
+      <DependentUpon>KGHAOnlinePaymentProcess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OnlinePaymentProcess.aspx.cs">
+      <DependentUpon>OnlinePaymentProcess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OnlinePaymentProcess.aspx.designer.cs">
+      <DependentUpon>OnlinePaymentProcess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PageNotFound.aspx.cs">
+      <DependentUpon>PageNotFound.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PageNotFound.aspx.designer.cs">
+      <DependentUpon>PageNotFound.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentEntryStub.aspx.cs">
+      <DependentUpon>PaymentEntryStub.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaymentEntryStub.aspx.designer.cs">
+      <DependentUpon>PaymentEntryStub.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentTagging.aspx.cs">
+      <DependentUpon>PaymentTagging.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaymentTagging.aspx.designer.cs">
+      <DependentUpon>PaymentTagging.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PayURequest.cs" />
+    <Compile Include="PDFImageCoordinates.aspx.cs">
+      <DependentUpon>PDFImageCoordinates.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDFImageCoordinates.aspx.designer.cs">
+      <DependentUpon>PDFImageCoordinates.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PrivateCarSaveProposal.aspx.cs">
+      <DependentUpon>PrivateCarSaveProposal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PrivateCarSaveProposal.aspx.designer.cs">
+      <DependentUpon>PrivateCarSaveProposal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ADBank_ServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\GBMServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\GCGenericService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\GSTService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\MISCReportServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\PdfService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServiceReference1\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServiceReference3\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServiceReference4\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServiceReference5\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\svcGCInternetProxy\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="TalismaPullSMS.aspx.cs">
+      <DependentUpon>TalismaPullSMS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TalismaPullSMS.aspx.designer.cs">
+      <DependentUpon>TalismaPullSMS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TechnoUserDetails.cs" />
+    <Compile Include="UserDetails.cs" />
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\AuthConfig.cs" />
+    <Compile Include="Account\OpenAuthProviders.ascx.cs">
+      <DependentUpon>OpenAuthProviders.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\OpenAuthProviders.ascx.designer.cs">
+      <DependentUpon>OpenAuthProviders.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Cls_General_Functions.cs" />
+    <Compile Include="CommonExtensions.cs" />
+    <Compile Include="ErrorPage.aspx.cs">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorPage.aspx.designer.cs">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCoverMasterNew.aspx.cs">
+      <DependentUpon>FrmCoverMasterNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmCoverMasterNew.aspx.designer.cs">
+      <DependentUpon>FrmCoverMasterNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmChangePassword.aspx.cs">
+      <DependentUpon>FrmChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmChangePassword.aspx.designer.cs">
+      <DependentUpon>FrmChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCreateUserMasterNewEdit.aspx.cs">
+      <DependentUpon>FrmCreateUserMasterNewEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmCreateUserMasterNewEdit.aspx.designer.cs">
+      <DependentUpon>FrmCreateUserMasterNewEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGPAClaimsUpload.aspx.cs">
+      <DependentUpon>FrmGPAClaimsUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmGPAClaimsUpload.aspx.designer.cs">
+      <DependentUpon>FrmGPAClaimsUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGPAClaimsUploadStatus.aspx.cs">
+      <DependentUpon>FrmGPAClaimsUploadStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmGPAClaimsUploadStatus.aspx.designer.cs">
+      <DependentUpon>FrmGPAClaimsUploadStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGPAGetPolicy.aspx.cs">
+      <DependentUpon>FrmGPAGetPolicy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmGPAGetPolicy.aspx.designer.cs">
+      <DependentUpon>FrmGPAGetPolicy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGPAPolicyEndorsementUpdate.aspx.cs">
+      <DependentUpon>FrmGPAPolicyEndorsementUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmGPAPolicyEndorsementUpdate.aspx.designer.cs">
+      <DependentUpon>FrmGPAPolicyEndorsementUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGPAPolicyUpload.aspx.cs">
+      <DependentUpon>FrmGPAPolicyUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmGPAPolicyUpload.aspx.designer.cs">
+      <DependentUpon>FrmGPAPolicyUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGPAPolicyUploadStatus.aspx.cs">
+      <DependentUpon>FrmGPAPolicyUploadStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmGPAPolicyUploadStatus.aspx.designer.cs">
+      <DependentUpon>FrmGPAPolicyUploadStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGPAUploadConfiguration.aspx.cs">
+      <DependentUpon>FrmGPAUploadConfiguration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmGPAUploadConfiguration.aspx.designer.cs">
+      <DependentUpon>FrmGPAUploadConfiguration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIRDARegisterComplaint.aspx.cs">
+      <DependentUpon>FrmIRDARegisterComplaint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmIRDARegisterComplaint.aspx.designer.cs">
+      <DependentUpon>FrmIRDARegisterComplaint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogout.aspx.cs">
+      <DependentUpon>FrmLogout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmLogout.aspx.designer.cs">
+      <DependentUpon>FrmLogout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMainMenu.aspx.cs">
+      <DependentUpon>FrmMainMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmMainMenu.aspx.designer.cs">
+      <DependentUpon>FrmMainMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPartner.aspx.cs">
+      <DependentUpon>FrmPartner.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmPartner.aspx.designer.cs">
+      <DependentUpon>FrmPartner.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPlanMasterEdit.aspx.cs">
+      <DependentUpon>FrmPlanMasterEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmPlanMasterEdit.aspx.designer.cs">
+      <DependentUpon>FrmPlanMasterEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPlanMasterNew.aspx.cs">
+      <DependentUpon>FrmPlanMasterNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmPlanMasterNew.aspx.designer.cs">
+      <DependentUpon>FrmPlanMasterNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPremiumCalculatorMotor.aspx.cs">
+      <DependentUpon>FrmPremiumCalculatorMotor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmPremiumCalculatorMotor.aspx.designer.cs">
+      <DependentUpon>FrmPremiumCalculatorMotor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSecuredLogin.aspx.cs">
+      <DependentUpon>FrmSecuredLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmSecuredLogin.aspx.designer.cs">
+      <DependentUpon>FrmSecuredLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUserRightsToRoleMapping.aspx.cs">
+      <DependentUpon>FrmUserRightsToRoleMapping.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmUserRightsToRoleMapping.aspx.designer.cs">
+      <DependentUpon>FrmUserRightsToRoleMapping.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUserRoleMaster.aspx.cs">
+      <DependentUpon>FrmUserRoleMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmUserRoleMaster.aspx.designer.cs">
+      <DependentUpon>FrmUserRoleMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUserToRoleMapping.aspx.cs">
+      <DependentUpon>FrmUserToRoleMapping.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmUserToRoleMapping.aspx.designer.cs">
+      <DependentUpon>FrmUserToRoleMapping.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GeneratePDF.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="MessageBoxUsc\uscMsgBox.ascx.cs">
+      <DependentUpon>uscMsgBox.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MessageBoxUsc\uscMsgBox.ascx.designer.cs">
+      <DependentUpon>uscMsgBox.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="PASS.Master.cs">
+      <DependentUpon>PASS.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PASS.Master.designer.cs">
+      <DependentUpon>PASS.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\ServiceReference2\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\ContactWS\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\InteractionWS\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Obout\HTMLEditor\DocumentsGallery\users_documents\" />
+    <Folder Include="App_Obout\HTMLEditor\FlashGallery\users_flashs\" />
+    <Folder Include="App_Obout\HTMLEditor\FlashVideoGallery\users_flashvideos\" />
+    <Folder Include="App_Obout\HTMLEditor\MediaGallery\users_medias\" />
+    <Folder Include="bin\bin\de\" />
+    <Folder Include="bin\x86\" />
+    <Folder Include="Reports\" />
+    <Folder Include="Uploads\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SmartForms\fonts\fontawesome\fontawesome-webfont.eot" />
+    <Content Include="SmartForms\fonts\fontawesome\fontawesome-webfont.svg" />
+    <Content Include="SmartForms\fonts\fontawesome\fontawesome-webfont.ttf" />
+    <Content Include="SmartForms\fonts\fontawesome\fontawesome-webfont.woff" />
+    <Content Include="SmartForms\fonts\fontawesome\FontAwesome.otf" />
+    <None Include="Service References\ServiceReference3\Service1.wsdl" />
+    <None Include="Service References\ServiceReference3\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference3\Service11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference3\Service12.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference3\Service13.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference3\Service14.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference4\CustomerPortalService.wsdl" />
+    <None Include="Service References\ServiceReference4\CustomerPortalService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference4\CustomerPortalService1.wsdl" />
+    <None Include="Service References\ServiceReference4\CustomerPortalService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference4\CustomerPortalService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference4\CustomerPortalService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference4\CustomerPortalService4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference4\CustomerPortalService5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference5\PartnerIntegrationService.wsdl" />
+    <None Include="Service References\ServiceReference5\PartnerIntegrationService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference5\PartnerIntegrationService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\ContactWS\contact.wsdl">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Web References\ContactWS\PropertyInfo.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Web References\ContactWS\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </Content>
+    <None Include="Web References\InteractionWS\interaction.wsdl" />
+    <Content Include="Web References\InteractionWS\InteractionInfo.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Web References\InteractionWS\MessageContent.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Web References\InteractionWS\PropertyInfo.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Web References\InteractionWS\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </Content>
+    <Content Include="Web References\InteractionWS\ReplyInfo.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Web References\InteractionWS\ReplyMsg.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="App_Obout\ColorPicker\Localization\de.resx" />
+    <EmbeddedResource Include="App_Obout\ColorPicker\Localization\en.resx" />
+    <EmbeddedResource Include="App_Obout\ColorPicker\Localization\fr.resx" />
+    <EmbeddedResource Include="App_Obout\ColorPicker\Localization\he.resx" />
+    <EmbeddedResource Include="App_Obout\ColorPicker\Localization\it.resx" />
+    <EmbeddedResource Include="App_Obout\ColorPicker\Localization\nl.resx" />
+    <EmbeddedResource Include="App_Obout\ColorPicker\Localization\ro.resx" />
+    <EmbeddedResource Include="App_Obout\ColorPicker\Localization\ru.resx" />
+    <EmbeddedResource Include="App_Obout\ColorPicker\Localization\sv.resx" />
+    <EmbeddedResource Include="App_Obout\FileUpload\Localization\en.resx" />
+    <EmbeddedResource Include="App_Obout\FileUpload\Localization\fr.resx" />
+    <EmbeddedResource Include="App_Obout\FileUpload\Localization\he.resx" />
+    <EmbeddedResource Include="App_Obout\FileUpload\Localization\nl.resx" />
+    <EmbeddedResource Include="App_Obout\FileUpload\Localization\pt.resx" />
+    <EmbeddedResource Include="App_Obout\FileUpload\Localization\ro.resx" />
+    <EmbeddedResource Include="App_Obout\FileUpload\Localization\ru.resx" />
+    <EmbeddedResource Include="App_Obout\FileUpload\Localization\sv.resx" />
+    <EmbeddedResource Include="App_Obout\HTMLEditor\Localization\de.resx" />
+    <EmbeddedResource Include="App_Obout\HTMLEditor\Localization\en.resx" />
+    <EmbeddedResource Include="App_Obout\HTMLEditor\Localization\fr.resx" />
+    <EmbeddedResource Include="App_Obout\HTMLEditor\Localization\he.resx" />
+    <EmbeddedResource Include="App_Obout\HTMLEditor\Localization\it.resx" />
+    <EmbeddedResource Include="App_Obout\HTMLEditor\Localization\nl.resx" />
+    <EmbeddedResource Include="App_Obout\HTMLEditor\Localization\ro.resx" />
+    <EmbeddedResource Include="App_Obout\HTMLEditor\Localization\ru.resx" />
+    <EmbeddedResource Include="App_Obout\HTMLEditor\Localization\sv.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ADBank_ServiceReference\" />
+    <WCFMetadataStorage Include="Service References\GBMServiceReference\" />
+    <WCFMetadataStorage Include="Service References\GCGenericService\" />
+    <WCFMetadataStorage Include="Service References\GSTService\" />
+    <WCFMetadataStorage Include="Service References\MISCReportServiceReference\" />
+    <WCFMetadataStorage Include="Service References\PdfService\" />
+    <WCFMetadataStorage Include="Service References\ServiceReference1\" />
+    <WCFMetadataStorage Include="Service References\ServiceReference2\" />
+    <WCFMetadataStorage Include="Service References\ServiceReference3\" />
+    <WCFMetadataStorage Include="Service References\ServiceReference4\" />
+    <WCFMetadataStorage Include="Service References\ServiceReference5\" />
+    <WCFMetadataStorage Include="Service References\svcGCInternetProxy\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://kgi-p-app-talisma-1-v089/interactioniservice/interaction.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\InteractionWS\</RelPath>
+      <UpdateFromURL>http://kgi-p-app-talisma-1-v089/interactioniservice/interaction.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>PrjPASS_InteractionWS_Interaction_x0020_Web_x0020_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://kgi-p-app-talisma-1-v089/contactiservice/contact.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\ContactWS\</RelPath>
+      <UpdateFromURL>https://kgi-p-app-talisma-1-v089/contactiservice/contact.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>PrjPASS_ContactWS_Contact_x0020_Web_x0020_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:3638/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

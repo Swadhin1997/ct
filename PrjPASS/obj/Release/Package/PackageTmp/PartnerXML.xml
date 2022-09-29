@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<PartnerIntegration>
+  <UserID type="string">GC0014</UserID>
+  <Password type="string">cmc123</Password>
+  <ProductType type="string">Private Car - P</ProductType>
+  <TransactionType type="string">Renewal</TransactionType>
+  <TransactionID type="string">1234</TransactionID>
+  <PolicyNo type="string">456</PolicyNo>
+  <ProposalDate type="date">2002-01-30</ProposalDate>
+  <ProposalTime type="time">15:00:00</ProposalTime>
+  <PolicyStartDate type="datetime">2002-05-30</PolicyStartDate>
+  <PolicyEndDate type="date">2002-05-30</PolicyEndDate>
+  <ProposerType type="string">I</ProposerType>
+  <CustomerName type="string">Johnson</CustomerName>
+  <EngineNos type="string">q12</EngineNos>
+  <ChassisNos type="string">f123</ChassisNos>
+  <Make type="string">g123</Make>
+  <Model type="string">s123</Model>
+  <Variant type="string">v123</Variant>
+  <IDV type="int">4545</IDV>
+  <TotalA type="int">4545</TotalA>
+  <TotalB type="int">445</TotalB>
+  <GrossPremium type="int">45454</GrossPremium>
+  <ServiceORSalesTax type="int">454</ServiceORSalesTax>
+  <NetPremium type="int">545</NetPremium>
+  <TransactionReference type="int">12345678912345678912</TransactionReference>
+  <TransactionDate type="date">2016-08-11</TransactionDate>
+  <TransactionAmount type="int">6565</TransactionAmount>
+  <Prefix>CWP</Prefix>
+  <VehicleRegistrationNumber type="string">xyz</VehicleRegistrationNumber>
+  <BiFuelKit type="string">abc</BiFuelKit>
+  <BiFuelKitIDV type="int">123</BiFuelKitIDV>
+  <NCB type="int">321</NCB>
+  <LegalLiabilityPaidDriver type="string">cdef</LegalLiabilityPaidDriver>
+  <ZeroDepreciation type="string">hij</ZeroDepreciation>
+  <EngineProtector type="string">klm</EngineProtector>
+  <ReturnToInvoice type="string">nop</ReturnToInvoice>
+  <PAUnnamedPassengerSI type="string">qrs</PAUnnamedPassengerSI>
+  <Consumables_Addon type="string">tuv</Consumables_Addon>
+  <RoadsideAssistance type="string">wxy</RoadsideAssistance>
+  <IMTNos type="string">zzzz</IMTNos>
+  <Additional_Info type="string">extra</Additional_Info>
+</PartnerIntegration>

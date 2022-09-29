@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<Root>
+  <PaymentTagging>
+ 
+    <IntermediaryId Value="2102420000" type="string" />
+    <TagSequence Value="0" type="Integer" />
+    <HouseBankId Value="" type="string" />
+    <AutoAcceptanceApplicable Value="1"  type="Integer" />
+    <InstrumentNo Value="1201700001493" type="string" />
+    <InstrumetDate Value="" type="string" />
+    <ReceivedDate Value="" type="string" />
+    <InstrumentAmount Value="39390.00" type="Long" />
+    <TotalInstrumentBalanceAmount Value="0" type="Long" />
+    <PaymentInfo Value="" type="string" />
+    <ShortPremium Value="0" type="string" />
+    <MaxPremium Value="0" type="Long" />
+    <BusinessType Value="0" type="Integer" />
+    <TypeOfBusiness Value="" type="string" />
+    <GenPolicy Value="0" type="Integer" />
+    <MonthlyExtension Value="0" type="Integer" />
+    <UserId Value="GC0014" type="string" />
+    <GUIDWorkFlow Value="" type="string" />
+    <OfficeCode Value="90001" type="string" />
+    <OfficeCodeUnmasked Value="90001" type="string" />
+    <WorkflowName Value="" type="string" />
+    <CallSLEnv Value="CP" type="string" />
+    <MIBLShortfallFlg Value="" type="string" />
+    <IsShortFallNonAllowedFlg Value="False" type="Boolean" />
+    <IsShortPremAllowedFlg Value="False" type="Boolean" />
+    <Is64vbAllowed Value="False" type="Boolean" />
+    <PaymentType Value="" type="string" />
+    <BankChargeArr Value="" type="string" />
+    <TransactionTime Value="06/09/2016" type="string" />
+    <TransactionId Value="10201700001598" type="string" />
+    <IsAutoPropChecked Value="False" type="Boolean" />
+    <IsAutoPaymentChecked Value="False" type="Boolean" />
+    <IsCreditPolicy Value="False" type="Boolean" />
+    <ClsProposalDetailsGrd>
+      <ClsProposalDetailsGrd Type="GroupData" Name="ClsPolicyIdGrid">
+        <BankCharge Value="0" type="String" />
+        <BusinessChannelId Value="2102420000" type="string" />
+        <CoverNoteNumber Value="" type="string" />
+        <CustomerName  Value="SANKET CHANDRASHEKHAR GADKARI" type="string" />
+        <IsChecked Value="True" type="Boolean" />
+        <PolicyNumber Value="" type="string" />
+        <PolicyStartDate Value="06/09/2016" type="string" />
+        <PropApplicationNo Value="10201700001598" type="String"/>
+        <PropCustId Value="1000010399" type="String"/>
+        <ProposalAmount Value="39390.00" type="String" />
+        <ProposalDate Value="06/09/2016" type="String" />
+        <ProposalNo Value="201609060000006" type="String" />
+        <RowNum Value="1" type="String" />
+        <ServiceChannelId Value="" type="string" />
+        <TransactionDate Value="06/09/2016" type="string" />
+        <UnpaidAmount Value="39390.00" type="string" />
+      </ClsProposalDetailsGrd>
+    </ClsProposalDetailsGrd>
+ 
+    <ClsPaymentIdGrid>
+      <ClsPaymentIdGrid Type="GroupData" Name="ClsPaymentIdGrid">
+        <ApplicationNo Value="10201700001598" type="String"/>
+        <BalanceAmount Value="39390.00" type="String"/>
+        <CDAccountNo Value="" type="String"/>
+        <CollectionOffice Value="90001" type="String"/>
+        <DepositBanktype Value="" type="String"/>
+        <DraweeBankName Value="" type="string" />
+        <DraweeBranchName Value="" type="string" />
+       <Homebank Value="" type="string" />
+        <HomebankList Value="" type="string" />
+        <IsChecked Value="True" type="Boolean" />
+        <ModeOfEntry Value="5" type="string" />
+        <PayerID Value="" type="string" />
+        <PayerName Value="" type="string" />
+        <PayerType Value="" type="string" />
+        <PaymenID Value="7201700001277" type="string" />
+        <PaymentApplicationNo Value="10201700001598" type="string" />
+        <PaymentDate Value="" type="string" />
+        <PaymentMode Value="" type="string" />
+        <PaymentNo Value="" type="string" />
+        <PaymentReceivedDate Value="" type="string" />
+        <PaymentStatus Value="" type="string" />
+        <ProducerCd Value="" type="string" />
+        <Relationship Value="" type="string" />
+        <RowNum Value="" type="String" />
+        <TagSequenceList Value="" type="string" />
+        <TotalAmount Value="39390.00" type="string" />
+      </ClsPaymentIdGrid>
+    </ClsPaymentIdGrid>
+ 
+  </PaymentTagging>
+</Root>

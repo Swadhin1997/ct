@@ -1,0 +1,96 @@
+D:\TFS Local Source\PASS\ProjectPass\PASS_PreProd\PrjPASS\bin\PrjPASS.dll.config
+D:\TFS Local Source\PASS\ProjectPass\PASS_PreProd\PrjPASS\bin\PrjPASS.dll
+D:\TFS Local Source\PASS\ProjectPass\PASS_PreProd\PrjPASS\bin\PrjPASS.pdb
+D:\TFS Local Source\PASS\ProjectPass\PASS_PreProd\PrjPASS\bin\wnvinternal.dat
+D:\TFS Local Source\PASS\ProjectPass\PASS_PreProd\PrjPASS\obj\Release\PrjPASS.csprojResolveAssemblyReference.cache
+D:\TFS Local Source\PASS\ProjectPass\PASS_PreProd\PrjPASS\obj\Release\PrjPASS.App_Obout.ColorPicker.Localization.de.resources
+D:\TFS Local Source\PASS\ProjectPass\PASS_PreProd\PrjPASS\obj\Release\PrjPASS.App_Obout.ColorPicker.Localization.en.resources
+D:\TFS Local Source\PASS\ProjectPass\PASS_PreProd\PrjPASS\obj\Release\PrjPASS.App_Obout.ColorPicker.Localization.fr.resources
+D:\TFS Local Source\PASS\ProjectPass\PASS_PreProd\PrjPASS\obj\Release\PrjPASS.App_Obout.ColorPicker.Localization.he.resources
+D:\TFS Local Source\PASS\ProjectPass\PASS_PreProd\PrjPASS\obj\Release\PrjPASS.App_Obout.ColorPicker.Localization.it.resources
+D:\TFS Local Source\PASS\ProjectPass\PASS_PreProd\PrjPASS\obj\Release\PrjPASS.App_Obout.ColorPicker.Localization.nl.resources
+D:\TFS Local Source\PASS\ProjectPass\PASS_PreProd\PrjPASS\obj\Release\PrjPASS.App_Obout.ColorPicker.Localization.ro.resources
+D:\TFS Local Source\PASS\ProjectPass\PASS_PreProd\PrjPASS\obj\Release\PrjPASS.App_Obout.ColorPicker.Localization.ru.resources
+D:\TFS Local Source\PASS\ProjectPass\PASS_PreProd\PrjPASS\obj\Release\PrjPASS.App_Obout.ColorPicker.Localization.sv.resources
+D:\TFS Local Source\PASS\ProjectPass\PASS_PreProd\PrjPASS\obj\Release\PrjPASS.App_Obout.FileUpload.Localization.en.resources
+D:\TFS Local Source\PASS\ProjectPass\PASS_PreProd\PrjPASS\obj\Release\PrjPASS.App_Obout.FileUpload.Localization.fr.resources
+D:\TFS Local Source\PASS\ProjectPass\PASS_PreProd\PrjPASS\obj\Release\PrjPASS.App_Obout.FileUpload.Localization.he.resources
+D:\TFS Local Source\PASS\ProjectPass\PASS_PreProd\PrjPASS\obj\Release\PrjPASS.App_Obout.FileUpload.Localization.nl.resources
+D:\TFS Local Source\PASS\ProjectPass\PASS_PreProd\PrjPASS\obj\Release\PrjPASS.App_Obout.FileUpload.Localization.pt.resources
+D:\TFS Local Source\PASS\ProjectPass\PASS_PreProd\PrjPASS\obj\Release\PrjPASS.App_Obout.FileUpload.Localization.ro.resources
+D:\TFS Local Source\PASS\ProjectPass\PASS_PreProd\PrjPASS\obj\Release\PrjPASS.App_Obout.FileUpload.Localization.ru.resources
+D:\TFS Local Source\PASS\ProjectPass\PASS_PreProd\PrjPASS\obj\Release\PrjPASS.App_Obout.FileUpload.Localization.sv.resources
+D:\TFS Local Source\PASS\ProjectPass\PASS_PreProd\PrjPASS\obj\Release\PrjPASS.App_Obout.HTMLEditor.Localization.de.resources
+D:\TFS Local Source\PASS\ProjectPass\PASS_PreProd\PrjPASS\obj\Release\PrjPASS.App_Obout.HTMLEditor.Localization.en.resources
+D:\TFS Local Source\PASS\ProjectPass\PASS_PreProd\PrjPASS\obj\Release\PrjPASS.App_Obout.HTMLEditor.Localization.fr.resources
+D:\TFS Local Source\PASS\ProjectPass\PASS_PreProd\PrjPASS\obj\Release\PrjPASS.App_Obout.HTMLEditor.Localization.he.resources
+D:\TFS Local Source\PASS\ProjectPass\PASS_PreProd\PrjPASS\obj\Release\PrjPASS.App_Obout.HTMLEditor.Localization.it.resources
+D:\TFS Local Source\PASS\ProjectPass\PASS_PreProd\PrjPASS\obj\Release\PrjPASS.App_Obout.HTMLEditor.Localization.nl.resources
+D:\TFS Local Source\PASS\ProjectPass\PASS_PreProd\PrjPASS\obj\Release\PrjPASS.App_Obout.HTMLEditor.Localization.ro.resources
+D:\TFS Local Source\PASS\ProjectPass\PASS_PreProd\PrjPASS\obj\Release\PrjPASS.App_Obout.HTMLEditor.Localization.ru.resources
+D:\TFS Local Source\PASS\ProjectPass\PASS_PreProd\PrjPASS\obj\Release\PrjPASS.App_Obout.HTMLEditor.Localization.sv.resources
+D:\TFS Local Source\PASS\ProjectPass\PASS_PreProd\PrjPASS\obj\Release\PrjPASS.csproj.GenerateResource.Cache
+D:\TFS Local Source\PASS\ProjectPass\PASS_PreProd\PrjPASS\obj\Release\PrjPASS.dll
+D:\TFS Local Source\PASS\ProjectPass\PASS_PreProd\PrjPASS\obj\Release\PrjPASS.pdb
+D:\TFS Local Source\PASS\ProjectPass\PASS_PreProd\PrjPASS\bin\Google.Apis.xml
+D:\TFS Local Source\PASS\ProjectPass\PASS_PreProd\PrjPASS\bin\Google.Apis.Auth.xml
+D:\TFS Local Source\PASS\ProjectPass\PASS_PreProd\PrjPASS\bin\Google.Apis.Auth.PlatformServices.xml
+D:\TFS Local Source\PASS\ProjectPass\PASS_PreProd\PrjPASS\bin\Google.Apis.Core.xml
+D:\TFS Local Source\PASS\ProjectPass\PASS_PreProd\PrjPASS\bin\Google.Apis.PlatformServices.xml
+D:\TFS Local Source\PASS\ProjectPass\PASS_PreProd\PrjPASS\bin\Google.Apis.Urlshortener.v1.xml
+D:\TFS Local Source\PASS\ProjectPass\PASS_PreProd\PrjPASS\bin\Newtonsoft.Json.xml
+D:\TFS Local Source\PASS\ProjectPass\PASS_PreProd\PrjPASS\bin\EntityFramework.xml
+D:\TFS Local Source\PASS\ProjectPass\PASS_PreProd\PrjPASS\bin\DotNetOpenAuth.Core.xml
+D:\TFS Local Source\PASS\ProjectPass\PASS_PreProd\PrjPASS\bin\DotNetOpenAuth.OAuth.xml
+D:\TFS Local Source\PASS\ProjectPass\PASS_PreProd\PrjPASS\bin\DotNetOpenAuth.OAuth.Consumer.xml
+D:\TFS Local Source\PASS\ProjectPass\PASS_PreProd\PrjPASS\bin\DotNetOpenAuth.OpenId.xml
+D:\TFS Local Source\PASS\ProjectPass\PASS_PreProd\PrjPASS\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+D:\TFS Local Source\PASS\ProjectPass\PASS_PreProd\PrjPASS\bin\DotNetOpenAuth.AspNet.xml
+D:\TFS Local Source\PASS\ProjectPass\PASS_PreProd\PrjPASS\bin\Org.Mentalis.Security.Cryptography.dll
+D:\TFS Local Source\PASS\ProjectPass\PASS_PreProd\PrjPASS\bin\Mono.Math.dll
+D:\TFS Local Source\PASS\ProjectPass\PASS_PreProd\PrjPASS\bin\Org.Mentalis.Security.Cryptography.xml
+D:\TFS Local Source\PASS\ProjectPass\PASS_PreProd\PrjPASS\bin\Mono.Math.xml
+D:\TFS Local Source\PASS\ProjectPass\PASS_PreProd\PrjPASS\bin\PrjPASS.XmlSerializers.dll
+D:\TFS Local Source\PASS\ProjectPass\PASS_PreProd\PrjPASS\bin\Microsoft.Web.Services3.dll
+D:\TFS Local Source\PASS\ProjectPass\PASS_PreProd\PrjPASS\obj\Release\PrjPASS.XmlSerializers.dll
+D:\TFSProjects\ProjectPass\PASS_PreProd\PrjPASS\bin\PrjPASS.dll.config
+D:\TFSProjects\ProjectPass\PASS_PreProd\PrjPASS\bin\PrjPASS.dll
+D:\TFSProjects\ProjectPass\PASS_PreProd\PrjPASS\bin\PrjPASS.XmlSerializers.dll
+D:\TFSProjects\ProjectPass\PASS_PreProd\PrjPASS\bin\PrjPASS.pdb
+D:\TFSProjects\ProjectPass\PASS_PreProd\PrjPASS\bin\MCPG.CCA.Util.dll
+D:\TFSProjects\ProjectPass\PASS_PreProd\PrjPASS\bin\Microsoft.Web.Administration.dll
+D:\TFSProjects\ProjectPass\PASS_PreProd\PrjPASS\bin\Microsoft.Web.Services3.dll
+D:\TFSProjects\ProjectPass\PASS_PreProd\PrjPASS\bin\wnvinternal.dat
+D:\TFSProjects\ProjectPass\PASS_PreProd\PrjPASS\obj\Release\PrjPASS.App_Obout.ColorPicker.Localization.de.resources
+D:\TFSProjects\ProjectPass\PASS_PreProd\PrjPASS\obj\Release\PrjPASS.App_Obout.ColorPicker.Localization.en.resources
+D:\TFSProjects\ProjectPass\PASS_PreProd\PrjPASS\obj\Release\PrjPASS.App_Obout.ColorPicker.Localization.fr.resources
+D:\TFSProjects\ProjectPass\PASS_PreProd\PrjPASS\obj\Release\PrjPASS.App_Obout.ColorPicker.Localization.he.resources
+D:\TFSProjects\ProjectPass\PASS_PreProd\PrjPASS\obj\Release\PrjPASS.App_Obout.ColorPicker.Localization.it.resources
+D:\TFSProjects\ProjectPass\PASS_PreProd\PrjPASS\obj\Release\PrjPASS.App_Obout.ColorPicker.Localization.nl.resources
+D:\TFSProjects\ProjectPass\PASS_PreProd\PrjPASS\obj\Release\PrjPASS.App_Obout.ColorPicker.Localization.ro.resources
+D:\TFSProjects\ProjectPass\PASS_PreProd\PrjPASS\obj\Release\PrjPASS.App_Obout.ColorPicker.Localization.ru.resources
+D:\TFSProjects\ProjectPass\PASS_PreProd\PrjPASS\obj\Release\PrjPASS.App_Obout.ColorPicker.Localization.sv.resources
+D:\TFSProjects\ProjectPass\PASS_PreProd\PrjPASS\obj\Release\PrjPASS.App_Obout.FileUpload.Localization.en.resources
+D:\TFSProjects\ProjectPass\PASS_PreProd\PrjPASS\obj\Release\PrjPASS.App_Obout.FileUpload.Localization.fr.resources
+D:\TFSProjects\ProjectPass\PASS_PreProd\PrjPASS\obj\Release\PrjPASS.App_Obout.FileUpload.Localization.he.resources
+D:\TFSProjects\ProjectPass\PASS_PreProd\PrjPASS\obj\Release\PrjPASS.App_Obout.FileUpload.Localization.nl.resources
+D:\TFSProjects\ProjectPass\PASS_PreProd\PrjPASS\obj\Release\PrjPASS.App_Obout.FileUpload.Localization.pt.resources
+D:\TFSProjects\ProjectPass\PASS_PreProd\PrjPASS\obj\Release\PrjPASS.App_Obout.FileUpload.Localization.ro.resources
+D:\TFSProjects\ProjectPass\PASS_PreProd\PrjPASS\obj\Release\PrjPASS.App_Obout.FileUpload.Localization.ru.resources
+D:\TFSProjects\ProjectPass\PASS_PreProd\PrjPASS\obj\Release\PrjPASS.App_Obout.FileUpload.Localization.sv.resources
+D:\TFSProjects\ProjectPass\PASS_PreProd\PrjPASS\obj\Release\PrjPASS.App_Obout.HTMLEditor.Localization.de.resources
+D:\TFSProjects\ProjectPass\PASS_PreProd\PrjPASS\obj\Release\PrjPASS.App_Obout.HTMLEditor.Localization.en.resources
+D:\TFSProjects\ProjectPass\PASS_PreProd\PrjPASS\obj\Release\PrjPASS.App_Obout.HTMLEditor.Localization.fr.resources
+D:\TFSProjects\ProjectPass\PASS_PreProd\PrjPASS\obj\Release\PrjPASS.App_Obout.HTMLEditor.Localization.he.resources
+D:\TFSProjects\ProjectPass\PASS_PreProd\PrjPASS\obj\Release\PrjPASS.App_Obout.HTMLEditor.Localization.it.resources
+D:\TFSProjects\ProjectPass\PASS_PreProd\PrjPASS\obj\Release\PrjPASS.App_Obout.HTMLEditor.Localization.nl.resources
+D:\TFSProjects\ProjectPass\PASS_PreProd\PrjPASS\obj\Release\PrjPASS.App_Obout.HTMLEditor.Localization.ro.resources
+D:\TFSProjects\ProjectPass\PASS_PreProd\PrjPASS\obj\Release\PrjPASS.App_Obout.HTMLEditor.Localization.ru.resources
+D:\TFSProjects\ProjectPass\PASS_PreProd\PrjPASS\obj\Release\PrjPASS.App_Obout.HTMLEditor.Localization.sv.resources
+D:\TFSProjects\ProjectPass\PASS_PreProd\PrjPASS\obj\Release\PrjPASS.csproj.GenerateResource.cache
+D:\TFSProjects\ProjectPass\PASS_PreProd\PrjPASS\obj\Release\PrjPASS.csproj.CoreCompileInputs.cache
+D:\TFSProjects\ProjectPass\PASS_PreProd\PrjPASS\obj\Release\PrjPASS.csproj.CopyComplete
+D:\TFSProjects\ProjectPass\PASS_PreProd\PrjPASS\obj\Release\PrjPASS.dll
+D:\TFSProjects\ProjectPass\PASS_PreProd\PrjPASS\obj\Release\PrjPASS.pdb
+D:\TFSProjects\ProjectPass\PASS_PreProd\PrjPASS\obj\Release\PrjPASS.XmlSerializers.dll
+D:\TFSProjects\ProjectPass\PASS_PreProd\PrjPASS\obj\Release\PrjPASS.csproj.AssemblyReference.cache

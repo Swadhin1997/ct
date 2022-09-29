@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="4b6d6b50-31c2-4270-bb97-ec9d483cfe33" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://kgi-u-app-gist-3-v040/WcfGenericService/GenericService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="GenericService.xsd" MetadataType="Schema" ID="142fa4e3-ee7c-4f6f-bad3-8c694114b8df" SourceId="1" SourceUrl="https://kgi-u-app-gist-3-v040/WcfGenericService/GenericService.svc?xsd=xsd3" />
+    <MetadataFile FileName="GenericService1.xsd" MetadataType="Schema" ID="46e22df4-cce5-4445-8341-5ed665566001" SourceId="1" SourceUrl="https://kgi-u-app-gist-3-v040/WcfGenericService/GenericService.svc?xsd=xsd0" />
+    <MetadataFile FileName="GenericService2.xsd" MetadataType="Schema" ID="75ef7e1d-067b-455f-b13e-dbe3e0db1467" SourceId="1" SourceUrl="https://kgi-u-app-gist-3-v040/WcfGenericService/GenericService.svc?xsd=xsd1" />
+    <MetadataFile FileName="GenericService.disco" MetadataType="Disco" ID="a4a387b3-b56f-4f77-b501-d0f9b67110a7" SourceId="1" SourceUrl="https://kgi-u-app-gist-3-v040/WcfGenericService/GenericService.svc?disco" />
+    <MetadataFile FileName="GenericService3.xsd" MetadataType="Schema" ID="b4186377-c8bb-4a5d-b8cc-4d609562c414" SourceId="1" SourceUrl="https://kgi-u-app-gist-3-v040/WcfGenericService/GenericService.svc?xsd=xsd4" />
+    <MetadataFile FileName="GenericService4.xsd" MetadataType="Schema" ID="7b6b23c6-7ad1-4ce6-afc7-a5d3d36c9283" SourceId="1" SourceUrl="https://kgi-u-app-gist-3-v040/WcfGenericService/GenericService.svc?xsd=xsd2" />
+    <MetadataFile FileName="GenericService.wsdl" MetadataType="Wsdl" ID="71ad16b5-7ee4-4eb4-baae-a143b450fe25" SourceId="1" SourceUrl="https://kgi-u-app-gist-3-v040/WcfGenericService/GenericService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

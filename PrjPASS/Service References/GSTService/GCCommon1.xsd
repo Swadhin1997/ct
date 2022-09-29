@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://kgi-p-app-bridge-1-v126/GCIntegrationServices/GCCommon.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WCF_Partner_integration" />
+  <xs:element name="GetRenewalPolicyInformation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="KGICustomerID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="PolicyNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="RegistrationBlock1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="RegistrationBlock2" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="RegistrationBlock3" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="RegistrationBlock4" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="EngineNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ChassisNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ProposerCRNNos" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ProposerAPACNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MemberID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MemberDOB" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SourceChannelID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AdditionalParameter1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AdditionalParameter2" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AdditionalParameter3" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AdditionalParameter4" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AdditionalParameter5" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRenewalPolicyInformationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetRenewalPolicyInformationResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GSTBreakUpTaxDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strPropsalDate" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strTotalPremium" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strIntermediaryCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strIntemediaryOfficeCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strCustomerStateCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strProductCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GSTBreakUpTaxDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/WCF_Partner_integration" minOccurs="0" name="GSTBreakUpTaxDetailsResult" nillable="true" type="q1:GSTBreakUpTaxDetails" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VerifyGCPolicy">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strPolicyNumber" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strDOBOfProposer" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strMemberID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strRegistrationNumber" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strEngineNumber" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strChassisNumber" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strCustMobie" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strCustEmail" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strCustCRN" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strCustPAN" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strAdd1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strAdd2" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strAdd3" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strAdd4" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strRequestTime" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VerifyGCPolicyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/WCF_Partner_integration" minOccurs="0" name="VerifyGCPolicyResult" nillable="true" type="q2:PolicyVerifcation" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUWPolicyData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GCUser" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="GCPassword" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strSource" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strCustomerCRNNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strCustomerEmailId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strAdditionalParam1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strAdditionalParam2" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strAdditionalParam3" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strAdditionalParam4" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUWPolicyDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetUWPolicyDataResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateCustomerCRNNumber">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GCUser" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="GCPassword" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strCustomerId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strCRNNumber" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateCustomerCRNNumberResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateCustomerCRNNumberResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IDVSyncData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strIDV" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IDVSyncDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IDVSyncDataResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

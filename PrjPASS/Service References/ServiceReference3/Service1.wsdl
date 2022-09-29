@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://10.221.16.23/CMCDocsService/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://10.221.16.23/CMCDocsService/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://10.221.16.23/CMCDocsService/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/CMCDocsService" />
+      <xsd:import schemaLocation="http://10.221.16.23/CMCDocsService/Service1.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/System.IO" />
+      <xsd:import schemaLocation="http://10.221.16.23/CMCDocsService/Service1.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/System" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_SearchDocument_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchDocument" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SearchDocument_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchDocumentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CreateDocument_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateDocument" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CreateDocument_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateDocumentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Validate_InputMessage">
+    <wsdl:part name="parameters" element="tns:Validate" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Validate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SearchDocumentDMS_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchDocumentDMS" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SearchDocumentDMS_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchDocumentDMSResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CreateDocumentDMS_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateDocumentDMS" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CreateDocumentDMS_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateDocumentDMSResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ViewDocumentDMS_InputMessage">
+    <wsdl:part name="parameters" element="tns:ViewDocumentDMS" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ViewDocumentDMS_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ViewDocumentDMSResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="SearchDocument">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SearchDocument" message="tns:IService1_SearchDocument_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SearchDocumentResponse" message="tns:IService1_SearchDocument_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateDocument">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/CreateDocument" message="tns:IService1_CreateDocument_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/CreateDocumentResponse" message="tns:IService1_CreateDocument_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Validate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Validate" message="tns:IService1_Validate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ValidateResponse" message="tns:IService1_Validate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchDocumentDMS">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SearchDocumentDMS" message="tns:IService1_SearchDocumentDMS_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SearchDocumentDMSResponse" message="tns:IService1_SearchDocumentDMS_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateDocumentDMS">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/CreateDocumentDMS" message="tns:IService1_CreateDocumentDMS_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/CreateDocumentDMSResponse" message="tns:IService1_CreateDocumentDMS_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ViewDocumentDMS">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ViewDocumentDMS" message="tns:IService1_ViewDocumentDMS_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ViewDocumentDMSResponse" message="tns:IService1_ViewDocumentDMS_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SearchDocument">
+      <soap:operation soapAction="http://tempuri.org/IService1/SearchDocument" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateDocument">
+      <soap:operation soapAction="http://tempuri.org/IService1/CreateDocument" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Validate">
+      <soap:operation soapAction="http://tempuri.org/IService1/Validate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchDocumentDMS">
+      <soap:operation soapAction="http://tempuri.org/IService1/SearchDocumentDMS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateDocumentDMS">
+      <soap:operation soapAction="http://tempuri.org/IService1/CreateDocumentDMS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ViewDocumentDMS">
+      <soap:operation soapAction="http://tempuri.org/IService1/ViewDocumentDMS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://10.221.16.23/CMCDocsService/Service1.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

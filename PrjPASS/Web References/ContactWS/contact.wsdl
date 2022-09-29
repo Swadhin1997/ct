@@ -1,0 +1,1369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.talisma.com/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://www.talisma.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Contact Web Service</wsdl:documentation>
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.talisma.com/">
+      <s:element name="CreateContact">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="contactName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="propData" type="tns:ArrayOfPropertyInfo" />
+            <s:element minOccurs="1" maxOccurs="1" name="bUpdateReadOnly" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="bIgnoreMandatoryCheck" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfPropertyInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="PropertyInfo" type="tns:PropertyInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="PropertyInfo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="propertyID" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="propValue" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="rowID" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="relJoinID" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="propValAttrs" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CreateContactResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CreateContactResult" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="contactID" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="error" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ResolveContact">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="noCheckForDuplicateEmail" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="contactPropData" type="tns:ArrayOfPropertyInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ResolveContactResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ResolveContactResult" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="contactId" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="error" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ResolveContactEx">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="noCheckForDuplicateEmail" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="contactPropData" type="tns:ArrayOfPropertyInfo" />
+            <s:element minOccurs="1" maxOccurs="1" name="nOperator" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ResolveContactExResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ResolveContactExResult" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="contactId" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="error" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteContact">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="contactID" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="deleteRelatedObjects" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteContactResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteContactResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="error" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteContacts">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strContactIDs" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="bDeleteRelatedObjects" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteContactsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteContactsResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="error" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ContactLogon">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="emailId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="portalId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="customLogin" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ContactLogonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ContactLogonResult" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="validContact" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="guid" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="contactId" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="error" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ContactLogoff">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="contactId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="portalId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="sessionKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ContactLogoffResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ContactLogoffResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="error" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ChangeContactPortalPassword">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="contactID" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="emailId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="oldPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="newPassword" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="portalId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="doTpinCheck" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ChangeContactPortalPasswordResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ChangeContactPortalPasswordResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="error" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendPortalPassword">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="PortalId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="emailId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendPortalPasswordResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SendPortalPasswordResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="error" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RegisterContactForPortal">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="portalId" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="contactName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="contactEmailId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="propData" type="tns:ArrayOfPropertyInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RegisterContactForPortalResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RegisterContactForPortalResult" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="contactId" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="error" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPortalConfigDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="contactId" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="portalId" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="valueIds" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="valueIdCount" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPortalConfigDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetPortalConfigDetailsResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="arrPropInfo" type="tns:ArrayOfPropertyInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="error" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdatePropertyTab">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="contactId" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="propData" type="tns:ArrayOfPropertyInfo" />
+            <s:element minOccurs="1" maxOccurs="1" name="bUpdateReadOnly" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="bIgnoreMandatoryCheck" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdatePropertyTabResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdatePropertyTabResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="error" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPropertiesTab">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="contactID" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="tabID" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="getPropinfoOrPropxml" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPropertiesTabResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetPropertiesTabResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="propData" type="tns:ArrayOfPropertyInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="propXML" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="error" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateRLTab">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="contactID" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="tabID" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="propData" type="tns:ArrayOfPropertyInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="deleteRows" type="tns:ArrayOfInt" />
+            <s:element minOccurs="1" maxOccurs="1" name="bUpdateReadOnly" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfInt">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="int" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="UpdateRLTabResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateRLTabResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="error" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRLTab">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="contactID" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="tabID" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="getPropinfoOrPropxml" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRLTabResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetRLTabResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="propData" type="tns:ArrayOfPropertyInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="rlpropXML" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="error" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLinkedTab">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="contactID" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="tabID" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLinkedTabResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetLinkedTabResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="propData" type="tns:ArrayOfPropertyInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="error" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLinkedTabEx">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="contactID" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="tabID" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLinkedTabExResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetLinkedTabExResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="propXML" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="error" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAttachmentTab">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="contactID" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="tabID" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAttachmentTabResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetAttachmentTabResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="attachments" type="tns:ArrayOfAttachmentData" />
+            <s:element minOccurs="0" maxOccurs="1" name="error" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfAttachmentData">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="AttachmentData" type="tns:AttachmentData" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="AttachmentData">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="fileName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="comment" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="fileBlob" type="s:base64Binary" />
+          <s:element minOccurs="1" maxOccurs="1" name="deleteAttachment" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="attachmentId" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="fileSize" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="dateModified" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="createdBy" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="createdOn" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="editOption" type="tns:AttachmentEditOption" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="AttachmentEditOption">
+        <s:restriction base="s:string">
+          <s:enumeration value="CreateNew" />
+          <s:enumeration value="Delete" />
+          <s:enumeration value="UpdateComment" />
+          <s:enumeration value="UpdateFile" />
+          <s:enumeration value="UpdateFileAndComment" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="GetAttachmentTabEx">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="objectType" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="objectID" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="tabID" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAttachmentTabExResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetAttachmentTabExResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="strXML" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="error" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAttachmentFile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="lObjectType" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="objectID" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="lAttachmentID" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAttachmentFileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetAttachmentFileResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="fileBlob" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="error" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateAttachmentFile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="lObjectType" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="lobjectID" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="lAttachmentID" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="lTabId" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="fileBlob" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="strAttName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateAttachmentFileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateAttachmentFileResult" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="lAttachmentID" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="error" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateAttachmentComments">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="lobjectType" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="lobjectID" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="lAttachmentId" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="commentsData" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateAttachmentCommentsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateAttachmentCommentsResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="error" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteAttachment">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="objectType" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="objectID" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="tabID" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="lAttachmentId" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteAttachmentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteAttachmentResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="error" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateAttachmentTab">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="contactID" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="tabId" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="attachments" type="tns:ArrayOfAttachmentData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateAttachmentTabResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateAttachmentTabResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="attachments" type="tns:ArrayOfAttachmentData" />
+            <s:element minOccurs="0" maxOccurs="1" name="error" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCommentsTab">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="contactID" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="tabID" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCommentsTabResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetCommentsTabResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="comments" type="tns:ArrayOfCommentsData" />
+            <s:element minOccurs="0" maxOccurs="1" name="error" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCommentsData">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CommentsData" type="tns:CommentsData" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CommentsData">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="userID" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="date" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="comment" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="UpdateCommentsTab">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="contactID" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="tabId" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="comment" type="tns:CommentsData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateCommentsTabResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateCommentsTabResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="error" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddContactToAccounts">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="lobjectID" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="strAccounts" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddContactToAccountsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddContactToAccountsResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RemoveContactFromAccount">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="lobjectID" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="lAccId" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RemoveContactFromAccountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RemoveContactFromAccountResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="CreateContactSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateContact" />
+  </wsdl:message>
+  <wsdl:message name="CreateContactSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateContactResponse" />
+  </wsdl:message>
+  <wsdl:message name="ResolveContactSoapIn">
+    <wsdl:part name="parameters" element="tns:ResolveContact" />
+  </wsdl:message>
+  <wsdl:message name="ResolveContactSoapOut">
+    <wsdl:part name="parameters" element="tns:ResolveContactResponse" />
+  </wsdl:message>
+  <wsdl:message name="ResolveContactExSoapIn">
+    <wsdl:part name="parameters" element="tns:ResolveContactEx" />
+  </wsdl:message>
+  <wsdl:message name="ResolveContactExSoapOut">
+    <wsdl:part name="parameters" element="tns:ResolveContactExResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteContactSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteContact" />
+  </wsdl:message>
+  <wsdl:message name="DeleteContactSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteContactResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteContactsSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteContacts" />
+  </wsdl:message>
+  <wsdl:message name="DeleteContactsSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteContactsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ContactLogonSoapIn">
+    <wsdl:part name="parameters" element="tns:ContactLogon" />
+  </wsdl:message>
+  <wsdl:message name="ContactLogonSoapOut">
+    <wsdl:part name="parameters" element="tns:ContactLogonResponse" />
+  </wsdl:message>
+  <wsdl:message name="ContactLogoffSoapIn">
+    <wsdl:part name="parameters" element="tns:ContactLogoff" />
+  </wsdl:message>
+  <wsdl:message name="ContactLogoffSoapOut">
+    <wsdl:part name="parameters" element="tns:ContactLogoffResponse" />
+  </wsdl:message>
+  <wsdl:message name="ChangeContactPortalPasswordSoapIn">
+    <wsdl:part name="parameters" element="tns:ChangeContactPortalPassword" />
+  </wsdl:message>
+  <wsdl:message name="ChangeContactPortalPasswordSoapOut">
+    <wsdl:part name="parameters" element="tns:ChangeContactPortalPasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendPortalPasswordSoapIn">
+    <wsdl:part name="parameters" element="tns:SendPortalPassword" />
+  </wsdl:message>
+  <wsdl:message name="SendPortalPasswordSoapOut">
+    <wsdl:part name="parameters" element="tns:SendPortalPasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="RegisterContactForPortalSoapIn">
+    <wsdl:part name="parameters" element="tns:RegisterContactForPortal" />
+  </wsdl:message>
+  <wsdl:message name="RegisterContactForPortalSoapOut">
+    <wsdl:part name="parameters" element="tns:RegisterContactForPortalResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPortalConfigDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPortalConfigDetails" />
+  </wsdl:message>
+  <wsdl:message name="GetPortalConfigDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPortalConfigDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdatePropertyTabSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdatePropertyTab" />
+  </wsdl:message>
+  <wsdl:message name="UpdatePropertyTabSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdatePropertyTabResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPropertiesTabSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPropertiesTab" />
+  </wsdl:message>
+  <wsdl:message name="GetPropertiesTabSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPropertiesTabResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateRLTabSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateRLTab" />
+  </wsdl:message>
+  <wsdl:message name="UpdateRLTabSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateRLTabResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetRLTabSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRLTab" />
+  </wsdl:message>
+  <wsdl:message name="GetRLTabSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRLTabResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetLinkedTabSoapIn">
+    <wsdl:part name="parameters" element="tns:GetLinkedTab" />
+  </wsdl:message>
+  <wsdl:message name="GetLinkedTabSoapOut">
+    <wsdl:part name="parameters" element="tns:GetLinkedTabResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetLinkedTabExSoapIn">
+    <wsdl:part name="parameters" element="tns:GetLinkedTabEx" />
+  </wsdl:message>
+  <wsdl:message name="GetLinkedTabExSoapOut">
+    <wsdl:part name="parameters" element="tns:GetLinkedTabExResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAttachmentTabSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAttachmentTab" />
+  </wsdl:message>
+  <wsdl:message name="GetAttachmentTabSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAttachmentTabResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAttachmentTabExSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAttachmentTabEx" />
+  </wsdl:message>
+  <wsdl:message name="GetAttachmentTabExSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAttachmentTabExResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAttachmentFileSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAttachmentFile" />
+  </wsdl:message>
+  <wsdl:message name="GetAttachmentFileSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAttachmentFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateAttachmentFileSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateAttachmentFile" />
+  </wsdl:message>
+  <wsdl:message name="UpdateAttachmentFileSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateAttachmentFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateAttachmentCommentsSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateAttachmentComments" />
+  </wsdl:message>
+  <wsdl:message name="UpdateAttachmentCommentsSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateAttachmentCommentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteAttachmentSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteAttachment" />
+  </wsdl:message>
+  <wsdl:message name="DeleteAttachmentSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteAttachmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateAttachmentTabSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateAttachmentTab" />
+  </wsdl:message>
+  <wsdl:message name="UpdateAttachmentTabSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateAttachmentTabResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCommentsTabSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCommentsTab" />
+  </wsdl:message>
+  <wsdl:message name="GetCommentsTabSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCommentsTabResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCommentsTabSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateCommentsTab" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCommentsTabSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateCommentsTabResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddContactToAccountsSoapIn">
+    <wsdl:part name="parameters" element="tns:AddContactToAccounts" />
+  </wsdl:message>
+  <wsdl:message name="AddContactToAccountsSoapOut">
+    <wsdl:part name="parameters" element="tns:AddContactToAccountsResponse" />
+  </wsdl:message>
+  <wsdl:message name="RemoveContactFromAccountSoapIn">
+    <wsdl:part name="parameters" element="tns:RemoveContactFromAccount" />
+  </wsdl:message>
+  <wsdl:message name="RemoveContactFromAccountSoapOut">
+    <wsdl:part name="parameters" element="tns:RemoveContactFromAccountResponse" />
+  </wsdl:message>
+  <wsdl:portType name="Contact_x0020_Web_x0020_ServiceSoap">
+    <wsdl:operation name="CreateContact">
+      <wsdl:input message="tns:CreateContactSoapIn" />
+      <wsdl:output message="tns:CreateContactSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ResolveContact">
+      <wsdl:input message="tns:ResolveContactSoapIn" />
+      <wsdl:output message="tns:ResolveContactSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ResolveContactEx">
+      <wsdl:input message="tns:ResolveContactExSoapIn" />
+      <wsdl:output message="tns:ResolveContactExSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteContact">
+      <wsdl:input message="tns:DeleteContactSoapIn" />
+      <wsdl:output message="tns:DeleteContactSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteContacts">
+      <wsdl:input message="tns:DeleteContactsSoapIn" />
+      <wsdl:output message="tns:DeleteContactsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ContactLogon">
+      <wsdl:input message="tns:ContactLogonSoapIn" />
+      <wsdl:output message="tns:ContactLogonSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ContactLogoff">
+      <wsdl:input message="tns:ContactLogoffSoapIn" />
+      <wsdl:output message="tns:ContactLogoffSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ChangeContactPortalPassword">
+      <wsdl:input message="tns:ChangeContactPortalPasswordSoapIn" />
+      <wsdl:output message="tns:ChangeContactPortalPasswordSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendPortalPassword">
+      <wsdl:input message="tns:SendPortalPasswordSoapIn" />
+      <wsdl:output message="tns:SendPortalPasswordSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RegisterContactForPortal">
+      <wsdl:input message="tns:RegisterContactForPortalSoapIn" />
+      <wsdl:output message="tns:RegisterContactForPortalSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPortalConfigDetails">
+      <wsdl:input message="tns:GetPortalConfigDetailsSoapIn" />
+      <wsdl:output message="tns:GetPortalConfigDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePropertyTab">
+      <wsdl:input message="tns:UpdatePropertyTabSoapIn" />
+      <wsdl:output message="tns:UpdatePropertyTabSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPropertiesTab">
+      <wsdl:input message="tns:GetPropertiesTabSoapIn" />
+      <wsdl:output message="tns:GetPropertiesTabSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRLTab">
+      <wsdl:input message="tns:UpdateRLTabSoapIn" />
+      <wsdl:output message="tns:UpdateRLTabSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRLTab">
+      <wsdl:input message="tns:GetRLTabSoapIn" />
+      <wsdl:output message="tns:GetRLTabSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLinkedTab">
+      <wsdl:input message="tns:GetLinkedTabSoapIn" />
+      <wsdl:output message="tns:GetLinkedTabSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLinkedTabEx">
+      <wsdl:input message="tns:GetLinkedTabExSoapIn" />
+      <wsdl:output message="tns:GetLinkedTabExSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAttachmentTab">
+      <wsdl:input message="tns:GetAttachmentTabSoapIn" />
+      <wsdl:output message="tns:GetAttachmentTabSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAttachmentTabEx">
+      <wsdl:input message="tns:GetAttachmentTabExSoapIn" />
+      <wsdl:output message="tns:GetAttachmentTabExSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAttachmentFile">
+      <wsdl:input message="tns:GetAttachmentFileSoapIn" />
+      <wsdl:output message="tns:GetAttachmentFileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAttachmentFile">
+      <wsdl:input message="tns:UpdateAttachmentFileSoapIn" />
+      <wsdl:output message="tns:UpdateAttachmentFileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAttachmentComments">
+      <wsdl:input message="tns:UpdateAttachmentCommentsSoapIn" />
+      <wsdl:output message="tns:UpdateAttachmentCommentsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAttachment">
+      <wsdl:input message="tns:DeleteAttachmentSoapIn" />
+      <wsdl:output message="tns:DeleteAttachmentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAttachmentTab">
+      <wsdl:input message="tns:UpdateAttachmentTabSoapIn" />
+      <wsdl:output message="tns:UpdateAttachmentTabSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCommentsTab">
+      <wsdl:input message="tns:GetCommentsTabSoapIn" />
+      <wsdl:output message="tns:GetCommentsTabSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCommentsTab">
+      <wsdl:input message="tns:UpdateCommentsTabSoapIn" />
+      <wsdl:output message="tns:UpdateCommentsTabSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddContactToAccounts">
+      <wsdl:input message="tns:AddContactToAccountsSoapIn" />
+      <wsdl:output message="tns:AddContactToAccountsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveContactFromAccount">
+      <wsdl:input message="tns:RemoveContactFromAccountSoapIn" />
+      <wsdl:output message="tns:RemoveContactFromAccountSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Contact_x0020_Web_x0020_ServiceSoap" type="tns:Contact_x0020_Web_x0020_ServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CreateContact">
+      <soap:operation soapAction="http://www.talisma.com/CreateContact" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ResolveContact">
+      <soap:operation soapAction="http://www.talisma.com/ResolveContact" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ResolveContactEx">
+      <soap:operation soapAction="http://www.talisma.com/ResolveContactEx" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteContact">
+      <soap:operation soapAction="http://www.talisma.com/DeleteContact" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteContacts">
+      <soap:operation soapAction="http://www.talisma.com/DeleteContacts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ContactLogon">
+      <soap:operation soapAction="http://www.talisma.com/ContactLogon" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ContactLogoff">
+      <soap:operation soapAction="http://www.talisma.com/ContactLogoff" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangeContactPortalPassword">
+      <soap:operation soapAction="http://www.talisma.com/ChangeContactPortalPassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendPortalPassword">
+      <soap:operation soapAction="http://www.talisma.com/SendPortalPassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegisterContactForPortal">
+      <soap:operation soapAction="http://www.talisma.com/RegisterContactForPortal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPortalConfigDetails">
+      <soap:operation soapAction="http://www.talisma.com/GetPortalConfigDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePropertyTab">
+      <soap:operation soapAction="http://www.talisma.com/UpdatePropertyTab" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPropertiesTab">
+      <soap:operation soapAction="http://www.talisma.com/GetPropertiesTab" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRLTab">
+      <soap:operation soapAction="http://www.talisma.com/UpdateRLTab" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRLTab">
+      <soap:operation soapAction="http://www.talisma.com/GetRLTab" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLinkedTab">
+      <soap:operation soapAction="http://www.talisma.com/GetLinkedTab" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLinkedTabEx">
+      <soap:operation soapAction="http://www.talisma.com/GetLinkedTabEx" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAttachmentTab">
+      <soap:operation soapAction="http://www.talisma.com/GetAttachmentTab" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAttachmentTabEx">
+      <soap:operation soapAction="http://www.talisma.com/GetAttachmentTabEx" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAttachmentFile">
+      <soap:operation soapAction="http://www.talisma.com/GetAttachmentFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAttachmentFile">
+      <soap:operation soapAction="http://www.talisma.com/UpdateAttachmentFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAttachmentComments">
+      <soap:operation soapAction="http://www.talisma.com/UpdateAttachmentComments" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAttachment">
+      <soap:operation soapAction="http://www.talisma.com/DeleteAttachment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAttachmentTab">
+      <soap:operation soapAction="http://www.talisma.com/UpdateAttachmentTab" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCommentsTab">
+      <soap:operation soapAction="http://www.talisma.com/GetCommentsTab" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCommentsTab">
+      <soap:operation soapAction="http://www.talisma.com/UpdateCommentsTab" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddContactToAccounts">
+      <soap:operation soapAction="http://www.talisma.com/AddContactToAccounts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveContactFromAccount">
+      <soap:operation soapAction="http://www.talisma.com/RemoveContactFromAccount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Contact_x0020_Web_x0020_ServiceSoap12" type="tns:Contact_x0020_Web_x0020_ServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CreateContact">
+      <soap12:operation soapAction="http://www.talisma.com/CreateContact" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ResolveContact">
+      <soap12:operation soapAction="http://www.talisma.com/ResolveContact" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ResolveContactEx">
+      <soap12:operation soapAction="http://www.talisma.com/ResolveContactEx" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteContact">
+      <soap12:operation soapAction="http://www.talisma.com/DeleteContact" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteContacts">
+      <soap12:operation soapAction="http://www.talisma.com/DeleteContacts" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ContactLogon">
+      <soap12:operation soapAction="http://www.talisma.com/ContactLogon" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ContactLogoff">
+      <soap12:operation soapAction="http://www.talisma.com/ContactLogoff" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangeContactPortalPassword">
+      <soap12:operation soapAction="http://www.talisma.com/ChangeContactPortalPassword" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendPortalPassword">
+      <soap12:operation soapAction="http://www.talisma.com/SendPortalPassword" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegisterContactForPortal">
+      <soap12:operation soapAction="http://www.talisma.com/RegisterContactForPortal" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPortalConfigDetails">
+      <soap12:operation soapAction="http://www.talisma.com/GetPortalConfigDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePropertyTab">
+      <soap12:operation soapAction="http://www.talisma.com/UpdatePropertyTab" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPropertiesTab">
+      <soap12:operation soapAction="http://www.talisma.com/GetPropertiesTab" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRLTab">
+      <soap12:operation soapAction="http://www.talisma.com/UpdateRLTab" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRLTab">
+      <soap12:operation soapAction="http://www.talisma.com/GetRLTab" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLinkedTab">
+      <soap12:operation soapAction="http://www.talisma.com/GetLinkedTab" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLinkedTabEx">
+      <soap12:operation soapAction="http://www.talisma.com/GetLinkedTabEx" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAttachmentTab">
+      <soap12:operation soapAction="http://www.talisma.com/GetAttachmentTab" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAttachmentTabEx">
+      <soap12:operation soapAction="http://www.talisma.com/GetAttachmentTabEx" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAttachmentFile">
+      <soap12:operation soapAction="http://www.talisma.com/GetAttachmentFile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAttachmentFile">
+      <soap12:operation soapAction="http://www.talisma.com/UpdateAttachmentFile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAttachmentComments">
+      <soap12:operation soapAction="http://www.talisma.com/UpdateAttachmentComments" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAttachment">
+      <soap12:operation soapAction="http://www.talisma.com/DeleteAttachment" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAttachmentTab">
+      <soap12:operation soapAction="http://www.talisma.com/UpdateAttachmentTab" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCommentsTab">
+      <soap12:operation soapAction="http://www.talisma.com/GetCommentsTab" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCommentsTab">
+      <soap12:operation soapAction="http://www.talisma.com/UpdateCommentsTab" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddContactToAccounts">
+      <soap12:operation soapAction="http://www.talisma.com/AddContactToAccounts" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveContactFromAccount">
+      <soap12:operation soapAction="http://www.talisma.com/RemoveContactFromAccount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Contact_x0020_Web_x0020_Service">
+    <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Contact Web Service</wsdl:documentation>
+    <wsdl:port name="Contact_x0020_Web_x0020_ServiceSoap" binding="tns:Contact_x0020_Web_x0020_ServiceSoap">
+      <soap:address location="https://kgi-p-app-talisma-1-v089/contactiservice/contact.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Contact_x0020_Web_x0020_ServiceSoap12" binding="tns:Contact_x0020_Web_x0020_ServiceSoap12">
+      <soap12:address location="https://kgi-p-app-talisma-1-v089/contactiservice/contact.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="6f9e35a8-0d5d-4e22-92bf-5ed6b9a5c340" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://KGI-P-APP-BRIDGE-1-V126/GCIntegrationServices/GCCommon.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="GCCommon.xsd" MetadataType="Schema" ID="5319ecce-a475-4635-89b1-93c9e6956807" SourceId="1" SourceUrl="http://kgi-p-app-bridge-1-v126/GCIntegrationServices/GCCommon.svc?xsd=xsd2" />
+    <MetadataFile FileName="GCCommon.wsdl" MetadataType="Wsdl" ID="0da91692-b8d5-46cc-911f-3854df642651" SourceId="1" SourceUrl="http://kgi-p-app-bridge-1-v126/GCIntegrationServices/GCCommon.svc?wsdl" />
+    <MetadataFile FileName="GCCommon1.xsd" MetadataType="Schema" ID="4c59fcec-47e8-4287-95ee-bf91ee8f1fc5" SourceId="1" SourceUrl="http://kgi-p-app-bridge-1-v126/GCIntegrationServices/GCCommon.svc?xsd=xsd0" />
+    <MetadataFile FileName="GCCommon2.xsd" MetadataType="Schema" ID="ab308a49-36e3-4fe7-967a-a10025467387" SourceId="1" SourceUrl="http://kgi-p-app-bridge-1-v126/GCIntegrationServices/GCCommon.svc?xsd=xsd1" />
+    <MetadataFile FileName="GCCommon.disco" MetadataType="Disco" ID="763e033f-d1a8-4082-84f2-47973219024a" SourceId="1" SourceUrl="http://kgi-p-app-bridge-1-v126/GCIntegrationServices/GCCommon.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

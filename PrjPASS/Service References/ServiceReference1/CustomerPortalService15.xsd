@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://10.221.12.125/GCIntegrationServices/CustomerPortalService.svc?xsd=xsd1" namespace="http://schemas.datacontract.org/2004/07/GCCustomerPortalBL" />
+  <xs:import schemaLocation="http://10.221.12.125/GCIntegrationServices/CustomerPortalService.svc?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/ClaimEntities" />
+  <xs:import schemaLocation="http://10.221.12.125/GCIntegrationServices/CustomerPortalService.svc?xsd=xsd8" namespace="http://schemas.datacontract.org/2004/07/GCIntegrationServices.CMCDocsService" />
+  <xs:element name="SaveProposal">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strUserId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strPassword" nillable="true" type="xs:string" />
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/GCCustomerPortalBL" minOccurs="0" name="objServiceResult" nillable="true" type="q1:ServiceResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveProposalResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/GCCustomerPortalBL" minOccurs="0" name="objServiceResult" nillable="true" type="q2:ServiceResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CalculatePremium">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strUserId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strPassword" nillable="true" type="xs:string" />
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/GCCustomerPortalBL" minOccurs="0" name="objServiceResult" nillable="true" type="q3:ServiceResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CalculatePremiumResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/GCCustomerPortalBL" minOccurs="0" name="objServiceResult" nillable="true" type="q4:ServiceResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PaymentEntry">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strUserId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strPassword" nillable="true" type="xs:string" />
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/GCCustomerPortalBL" minOccurs="0" name="objServiceResult" nillable="true" type="q5:ServiceResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PaymentEntryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/GCCustomerPortalBL" minOccurs="0" name="objServiceResult" nillable="true" type="q6:ServiceResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PaymentAllocation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strUserId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strPassword" nillable="true" type="xs:string" />
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/GCCustomerPortalBL" minOccurs="0" name="objServiceResult" nillable="true" type="q7:ServiceResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PaymentAllocationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/GCCustomerPortalBL" minOccurs="0" name="objServiceResult" nillable="true" type="q8:ServiceResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PaymentTagging">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strUserId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strPassword" nillable="true" type="xs:string" />
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/GCCustomerPortalBL" minOccurs="0" name="objServiceResult" nillable="true" type="q9:ServiceResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PaymentTaggingResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/GCCustomerPortalBL" minOccurs="0" name="objServiceResult" nillable="true" type="q10:ServiceResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FetchProposal">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strUserId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strPassword" nillable="true" type="xs:string" />
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/GCCustomerPortalBL" minOccurs="0" name="objServiceResult" nillable="true" type="q11:ServiceResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FetchProposalResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="FetchProposalResult" nillable="true" type="xs:string" />
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/GCCustomerPortalBL" minOccurs="0" name="objServiceResult" nillable="true" type="q12:ServiceResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ClaimSaveRegistration">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strUserId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strPassword" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="WebSessionID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SessionID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TransactionID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TransactionDateTime" nillable="true" type="xs:string" />
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/ClaimEntities" minOccurs="0" name="objServiceResult" nillable="true" type="q13:CUD_Registration" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ClaimSaveRegistrationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/ClaimEntities" minOccurs="0" name="ClaimSaveRegistrationResult" nillable="true" type="q14:CUD_Registration" />
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/ClaimEntities" minOccurs="0" name="objServiceResult" nillable="true" type="q15:CUD_Registration" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ClaimSaveWorkshop">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strUserId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strPassword" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ClaimNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TransId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SessionId" nillable="true" type="xs:string" />
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/ClaimEntities" minOccurs="0" name="ObjWorkshop" nillable="true" type="q16:ArrayOfGDt_RepairerDetails" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ClaimSaveWorkshopResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ClaimSaveWorkshopResult" nillable="true" type="xs:string" />
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/ClaimEntities" minOccurs="0" name="ObjWorkshop" nillable="true" type="q17:ArrayOfGDt_RepairerDetails" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ClaimSaveAssessmentSheet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strUserId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strPassword" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ClaimNo" nillable="true" type="xs:string" />
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/ClaimEntities" minOccurs="0" name="objServiceResult" nillable="true" type="q18:ClaimServiceResult_SurveyorDataEntry" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ClaimSaveAssessmentSheetResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ClaimSaveAssessmentSheetResult" nillable="true" type="xs:string" />
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/ClaimEntities" minOccurs="0" name="objServiceResult" nillable="true" type="q19:ClaimServiceResult_SurveyorDataEntry" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ClaimAdjusterAppointment">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strUserId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strPassword" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ClaimNo" nillable="true" type="xs:string" />
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/ClaimEntities" minOccurs="0" name="objServiceResult" nillable="true" type="q20:ClaimServiceResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ClaimAdjusterAppointmentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ClaimAdjusterAppointmentResult" nillable="true" type="xs:string" />
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/ClaimEntities" minOccurs="0" name="objServiceResult" nillable="true" type="q21:ClaimServiceResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ClaimPopulateWorkshop">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strUserId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strPassword" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ClaimNo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ClaimPopulateWorkshopResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/ClaimEntities" minOccurs="0" name="ClaimPopulateWorkshopResult" nillable="true" type="q22:ArrayOfGDt_RepairerDetails" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ClaimPopulateAssessmentSheet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strUserId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strPassword" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ClaimNo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ClaimPopulateAssessmentSheetResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/ClaimEntities" minOccurs="0" name="ClaimPopulateAssessmentSheetResult" nillable="true" type="q23:ClaimServiceResult_SurveyorDataEntry" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ClaimPopulateAdjusterAppointment">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strUserId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strPassword" nillable="true" type="xs:string" />
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/ClaimEntities" minOccurs="0" name="objAdjusterAppointment" nillable="true" type="q24:ClaimServiceResult_AdjusterAppointment" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ClaimPopulateAdjusterAppointmentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/ClaimEntities" minOccurs="0" name="ClaimPopulateAdjusterAppointmentResult" nillable="true" type="q25:ClaimServiceResult_AdjusterAppointment" />
+        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/ClaimEntities" minOccurs="0" name="objAdjusterAppointment" nillable="true" type="q26:ClaimServiceResult_AdjusterAppointment" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ClaimPopulateRegistration">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strUserId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strPassword" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ClaimNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strMotorClaimType" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ClaimPopulateRegistrationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/ClaimEntities" minOccurs="0" name="ClaimPopulateRegistrationResult" nillable="true" type="q27:CUD_Registration" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ClaimPopulateIntimation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strUserId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strPassword" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ClaimNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strLOBCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ClaimPopulateIntimationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/ClaimEntities" minOccurs="0" name="ClaimPopulateIntimationResult" nillable="true" type="q28:CUD_Registration" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ClaimServiceUpdateDriverDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strUserId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strPassword" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ClaimNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TransId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SessionId" nillable="true" type="xs:string" />
+        <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/ClaimEntities" minOccurs="0" name="ObjDriverDetails" nillable="true" type="q29:DriverDetails" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ClaimServiceUpdateDriverDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ClaimServiceUpdateDriverDetailsResult" nillable="true" type="xs:string" />
+        <xs:element xmlns:q30="http://schemas.datacontract.org/2004/07/ClaimEntities" minOccurs="0" name="ObjDriverDetails" nillable="true" type="q30:DriverDetails" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ClaimServiceSaveReportSubmission">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strUserId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strPassword" nillable="true" type="xs:string" />
+        <xs:element xmlns:q31="http://schemas.datacontract.org/2004/07/ClaimEntities" minOccurs="0" name="ObjReportSubmission" nillable="true" type="q31:ClaimServiceResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ClaimServiceSaveReportSubmissionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ClaimServiceSaveReportSubmissionResult" nillable="true" type="xs:string" />
+        <xs:element xmlns:q32="http://schemas.datacontract.org/2004/07/ClaimEntities" minOccurs="0" name="ObjReportSubmission" nillable="true" type="q32:ClaimServiceResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ClaimServiceGetNote">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strUserId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strPassword" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ClaimNo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ClaimServiceGetNoteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q33="http://schemas.datacontract.org/2004/07/ClaimEntities" minOccurs="0" name="ClaimServiceGetNoteResult" nillable="true" type="q33:CUD_Note" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ClaimServiceSaveNote">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strUserId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strPassword" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ClaimNo" nillable="true" type="xs:string" />
+        <xs:element xmlns:q34="http://schemas.datacontract.org/2004/07/ClaimEntities" minOccurs="0" name="ObjClaimNote" nillable="true" type="q34:CUD_Note" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ClaimServiceSaveNoteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ClaimServiceSaveNoteResult" nillable="true" type="xs:string" />
+        <xs:element xmlns:q35="http://schemas.datacontract.org/2004/07/ClaimEntities" minOccurs="0" name="ObjClaimNote" nillable="true" type="q35:CUD_Note" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddCustomer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strUserId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strPassword" nillable="true" type="xs:string" />
+        <xs:element xmlns:q36="http://schemas.datacontract.org/2004/07/GCCustomerPortalBL" minOccurs="0" name="objServiceResult" nillable="true" type="q36:ServiceResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddCustomerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q37="http://schemas.datacontract.org/2004/07/GCCustomerPortalBL" minOccurs="0" name="objServiceResult" nillable="true" type="q37:ServiceResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ViewCustomer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strUserId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strPassword" nillable="true" type="xs:string" />
+        <xs:element xmlns:q38="http://schemas.datacontract.org/2004/07/GCCustomerPortalBL" minOccurs="0" name="objServiceResult" nillable="true" type="q38:ServiceResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ViewCustomerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q39="http://schemas.datacontract.org/2004/07/GCCustomerPortalBL" minOccurs="0" name="objServiceResult" nillable="true" type="q39:ServiceResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EditCustomer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strUserId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strPassword" nillable="true" type="xs:string" />
+        <xs:element xmlns:q40="http://schemas.datacontract.org/2004/07/GCCustomerPortalBL" minOccurs="0" name="objServiceResult" nillable="true" type="q40:ServiceResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EditCustomerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q41="http://schemas.datacontract.org/2004/07/GCCustomerPortalBL" minOccurs="0" name="objServiceResult" nillable="true" type="q41:ServiceResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HealthMemberAdd">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strUserId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strPassword" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strMemberFirstname" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strMemberLastName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HealthMemberAddResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="HealthMemberAddResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateDocumentDMS">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="InwardId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ApplicationNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CustomerId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DocumentUniqNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="PolicyNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ClaimNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Source" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FileName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="requestedByte" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="DocumentType" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateDocumentDMSResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CreateDocumentDMSResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SearchDocumentDMS">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="InwardId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ApplicationNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CustomerId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DocumentUniqNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="PolicyNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ClaimNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DocumentType" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SearchDocumentDMSResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q42="http://schemas.datacontract.org/2004/07/GCIntegrationServices.CMCDocsService" minOccurs="0" name="SearchDocumentDMSResult" nillable="true" type="q42:ArrayOfImagePath" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ViewDocumentDMS">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Filename" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FilePath" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ViewDocumentDMSResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q43="http://schemas.datacontract.org/2004/07/GCIntegrationServices.CMCDocsService" minOccurs="0" name="ViewDocumentDMSResult" nillable="true" type="q43:ArrayOfImagePathDMS" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPolicyDocumentForPortal">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strUserId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strPassword" nillable="true" type="xs:string" />
+        <xs:element xmlns:q44="http://schemas.datacontract.org/2004/07/GCCustomerPortalBL" minOccurs="0" name="objServiceResult" nillable="true" type="q44:ServiceResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPolicyDocumentForPortalResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetPolicyDocumentForPortalResult" nillable="true" type="xs:base64Binary" />
+        <xs:element xmlns:q45="http://schemas.datacontract.org/2004/07/GCCustomerPortalBL" minOccurs="0" name="objServiceResult" nillable="true" type="q45:ServiceResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SearchDataInwardId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="InwardId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SearchDataInwardIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SearchDataInwardIdResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SearchDocumentDMSDocType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="InwardId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ApplicationNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CustomerId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DocumentUniqNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="PolicyNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ClaimNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DocumentType" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SearchDocumentDMSDocTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q46="http://schemas.datacontract.org/2004/07/GCIntegrationServices.CMCDocsService" minOccurs="0" name="SearchDocumentDMSDocTypeResult" nillable="true" type="q46:ArrayOfImagePathDMSSearch" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCreditScore">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strUserId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strPassword" nillable="true" type="xs:string" />
+        <xs:element xmlns:q47="http://schemas.datacontract.org/2004/07/GCCustomerPortalBL" minOccurs="0" name="objServiceResult" nillable="true" type="q47:ServiceResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCreditScoreResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q48="http://schemas.datacontract.org/2004/07/GCCustomerPortalBL" minOccurs="0" name="objServiceResult" nillable="true" type="q48:ServiceResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPeerlessResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strUserId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strPassword" nillable="true" type="xs:string" />
+        <xs:element xmlns:q49="http://schemas.datacontract.org/2004/07/GCCustomerPortalBL" minOccurs="0" name="objServiceResult" nillable="true" type="q49:ServiceResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPeerlessResponseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q50="http://schemas.datacontract.org/2004/07/GCCustomerPortalBL" minOccurs="0" name="objServiceResult" nillable="true" type="q50:ServiceResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPolicyScheduleForPortal">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strUserId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strPassword" nillable="true" type="xs:string" />
+        <xs:element xmlns:q51="http://schemas.datacontract.org/2004/07/GCCustomerPortalBL" minOccurs="0" name="objServiceResult" nillable="true" type="q51:ServiceResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPolicyScheduleForPortalResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetPolicyScheduleForPortalResult" nillable="true" type="xs:base64Binary" />
+        <xs:element xmlns:q52="http://schemas.datacontract.org/2004/07/GCCustomerPortalBL" minOccurs="0" name="objServiceResult" nillable="true" type="q52:ServiceResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DigitalPayPropAllInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strUserId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strPassword" nillable="true" type="xs:string" />
+        <xs:element xmlns:q53="http://schemas.datacontract.org/2004/07/GCCustomerPortalBL" minOccurs="0" name="objServiceResult" nillable="true" type="q53:ServiceResult" />
+        <xs:element minOccurs="0" name="strProposalNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strIntrID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DigitalPayPropAllInfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q54="http://schemas.datacontract.org/2004/07/GCCustomerPortalBL" minOccurs="0" name="objServiceResult" nillable="true" type="q54:ServiceResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

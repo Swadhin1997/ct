@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="6cfc31a3-33c8-419c-8d5a-1a02f0675c1e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://10.221.12.125/GCIntegrationServices/CustomerPortalService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CustomerPortalService12.xsd" MetadataType="Schema" ID="44cce68f-e507-4a8e-8145-5079442e55b9" SourceId="1" SourceUrl="http://10.221.12.125/GCIntegrationServices/CustomerPortalService.svc?xsd=xsd0" />
+    <MetadataFile FileName="CustomerPortalService13.xsd" MetadataType="Schema" ID="34c4c443-14a4-431f-bc26-2e4efa28e03f" SourceId="1" SourceUrl="http://10.221.12.125/GCIntegrationServices/CustomerPortalService.svc?xsd=xsd3" />
+    <MetadataFile FileName="CustomerPortalService14.xsd" MetadataType="Schema" ID="d39f0cfc-0fa6-439b-9550-7484e8edd5c6" SourceId="1" SourceUrl="http://10.221.12.125/GCIntegrationServices/CustomerPortalService.svc?xsd=xsd2" />
+    <MetadataFile FileName="CustomerPortalService15.xsd" MetadataType="Schema" ID="5d6ef94e-2f05-4ffd-a2f6-9b35c83544fb" SourceId="1" SourceUrl="http://10.221.12.125/GCIntegrationServices/CustomerPortalService.svc?xsd=xsd5" />
+    <MetadataFile FileName="CustomerPortalService16.xsd" MetadataType="Schema" ID="4e8c13ad-cf78-4121-8183-b75b6f37196f" SourceId="1" SourceUrl="http://10.221.12.125/GCIntegrationServices/CustomerPortalService.svc?xsd=xsd4" />
+    <MetadataFile FileName="CustomerPortalService17.xsd" MetadataType="Schema" ID="bf0584f1-5eea-4e6c-8791-4ca8e7c60506" SourceId="1" SourceUrl="http://10.221.12.125/GCIntegrationServices/CustomerPortalService.svc?xsd=xsd7" />
+    <MetadataFile FileName="CustomerPortalService18.xsd" MetadataType="Schema" ID="25be5180-014a-4f4a-8ca2-2c583c8fe44e" SourceId="1" SourceUrl="http://10.221.12.125/GCIntegrationServices/CustomerPortalService.svc?xsd=xsd6" />
+    <MetadataFile FileName="CustomerPortalService2.disco" MetadataType="Disco" ID="88f034e8-1be4-46d0-99a9-b88c097b96bf" SourceId="1" SourceUrl="http://10.221.12.125/GCIntegrationServices/CustomerPortalService.svc?disco" />
+    <MetadataFile FileName="CustomerPortalService19.xsd" MetadataType="Schema" ID="fac72b00-d3eb-4897-b5ae-bfd86c4357e1" SourceId="1" SourceUrl="http://10.221.12.125/GCIntegrationServices/CustomerPortalService.svc?xsd=xsd10" />
+    <MetadataFile FileName="CustomerPortalService2.wsdl" MetadataType="Wsdl" ID="e6199928-507a-4359-9132-e9fd0037d563" SourceId="1" SourceUrl="http://10.221.12.125/GCIntegrationServices/CustomerPortalService.svc?wsdl" />
+    <MetadataFile FileName="CustomerPortalService20.xsd" MetadataType="Schema" ID="cc7035f3-3dd9-4e3f-af52-b1c6fdbfca39" SourceId="1" SourceUrl="http://10.221.12.125/GCIntegrationServices/CustomerPortalService.svc?xsd=xsd8" />
+    <MetadataFile FileName="CustomerPortalService21.xsd" MetadataType="Schema" ID="f1fd140c-3772-4b9e-b80b-64e47962c92f" SourceId="1" SourceUrl="http://10.221.12.125/GCIntegrationServices/CustomerPortalService.svc?xsd=xsd9" />
+    <MetadataFile FileName="CustomerPortalService22.xsd" MetadataType="Schema" ID="3300c740-0a6f-4f13-ae60-bef513faedd8" SourceId="1" SourceUrl="http://10.221.12.125/GCIntegrationServices/CustomerPortalService.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

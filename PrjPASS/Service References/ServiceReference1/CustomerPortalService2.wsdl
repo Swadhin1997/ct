@@ -1,0 +1,984 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="CustomerPortalService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="webEndPoint2_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <sp:HttpsToken RequireClientCertificate="false" />
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict />
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://10.221.12.125/GCIntegrationServices/CustomerPortalService.svc?xsd=xsd5" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://10.221.12.125/GCIntegrationServices/CustomerPortalService.svc?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://10.221.12.125/GCIntegrationServices/CustomerPortalService.svc?xsd=xsd1" namespace="http://schemas.datacontract.org/2004/07/GCCustomerPortalBL" />
+      <xsd:import schemaLocation="http://10.221.12.125/GCIntegrationServices/CustomerPortalService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/System.Text" />
+      <xsd:import schemaLocation="http://10.221.12.125/GCIntegrationServices/CustomerPortalService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/DbUtility" />
+      <xsd:import schemaLocation="http://10.221.12.125/GCIntegrationServices/CustomerPortalService.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://10.221.12.125/GCIntegrationServices/CustomerPortalService.svc?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/ClaimEntities" />
+      <xsd:import schemaLocation="http://10.221.12.125/GCIntegrationServices/CustomerPortalService.svc?xsd=xsd7" namespace="http://schemas.datacontract.org/2004/07/ClaimServiceBL" />
+      <xsd:import schemaLocation="http://10.221.12.125/GCIntegrationServices/CustomerPortalService.svc?xsd=xsd8" namespace="http://schemas.datacontract.org/2004/07/GCIntegrationServices.CMCDocsService" />
+      <xsd:import schemaLocation="http://10.221.12.125/GCIntegrationServices/CustomerPortalService.svc?xsd=xsd9" namespace="http://schemas.datacontract.org/2004/07/System.ComponentModel" />
+      <xsd:import schemaLocation="http://10.221.12.125/GCIntegrationServices/CustomerPortalService.svc?xsd=xsd10" namespace="http://schemas.datacontract.org/2004/07/System" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ICustomerPortalService_SaveProposal_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveProposal" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_SaveProposal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveProposalResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_CalculatePremium_InputMessage">
+    <wsdl:part name="parameters" element="tns:CalculatePremium" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_CalculatePremium_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CalculatePremiumResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_PaymentEntry_InputMessage">
+    <wsdl:part name="parameters" element="tns:PaymentEntry" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_PaymentEntry_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PaymentEntryResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_PaymentAllocation_InputMessage">
+    <wsdl:part name="parameters" element="tns:PaymentAllocation" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_PaymentAllocation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PaymentAllocationResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_PaymentTagging_InputMessage">
+    <wsdl:part name="parameters" element="tns:PaymentTagging" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_PaymentTagging_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PaymentTaggingResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_FetchProposal_InputMessage">
+    <wsdl:part name="parameters" element="tns:FetchProposal" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_FetchProposal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FetchProposalResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_ClaimSaveRegistration_InputMessage">
+    <wsdl:part name="parameters" element="tns:ClaimSaveRegistration" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_ClaimSaveRegistration_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ClaimSaveRegistrationResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_ClaimSaveWorkshop_InputMessage">
+    <wsdl:part name="parameters" element="tns:ClaimSaveWorkshop" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_ClaimSaveWorkshop_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ClaimSaveWorkshopResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_ClaimSaveAssessmentSheet_InputMessage">
+    <wsdl:part name="parameters" element="tns:ClaimSaveAssessmentSheet" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_ClaimSaveAssessmentSheet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ClaimSaveAssessmentSheetResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_ClaimAdjusterAppointment_InputMessage">
+    <wsdl:part name="parameters" element="tns:ClaimAdjusterAppointment" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_ClaimAdjusterAppointment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ClaimAdjusterAppointmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_ClaimPopulateWorkshop_InputMessage">
+    <wsdl:part name="parameters" element="tns:ClaimPopulateWorkshop" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_ClaimPopulateWorkshop_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ClaimPopulateWorkshopResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_ClaimPopulateAssessmentSheet_InputMessage">
+    <wsdl:part name="parameters" element="tns:ClaimPopulateAssessmentSheet" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_ClaimPopulateAssessmentSheet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ClaimPopulateAssessmentSheetResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_ClaimPopulateAdjusterAppointment_InputMessage">
+    <wsdl:part name="parameters" element="tns:ClaimPopulateAdjusterAppointment" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_ClaimPopulateAdjusterAppointment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ClaimPopulateAdjusterAppointmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_ClaimPopulateRegistration_InputMessage">
+    <wsdl:part name="parameters" element="tns:ClaimPopulateRegistration" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_ClaimPopulateRegistration_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ClaimPopulateRegistrationResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_ClaimPopulateIntimation_InputMessage">
+    <wsdl:part name="parameters" element="tns:ClaimPopulateIntimation" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_ClaimPopulateIntimation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ClaimPopulateIntimationResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_ClaimServiceUpdateDriverDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:ClaimServiceUpdateDriverDetails" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_ClaimServiceUpdateDriverDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ClaimServiceUpdateDriverDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_ClaimServiceSaveReportSubmission_InputMessage">
+    <wsdl:part name="parameters" element="tns:ClaimServiceSaveReportSubmission" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_ClaimServiceSaveReportSubmission_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ClaimServiceSaveReportSubmissionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_ClaimServiceGetNote_InputMessage">
+    <wsdl:part name="parameters" element="tns:ClaimServiceGetNote" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_ClaimServiceGetNote_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ClaimServiceGetNoteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_ClaimServiceSaveNote_InputMessage">
+    <wsdl:part name="parameters" element="tns:ClaimServiceSaveNote" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_ClaimServiceSaveNote_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ClaimServiceSaveNoteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_AddCustomer_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddCustomer" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_AddCustomer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddCustomerResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_ViewCustomer_InputMessage">
+    <wsdl:part name="parameters" element="tns:ViewCustomer" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_ViewCustomer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ViewCustomerResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_EditCustomer_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditCustomer" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_EditCustomer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditCustomerResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_HealthMemberAdd_InputMessage">
+    <wsdl:part name="parameters" element="tns:HealthMemberAdd" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_HealthMemberAdd_OutputMessage">
+    <wsdl:part name="parameters" element="tns:HealthMemberAddResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_CreateDocumentDMS_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateDocumentDMS" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_CreateDocumentDMS_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateDocumentDMSResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_SearchDocumentDMS_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchDocumentDMS" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_SearchDocumentDMS_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchDocumentDMSResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_ViewDocumentDMS_InputMessage">
+    <wsdl:part name="parameters" element="tns:ViewDocumentDMS" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_ViewDocumentDMS_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ViewDocumentDMSResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_GetPolicyDocumentForPortal_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPolicyDocumentForPortal" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_GetPolicyDocumentForPortal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPolicyDocumentForPortalResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_SearchDataInwardId_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchDataInwardId" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_SearchDataInwardId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchDataInwardIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_SearchDocumentDMSDocType_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchDocumentDMSDocType" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_SearchDocumentDMSDocType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchDocumentDMSDocTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_GetCreditScore_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCreditScore" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_GetCreditScore_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCreditScoreResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_GetPeerlessResponse_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPeerlessResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_GetPeerlessResponse_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPeerlessResponseResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_GetPolicyScheduleForPortal_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPolicyScheduleForPortal" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_GetPolicyScheduleForPortal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPolicyScheduleForPortalResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_DigitalPayPropAllInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:DigitalPayPropAllInfo" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerPortalService_DigitalPayPropAllInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DigitalPayPropAllInfoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ICustomerPortalService">
+    <wsdl:operation name="SaveProposal">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICustomerPortalService/SaveProposal" message="tns:ICustomerPortalService_SaveProposal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICustomerPortalService/SaveProposalResponse" message="tns:ICustomerPortalService_SaveProposal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CalculatePremium">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICustomerPortalService/CalculatePremium" message="tns:ICustomerPortalService_CalculatePremium_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICustomerPortalService/CalculatePremiumResponse" message="tns:ICustomerPortalService_CalculatePremium_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PaymentEntry">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICustomerPortalService/PaymentEntry" message="tns:ICustomerPortalService_PaymentEntry_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICustomerPortalService/PaymentEntryResponse" message="tns:ICustomerPortalService_PaymentEntry_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PaymentAllocation">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICustomerPortalService/PaymentAllocation" message="tns:ICustomerPortalService_PaymentAllocation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICustomerPortalService/PaymentAllocationResponse" message="tns:ICustomerPortalService_PaymentAllocation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PaymentTagging">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICustomerPortalService/PaymentTagging" message="tns:ICustomerPortalService_PaymentTagging_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICustomerPortalService/PaymentTaggingResponse" message="tns:ICustomerPortalService_PaymentTagging_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FetchProposal">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICustomerPortalService/FetchProposal" message="tns:ICustomerPortalService_FetchProposal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICustomerPortalService/FetchProposalResponse" message="tns:ICustomerPortalService_FetchProposal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ClaimSaveRegistration">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICustomerPortalService/ClaimSaveRegistration" message="tns:ICustomerPortalService_ClaimSaveRegistration_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICustomerPortalService/ClaimSaveRegistrationResponse" message="tns:ICustomerPortalService_ClaimSaveRegistration_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ClaimSaveWorkshop">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICustomerPortalService/ClaimSaveWorkshop" message="tns:ICustomerPortalService_ClaimSaveWorkshop_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICustomerPortalService/ClaimSaveWorkshopResponse" message="tns:ICustomerPortalService_ClaimSaveWorkshop_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ClaimSaveAssessmentSheet">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICustomerPortalService/ClaimSaveAssessmentSheet" message="tns:ICustomerPortalService_ClaimSaveAssessmentSheet_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICustomerPortalService/ClaimSaveAssessmentSheetResponse" message="tns:ICustomerPortalService_ClaimSaveAssessmentSheet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ClaimAdjusterAppointment">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICustomerPortalService/ClaimAdjusterAppointment" message="tns:ICustomerPortalService_ClaimAdjusterAppointment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICustomerPortalService/ClaimAdjusterAppointmentResponse" message="tns:ICustomerPortalService_ClaimAdjusterAppointment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ClaimPopulateWorkshop">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICustomerPortalService/ClaimPopulateWorkshop" message="tns:ICustomerPortalService_ClaimPopulateWorkshop_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICustomerPortalService/ClaimPopulateWorkshopResponse" message="tns:ICustomerPortalService_ClaimPopulateWorkshop_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ClaimPopulateAssessmentSheet">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICustomerPortalService/ClaimPopulateAssessmentSheet" message="tns:ICustomerPortalService_ClaimPopulateAssessmentSheet_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICustomerPortalService/ClaimPopulateAssessmentSheetResponse" message="tns:ICustomerPortalService_ClaimPopulateAssessmentSheet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ClaimPopulateAdjusterAppointment">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICustomerPortalService/ClaimPopulateAdjusterAppointment" message="tns:ICustomerPortalService_ClaimPopulateAdjusterAppointment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICustomerPortalService/ClaimPopulateAdjusterAppointmentResponse" message="tns:ICustomerPortalService_ClaimPopulateAdjusterAppointment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ClaimPopulateRegistration">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICustomerPortalService/ClaimPopulateRegistration" message="tns:ICustomerPortalService_ClaimPopulateRegistration_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICustomerPortalService/ClaimPopulateRegistrationResponse" message="tns:ICustomerPortalService_ClaimPopulateRegistration_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ClaimPopulateIntimation">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICustomerPortalService/ClaimPopulateIntimation" message="tns:ICustomerPortalService_ClaimPopulateIntimation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICustomerPortalService/ClaimPopulateIntimationResponse" message="tns:ICustomerPortalService_ClaimPopulateIntimation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ClaimServiceUpdateDriverDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICustomerPortalService/ClaimServiceUpdateDriverDetails" message="tns:ICustomerPortalService_ClaimServiceUpdateDriverDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICustomerPortalService/ClaimServiceUpdateDriverDetailsResponse" message="tns:ICustomerPortalService_ClaimServiceUpdateDriverDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ClaimServiceSaveReportSubmission">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICustomerPortalService/ClaimServiceSaveReportSubmission" message="tns:ICustomerPortalService_ClaimServiceSaveReportSubmission_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICustomerPortalService/ClaimServiceSaveReportSubmissionResponse" message="tns:ICustomerPortalService_ClaimServiceSaveReportSubmission_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ClaimServiceGetNote">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICustomerPortalService/ClaimServiceGetNote" message="tns:ICustomerPortalService_ClaimServiceGetNote_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICustomerPortalService/ClaimServiceGetNoteResponse" message="tns:ICustomerPortalService_ClaimServiceGetNote_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ClaimServiceSaveNote">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICustomerPortalService/ClaimServiceSaveNote" message="tns:ICustomerPortalService_ClaimServiceSaveNote_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICustomerPortalService/ClaimServiceSaveNoteResponse" message="tns:ICustomerPortalService_ClaimServiceSaveNote_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddCustomer">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICustomerPortalService/AddCustomer" message="tns:ICustomerPortalService_AddCustomer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICustomerPortalService/AddCustomerResponse" message="tns:ICustomerPortalService_AddCustomer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ViewCustomer">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICustomerPortalService/ViewCustomer" message="tns:ICustomerPortalService_ViewCustomer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICustomerPortalService/ViewCustomerResponse" message="tns:ICustomerPortalService_ViewCustomer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditCustomer">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICustomerPortalService/EditCustomer" message="tns:ICustomerPortalService_EditCustomer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICustomerPortalService/EditCustomerResponse" message="tns:ICustomerPortalService_EditCustomer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="HealthMemberAdd">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICustomerPortalService/HealthMemberAdd" message="tns:ICustomerPortalService_HealthMemberAdd_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICustomerPortalService/HealthMemberAddResponse" message="tns:ICustomerPortalService_HealthMemberAdd_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateDocumentDMS">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICustomerPortalService/CreateDocumentDMS" message="tns:ICustomerPortalService_CreateDocumentDMS_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICustomerPortalService/CreateDocumentDMSResponse" message="tns:ICustomerPortalService_CreateDocumentDMS_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchDocumentDMS">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICustomerPortalService/SearchDocumentDMS" message="tns:ICustomerPortalService_SearchDocumentDMS_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICustomerPortalService/SearchDocumentDMSResponse" message="tns:ICustomerPortalService_SearchDocumentDMS_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ViewDocumentDMS">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICustomerPortalService/ViewDocumentDMS" message="tns:ICustomerPortalService_ViewDocumentDMS_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICustomerPortalService/ViewDocumentDMSResponse" message="tns:ICustomerPortalService_ViewDocumentDMS_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPolicyDocumentForPortal">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICustomerPortalService/GetPolicyDocumentForPortal" message="tns:ICustomerPortalService_GetPolicyDocumentForPortal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICustomerPortalService/GetPolicyDocumentForPortalResponse" message="tns:ICustomerPortalService_GetPolicyDocumentForPortal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchDataInwardId">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICustomerPortalService/SearchDataInwardId" message="tns:ICustomerPortalService_SearchDataInwardId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICustomerPortalService/SearchDataInwardIdResponse" message="tns:ICustomerPortalService_SearchDataInwardId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchDocumentDMSDocType">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICustomerPortalService/SearchDocumentDMSDocType" message="tns:ICustomerPortalService_SearchDocumentDMSDocType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICustomerPortalService/SearchDocumentDMSDocTypeResponse" message="tns:ICustomerPortalService_SearchDocumentDMSDocType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCreditScore">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICustomerPortalService/GetCreditScore" message="tns:ICustomerPortalService_GetCreditScore_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICustomerPortalService/GetCreditScoreResponse" message="tns:ICustomerPortalService_GetCreditScore_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPeerlessResponse">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICustomerPortalService/GetPeerlessResponse" message="tns:ICustomerPortalService_GetPeerlessResponse_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICustomerPortalService/GetPeerlessResponseResponse" message="tns:ICustomerPortalService_GetPeerlessResponse_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPolicyScheduleForPortal">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICustomerPortalService/GetPolicyScheduleForPortal" message="tns:ICustomerPortalService_GetPolicyScheduleForPortal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICustomerPortalService/GetPolicyScheduleForPortalResponse" message="tns:ICustomerPortalService_GetPolicyScheduleForPortal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DigitalPayPropAllInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICustomerPortalService/DigitalPayPropAllInfo" message="tns:ICustomerPortalService_DigitalPayPropAllInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICustomerPortalService/DigitalPayPropAllInfoResponse" message="tns:ICustomerPortalService_DigitalPayPropAllInfo_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="webEndPoint1" type="tns:ICustomerPortalService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SaveProposal">
+      <soap:operation soapAction="http://tempuri.org/ICustomerPortalService/SaveProposal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CalculatePremium">
+      <soap:operation soapAction="http://tempuri.org/ICustomerPortalService/CalculatePremium" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PaymentEntry">
+      <soap:operation soapAction="http://tempuri.org/ICustomerPortalService/PaymentEntry" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PaymentAllocation">
+      <soap:operation soapAction="http://tempuri.org/ICustomerPortalService/PaymentAllocation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PaymentTagging">
+      <soap:operation soapAction="http://tempuri.org/ICustomerPortalService/PaymentTagging" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FetchProposal">
+      <soap:operation soapAction="http://tempuri.org/ICustomerPortalService/FetchProposal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClaimSaveRegistration">
+      <soap:operation soapAction="http://tempuri.org/ICustomerPortalService/ClaimSaveRegistration" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClaimSaveWorkshop">
+      <soap:operation soapAction="http://tempuri.org/ICustomerPortalService/ClaimSaveWorkshop" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClaimSaveAssessmentSheet">
+      <soap:operation soapAction="http://tempuri.org/ICustomerPortalService/ClaimSaveAssessmentSheet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClaimAdjusterAppointment">
+      <soap:operation soapAction="http://tempuri.org/ICustomerPortalService/ClaimAdjusterAppointment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClaimPopulateWorkshop">
+      <soap:operation soapAction="http://tempuri.org/ICustomerPortalService/ClaimPopulateWorkshop" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClaimPopulateAssessmentSheet">
+      <soap:operation soapAction="http://tempuri.org/ICustomerPortalService/ClaimPopulateAssessmentSheet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClaimPopulateAdjusterAppointment">
+      <soap:operation soapAction="http://tempuri.org/ICustomerPortalService/ClaimPopulateAdjusterAppointment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClaimPopulateRegistration">
+      <soap:operation soapAction="http://tempuri.org/ICustomerPortalService/ClaimPopulateRegistration" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClaimPopulateIntimation">
+      <soap:operation soapAction="http://tempuri.org/ICustomerPortalService/ClaimPopulateIntimation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClaimServiceUpdateDriverDetails">
+      <soap:operation soapAction="http://tempuri.org/ICustomerPortalService/ClaimServiceUpdateDriverDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClaimServiceSaveReportSubmission">
+      <soap:operation soapAction="http://tempuri.org/ICustomerPortalService/ClaimServiceSaveReportSubmission" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClaimServiceGetNote">
+      <soap:operation soapAction="http://tempuri.org/ICustomerPortalService/ClaimServiceGetNote" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClaimServiceSaveNote">
+      <soap:operation soapAction="http://tempuri.org/ICustomerPortalService/ClaimServiceSaveNote" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddCustomer">
+      <soap:operation soapAction="http://tempuri.org/ICustomerPortalService/AddCustomer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ViewCustomer">
+      <soap:operation soapAction="http://tempuri.org/ICustomerPortalService/ViewCustomer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditCustomer">
+      <soap:operation soapAction="http://tempuri.org/ICustomerPortalService/EditCustomer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HealthMemberAdd">
+      <soap:operation soapAction="http://tempuri.org/ICustomerPortalService/HealthMemberAdd" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateDocumentDMS">
+      <soap:operation soapAction="http://tempuri.org/ICustomerPortalService/CreateDocumentDMS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchDocumentDMS">
+      <soap:operation soapAction="http://tempuri.org/ICustomerPortalService/SearchDocumentDMS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ViewDocumentDMS">
+      <soap:operation soapAction="http://tempuri.org/ICustomerPortalService/ViewDocumentDMS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPolicyDocumentForPortal">
+      <soap:operation soapAction="http://tempuri.org/ICustomerPortalService/GetPolicyDocumentForPortal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchDataInwardId">
+      <soap:operation soapAction="http://tempuri.org/ICustomerPortalService/SearchDataInwardId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchDocumentDMSDocType">
+      <soap:operation soapAction="http://tempuri.org/ICustomerPortalService/SearchDocumentDMSDocType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCreditScore">
+      <soap:operation soapAction="http://tempuri.org/ICustomerPortalService/GetCreditScore" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPeerlessResponse">
+      <soap:operation soapAction="http://tempuri.org/ICustomerPortalService/GetPeerlessResponse" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPolicyScheduleForPortal">
+      <soap:operation soapAction="http://tempuri.org/ICustomerPortalService/GetPolicyScheduleForPortal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DigitalPayPropAllInfo">
+      <soap:operation soapAction="http://tempuri.org/ICustomerPortalService/DigitalPayPropAllInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="webEndPoint2" type="tns:ICustomerPortalService">
+    <wsp:PolicyReference URI="#webEndPoint2_policy" />
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SaveProposal">
+      <soap:operation soapAction="http://tempuri.org/ICustomerPortalService/SaveProposal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CalculatePremium">
+      <soap:operation soapAction="http://tempuri.org/ICustomerPortalService/CalculatePremium" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PaymentEntry">
+      <soap:operation soapAction="http://tempuri.org/ICustomerPortalService/PaymentEntry" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PaymentAllocation">
+      <soap:operation soapAction="http://tempuri.org/ICustomerPortalService/PaymentAllocation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PaymentTagging">
+      <soap:operation soapAction="http://tempuri.org/ICustomerPortalService/PaymentTagging" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FetchProposal">
+      <soap:operation soapAction="http://tempuri.org/ICustomerPortalService/FetchProposal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClaimSaveRegistration">
+      <soap:operation soapAction="http://tempuri.org/ICustomerPortalService/ClaimSaveRegistration" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClaimSaveWorkshop">
+      <soap:operation soapAction="http://tempuri.org/ICustomerPortalService/ClaimSaveWorkshop" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClaimSaveAssessmentSheet">
+      <soap:operation soapAction="http://tempuri.org/ICustomerPortalService/ClaimSaveAssessmentSheet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClaimAdjusterAppointment">
+      <soap:operation soapAction="http://tempuri.org/ICustomerPortalService/ClaimAdjusterAppointment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClaimPopulateWorkshop">
+      <soap:operation soapAction="http://tempuri.org/ICustomerPortalService/ClaimPopulateWorkshop" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClaimPopulateAssessmentSheet">
+      <soap:operation soapAction="http://tempuri.org/ICustomerPortalService/ClaimPopulateAssessmentSheet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClaimPopulateAdjusterAppointment">
+      <soap:operation soapAction="http://tempuri.org/ICustomerPortalService/ClaimPopulateAdjusterAppointment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClaimPopulateRegistration">
+      <soap:operation soapAction="http://tempuri.org/ICustomerPortalService/ClaimPopulateRegistration" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClaimPopulateIntimation">
+      <soap:operation soapAction="http://tempuri.org/ICustomerPortalService/ClaimPopulateIntimation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClaimServiceUpdateDriverDetails">
+      <soap:operation soapAction="http://tempuri.org/ICustomerPortalService/ClaimServiceUpdateDriverDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClaimServiceSaveReportSubmission">
+      <soap:operation soapAction="http://tempuri.org/ICustomerPortalService/ClaimServiceSaveReportSubmission" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClaimServiceGetNote">
+      <soap:operation soapAction="http://tempuri.org/ICustomerPortalService/ClaimServiceGetNote" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClaimServiceSaveNote">
+      <soap:operation soapAction="http://tempuri.org/ICustomerPortalService/ClaimServiceSaveNote" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddCustomer">
+      <soap:operation soapAction="http://tempuri.org/ICustomerPortalService/AddCustomer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ViewCustomer">
+      <soap:operation soapAction="http://tempuri.org/ICustomerPortalService/ViewCustomer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditCustomer">
+      <soap:operation soapAction="http://tempuri.org/ICustomerPortalService/EditCustomer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HealthMemberAdd">
+      <soap:operation soapAction="http://tempuri.org/ICustomerPortalService/HealthMemberAdd" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateDocumentDMS">
+      <soap:operation soapAction="http://tempuri.org/ICustomerPortalService/CreateDocumentDMS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchDocumentDMS">
+      <soap:operation soapAction="http://tempuri.org/ICustomerPortalService/SearchDocumentDMS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ViewDocumentDMS">
+      <soap:operation soapAction="http://tempuri.org/ICustomerPortalService/ViewDocumentDMS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPolicyDocumentForPortal">
+      <soap:operation soapAction="http://tempuri.org/ICustomerPortalService/GetPolicyDocumentForPortal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchDataInwardId">
+      <soap:operation soapAction="http://tempuri.org/ICustomerPortalService/SearchDataInwardId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchDocumentDMSDocType">
+      <soap:operation soapAction="http://tempuri.org/ICustomerPortalService/SearchDocumentDMSDocType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCreditScore">
+      <soap:operation soapAction="http://tempuri.org/ICustomerPortalService/GetCreditScore" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPeerlessResponse">
+      <soap:operation soapAction="http://tempuri.org/ICustomerPortalService/GetPeerlessResponse" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPolicyScheduleForPortal">
+      <soap:operation soapAction="http://tempuri.org/ICustomerPortalService/GetPolicyScheduleForPortal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DigitalPayPropAllInfo">
+      <soap:operation soapAction="http://tempuri.org/ICustomerPortalService/DigitalPayPropAllInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CustomerPortalService">
+    <wsdl:port name="webEndPoint1" binding="tns:webEndPoint1">
+      <soap:address location="http://10.221.12.125/GCIntegrationServices/CustomerPortalService.svc" />
+    </wsdl:port>
+    <wsdl:port name="webEndPoint2" binding="tns:webEndPoint2">
+      <soap:address location="https://10.221.12.125/GCIntegrationServices/CustomerPortalService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

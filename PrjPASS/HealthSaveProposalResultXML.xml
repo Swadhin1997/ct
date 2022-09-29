@@ -1,0 +1,730 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceResult xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ExtensionData />
+  <BasicPremium>0</BasicPremium>
+  <ConfWFHelper>
+    <ExtensionData />
+    <BaseTransRBFailed>false</BaseTransRBFailed>
+    <GetLinkIDData>
+      <clsLinkIdDtls>
+        <ExtensionData />
+        <LinkID>201611240000128</LinkID>
+        <LinkIDName>Proposal ID</LinkIDName>
+      </clsLinkIdDtls>
+    </GetLinkIDData>
+    <WFMessageHtml>&lt;table border='1' style="border-style:solid; border-width:1px; border-color:Gray" cellspacing=0 cellpadding=0&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Proposal Number&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Proposal Date&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Total Premium (Rs)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Customer Id&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Customer Name&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;201611240000128&lt;/td&gt;&lt;td&gt;24/11/2016&lt;/td&gt;&lt;td&gt;3728/-&lt;/td&gt;&lt;td&gt;1000013793&lt;/td&gt;&lt;td&gt;Hasmukh D Jain&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</WFMessageHtml>
+    <WFMessageList>
+      <clsMessageItem>
+        <ExtensionData />
+        <ItemLabel>Proposal Number</ItemLabel>
+        <ItemValue>201611240000128</ItemValue>
+      </clsMessageItem>
+      <clsMessageItem>
+        <ExtensionData />
+        <ItemLabel>Proposal Date</ItemLabel>
+        <ItemValue>24/11/2016</ItemValue>
+      </clsMessageItem>
+      <clsMessageItem>
+        <ExtensionData />
+        <ItemLabel>Total Premium (Rs)</ItemLabel>
+        <ItemValue>3728/-</ItemValue>
+      </clsMessageItem>
+      <clsMessageItem>
+        <ExtensionData />
+        <ItemLabel>Customer Id</ItemLabel>
+        <ItemValue>1000013793</ItemValue>
+      </clsMessageItem>
+      <clsMessageItem>
+        <ExtensionData />
+        <ItemLabel>Customer Name</ItemLabel>
+        <ItemValue>Hasmukh D Jain</ItemValue>
+      </clsMessageItem>
+    </WFMessageList>
+    <WFStateAction>~/CnfgtrMenu/CnfgtrMenuPages/GenisysConfiguratorTracker.aspx?WORKFLOW_ID=&amp;ERROR_DATE=&amp;ERROR_MESSAGE=&amp;POSSIBLE_STATES=NEWPROPOSAL_COMPLETED,RECEIPT_ALLOCATION,CHECK_QC,START_RI,COLLECT_PAYMENT&amp;INITIALIZE_STATE_IDS='START_WORKFLOW','COLLECT_PAYMENT','PAYMENT_RECEIVED','RECEIPT_ALLOCATION','RECEIPT_ALLOCATION_COMPLETED','CREATE_NEWPROPOSAL','NEWPROPOSAL_COMPLETED','CHECK_QC','QC_COMPLETED','TAG_PAYMENT_PROPOSAL','PAYMENT_PROPOSAL_TAGGED','PAYMENT_REFUND','PAYMENT_REFUND_COMPLETED','START_RI','END_RI'</WFStateAction>
+    <WFSystemID>W100000500141160</WFSystemID>
+    <WFTransRolledback>false</WFTransRolledback>
+  </ConfWFHelper>
+  <CustomWorkflowCondition>PR,PG,UW</CustomWorkflowCondition>
+  <EndorsementPremium>3242</EndorsementPremium>
+  <EndorsementSI>0</EndorsementSI>
+  <EndorsementServiceTax>0</EndorsementServiceTax>
+  <ErrorText />
+  <GetUserData>
+    <PropRisks_AdditionInfoLetterDecision />
+    <PropRisks_AdditionInfoLetterDecisionDate />
+    <PropRisks_AdditionInfoLetterToBeGeneratd />
+    <PropRisks_Boolean1>false</PropRisks_Boolean1>
+    <PropRisks_Boolean2>true</PropRisks_Boolean2>
+    <PropRisks_CounterOfferLetterDecision>Counter Offer Letter Not Required</PropRisks_CounterOfferLetterDecision>
+    <PropRisks_CounterOfferLetterDecisionDate />
+    <PropRisks_CounterOfferLetterToBeGeneratd />
+    <PropRisks_DeviationRemarks>Any Remarks</PropRisks_DeviationRemarks>
+    <PropRisks_ExtraBoolean1>false</PropRisks_ExtraBoolean1>
+    <PropRisks_ExtraBoolean10>true</PropRisks_ExtraBoolean10>
+    <PropRisks_ExtraBoolean2>true</PropRisks_ExtraBoolean2>
+    <PropRisks_ExtraBoolean3>false</PropRisks_ExtraBoolean3>
+    <PropRisks_ExtraBoolean4>true</PropRisks_ExtraBoolean4>
+    <PropRisks_ExtraBoolean5>true</PropRisks_ExtraBoolean5>
+    <PropRisks_ExtraBoolean6>true</PropRisks_ExtraBoolean6>
+    <PropRisks_ExtraBoolean7>true</PropRisks_ExtraBoolean7>
+    <PropRisks_ExtraBoolean8>true</PropRisks_ExtraBoolean8>
+    <PropRisks_ExtraBoolean9>true</PropRisks_ExtraBoolean9>
+    <PropRisks_ExtraNum1>0</PropRisks_ExtraNum1>
+    <PropRisks_ExtraNum10>0</PropRisks_ExtraNum10>
+    <PropRisks_ExtraNum2>0</PropRisks_ExtraNum2>
+    <PropRisks_ExtraNum3>0</PropRisks_ExtraNum3>
+    <PropRisks_ExtraNum4>0</PropRisks_ExtraNum4>
+    <PropRisks_ExtraNum5>0</PropRisks_ExtraNum5>
+    <PropRisks_ExtraNum6>0</PropRisks_ExtraNum6>
+    <PropRisks_ExtraNum7>0</PropRisks_ExtraNum7>
+    <PropRisks_ExtraNum8>0</PropRisks_ExtraNum8>
+    <PropRisks_ExtraNum9>0</PropRisks_ExtraNum9>
+    <PropRisks_ExtraText1 />
+    <PropRisks_ExtraText10 />
+    <PropRisks_ExtraText2 />
+    <PropRisks_ExtraText3 />
+    <PropRisks_ExtraText4 />
+    <PropRisks_ExtraText5 />
+    <PropRisks_ExtraText6 />
+    <PropRisks_ExtraText7 />
+    <PropRisks_ExtraText8 />
+    <PropRisks_ExtraText9 />
+    <PropRisks_FamilyDiscApplicability>false</PropRisks_FamilyDiscApplicability>
+    <PropRisks_FamilyDiscountAppPrem>0</PropRisks_FamilyDiscountAppPrem>
+    <PropRisks_FamilyDoctor />
+    <PropRisks_FamilyDoctorAddress />
+    <PropRisks_FamilyDoctorEmail />
+    <PropRisks_FamilyDoctorMobile />
+    <PropRisks_FamilyDoctorName />
+    <PropRisks_FamilyDoctorQualification />
+    <PropRisks_FamilyDoctorTelNo />
+    <PropRisks_FinalApproval />
+    <PropRisks_FloaterCBAmount>0</PropRisks_FloaterCBAmount>
+    <PropRisks_FloaterSumInsured>0</PropRisks_FloaterSumInsured>
+    <PropRisks_InstAdditionalEndorsement>true</PropRisks_InstAdditionalEndorsement>
+    <PropRisks_InstallmentFrequency />
+    <PropRisks_IsPolicyholderanInsured>true</PropRisks_IsPolicyholderanInsured>
+    <PropRisks_IsServiceTaxExempted>false</PropRisks_IsServiceTaxExempted>
+    <PropRisks_LoadingPercentage>0</PropRisks_LoadingPercentage>
+    <PropRisks_LocationCode />
+    <PropRisks_LongTermDiscApplicability>false</PropRisks_LongTermDiscApplicability>
+    <PropRisks_LongTermDiscountAppPrem>0</PropRisks_LongTermDiscountAppPrem>
+    <PropRisks_MASPercentage>100</PropRisks_MASPercentage>
+    <PropRisks_MFLPercentage>100</PropRisks_MFLPercentage>
+    <PropRisks_MemberPremiumTotal>0</PropRisks_MemberPremiumTotal>
+    <PropRisks_NoMedicalDeclaration>true</PropRisks_NoMedicalDeclaration>
+    <PropRisks_NoPED>true</PropRisks_NoPED>
+    <PropRisks_Num1>0</PropRisks_Num1>
+    <PropRisks_Num2>1</PropRisks_Num2>
+    <PropRisks_Num3>0</PropRisks_Num3>
+    <PropRisks_Num4>0</PropRisks_Num4>
+    <PropRisks_Num5>1</PropRisks_Num5>
+    <PropRisks_OtherDate1 />
+    <PropRisks_OtherInfoBool1>true</PropRisks_OtherInfoBool1>
+    <PropRisks_OtherInfoText1>,applicability=NONBANCASSURANCE,InsuredDtls=1&gt;Self|</PropRisks_OtherInfoText1>
+    <PropRisks_OtherInfoText2 />
+    <PropRisks_OtherInfoText3 />
+    <PropRisks_OtherInfoText4>,memberid=1000006862</PropRisks_OtherInfoText4>
+    <PropRisks_OtherInfoText5 />
+    <PropRisks_OtherInfoText6 />
+    <PropRisks_OtherInfoText7 />
+    <PropRisks_OtherInfoText8 />
+    <PropRisks_PMLPercentage>100</PropRisks_PMLPercentage>
+    <PropRisks_PlanCode>10001</PropRisks_PlanCode>
+    <PropRisks_PlanName>EXCEL</PropRisks_PlanName>
+    <PropRisks_PlanType>Individual Basis</PropRisks_PlanType>
+    <PropRisks_PremiumReceivedFromCustomer>3635</PropRisks_PremiumReceivedFromCustomer>
+    <PropRisks_RelationshipCombination />
+    <PropRisks_TPACode>1000000001</PropRisks_TPACode>
+    <PropRisks_TPAName>Family Health Plan (TPA) Limited</PropRisks_TPAName>
+    <PropRisks_Term>1 Year</PropRisks_Term>
+    <PropRisks_Text1 />
+    <PropRisks_Text2 />
+    <PropRisks_Text3 />
+    <PropRisks_Text4 />
+    <PropRisks_TotalNoOfInstallment>0</PropRisks_TotalNoOfInstallment>
+    <PropRisks_ProposalEntryDate>24/11/2016</PropRisks_ProposalEntryDate>
+    <PropRisks_UWDecisionDeviation>false</PropRisks_UWDecisionDeviation>
+    <PropRisks_Col>
+      <Risks>
+        <IsOptionalCover>false</IsOptionalCover>
+        <PropRisks_AnyAddInfoRecommendedByAMHI />
+        <PropRisks_AnyAddTestRecommendedByAMHI />
+        <PropRisks_AnyAdditionalInforRecommended />
+        <PropRisks_AnyAdditionalTestRecommended />
+        <PropRisks_AnyExclusionRecommendedByAMHI />
+        <PropRisks_AnySpcConRecommendedByAMHI />
+        <PropRisks_AnyUWLoadingRecommendedByAMHI />
+        <PropRisks_ApplicableSumInsured>200000</PropRisks_ApplicableSumInsured>
+        <PropRisks_BodyMassIndex>23.88</PropRisks_BodyMassIndex>
+        <PropRisks_ConfirmMemberId />
+        <PropRisks_CumulativeBonusEarned>0</PropRisks_CumulativeBonusEarned>
+        <PropRisks_DetailLoadingDiscount_Col />
+        <PropRisks_DifferentialSI>200000</PropRisks_DifferentialSI>
+        <PropRisks_EndorsementAmount>3242</PropRisks_EndorsementAmount>
+        <PropRisks_EnhancedMemberSI>200000</PropRisks_EnhancedMemberSI>
+        <PropRisks_ExpiringPolicySI>0</PropRisks_ExpiringPolicySI>
+        <PropRisks_FirstName>HASMUKH</PropRisks_FirstName>
+        <PropRisks_Gender>Male</PropRisks_Gender>
+        <PropRisks_HeightOfTheInsuredInCm>165</PropRisks_HeightOfTheInsuredInCm>
+        <PropRisks_HeightOfTheInsuredInInches>0</PropRisks_HeightOfTheInsuredInInches>
+        <PropRisks_ICDMajorCode />
+        <PropRisks_ICDMajorDescription />
+        <PropRisks_ICDMinorCode />
+        <PropRisks_ICDMinorDescription />
+        <PropRisks_IndividualRiskPremium>0</PropRisks_IndividualRiskPremium>
+        <PropRisks_InsuredAge>27</PropRisks_InsuredAge>
+        <PropRisks_InsuredDateOfBirth>25/09/1989</PropRisks_InsuredDateOfBirth>
+        <PropRisks_InsuredName>HASMUKH D JAIN</PropRisks_InsuredName>
+        <PropRisks_InsuredRelationwithProposer>Self</PropRisks_InsuredRelationwithProposer>
+        <PropRisks_IsDataDeleted>false</PropRisks_IsDataDeleted>
+        <PropRisks_IsOldDataDeleted>false</PropRisks_IsOldDataDeleted>
+        <PropRisks_LastName>JAIN</PropRisks_LastName>
+        <PropRisks_LoadingReasonByAMHI />
+        <PropRisks_MemberDeath />
+        <PropRisks_MemberEntryDate>24/11/2016</PropRisks_MemberEntryDate>
+        <PropRisks_MemberID>1000006862</PropRisks_MemberID>
+        <PropRisks_MemberPremium>0</PropRisks_MemberPremium>
+        <PropRisks_MemberStatus>No Approval Required</PropRisks_MemberStatus>
+        <PropRisks_MemberStatusByAMHI />
+        <PropRisks_MiddleName>D</PropRisks_MiddleName>
+        <PropRisks_Num1RiskGroup>0</PropRisks_Num1RiskGroup>
+        <PropRisks_Occupation>Salaried</PropRisks_Occupation>
+        <PropRisks_OtherKotakGenRenewalApplicable>true</PropRisks_OtherKotakGenRenewalApplicable>
+        <PropRisks_OtherOccupationSpecify />
+        <PropRisks_OtherRiskDiscountAppPrem>0</PropRisks_OtherRiskDiscountAppPrem>
+        <PropRisks_OtherRiskLoadingAppPrem>0</PropRisks_OtherRiskLoadingAppPrem>
+        <PropRisks_OtherTagicRenewalApplicable>true</PropRisks_OtherTagicRenewalApplicable>
+        <PropRisks_OverallRemarksByAMHI />
+        <PropRisks_PPCChargePerMember>0</PropRisks_PPCChargePerMember>
+        <PropRisks_PPCRegistrationNumber />
+        <PropRisks_PPCTestLevel />
+        <PropRisks_PerDayCashBenefitForAccoChild />
+        <PropRisks_Person>Self</PropRisks_Person>
+        <PropRisks_PortabilityReqOthTagicRenApp>false</PropRisks_PortabilityReqOthTagicRenApp>
+        <PropRisks_PortabilityRequired>false</PropRisks_PortabilityRequired>
+        <PropRisks_Premium>3242</PropRisks_Premium>
+        <PropRisks_Rate>0</PropRisks_Rate>
+        <PropRisks_RejectionCategory />
+        <PropRisks_RejectionReason />
+        <PropRisks_RejectionReasonByAMHI />
+        <PropRisks_Remarks />
+        <PropRisks_RiskPremium>0</PropRisks_RiskPremium>
+        <PropRisks_RiskSLNo>1</PropRisks_RiskSLNo>
+        <PropRisks_SumInsured>200000</PropRisks_SumInsured>
+        <PropRisks_Title>MR</PropRisks_Title>
+        <PropRisks_UWDiscountRate>0</PropRisks_UWDiscountRate>
+        <PropRisks_UWLoadingRate>0</PropRisks_UWLoadingRate>
+        <PropRisks_UnderwritingDiscountAppPrem>0</PropRisks_UnderwritingDiscountAppPrem>
+        <PropRisks_UnderwritingLoadingAppPrem>0</PropRisks_UnderwritingLoadingAppPrem>
+        <PropRisks_WeightOfTheInsuredInKG>65</PropRisks_WeightOfTheInsuredInKG>
+        <ExtensionData />
+        <PropRisks_CoverDetails_Col>
+          <Risks_CoverDetails>
+            <ExtensionData />
+            <PropCoverDetails_Applicable>true</PropCoverDetails_Applicable>
+            <PropCoverDetails_CoverGroups>Basic Covers</PropCoverDetails_CoverGroups>
+            <PropCoverDetails_CumEndorsementPrem>0</PropCoverDetails_CumEndorsementPrem>
+            <PropCoverDetails_CumTotalPremium>0</PropCoverDetails_CumTotalPremium>
+            <PropCoverDetails_CumulativeEndAmount>0</PropCoverDetails_CumulativeEndAmount>
+            <PropCoverDetails_CumulativeEndSerTax>0</PropCoverDetails_CumulativeEndSerTax>
+            <PropCoverDetails_CumulativePremium>0</PropCoverDetails_CumulativePremium>
+            <PropCoverDetails_CumulativeServiceTax>0</PropCoverDetails_CumulativeServiceTax>
+            <PropCoverDetails_DifferentialSI>200000</PropCoverDetails_DifferentialSI>
+            <PropCoverDetails_EndorsementAmount>3242</PropCoverDetails_EndorsementAmount>
+            <PropCoverDetails_IsDataDeleted>false</PropCoverDetails_IsDataDeleted>
+            <PropCoverDetails_IsOldDataDeleted>false</PropCoverDetails_IsOldDataDeleted>
+            <PropCoverDetails_MMCPCode />
+            <PropCoverDetails_OtherCvrPrem1>3242</PropCoverDetails_OtherCvrPrem1>
+            <PropCoverDetails_OtherCvrPrem2>0</PropCoverDetails_OtherCvrPrem2>
+            <PropCoverDetails_Premium>3242</PropCoverDetails_Premium>
+            <PropCoverDetails_Rate>0</PropCoverDetails_Rate>
+            <PropCoverDetails_SumInsured>200000</PropCoverDetails_SumInsured>
+            <PropCoverDetails_commission>0</PropCoverDetails_commission>
+          </Risks_CoverDetails>
+        </PropRisks_CoverDetails_Col>
+        <PropRisks_HeightOfTheInsuredInFeet>0</PropRisks_HeightOfTheInsuredInFeet>
+      </Risks>
+    </PropRisks_Col>
+    <ErrorTrackingNeeded>false</ErrorTrackingNeeded>
+    <ProductType>SB</ProductType>
+    <PropBranchDetails_IMDBranchCode />
+    <PropBranchDetails_IMDBranchName />
+    <PropCalculation_CalculateRate>true</PropCalculation_CalculateRate>
+    <PropCalculation_Validate>true</PropCalculation_Validate>
+    <PropCalculation_ValidateData>false</PropCalculation_ValidateData>
+    <PropClauseDetails_Component51 />
+    <PropClauseDetails_DepartmentCode_Mandatary>0</PropClauseDetails_DepartmentCode_Mandatary>
+    <PropClauseDetails_ProductCode_Mandatary>2876</PropClauseDetails_ProductCode_Mandatary>
+    <PropClauseDetails_SectionCode />
+    <PropCoinsuranceDetails_AddRow>true</PropCoinsuranceDetails_AddRow>
+    <PropCoinsuranceDetails_CoinsuranceType />
+    <PropCoinsuranceDetails_Commissiontobepaidbytheleader>true</PropCoinsuranceDetails_Commissiontobepaidbytheleader>
+    <PropCoinsuranceDetails_PolicyNooftheleader />
+    <PropCoinsuranceDetails_ReferenceNumber />
+    <PropCoinsuranceDetails_SERVTAXCOMMRCVRLEADER>true</PropCoinsuranceDetails_SERVTAXCOMMRCVRLEADER>
+    <PropCoinsuranceDetails_Servicetaxtobepaidbytheleader>true</PropCoinsuranceDetails_Servicetaxtobepaidbytheleader>
+    <PropCoinsuranceDetails_Validate>True</PropCoinsuranceDetails_Validate>
+    <PropConditionDetails_ConditionDescription />
+    <PropConditionDetails_DepartmentCode>0</PropConditionDetails_DepartmentCode>
+    <PropConditionDetails_ProductCode>2876</PropConditionDetails_ProductCode>
+    <PropConditionDetails_SectionCode />
+    <PropConditionDetails_SpecialConditionDescription />
+    <PropCoverNoteDetails_CoverNoteBookNo />
+    <PropCoverNoteDetails_CoverNoteLeafNo />
+    <PropCoverNoteDetails_IssuedOnDt />
+    <PropCoverNoteDetails_IsuedonTime />
+    <PropCoverNoteDetails_LeafNo>0</PropCoverNoteDetails_LeafNo>
+    <PropCoverNoteDetails_RecievedOn />
+    <PropCoverNoteDetails_Validate>false</PropCoverNoteDetails_Validate>
+    <PropCustomerDtls_CustomerID_Mandatary>1000013793</PropCustomerDtls_CustomerID_Mandatary>
+    <PropCustomerDtls_CustomerName>Hasmukh D Jain</PropCustomerDtls_CustomerName>
+    <PropCustomerDtls_CustomerType />
+    <PropCustomerDtls_PayeeCustomerID>1000013793</PropCustomerDtls_PayeeCustomerID>
+    <PropCustomerDtls_PayeeCustomerName>Hasmukh</PropCustomerDtls_PayeeCustomerName>
+    <PropCustomerReferenceInfo_OldPolicyNumber />
+    <PropCustomerReferenceInfo_PolicyConversionDate />
+    <PropDistributionChannel_BranchDetails />
+    <PropDistributionChannel_BusineeChannelBrunch />
+    <PropDistributionChannel_BusineeChanneltype>INTERNET</PropDistributionChannel_BusineeChanneltype>
+    <PropDistributionChannel_BusinessServicingChannelType />
+    <PropDistributionChannel_BusinessSharingPercent>0</PropDistributionChannel_BusinessSharingPercent>
+    <PropDistributionChannel_BusinessSource_Mandatary>INTERMEDIARY</PropDistributionChannel_BusinessSource_Mandatary>
+    <PropDistributionChannel_BusinessSourcetype />
+    <PropDistributionChannel_Commision>0</PropDistributionChannel_Commision>
+    <PropDistributionChannel_EndorsementDtls />
+    <PropDistributionChannel_FieldUserDetails />
+    <PropDistributionChannel_FolderFilePath />
+    <PropDistributionChannel_IntermediaryDetails />
+    <PropDistributionChannel_MODetails />
+    <PropDistributionChannel_OperationMode>NEWPOLICY</PropDistributionChannel_OperationMode>
+    <PropDistributionChannel_SPDetails />
+    <PropDistributionChannel_SerIntermediaryDetails />
+    <PropDistributionChannel_ServiceProvider>0</PropDistributionChannel_ServiceProvider>
+    <PropDistributionChannel_SpecialDiscount>100</PropDistributionChannel_SpecialDiscount>
+    <PropDistributionChannel_TERRORISMCOMMISSION>0</PropDistributionChannel_TERRORISMCOMMISSION>
+    <PropDistributionChannel_Validate>true</PropDistributionChannel_Validate>
+    <PropDistributionChannel_VerticalDtls />
+    <PropEndorsementDtls_CancellationDueToDataEntry>true</PropEndorsementDtls_CancellationDueToDataEntry>
+    <PropEndorsementDtls_CancellationForDeathorPTD>true</PropEndorsementDtls_CancellationForDeathorPTD>
+    <PropEndorsementDtls_CancellationForDoubleInsurance>Automatic</PropEndorsementDtls_CancellationForDoubleInsurance>
+    <PropEndorsementDtls_ClientRequestDate />
+    <PropEndorsementDtls_Description />
+    <PropEndorsementDtls_EndorsementTypeCode>0</PropEndorsementDtls_EndorsementTypeCode>
+    <PropEndorsementDtls_IsOrifinalCertificateSurrender>true</PropEndorsementDtls_IsOrifinalCertificateSurrender>
+    <PropEndorsementDtls_IsUWCompleted>true</PropEndorsementDtls_IsUWCompleted>
+    <PropEndorsementDtls_NameOfInsCo />
+    <PropEndorsementDtls_OfficeCodeAndAddress />
+    <PropEndorsementDtls_PartnerApplicationDate>24/11/2016</PropEndorsementDtls_PartnerApplicationDate>
+    <PropEndorsementDtls_PartnerApplicationNo>QH201611243014</PropEndorsementDtls_PartnerApplicationNo>
+    <PropEndorsementDtls_PeriodFrm />
+    <PropEndorsementDtls_PeriodTodate />
+    <PropEndorsementDtls_PolicyIssueDateTime />
+    <PropEndorsementDtls_PolicyNumber />
+    <PropEndorsementDtls_ReasonForCancellation />
+    <PropEndorsementDtls_TypeofEndorsement />
+    <PropEndorsementDtls_ValuationReport>true</PropEndorsementDtls_ValuationReport>
+    <PropEndorsementDtls_cancellationDueToClaim>true</PropEndorsementDtls_cancellationDueToClaim>
+    <PropEndorsementEffectiveDate_EffectiveDate />
+    <PropEndorsementEffectiveDate_EffectiveTime />
+    <PropExclusionDetails_DepartmentCode>0</PropExclusionDetails_DepartmentCode>
+    <PropExclusionDetails_ProductCode>2876</PropExclusionDetails_ProductCode>
+    <PropExclusionDetails_SectionCode />
+    <PropFees_PPCFee>0</PropFees_PPCFee>
+    <PropFieldUserDetails_FieldUserCode />
+    <PropFieldUserDetails_FieldUserLocation />
+    <PropFieldUserDetails_FieldUserName />
+    <PropFieldUserDetails_FieldUserVertical />
+    <PropFieldUserDetails_FiledUserUserID />
+    <PropFinancierDetails_AddRow>true</PropFinancierDetails_AddRow>
+    <PropFinancierDetails_Validate>true</PropFinancierDetails_Validate>
+    <PropGeneralNodes_ApplicationDate>24/11/2016</PropGeneralNodes_ApplicationDate>
+    <PropGeneralNodes_ApplicationNo>20201700003575</PropGeneralNodes_ApplicationNo>
+    <PropGeneralNodes_AutoPopulate />
+    <PropGeneralNodes_CustomFetch>true</PropGeneralNodes_CustomFetch>
+    <PropGeneralNodes_ParentCompanyName />
+    <PropGeneralNodes_RIInwardSharePercentage>0</PropGeneralNodes_RIInwardSharePercentage>
+    <PropGeneralProposalGroup_CoverNoteDetails />
+    <PropGeneralProposalGroup_DistributionChannel />
+    <PropGeneralProposalGroup_Fees />
+    <PropGeneralProposalGroup_GeneralProposalInformation />
+    <PropGeneralProposalInformation_ActiveFlag>Yes</PropGeneralProposalInformation_ActiveFlag>
+    <PropGeneralProposalInformation_ApplicationNumber />
+    <PropGeneralProposalInformation_BankID>0</PropGeneralProposalInformation_BankID>
+    <PropGeneralProposalInformation_BlnEndtNoBlock>true</PropGeneralProposalInformation_BlnEndtNoBlock>
+    <PropGeneralProposalInformation_BranchInwardDate />
+    <PropGeneralProposalInformation_BranchInwardNumber />
+    <PropGeneralProposalInformation_BranchOfficeCode>90002</PropGeneralProposalInformation_BranchOfficeCode>
+    <PropGeneralProposalInformation_BusinessSourceInfo />
+    <PropGeneralProposalInformation_BusinessType_Mandatary>New Business</PropGeneralProposalInformation_BusinessType_Mandatary>
+    <PropGeneralProposalInformation_CertificateNumber />
+    <PropGeneralProposalInformation_ChannelNumber />
+    <PropGeneralProposalInformation_CoverNotePlace />
+    <PropGeneralProposalInformation_CovernoteGenType>AUTO</PropGeneralProposalInformation_CovernoteGenType>
+    <PropGeneralProposalInformation_CustomerDtls />
+    <PropGeneralProposalInformation_CustomerReferenceInfo />
+    <PropGeneralProposalInformation_DayDiff>366</PropGeneralProposalInformation_DayDiff>
+    <PropGeneralProposalInformation_DealId />
+    <PropGeneralProposalInformation_DepartmentCode>28</PropGeneralProposalInformation_DepartmentCode>
+    <PropGeneralProposalInformation_DepartmentName />
+    <PropGeneralProposalInformation_DisplayOfficeCode>0002</PropGeneralProposalInformation_DisplayOfficeCode>
+    <PropGeneralProposalInformation_DisplayStatus />
+    <PropGeneralProposalInformation_EmployeeName />
+    <PropGeneralProposalInformation_EndorsementDescription />
+    <PropGeneralProposalInformation_EndorsementEffectiveDate />
+    <PropGeneralProposalInformation_EndorsementNo>0</PropGeneralProposalInformation_EndorsementNo>
+    <PropGeneralProposalInformation_EndorsementRequestType />
+    <PropGeneralProposalInformation_EndorsementRequestTypeCode />
+    <PropGeneralProposalInformation_EndorsementSi>200000</PropGeneralProposalInformation_EndorsementSi>
+    <PropGeneralProposalInformation_EndorsementType />
+    <PropGeneralProposalInformation_EndorsementWording />
+    <PropGeneralProposalInformation_FrontingCompany />
+    <PropGeneralProposalInformation_IfOthersProvideReason />
+    <PropGeneralProposalInformation_IndustryCode />
+    <PropGeneralProposalInformation_InternalUWComments />
+    <PropGeneralProposalInformation_InwardNo />
+    <PropGeneralProposalInformation_IsNCBApplicable>true</PropGeneralProposalInformation_IsNCBApplicable>
+    <PropGeneralProposalInformation_IsSPCalcByDayDiffReqd />
+    <PropGeneralProposalInformation_LeadGenerator />
+    <PropGeneralProposalInformation_ManualCovernoteNo />
+    <PropGeneralProposalInformation_MasterPolicy />
+    <PropGeneralProposalInformation_MasterPolicyVersion />
+    <PropGeneralProposalInformation_MethodOfCalculation>GC0014</PropGeneralProposalInformation_MethodOfCalculation>
+    <PropGeneralProposalInformation_NCBpercentage>0</PropGeneralProposalInformation_NCBpercentage>
+    <PropGeneralProposalInformation_NextB>true</PropGeneralProposalInformation_NextB>
+    <PropGeneralProposalInformation_NoPrevInsuranceFlag>true</PropGeneralProposalInformation_NoPrevInsuranceFlag>
+    <PropGeneralProposalInformation_NonLiablePeriod />
+    <PropGeneralProposalInformation_NumCovernoteNo>0</PropGeneralProposalInformation_NumCovernoteNo>
+    <PropGeneralProposalInformation_OfficeCode />
+    <PropGeneralProposalInformation_OfficeName>MUMBAI (KALINA)</PropGeneralProposalInformation_OfficeName>
+    <PropGeneralProposalInformation_OldCovernoteNo />
+    <PropGeneralProposalInformation_OpsSalesPartnerUserComments />
+    <PropGeneralProposalInformation_OptionForCalculation>Yearly</PropGeneralProposalInformation_OptionForCalculation>
+    <PropGeneralProposalInformation_PolicyCurrency />
+    <PropGeneralProposalInformation_PolicyEffectivedate>24/11/2016</PropGeneralProposalInformation_PolicyEffectivedate>
+    <PropGeneralProposalInformation_PolicyNo>0</PropGeneralProposalInformation_PolicyNo>
+    <PropGeneralProposalInformation_PolicyNumberChar />
+    <PropGeneralProposalInformation_PolicySchedule_Mandatary>Yes</PropGeneralProposalInformation_PolicySchedule_Mandatary>
+    <PropGeneralProposalInformation_PolicyTerm />
+    <PropGeneralProposalInformation_PrintingType>With Policy Wording</PropGeneralProposalInformation_PrintingType>
+    <PropGeneralProposalInformation_ProductCode>2876</PropGeneralProposalInformation_ProductCode>
+    <PropGeneralProposalInformation_ProductName />
+    <PropGeneralProposalInformation_ProposalDate_Mandatary>24/11/2016</PropGeneralProposalInformation_ProposalDate_Mandatary>
+    <PropGeneralProposalInformation_ProposalFormNumber />
+    <PropGeneralProposalInformation_ProvisionalBooking />
+    <PropGeneralProposalInformation_ProvisionalBookingReason />
+    <PropGeneralProposalInformation_QuickId />
+    <PropGeneralProposalInformation_QuoteNumber />
+    <PropGeneralProposalInformation_ReInsuranceInward>true</PropGeneralProposalInformation_ReInsuranceInward>
+    <PropGeneralProposalInformation_ReSharePer />
+    <PropGeneralProposalInformation_ReferenceNoDate />
+    <PropGeneralProposalInformation_ReferralCode />
+    <PropGeneralProposalInformation_RelationshipType>Self</PropGeneralProposalInformation_RelationshipType>
+    <PropGeneralProposalInformation_Remarks />
+    <PropGeneralProposalInformation_RetainCancellationPremium />
+    <PropGeneralProposalInformation_SalesTax />
+    <PropGeneralProposalInformation_Sector_Mandatary>Urban</PropGeneralProposalInformation_Sector_Mandatary>
+    <PropGeneralProposalInformation_SerDealId />
+    <PropGeneralProposalInformation_ServiceTaxExemption>true</PropGeneralProposalInformation_ServiceTaxExemption>
+    <PropGeneralProposalInformation_ServiceTaxExemptionCategory_Mandatary>No Exemption</PropGeneralProposalInformation_ServiceTaxExemptionCategory_Mandatary>
+    <PropGeneralProposalInformation_ServiceTaxExemptionReason>No Exemption</PropGeneralProposalInformation_ServiceTaxExemptionReason>
+    <PropGeneralProposalInformation_SourceOfTransaction>CP</PropGeneralProposalInformation_SourceOfTransaction>
+    <PropGeneralProposalInformation_TotalSi>200000</PropGeneralProposalInformation_TotalSi>
+    <PropGeneralProposalInformation_TypeOfBusiness />
+    <PropGeneralProposalInformation_TypeOfCalculation />
+    <PropGeneralProposalInformation_TypeOfIndustry />
+    <PropGeneralProposalInformation_TypeOfPolicy>SYSTEM</PropGeneralProposalInformation_TypeOfPolicy>
+    <PropGeneralProposalInformation_TypeofCancellation />
+    <PropGeneralProposalInformation_UWLocation />
+    <PropGeneralProposalInformation_UWLocationCode />
+    <PropGeneralProposalInformation_ValidationFlag />
+    <PropGeneralProposalInformation_ValuationReport>true</PropGeneralProposalInformation_ValuationReport>
+    <PropGeneralProposalInformation_VehicleLaidUpFrom />
+    <PropGeneralProposalInformation_VehicleLaidUpTo />
+    <PropGeneralProposalInformation_covernoteissuedate />
+    <PropGeneralProposalInformation_covernoteissuetime />
+    <PropGeneralProposalInformation_disprntoffcd />
+    <PropGeneralProposalInformation_iscovernoteused>false</PropGeneralProposalInformation_iscovernoteused>
+    <PropGeneralProposalInformation_numTotalFee>0</PropGeneralProposalInformation_numTotalFee>
+    <PropGeneralProposal_GeneralProposalGroup />
+    <PropGeneralProposal_IsCustomWorkflowCondition>PR,PG,UW</PropGeneralProposal_IsCustomWorkflowCondition>
+    <PropHealthOtherNodes_AfterFetch>true</PropHealthOtherNodes_AfterFetch>
+    <PropHealthOtherNodes_CancelationDetail />
+    <PropHealthOtherNodes_EndorsementDtls />
+    <PropHealthOtherNodes_FetchRiskCoverDetails />
+    <PropHealthOtherNodes_GeneralNodes />
+    <PropHealthOtherNodes_validate_beforecalc>True</PropHealthOtherNodes_validate_beforecalc>
+    <PropHigherExcessDiscount_HE_Disc_RateType_In>0</PropHigherExcessDiscount_HE_Disc_RateType_In>
+    <PropIntermediaryDetails_BrokeragePercentage />
+    <PropIntermediaryDetails_IntermediaryCityCode />
+    <PropIntermediaryDetails_IntermediaryCityName />
+    <PropIntermediaryDetails_IntermediaryCode>4103760000</PropIntermediaryDetails_IntermediaryCode>
+    <PropIntermediaryDetails_IntermediaryName>DIRECT INTERMEDIARY</PropIntermediaryDetails_IntermediaryName>
+    <PropIntermediaryDetails_IntermediaryType>INTERNET</PropIntermediaryDetails_IntermediaryType>
+    <PropMODetails_PrimaryMOCode>362</PropMODetails_PrimaryMOCode>
+    <PropMODetails_PrimaryMOName>AMIT VYAS</PropMODetails_PrimaryMOName>
+    <PropMODetails_SecondaryMOCode />
+    <PropMODetails_SecondaryMOLocation />
+    <PropMODetails_SecondaryMOName />
+    <PropMODetails_TertiaryMOCode />
+    <PropMODetails_TertiaryMOName />
+    <PropNonLiablePeriod_NonLiableEndTime />
+    <PropNonLiablePeriod_NonLiableFromDate />
+    <PropNonLiablePeriod_NonLiableStartTime />
+    <PropNonLiablePeriod_NonLiableToDate />
+    <PropParameters_AddClause>false</PropParameters_AddClause>
+    <PropParameters_AddCondition>false</PropParameters_AddCondition>
+    <PropParameters_AddExclusion>false</PropParameters_AddExclusion>
+    <PropParameters_AddWarranty>false</PropParameters_AddWarranty>
+    <PropParameters_AfterFetch>false</PropParameters_AfterFetch>
+    <PropParameters_ClauseApplicable>true</PropParameters_ClauseApplicable>
+    <PropParameters_CoInsuranceApplicability>true</PropParameters_CoInsuranceApplicability>
+    <PropParameters_CommissionApplicable>true</PropParameters_CommissionApplicable>
+    <PropParameters_ConditionApplicable>true</PropParameters_ConditionApplicable>
+    <PropParameters_CoverNoteApplicability>true</PropParameters_CoverNoteApplicability>
+    <PropParameters_EQHigherExcessDiscount>false</PropParameters_EQHigherExcessDiscount>
+    <PropParameters_ExclusionApplicable>true</PropParameters_ExclusionApplicable>
+    <PropParameters_FamilyPackageDiscount>false</PropParameters_FamilyPackageDiscount>
+    <PropParameters_FinancierApplicability>true</PropParameters_FinancierApplicability>
+    <PropParameters_FloaterRiskLoading>false</PropParameters_FloaterRiskLoading>
+    <PropParameters_GroupDiscount>false</PropParameters_GroupDiscount>
+    <PropParameters_HighClaimLoading>false</PropParameters_HighClaimLoading>
+    <PropParameters_HigherExcessDiscount>false</PropParameters_HigherExcessDiscount>
+    <PropParameters_Installment>false</PropParameters_Installment>
+    <PropParameters_LongTermPolicy>true</PropParameters_LongTermPolicy>
+    <PropParameters_LowClaimDiscount>false</PropParameters_LowClaimDiscount>
+    <PropParameters_MinimumPremium>true</PropParameters_MinimumPremium>
+    <PropParameters_NoClaimDiscount>false</PropParameters_NoClaimDiscount>
+    <PropParameters_OverageLoading>false</PropParameters_OverageLoading>
+    <PropParameters_PasPolicyApplicable />
+    <PropParameters_PastPolicyApplicable>false</PropParameters_PastPolicyApplicable>
+    <PropParameters_PolicyCancellation>false</PropParameters_PolicyCancellation>
+    <PropParameters_PopulateTransactionBegin>true</PropParameters_PopulateTransactionBegin>
+    <PropParameters_PreviousPolicyApplicable />
+    <PropParameters_RenewalAllowed>true</PropParameters_RenewalAllowed>
+    <PropParameters_SectionDiscount>false</PropParameters_SectionDiscount>
+    <PropParameters_ServiceTaxExempted>false</PropParameters_ServiceTaxExempted>
+    <PropParameters_ShortPeriodLongPeriod>true</PropParameters_ShortPeriodLongPeriod>
+    <PropParameters_SpecialDiscountApplicable>false</PropParameters_SpecialDiscountApplicable>
+    <PropParameters_StaffDiscount>true</PropParameters_StaffDiscount>
+    <PropParameters_StampDutyChargeable>false</PropParameters_StampDutyChargeable>
+    <PropParameters_TariffProduct>true</PropParameters_TariffProduct>
+    <PropParameters_TransferFees>false</PropParameters_TransferFees>
+    <PropParameters_VDFDiscountAllowed>false</PropParameters_VDFDiscountAllowed>
+    <PropParameters_ValidateClause>true</PropParameters_ValidateClause>
+    <PropParameters_ValidateCondition>true</PropParameters_ValidateCondition>
+    <PropParameters_ValidateEndorsementData>true</PropParameters_ValidateEndorsementData>
+    <PropParameters_ValidateExclusion>true</PropParameters_ValidateExclusion>
+    <PropParameters_ValidateWarranty>true</PropParameters_ValidateWarranty>
+    <PropParameters_WarrentyApplicable>true</PropParameters_WarrentyApplicable>
+    <PropPolicyEffectivedate_Fromdate_Mandatary>24/11/2016</PropPolicyEffectivedate_Fromdate_Mandatary>
+    <PropPolicyEffectivedate_Fromhour_Mandatary>22:10</PropPolicyEffectivedate_Fromhour_Mandatary>
+    <PropPolicyEffectivedate_Todate_Mandatary>23/11/2017</PropPolicyEffectivedate_Todate_Mandatary>
+    <PropPolicyEffectivedate_Tohour_Mandatary>23:59</PropPolicyEffectivedate_Tohour_Mandatary>
+    <PropPremiumCalculation_BasicPremium>3242</PropPremiumCalculation_BasicPremium>
+    <PropPremiumCalculation_Cess>0</PropPremiumCalculation_Cess>
+    <PropPremiumCalculation_CustomCoverLDPremium>0</PropPremiumCalculation_CustomCoverLDPremium>
+    <PropPremiumCalculation_ERFAmount>0</PropPremiumCalculation_ERFAmount>
+    <PropPremiumCalculation_EduCess />
+    <PropPremiumCalculation_EndorsementERFAmount>0</PropPremiumCalculation_EndorsementERFAmount>
+    <PropPremiumCalculation_EndorsementPremium>3242</PropPremiumCalculation_EndorsementPremium>
+    <PropPremiumCalculation_EndorsementServiceTax>486.3</PropPremiumCalculation_EndorsementServiceTax>
+    <PropPremiumCalculation_EndorsementStampDuty>20</PropPremiumCalculation_EndorsementStampDuty>
+    <PropPremiumCalculation_EndorsementTerrorismPremium>0</PropPremiumCalculation_EndorsementTerrorismPremium>
+    <PropPremiumCalculation_EndtEduCess />
+    <PropPremiumCalculation_EndtHigherEduCess />
+    <PropPremiumCalculation_GrossCoverPremium>0</PropPremiumCalculation_GrossCoverPremium>
+    <PropPremiumCalculation_HigherEduCess />
+    <PropPremiumCalculation_NetODPremium>0</PropPremiumCalculation_NetODPremium>
+    <PropPremiumCalculation_NetPremium>3242</PropPremiumCalculation_NetPremium>
+    <PropPremiumCalculation_NetTPPremium>0</PropPremiumCalculation_NetTPPremium>
+    <PropPremiumCalculation_SP_PR_LTFactor>1</PropPremiumCalculation_SP_PR_LTFactor>
+    <PropPremiumCalculation_ServiceTax>486.3</PropPremiumCalculation_ServiceTax>
+    <PropPremiumCalculation_StampDuty>20</PropPremiumCalculation_StampDuty>
+    <PropPremiumCalculation_StampDutyApplicability>false</PropPremiumCalculation_StampDutyApplicability>
+    <PropPremiumCalculation_TerrorismPremium>0</PropPremiumCalculation_TerrorismPremium>
+    <PropPremiumCalculation_TotalPremium>3728</PropPremiumCalculation_TotalPremium>
+    <PropPremiumCalculation_TransferFeeAmount>0</PropPremiumCalculation_TransferFeeAmount>
+    <PropPreviousPolicyDetails_AddRow>false</PropPreviousPolicyDetails_AddRow>
+    <PropPreviousPolicyDetails_CalculateClaimRatio>true</PropPreviousPolicyDetails_CalculateClaimRatio>
+    <PropPreviousPolicyDetails_ClaimRatio>0</PropPreviousPolicyDetails_ClaimRatio>
+    <PropPreviousPolicyDetails_Combo1 />
+    <PropPreviousPolicyDetails_FirstPolicyInceptionDate />
+    <PropPreviousPolicyDetails_InceptionYear>0</PropPreviousPolicyDetails_InceptionYear>
+    <PropPreviousPolicyDetails_NCBPercentage>0</PropPreviousPolicyDetails_NCBPercentage>
+    <PropPreviousPolicyDetails_OldTariffSlab>false</PropPreviousPolicyDetails_OldTariffSlab>
+    <PropPreviousPolicyDetails_PreviousPolicyType />
+    <PropPreviousPolicyDetails_Validate>true</PropPreviousPolicyDetails_Validate>
+    <PropProductDetails_Component17 />
+    <PropProductDetails_DepartmentCode>28</PropProductDetails_DepartmentCode>
+    <PropProductDetails_ProductCode>2876</PropProductDetails_ProductCode>
+    <PropProductDetails_ProductName />
+    <PropProductName>KotakHealthCare</PropProductName>
+    <PropReferenceNoDate_ReferenceDate_Mandatary>24/11/2016</PropReferenceNoDate_ReferenceDate_Mandatary>
+    <PropReferenceNoDate_ReferenceNo_Mandatary>0</PropReferenceNoDate_ReferenceNo_Mandatary>
+    <PropSPDetails_SPCode>0</PropSPDetails_SPCode>
+    <PropSPDetails_SPName />
+    <PropSerIntermediaryDetails_SerIntermediaryCode />
+    <PropSerIntermediaryDetails_SerIntermediaryName />
+    <PropSerIntermediaryDetails_SerIntermediaryType />
+    <PropServiceTaxExemptionCategory_Component43 />
+    <PropVerticalDtls_PrimaryVerticalCode />
+    <PropVerticalDtls_PrimaryVerticalName />
+    <PropVerticalDtls_SecondaryVerticalCode />
+    <PropVerticalDtls_SecondaryVerticalName />
+    <PropVerticalDtls_ServicingPrimaryVerticalCode />
+    <PropVerticalDtls_ServicingPrimaryVerticalName />
+    <PropVerticalDtls_ServicingSecondaryVerticalCode />
+    <PropVerticalDtls_ServicingSecondaryVerticalName />
+    <PropVerticalDtls_ServicingTertiaryVerticalCode />
+    <PropVerticalDtls_ServicingTertiaryVerticalName />
+    <PropVerticalDtls_TertiaryVerticalCode />
+    <PropVerticalDtls_TertiaryVerticalName />
+    <PropWarranty_DepartmentCode>0</PropWarranty_DepartmentCode>
+    <PropWarranty_ProductCode>0</PropWarranty_ProductCode>
+    <PropWarranty_SectionCode />
+    <PropGeneralNodes_SourceType>Internet</PropGeneralNodes_SourceType>
+    <ExtensionData />
+    <PropGeneralProposalInformation_ClientProductCode />
+    <PropGeneralProposalInformation_ProductCode1>0</PropGeneralProposalInformation_ProductCode1>
+    <PropGeneralProposalInformation_ProposalEntryDate />
+    <PropGeneralProposalInformation_ProposalEntryDate1 />
+    <PropGeneralProposalInformation_UIN />
+    <PropGeneralProposal_ClauseDetails_Col />
+    <PropGeneralProposal_CoinsuranceDetails_Col />
+    <PropGeneralProposal_ConditionDetails_Col />
+    <PropGeneralProposal_ExclusionDetails_Col />
+    <PropGeneralProposal_FinancierDetails_Col />
+    <PropGeneralProposal_PreviousPolicyDetails_Col />
+    <PropGeneralProposal_Warranty_Col />
+    <PropLoadingDiscount_Col />
+    <PropRisks_ClientProductCode />
+    <PropRisks_OtherNum1>0</PropRisks_OtherNum1>
+    <PropRisks_OtherNum10>0</PropRisks_OtherNum10>
+    <PropRisks_OtherNum11>0</PropRisks_OtherNum11>
+    <PropRisks_OtherNum12>0</PropRisks_OtherNum12>
+    <PropRisks_OtherNum13>0</PropRisks_OtherNum13>
+    <PropRisks_OtherNum14>0</PropRisks_OtherNum14>
+    <PropRisks_OtherNum15>0</PropRisks_OtherNum15>
+    <PropRisks_OtherNum16>0</PropRisks_OtherNum16>
+    <PropRisks_OtherNum17>0</PropRisks_OtherNum17>
+    <PropRisks_OtherNum18>0</PropRisks_OtherNum18>
+    <PropRisks_OtherNum19>0</PropRisks_OtherNum19>
+    <PropRisks_OtherNum2>0</PropRisks_OtherNum2>
+    <PropRisks_OtherNum20>0</PropRisks_OtherNum20>
+    <PropRisks_OtherNum21>0</PropRisks_OtherNum21>
+    <PropRisks_OtherNum22>0</PropRisks_OtherNum22>
+    <PropRisks_OtherNum23>0</PropRisks_OtherNum23>
+    <PropRisks_OtherNum24>0</PropRisks_OtherNum24>
+    <PropRisks_OtherNum25>0</PropRisks_OtherNum25>
+    <PropRisks_OtherNum26>0</PropRisks_OtherNum26>
+    <PropRisks_OtherNum27>0</PropRisks_OtherNum27>
+    <PropRisks_OtherNum28>0</PropRisks_OtherNum28>
+    <PropRisks_OtherNum29>0</PropRisks_OtherNum29>
+    <PropRisks_OtherNum3>0</PropRisks_OtherNum3>
+    <PropRisks_OtherNum30>0</PropRisks_OtherNum30>
+    <PropRisks_OtherNum31>0</PropRisks_OtherNum31>
+    <PropRisks_OtherNum32>0</PropRisks_OtherNum32>
+    <PropRisks_OtherNum33>0</PropRisks_OtherNum33>
+    <PropRisks_OtherNum34>0</PropRisks_OtherNum34>
+    <PropRisks_OtherNum35>0</PropRisks_OtherNum35>
+    <PropRisks_OtherNum36>0</PropRisks_OtherNum36>
+    <PropRisks_OtherNum37>0</PropRisks_OtherNum37>
+    <PropRisks_OtherNum38>0</PropRisks_OtherNum38>
+    <PropRisks_OtherNum39>1</PropRisks_OtherNum39>
+    <PropRisks_OtherNum4>0</PropRisks_OtherNum4>
+    <PropRisks_OtherNum40>0</PropRisks_OtherNum40>
+    <PropRisks_OtherNum41>0</PropRisks_OtherNum41>
+    <PropRisks_OtherNum42>2.5</PropRisks_OtherNum42>
+    <PropRisks_OtherNum43>0</PropRisks_OtherNum43>
+    <PropRisks_OtherNum44>0</PropRisks_OtherNum44>
+    <PropRisks_OtherNum45>2</PropRisks_OtherNum45>
+    <PropRisks_OtherNum46>0</PropRisks_OtherNum46>
+    <PropRisks_OtherNum47>0</PropRisks_OtherNum47>
+    <PropRisks_OtherNum48>3242</PropRisks_OtherNum48>
+    <PropRisks_OtherNum49>5</PropRisks_OtherNum49>
+    <PropRisks_OtherNum5>0</PropRisks_OtherNum5>
+    <PropRisks_OtherNum50>27</PropRisks_OtherNum50>
+    <PropRisks_OtherNum6>0</PropRisks_OtherNum6>
+    <PropRisks_OtherNum7>0</PropRisks_OtherNum7>
+    <PropRisks_OtherNum8>0</PropRisks_OtherNum8>
+    <PropRisks_OtherNum9>0</PropRisks_OtherNum9>
+    <PropRisks_UIN />
+    <PropRisks_isAlternativeTreatmentCover>false</PropRisks_isAlternativeTreatmentCover>
+    <PropRisks_isBasicCover>false</PropRisks_isBasicCover>
+    <PropRisks_isCapOnRoomRentCover>false</PropRisks_isCapOnRoomRentCover>
+    <PropRisks_isCompassionateVisitCover>false</PropRisks_isCompassionateVisitCover>
+    <PropRisks_isConvalescenceBenefitCover>false</PropRisks_isConvalescenceBenefitCover>
+    <PropRisks_isCriticalIllnessCover>false</PropRisks_isCriticalIllnessCover>
+    <PropRisks_isDonorExpensesCover>false</PropRisks_isDonorExpensesCover>
+    <PropRisks_isDoubleSIForHospCover>false</PropRisks_isDoubleSIForHospCover>
+    <PropRisks_isHos>false</PropRisks_isHos>
+    <PropRisks_isMaternityBenefitCover>false</PropRisks_isMaternityBenefitCover>
+    <PropRisks_isNewBornBabyCover>false</PropRisks_isNewBornBabyCover>
+    <PropRisks_isRestorationOfSumInsuredCover>false</PropRisks_isRestorationOfSumInsuredCover>
+    <PropRisks_numAlternativePrem>0</PropRisks_numAlternativePrem>
+    <PropRisks_numAlternativeSI>0</PropRisks_numAlternativeSI>
+    <PropRisks_numCompPrem>0</PropRisks_numCompPrem>
+    <PropRisks_numCompSI>0</PropRisks_numCompSI>
+    <PropRisks_numConvPrem>0</PropRisks_numConvPrem>
+    <PropRisks_numConvSI>0</PropRisks_numConvSI>
+    <PropRisks_numCriticalPrem>0</PropRisks_numCriticalPrem>
+    <PropRisks_numCriticalSI>0</PropRisks_numCriticalSI>
+    <PropRisks_numDomiciliaryPrem>0</PropRisks_numDomiciliaryPrem>
+    <PropRisks_numDomiciliarySI>0</PropRisks_numDomiciliarySI>
+    <PropRisks_numDonorPrem>0</PropRisks_numDonorPrem>
+    <PropRisks_numDonorSI>0</PropRisks_numDonorSI>
+    <PropRisks_numDoublePrem>0</PropRisks_numDoublePrem>
+    <PropRisks_numDoubleSI>0</PropRisks_numDoubleSI>
+    <PropRisks_numHospCashDailyAmount>0</PropRisks_numHospCashDailyAmount>
+    <PropRisks_numHospCashPrem>0</PropRisks_numHospCashPrem>
+    <PropRisks_numHospCashSI>0</PropRisks_numHospCashSI>
+    <PropRisks_numMaternityPrem>0</PropRisks_numMaternityPrem>
+    <PropRisks_numMaternitySI>0</PropRisks_numMaternitySI>
+    <PropRisks_numMaternitySumInsured>false</PropRisks_numMaternitySumInsured>
+    <PropRisks_numNewBornPrem>0</PropRisks_numNewBornPrem>
+    <PropRisks_numNewBornSI>0</PropRisks_numNewBornSI>
+    <PropRisks_numRestOfSI>0</PropRisks_numRestOfSI>
+    <PropRisks_numRestofSIPrem>0</PropRisks_numRestofSIPrem>
+    <PropRisks_numRoomCapPrem>0</PropRisks_numRoomCapPrem>
+    <PropRisks_numRoomCapSI>0</PropRisks_numRoomCapSI>
+    <PropRisks_numSI1>0</PropRisks_numSI1>
+    <PropRisks_numSI10>0</PropRisks_numSI10>
+    <PropRisks_numSI2>0</PropRisks_numSI2>
+    <PropRisks_numSI3>0</PropRisks_numSI3>
+    <PropRisks_numSI4>0</PropRisks_numSI4>
+    <PropRisks_numSI5>0</PropRisks_numSI5>
+    <PropRisks_numSI6>0</PropRisks_numSI6>
+    <PropRisks_numSI7>0</PropRisks_numSI7>
+    <PropRisks_numSI8>0</PropRisks_numSI8>
+    <PropRisks_numSI9>0</PropRisks_numSI9>
+    <PropRisks_txtCustInfo1>7738284116</PropRisks_txtCustInfo1>
+    <PropRisks_txtCustInfo10 />
+    <PropRisks_txtCustInfo2>WORLI,MUMBAI,MUMBAI,MAHARASHTRA,400013</PropRisks_txtCustInfo2>
+    <PropRisks_txtCustInfo3>WORLI,MUMBAI,MUMBAI,MAHARASHTRA,400013</PropRisks_txtCustInfo3>
+    <PropRisks_txtCustInfo4>KGI.HASMUKH-JAIN@KOTAK.COM</PropRisks_txtCustInfo4>
+    <PropRisks_txtCustInfo5>MR</PropRisks_txtCustInfo5>
+    <PropRisks_txtCustInfo6>25/09/1989</PropRisks_txtCustInfo6>
+    <PropRisks_txtCustInfo7 />
+    <PropRisks_txtCustInfo8 />
+    <PropRisks_txtCustInfo9 />
+  </GetUserData>
+  <IndividualPremiumDetails>
+    <ExtensionData />
+    <BasicPremium>0</BasicPremium>
+    <BlockID>0</BlockID>
+    <ExchangeRate>0</ExchangeRate>
+    <NetPremium>0</NetPremium>
+    <SectionID>0</SectionID>
+    <TotalSI>0</TotalSI>
+  </IndividualPremiumDetails>
+  <NetPremium>3242</NetPremium>
+  <ProductType>SB</ProductType>
+  <ProposalNo>201611240000128</ProposalNo>
+  <ServiceTax>486</ServiceTax>
+  <StampDuty>20</StampDuty>
+  <TotalPremium>3728</TotalPremium>
+  <TotalSI>200000</TotalSI>
+  <UWPartialDataXml />
+  <WarningText>There is a mismatch between premium recieved from customer and total premium calculated and the difference is amount  93  'Shortfall'.</WarningText>
+</ServiceResult>
