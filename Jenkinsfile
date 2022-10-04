@@ -20,7 +20,7 @@ agent any
                    git branch: 'main', url: 'https://github.com/Swadhin1997/ct.git'
                 }
             }  
-        stage('Prep') {
+        stage ('Prep') {
             steps {
                 script {
                     GIT_BRANCH=sh(returnStdout: true, script: 'git symbolic-ref --short HEAD').trim()
@@ -39,7 +39,7 @@ agent any
                    sh "dotnet publish PrjPASS.sln"
               }
          }
-         stage'Copy proj to backup') {
+         stage ('Copy proj to backup') {
             steps {
                 script {
                     echo "Copying project folder to backup folder"
