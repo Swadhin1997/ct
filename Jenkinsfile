@@ -1,4 +1,4 @@
-def project_folder = "C:\ProgramData\Jenkins\.jenkins\workspace\ct\PrjPASS\bin"
+def project_folder = "C:/ProgramData/Jenkins/.jenkins/workspace/ct/PrjPASS/bin"
 def JOB_NAME = "ct"
 def backup_folder = "D:\New folder"
 
