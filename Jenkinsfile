@@ -1,6 +1,6 @@
 def project_folder = "C:/ProgramData/Jenkins/.jenkins/workspace/ct/PrjPASS/bin"
 def JOB_NAME = "ct"
-def backup_folder = 'C:/swadhin'
+def backup_folder = 'D:/Backup'
 
 pipeline {
 agent any
