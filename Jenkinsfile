@@ -43,7 +43,7 @@ agent any
             steps {
                 script {
                     echo "Copying project folder to backup folder"
-                    sh "'powershell.exe cp -r ${project_folder} ${backup_folder}/${JOB_NAME}${currentBuild.number}_$timestamp'"
+                    sh "'powershell.exe Copy-Item -Path ${project_folder} -Destination ${backup_folder}/${JOB_NAME}${currentBuild.number}_$timestamp -force -Recurse'"
                     echo "Current timestamp :: $timestamp"
                 }
             }
