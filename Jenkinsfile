@@ -1,7 +1,3 @@
-def project_folder = "C:\ProgramData\Jenkins\.jenkins\workspace\ct\PrjPASS\bin"
-def JOB_NAME = "ct"
-def backup_folder = 'D:\Backup'
-
 pipeline {
 agent any
 
@@ -39,14 +35,5 @@ agent any
                    sh "dotnet publish PrjPASS.sln"
               }
          }
-         stage ('Copy proj to backup') {
-            steps {
-                script {
-                    echo "Copying project folder to backup folder"
-                    sh "'powershell.exe Copy-Item -Path ${project_folder}\* -Destination ${backup_folder} -force -Recurse'"
-                    echo "Current timestamp :: $timestamp"
-                }
-            }
-        }
     }
 }
